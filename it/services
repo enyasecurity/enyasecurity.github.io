@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Enya Security – Servizi</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <img src="../assets/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Servizi</a>
+        <a href="packs.html">Pacchetti</a>
+        <a href="contact.html">Contatto</a>
+        <a href="../index.html">FR</a>
+        <a href="../en/services.html">EN</a>
+    </nav>
+</header>
+
+<section class="page">
+    <h1 class="neon-title">I Nostri Servizi</h1>
+
+    <ul class="service-list">
+        <li>Analisi della visibilità online</li>
+        <li>Scan delle vulnerabilità</li>
+        <li>Test di sicurezza del sito web</li>
+        <li>Sensibilizzazione alla sicurezza</li>
+        <li>Simulazioni di phishing</li>
+    </ul>
+</section>
+
+</body>
+</html>
