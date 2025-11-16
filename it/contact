@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Enya Security – Contatto</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <img src="../assets/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Servizi</a>
+        <a href="packs.html">Pacchetti</a>
+        <a href="contact.html">Contatto</a>
+        <a href="../index.html">FR</a>
+        <a href="../en/contact.html">EN</a>
+    </nav>
+</header>
+
+<section class="page">
+    <h1 class="neon-title">Contattaci</h1>
+
+    <p class="subtitle">Per qualsiasi richiesta, scrivici a :</p>
+
+    <p class="big-email">enyacybersec@outlook.com</p>
+</section>
+
+</body>
+</html>
