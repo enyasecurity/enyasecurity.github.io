@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Enya Security – Pacchetti</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <img src="../assets/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Servizi</a>
+        <a href="packs.html">Pacchetti</a>
+        <a href="contact.html">Contatto</a>
+        <a href="../index.html">FR</a>
+        <a href="../en/packs.html">EN</a>
+    </nav>
+</header>
+
+<section class="page">
+    <h1 class="neon-title">Pacchetti di Sicurezza</h1>
+
+    <ul class="service-list">
+        <li>Pacchetto Base – Scansioni principali</li>
+        <li>Pacchetto Avanzato – Test completi</li>
+        <li>Pacchetto Premium – Protezione totale</li>
+    </ul>
+</section>
+
+</body>
+</html>
