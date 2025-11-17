@@ -58,3 +58,38 @@ h1 {
     text-shadow: 0 0 6px #ff00ff;
 }
 
+* ========== RÉDUCTION DU CONTENU ========== */
+
+.container {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.container p {
+  font-size: 18px;
+}
+
+.container h1 {
+  font-size: 34px;
+  text-shadow: 0 0 12px #00d2ff;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  font-size: 26px;
+  text-shadow: 0 0 8px #00d2ff;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.container h3 {
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.container ul li {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+
