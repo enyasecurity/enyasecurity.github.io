@@ -6,12 +6,17 @@ body {
 }
 
 /* HEADER */
-header {
-  display: flex;
-  align-items: center;
-  padding: 25px 40px;  /* plus grand */
-  border-bottom: 1px solid #222;
-}
+<header>
+    <img src="../assets/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Servizi</a>
+        <a href="packs.html">Pacchetti</a>
+        <a href="contact.html">Contatto</a>
+        <a href="../index.html">FR</a>
+        <a href="../en/index.html">EN</a>
+    </nav>
+</header>
 header img {
   height: 90px;        /* logo plus grand */
   margin-right: 25px;
