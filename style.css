@@ -16,44 +16,60 @@ body {
 
 header {
   display: flex;
-  align-items: center;       
+  align-items: center;
   justify-content: space-between;
-  padding: 25px 60px;         
+  padding: 25px 60px;
   border-bottom: 1px solid #222;
 }
 
-/* Logo */
-logo {
-  height: 95px;              
-  width: auto;
-  margin-right: 25px;
-}
-
+/* Bloc logo + titre */
 .header-left {
   display: flex;
-  align-items: center;        
+  align-items: center;
 }
 
-/* Titre Enya Security */
-header h2 {
+/* LOGO */
+.logo {
+  height: 110px;     /* Taille du logo */
+  width: auto;
+  margin-right: 25px;
+  display: block;
+}
+
+/* TITRE (Enya Security) */
+.site-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.85;
+}
+
+.title-enya {
   color: #ff00e6;
-  font-size: 36px;
+  font-size: 60px;
   font-weight: bold;
-  margin-right: 50px;
   text-shadow: 0 0 18px #ff00e6;
 }
 
+.title-security {
+  color: #ff00e6;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 0 12px #ff00e6;
+  margin-left: 10px;
+}
 
-/* =========================================
-   NAVIGATION
-========================================= */
+/* MENU */
+nav {
+  display: flex;
+  align-items: center;
+}
 
 nav a {
-  margin: 0 12px;
+  margin: 0 18px;
   color: #00d2ff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 nav a:hover {
@@ -62,66 +78,21 @@ nav a:hover {
 
 
 /* =========================================
-   TITRES GÉNÉRAUX
-========================================= */
-
-h1 {
-  color: #00d2ff;
-  text-shadow: 0 0 15px #00d2ff;
-}
-
-
-/* =========================================
-   CONTAINER
+   CONTENU
 ========================================= */
 
 .container {
   padding: 40px;
   max-width: 900px;
   margin: auto;
-  font-size: 17px;
-  line-height: 1.6;
 }
 
-.container p {
-  font-size: 18px;
+h1 {
+  color: #00d2ff;
+  text-shadow: 0 0 15px #00d2ff;
+  font-size: 40px;
 }
 
-.container h1 {
-  font-size: 34px;
-  margin-bottom: 20px;
-  text-shadow: 0 0 12px #00d2ff;
-}
-
-.container h2 {
-  font-size: 26px;
-  margin-top: 35px;
-  margin-bottom: 10px;
-  text-shadow: 0 0 8px #00d2ff;
-}
-
-.container h3 {
-  font-size: 22px;
-  margin-top: 25px;
-}
-
-.container ul li {
-  font-size: 17px;
-  margin-bottom: 8px;
-}
-
-
-/* =========================================
-   LIENS SPÉCIFIQUES (Services)
-========================================= */
-
-.service-link {
-  color: #00d9ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.service-link:hover {
-  color: #ff00ff;
-  text-shadow: 0 0 6px #ff00ff;
+p {
+  font-size: 20px;
 }
