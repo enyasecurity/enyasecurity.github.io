@@ -8,6 +8,7 @@ body {
 /* HEADER */
 <header>
     <img src="../assets/logo.png" class="logo">
+    <h2>Enya Security</h2>
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Servizi</a>
@@ -17,6 +18,8 @@ body {
         <a href="../en/index.html">EN</a>
     </nav>
 </header>
+
+
 header img {
   height: 90px;        /* logo plus grand */
   margin-right: 25px;
