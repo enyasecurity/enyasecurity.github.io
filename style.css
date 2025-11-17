@@ -45,3 +45,15 @@ h1 {
   max-width:900px;
   margin:auto;
 }
+
+.service-link {
+    color: #00d9ff;               /* cyan neon */
+    text-decoration: none;        /* pas de soulignement */
+    font-weight: bold;
+}
+
+.service-link:hover {
+    color: #ff00ff;               /* rose neon au survol */
+    text-shadow: 0 0 6px #ff00ff;
+}
+
