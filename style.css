@@ -21,9 +21,16 @@ body {
 
 
 header img {
-  height: 90px;        /* logo plus grand */
+  height: 90px;        
   margin-right: 25px;
 }
+
+.logo {
+    height: 75px;
+    width: auto;
+}
+
+
 header h2 {
   color: #ff00e6;
   font-size: 36px;     /* titre beaucoup plus grand */
