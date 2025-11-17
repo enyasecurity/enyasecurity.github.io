@@ -16,16 +16,22 @@ body {
 
 header {
   display: flex;
-  align-items: center;
-  padding: 25px 40px;
+  align-items: center;       
+  justify-content: space-between;
+  padding: 25px 60px;         
   border-bottom: 1px solid #222;
 }
 
 /* Logo */
-.logo {
-  height: 75px;
+logo {
+  height: 95px;              
   width: auto;
   margin-right: 25px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;        
 }
 
 /* Titre Enya Security */
@@ -43,11 +49,11 @@ header h2 {
 ========================================= */
 
 nav a {
-  margin: 0 18px;
+  margin: 0 12px;
   color: #00d2ff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 nav a:hover {
