@@ -9,7 +9,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  padding: 35px 40px;  /* plus grand */
+  padding: 25px 40px;  /* plus grand */
   border-bottom: 1px solid #222;
 }
 header img {
@@ -18,10 +18,10 @@ header img {
 }
 header h2 {
   color: #ff00e6;
-  font-size: 46px;     /* titre beaucoup plus grand */
+  font-size: 36px;     /* titre beaucoup plus grand */
   font-weight: bold;
   text-shadow: 0 0 18px #ff00e6;
-  margin-right: 60px;
+  margin-right: 50px;
 }
 /* NAVIGATION */
 nav a {
