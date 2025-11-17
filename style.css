@@ -1,81 +1,78 @@
+/* =========================================
+   BASE
+========================================= */
+
 body {
-  margin:0;
-  background:#000;
+  margin: 0;
+  background: #000;
   font-family: Arial, sans-serif;
-  color:#fff;
+  color: #fff;
 }
 
-/* HEADER */
-<header>
-    <img src="../assets/logo.png" class="logo">
-    <h2>Enya Security</h2>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Servizi</a>
-        <a href="packs.html">Pacchetti</a>
-        <a href="contact.html">Contatto</a>
-        <a href="../index.html">FR</a>
-        <a href="../en/index.html">EN</a>
-    </nav>
-</header>
 
+/* =========================================
+   HEADER
+========================================= */
 
-header img {
-  height: 90px;        
+header {
+  display: flex;
+  align-items: center;
+  padding: 25px 40px;
+  border-bottom: 1px solid #222;
+}
+
+/* Logo */
+.logo {
+  height: 75px;
+  width: auto;
   margin-right: 25px;
 }
 
-.logo {
-    height: 75px;
-    width: auto;
-}
-
-
+/* Titre Enya Security */
 header h2 {
   color: #ff00e6;
-  font-size: 36px;     /* titre beaucoup plus grand */
+  font-size: 36px;
   font-weight: bold;
-  text-shadow: 0 0 18px #ff00e6;
   margin-right: 50px;
+  text-shadow: 0 0 18px #ff00e6;
 }
-/* NAVIGATION */
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
 nav a {
   margin: 0 18px;
   color: #00d2ff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 24px;     /* menu plus grand */
+  font-size: 22px;
 }
+
 nav a:hover {
   text-shadow: 0 0 12px #00d2ff;
 }
-/* TITRES */
+
+
+/* =========================================
+   TITRES GÉNÉRAUX
+========================================= */
+
 h1 {
-  color:#00d2ff;
-  text-shadow:0 0 15px #00d2ff;
+  color: #00d2ff;
+  text-shadow: 0 0 15px #00d2ff;
 }
 
-/* CONTAINER */
-.container {
-  padding:40px;
-  max-width:900px;
-  margin:auto;
-}
 
-.service-link {
-    color: #00d9ff;               /* cyan neon */
-    text-decoration: none;        /* pas de soulignement */
-    font-weight: bold;
-}
-
-.service-link:hover {
-    color: #ff00ff;               /* rose neon au survol */
-    text-shadow: 0 0 6px #ff00ff;
-}
-
-* ========== RÉDUCTION DU CONTENU ========== */
+/* =========================================
+   CONTAINER
+========================================= */
 
 .container {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -86,15 +83,15 @@ h1 {
 
 .container h1 {
   font-size: 34px;
-  text-shadow: 0 0 12px #00d2ff;
   margin-bottom: 20px;
+  text-shadow: 0 0 12px #00d2ff;
 }
 
 .container h2 {
   font-size: 26px;
-  text-shadow: 0 0 8px #00d2ff;
   margin-top: 35px;
   margin-bottom: 10px;
+  text-shadow: 0 0 8px #00d2ff;
 }
 
 .container h3 {
@@ -108,3 +105,17 @@ h1 {
 }
 
 
+/* =========================================
+   LIENS SPÉCIFIQUES (Services)
+========================================= */
+
+.service-link {
+  color: #00d9ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-link:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 6px #ff00ff;
+}
