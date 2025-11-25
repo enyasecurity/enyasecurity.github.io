@@ -96,3 +96,13 @@ h1 {
 p {
   font-size: 20px;
 }
+
+.service-link {
+    color: #00e5ff;   /* bleu-cyan comme tes autres titres */
+    text-decoration: underline; /* si tu veux garder le style du lien */
+}
+
+.service-link:hover {
+    color: #ffffff;   /* optionnel : couleur blanche au survol */
+}
+
