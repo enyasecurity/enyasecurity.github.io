@@ -13,7 +13,7 @@
     
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/style.css">
-<title>Enya Security – Online Visibility Analysis</title>
+<title>Enya Security – Analisi della visibilità online</title>
 
  <!-- taille smartphone --> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,13 +31,13 @@
         </div>
     </div>
     <nav>
-         <a href="/en/home.html">Home</a>
-        <a href="/en/services.html">Services</a>
-        <a href="/en/packages.html">Packages</a>
-        <a href="/en/contact.html">Contact</a>
+        <a href="/it/home.html">Home</a>
+        <a href="/it/servizi.html">Servizi</a>
+        <a href="/it/pacchetti.html">Pacchetti</a>
+        <a href="/it/contatti.html">Contatti</a>
 
         <a href="/index.html">FR</a>
-        <a href="/it/home.html">IT</a>
+        <a href="/en/home.html">EN</a>
       
     </nav>
 </header>
@@ -50,17 +50,17 @@
 <!-- ===================================== -->
 
   <section class="section">
-  <h2>What is it ?</h2>
+  <h2>Che cos’è?</h2>
 
-  <p>
-        Your business may be exposing information online without knowing it:
-        forgotten pages, subdomains, emails, public files, visible history,
-        or technical configurations revealed externally.
+    <p>
+        La tua azienda potrebbe esporre informazioni online senza saperlo:
+        pagine dimenticate, sottodomini, email, file pubblici, storico visibile
+        o configurazioni tecniche rivelate.
         <br><br>
-        This <strong>non-intrusive analysis</strong> reveals everything an attacker
-        can see about your company simply by collecting public information.
+        Questa analisi <strong>non intrusiva</strong> rivela tutto ciò che un attaccante
+        può vedere sulla tua azienda semplicemente raccogliendo informazioni pubbliche.
         <br>
-        You receive a clear, simple, and actionable report.
+        Riceverai un rapporto chiaro, semplice e immediatamente utilizzabile.
     </p>
 </section>
 
@@ -69,34 +69,34 @@
 <!-- ===================================== -->
 
 <section class="section packs-section">
-  <h2 class="packs-title">Which pack should you choose?</h2>
+  <h2 class="packs-title">Quale pacchetto scegliere?</h2>
 
-  <div class="packs-grid">
+    <div class="packs-grid">
 
-    <!-- Light Pack -->
+        <!-- Light Pack -->
         <div class="pack-card">
             <div class="pack-icon essentiel">🔍</div>
-            <h3>Light Pack</h3>
+            <h3>Pacchetto Light</h3>
             <p>
-                A quick first assessment of your exposure:
-                <br><strong>ideal for showcase websites and small businesses.</strong>
+                Una prima valutazione rapida della tua esposizione:
+                <br><strong>ideale per siti vetrina e piccole imprese.</strong>
                 <br><br>
-                I check your domain, DNS, subdomains, technologies,
-                Shodan presence, exposed files, and provide immediate recommendations.
+                Verifico dominio, DNS, sottodomini, tecnologie,
+                presenza su Shodan, file esposti e fornisco raccomandazioni rapide.
             </p>
         </div>
 
         <!-- Premium Pack -->
         <div class="pack-card">
             <div class="pack-icon premium">🌐</div>
-            <h3>Premium Pack</h3>
+            <h3>Pacchetto Premium</h3>
             <p>
-                A full analysis of everything visible on the Internet:
-                <br><strong>ideal for SMEs, agencies, and modern companies.</strong>
+                Un’analisi completa di tutto ciò che è visibile su Internet:
+                <br><strong>ideale per PMI, agenzie e aziende moderne.</strong>
                 <br><br>
-                Includes: GitHub leaks, SSL certificates, Google index,
-                social networks, public files, history, pastebin checks,
-                cloud exposure, DMARC, WAF/CDN, reputation and global exposure.
+                Include: GitHub leaks, certificati SSL, indice Google,
+                social network, file pubblici, storico, pastebin,
+                esposizione cloud, DMARC, WAF/CDN, reputazione e visibilità globale.
             </p>
         </div>
 
@@ -109,49 +109,51 @@
 <!-- ===================================== -->
 
 <section class="section-check">
-    <h2 class="neon-title">What I check</h2>
+    <h2 class="neon-title">Cosa verifico</h2>
 
     <div class="check-grid">
 
         <div class="check-item">
             <div class="icon">🌍</div>
-            <p>Accessible public data</p>
+            <p>Dati pubblici accessibili</p>
         </div>
 
         <div class="check-item">
             <div class="icon">🔐</div>
-            <p>DNS, emails, SPF/DKIM/DMARC protections</p>
+            <p>DNS, email, protezioni SPF/DKIM/DMARC</p>
         </div>
 
         <div class="check-item">
             <div class="icon">🛰️</div>
-            <p>Subdomains & exposed services</p>
+            <p>Sottodomini e servizi esposti</p>
         </div>
 
         <div class="check-item">
             <div class="icon">🧱</div>
-            <p>Technologies, CMS, visible versions</p>
+            <p>Tecnologie, CMS, versioni visibili</p>
         </div>
 
         <div class="check-item">
             <div class="icon">📡</div>
-            <p>What Shodan/Censys reveal</p>
+            <p>Cosa rivelano Shodan/Censys</p>
         </div>
 
         <div class="check-item">
             <div class="icon">🗃️</div>
-            <p>Sensitive files & indexed pages</p>
+            <p>File sensibili e pagine indicizzate</p>
         </div>
 
         <div class="check-item">
             <div class="icon">📜</div>
-            <p>Historical data & old versions</p>
+            <p>Storico e versioni precedenti</p>
         </div>
 
         <div class="check-item">
             <div class="icon">🎯</div>
-            <p>Actionable recommendations</p>
+            <p>Raccomandazioni utilizzabili</p>
         </div>
+
+
 
     </div>
 </section>
@@ -164,15 +166,15 @@
 <!-- ===================================== -->
 
 <section class="section call-to-action">
-    <h2>See what the web reveals about you</h2>
+    <h2>Scopri cosa il web dice di te</h2>
 
     <p>
-        Your business may be showing more information than you think.
-        <br>Get a clear, precise and non-intrusive analysis.
+        La tua azienda potrebbe mostrare più informazioni di quanto immagini.
+        <br>Ottieni un’analisi chiara, precisa e non intrusiva.
     </p>
 
     <a href="mailto:marinabruno@enyasecurity.com" class="cta-button">
-        Request a quote
+        Richiedi un preventivo
     </a>
 </section>
 
