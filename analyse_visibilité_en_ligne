@@ -1,0 +1,180 @@
+<html>
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB0S06Q6LJ"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BB0S06Q6LJ');
+  </script>
+    
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/style.css">
+<title>Enya Security – Analyse de visibilité en ligne</title>
+
+ <!-- taille smartphone --> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+    <header>
+    <div class="header-left">
+      <img src="/assets/logo.png" class="logo">
+       <div class="site-title">
+            <span class="title-enya">Enya</span>
+            <span class="title-security">Security</span>
+        </div>
+    </div>
+    <nav>
+         <a href="/index.html">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/packs.html">Packages</a>
+        <a href="/contact.html">Contact</a>
+
+        <a href="/en/home.html">EN</a>
+        <a href="/it/home.html">IT</a>
+      
+    </nav>
+</header>
+
+<h1>Enya Security – Analyse de la visibilité en ligne</h1>
+
+  
+<!-- ===================================== -->
+<!--   SECTION : Qu’est-ce que c’est ?     -->
+<!-- ===================================== -->
+
+  <section class="section">
+  <h2>Qu’est-ce que c’est ?</h2>
+
+  <p>
+     Votre entreprise expose peut-être des informations en ligne sans le savoir : pages oubliées,
+        sous-domaines, emails, fichiers publics, historiques visibles ou configurations techniques révélées.
+        <br><br>
+        Cette analyse <strong>non intrusive</strong> révèle tout ce qu’un attaquant peut voir sur votre entreprise,
+        simplement en collectant des informations publiques.
+        <br>
+        Vous recevez ensuite un rapport clair, simple et actionnable.
+  </p>
+</section>
+
+<!-- ===================================== -->
+<!--   SECTION : Packs OSINT             -->
+<!-- ===================================== -->
+
+<section class="section packs-section">
+  <h2 class="packs-title">Quel pack choisir ?</h2>
+
+  <div class="packs-grid">
+
+    <!-- Pack Light -->
+        <div class="pack-card">
+            <div class="pack-icon essentiel">🔍</div>
+            <h3>Pack Light</h3>
+            <p>
+                Pour une première évaluation rapide de votre exposition :
+                <br><strong>idéal pour sites vitrines et petites entreprises.</strong>
+                <br><br>
+                Je vérifie votre domaine, DNS, sous-domaines, technologies,
+                présence Shodan, fichiers exposés et donne des recommandations rapides.
+            </p>
+        </div>
+
+        <!-- Pack Premium -->
+        <div class="pack-card">
+            <div class="pack-icon premium">🌐</div>
+            <h3>Pack Premium</h3>
+            <p>
+                Pour une analyse complète de tout ce qui est visible sur Internet :
+                <br><strong>idéal PME / agences / entreprises modernes.</strong>
+                <br><br>
+                Comprend : GitHub leaks, certificats SSL, index Google, réseaux sociaux,
+                fichiers publics, historique, pastebin, cloud, DMARC, WAF/CDN, réputation
+                et exposition globale.
+            </p>
+        </div>
+
+  </div>
+</section>
+
+
+<!-- ===================================== -->
+<!--   SECTION : Ce que je vérifie         -->
+<!-- ===================================== -->
+
+<section class="section-check">
+    <h2 class="neon-title">Ce que je vérifie</h2>
+
+    <div class="check-grid">
+
+        <div class="check-item">
+            <div class="icon">🌍</div>
+            <p>Données publiques accessibles</p>
+        </div>
+
+        <div class="check-item">
+            <div class="icon">🔐</div>
+            <p>DNS, emails, protections SPF/DKIM/DMARC</p>
+        </div>
+
+        <div class="check-item">
+            <div class="icon">🛰️</div>
+            <p>Sous-domaines & services exposés</p>
+        </div>
+
+        <div class="check-item">
+            <div class="icon">🧱</div>
+            <p>Technologies, CMS, versions visibles</p>
+        </div>
+
+        <div class="check-item">
+            <div class="icon">📡</div>
+            <p>Ce que Shodan/Censys révèlent</p>
+        </div>
+
+        <div class="check-item">
+            <div class="icon">🗃️</div>
+            <p>Fichiers et pages sensibles indexées</p>
+        </div>
+
+        <div class="check-item">
+            <div class="icon">📜</div>
+            <p>Historique & versions anciennes</p>
+        </div>
+
+        <div class="check-item">
+            <div class="icon">🎯</div>
+            <p>Recommandations actionnables</p>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+<!-- ===================================== -->
+<!--   SECTION : CTA Final                  -->
+<!-- ===================================== -->
+
+<section class="section call-to-action">
+    <h2>Découvrez ce que le web dit de vous</h2>
+
+    <p>
+        Votre entreprise montre peut-être plus d’informations que vous le pensez.
+        <br>Obtenez une analyse claire, précise et non intrusive.
+    </p>
+
+    <a href="mailto:marinabruno@enyasecurity.com" class="cta-button">
+        Demander un devis
+    </a>
+</section>
+
+</body>
+</html>
