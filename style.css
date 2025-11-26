@@ -106,3 +106,74 @@ p {
     color: #ffffff;   /* optionnel : couleur blanche au survol */
 }
 
+/* Section Title */
+.packs-title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Grid 4 colonnes */
+.packs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Carte pack */
+.pack-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  transition: 0.25s;
+}
+
+/* Hover effet néon */
+.pack-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255,0,255,0.4),
+              0 0 25px rgba(0,150,255,0.4);
+}
+
+/* Titre du pack */
+.pack-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Texte */
+.pack-card p {
+  color: #ddd;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Icônes */
+.pack-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* Couleurs icônes (Enya Security) */
+.pack-icon.essentiel {
+  color: #00c8ff; /* bleu néon */
+}
+
+.pack-icon.pro {
+  color: #ff00e6; /* rose néon */
+}
+
+.pack-icon.premium {
+  color: #a044ff; /* violet néon */
+}
+
+.pack-icon.vip {
+  color: #ff66c4; /* rose pastel néon */
+}
+
+
