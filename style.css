@@ -185,57 +185,60 @@ p {
 }
 
 /* SECTION : Ce que je vérifie ----------------------------------- */
+/* SECTION : Ce que je vérifie ----------------------------------- */
+/* SECTION : Ce que je vérifie ----------------------------------- */
+/* SECTION : Ce que je vérifie ----------------------------------- */
+/* SECTION : Ce que je vérifie ----------------------------------- */
+/* SECTION : Ce que je vérifie ----------------------------------- */
 
-/* Section title */
+
 .section-check {
     text-align: center;
-    margin: 80px 0 40px 0;
+    margin: 40px 0;
 }
 
-.section-check .neon-title {
-    font-size: 2.3rem;
+.neon-title {
+    font-size: 2rem;
     color: #00eaff;
     text-shadow: 0 0 12px #00eaff;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
-/* The grid */
+/* Grille compacte */
 .check-grid {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap; /* permet que ça reste joli sur mobile */
-    padding: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-/* Each item */
+/* Petit bloc */
 .check-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 180px;
     background: #111;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 0 12px #6f00ff33;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #8000ff55;
+    text-align: center;
     transition: 0.2s;
 }
 
 .check-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #ff00ff55;
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px #ff00ff88;
 }
 
-/* Icons */
-.check-item img {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 12px;
-    filter: drop-shadow(0 0 8px #ff00ff);
+/* Icônes emojis */
+.check-item .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #ff00ff;
 }
 
-/* Text */
+/* Texte */
 .check-item p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
+    line-height: 1.3;
 }
+
