@@ -58,6 +58,14 @@ header {
   margin-left: 10px;
 }
 
+.subtitle {
+  font-size: 2rem;   /* Taille plus petite que le H1 */
+  color: #00d9ff;
+  text-shadow: 0 0 10px #00d9ff;
+  margin-bottom: 20px;
+}
+
+
 /* MENU */
 nav {
   display: flex;
