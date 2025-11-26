@@ -242,3 +242,40 @@ p {
     line-height: 1.3;
 }
 
+/* SECTION : call-to-action ----------------------------------- */
+/* SECTION : call-to-action ----------------------------------- */
+/* SECTION : call-to-action ----------------------------------- */
+/* SECTION : call-to-action ----------------------------------- */
+
+
+
+.call-to-action {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.call-to-action p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #e6e6e6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(90deg, #00eaff, #ff00d4);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+    box-shadow: 0 0 20px rgba(255, 0, 212, 0.4);
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 28px rgba(0, 234, 255, 0.6);
+}
+
