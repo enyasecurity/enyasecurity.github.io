@@ -186,58 +186,56 @@ p {
 
 /* SECTION : Ce que je vérifie ----------------------------------- */
 
-.checks-section {
-  margin-top: 60px;
+/* Section title */
+.section-check {
+    text-align: center;
+    margin: 80px 0 40px 0;
 }
 
-.checks-title {
-  text-align: center;
-  color: #00d9ff;
-  font-size: 2.2rem;
-  text-shadow: 0 0 10px #00d9ff;
-  margin-bottom: 40px;
+.section-check .neon-title {
+    font-size: 2.3rem;
+    color: #00eaff;
+    text-shadow: 0 0 12px #00eaff;
+    margin-bottom: 40px;
 }
 
-/* grid responsive */
-.checks-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-  justify-items: center;
+/* The grid */
+.check-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; /* permet que ça reste joli sur mobile */
+    padding: 20px;
 }
 
-/* item bloc */
+/* Each item */
 .check-item {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.06);
-  width: 100%;
-  max-width: 320px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.5);
-  transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    background: #111;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px #6f00ff33;
+    transition: 0.2s;
 }
 
-/* hover néon */
 .check-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0,217,255,0.4), 
-              0 0 25px rgba(255,0,255,0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ff00ff55;
 }
 
-/* icônes */
-.check-icon {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-  color: #c44dff;
-  text-shadow: 0 0 8px #c44dff;
+/* Icons */
+.check-item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 8px #ff00ff);
 }
 
-/* texte */
+/* Text */
 .check-item p {
-  color: white;
-  font-size: 1.1rem;
+    font-size: 1.1rem;
+    color: #fff;
 }
-
-
