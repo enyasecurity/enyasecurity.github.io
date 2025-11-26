@@ -184,4 +184,60 @@ p {
   color: #ff66c4; /* rose pastel néon */
 }
 
+/* SECTION : Ce que je vérifie ----------------------------------- */
+
+.checks-section {
+  margin-top: 60px;
+}
+
+.checks-title {
+  text-align: center;
+  color: #00d9ff;
+  font-size: 2.2rem;
+  text-shadow: 0 0 10px #00d9ff;
+  margin-bottom: 40px;
+}
+
+/* grid responsive */
+.checks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* item bloc */
+.check-item {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.06);
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  transition: 0.25s;
+}
+
+/* hover néon */
+.check-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,217,255,0.4), 
+              0 0 25px rgba(255,0,255,0.3);
+}
+
+/* icônes */
+.check-icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #c44dff;
+  text-shadow: 0 0 8px #c44dff;
+}
+
+/* texte */
+.check-item p {
+  color: white;
+  font-size: 1.1rem;
+}
+
 
