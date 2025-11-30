@@ -2,74 +2,158 @@
 <html lang="it">
 <head>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB0S06Q6LJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-BB0S06Q6LJ');
 </script>
-    
-    <meta charset="UTF-8">
-    <title>Enya Security – Servizi</title>
-    <link rel="stylesheet" href="../style.css">
 
-  <!-- taille smartphone --> 
+<meta charset="UTF-8">
+<title>Enya Security – Servizi</title>
+<link rel="stylesheet" href="../style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+<style>
+/* ===== STYLE SPECIFICO ===== */
+
+.services-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.services-title {
+  color: cyan;
+  font-size: 3rem;
+  text-shadow: 0 0 15px cyan;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,255,255,0.3);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,255,255,0.2);
+  transition: 0.25s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(0,255,255,0.35);
+}
+
+.service-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: cyan;
+}
+
+.service-card h3 {
+  color: cyan;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #bbb;
+  min-height: 65px;
+}
+
+.service-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #00eaff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
-    <div class="header-left">
-      <img src="/assets/logo.png" class="logo">
-     <div class="site-title">
-            <span class="title-enya">Enya</span>
-            <span class="title-security">Security</span>
-        </div>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
     </div>
-    <nav>
-         <a href="/it/home.html">Home</a>
-        <a href="/it/servizi.html">Servizi</a>
-        <a href="/it/pacchetti.html">Pacchetti</a>
-        <a href="/it/contatti.html">Contatti</a>
+  </div>
 
-        <a href="/index.html">FR</a>
-        <a href="/en/home.html">EN</a>
-    </nav>
+  <nav>
+    <a href="/it/home.html">Home</a>
+    <a class="active" href="/it/servizi.html">Servizi</a>
+    <a href="/it/pacchetti.html">Pacchetti</a>
+    <a href="/it/contatti.html">Contatti</a>
+
+    <a href="/index.html">FR</a>
+    <a href="/en/homeEN.html">EN</a>
+  </nav>
 </header>
 
-<section class="page">
-    <h1 class="neon-title">I Nostri Servizi</h1>
 
 
-   <li><a class="service-link" href="/it/analisi_visibilita_online.html">
-            Analisi della visibilità online
-        </a></li>
+<!-- ======================================= -->
+<!--                SERVIZI                  -->
+<!-- ======================================= -->
 
-      
-      
- <li><a class="service-link" href="/it/scans_di_vulnerabilite.html">
-            Scans di vulnerabilità delle applicazioni / siti web
-        </a></li>
+<section class="services-container">
+  <h1 class="services-title">I Nostri Servizi</h1>
 
+  <div class="services-grid">
 
-   <li><a class="service-link" href="/it/pentest_light.html">
-            Test di sicurezza del sito web
-        </a></li>
+    <!-- Analisi visibilità -->
+    <div class="service-card">
+      <div class="service-icon">🔍</div>
+      <h3>Analisi della Visibilità Online</h3>
+      <p>Scopri quali informazioni sulla tua azienda sono visibili pubblicamente senza che tu lo sappia.</p>
+      <a href="/it/analisi_visibilita_online.html">Vedi il servizio →</a>
+    </div>
 
+    <!-- Scansione vulnerabilità -->
+    <div class="service-card">
+      <div class="service-icon">🛠️</div>
+      <h3>Scansione di Vulnerabilità</h3>
+      <p>Una scansione rapida per identificare le debolezze più comuni del tuo sito.</p>
+      <a href="/it/scans_di_vulnerabilite.html">Vedi il servizio →</a>
+    </div>
 
-  
+    <!-- Pentest web -->
+    <div class="service-card">
+      <div class="service-icon">🛡️</div>
+      <h3>Pentest Web (Light & Premium)</h3>
+      <p>Un test di sicurezza completo per individuare i rischi prima che vengano sfruttati.</p>
+      <a href="/it/pentest_light.html">Vedi il servizio →</a>
+    </div>
 
-     <li><a class="service-link" href="/it/sensibilizzazione.html">
-            Sensibilizzazione alla Cybersecurity
-        </a></li>
-  
+    <!-- Sensibilizzazione -->
+    <div class="service-card">
+      <div class="service-icon">🎓</div>
+      <h3>Sensibilizzazione alla Cybersecurity</h3>
+      <p>Forma il tuo team a riconoscere truffe, attacchi, siti falsi e comportamenti rischiosi.</p>
+      <a href="/it/sensibilizzazione.html">Vedi il servizio →</a>
+    </div>
 
-        <li>Simulazioni di phishing</li>
-    </ul>
+    <!-- Simulazione phishing -->
+    <div class="service-card">
+      <div class="service-icon">🎣</div>
+      <h3>Simulazioni di Phishing</h3>
+      <p>Un test controllato per valutare la reazione dei dipendenti davanti a email malevole.</p>
+      <a href="/it/simulazione_phishing.html">Vedi il servizio →</a>
+    </div>
+
+  </div>
 </section>
 
 </body>
