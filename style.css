@@ -393,3 +393,12 @@ p {
     hue-rotate(159deg) brightness(113%) contrast(115%)
     drop-shadow(0 0 10px var(--cyan-glow));
 }
+
+.service-icon.pink {
+  color: var(--pink);
+  filter:
+    brightness(0) saturate(100%) invert(15%) sepia(96%) saturate(7480%) 
+    hue-rotate(297deg) brightness(103%) contrast(132%)
+    drop-shadow(0 0 12px var(--pink-glow));
+}
+
