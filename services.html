@@ -28,9 +28,9 @@
 }
 
 .services-title {
-  color: cyan;
+  color: #00f6ff;
   font-size: 3rem;
-  text-shadow: 0 0 15px cyan;
+  text-shadow: 0 0 15px #00f6ff;
   margin-bottom: 40px;
 }
 
@@ -54,14 +54,29 @@
   box-shadow: 0 0 18px rgba(0,255,255,0.35);
 }
 
-.service-icon {
-  font-size: 42px;
-  margin-bottom: 12px;
-  color: cyan;
+/* ★ Icônes recolorées en néon comme le logo ★ */
+.service-icon-img {
+  width: 55px;
+  height: 55px;
+  filter: 
+    invert(80%) 
+    sepia(100%) 
+    saturate(600%) 
+    hue-rotate(160deg)
+    drop-shadow(0 0 6px #00f6ff);
+}
+
+.service-icon-img.pink {
+  filter: 
+    invert(80%) 
+    sepia(100%) 
+    saturate(600%) 
+    hue-rotate(290deg)
+    drop-shadow(0 0 6px #ff00ff);
 }
 
 .service-card h3 {
-  color: cyan;
+  color: #00f6ff;
   margin-bottom: 10px;
 }
 
@@ -105,56 +120,50 @@
 </header>
 
 
-
-<!-- ======================================= -->
-<!--                SERVICES                 -->
-<!-- ======================================= -->
-
 <section class="services-container">
   <h1 class="services-title">Services</h1>
 
   <div class="services-grid">
 
     <!-- Analyse visibilité -->
-<div class="service-card">
-  <img src="/assets/icons/visibility.svg" class="service-icon-img">
-  <h3>Analyse de la visibilité en ligne</h3>
-  <p>Découvrez quelles informations sur votre entreprise sont visibles publiquement sans que vous le sachiez.</p>
-  <a href="/analyse_visibilite_en_ligne.html">Voir le service →</a>
-</div>
+    <div class="service-card">
+      <img src="/assets/icons/visibility.svg" class="service-icon-img">
+      <h3>Analyse de la visibilité en ligne</h3>
+      <p>Découvrez quelles informations sur votre entreprise sont visibles publiquement sans que vous le sachiez.</p>
+      <a href="/analyse_visibilite_en_ligne.html">Voir le service →</a>
+    </div>
 
-<!-- Scan vulnérabilités -->
-<div class="service-card">
-  <img src="/assets/icons/scan.svg" class="service-icon-img">
-  <h3>Scan de vulnérabilités</h3>
-  <p>Identifiez rapidement les failles les plus courantes présentes sur votre site web.</p>
-  <a href="/scan-vulnerabilites.html">Voir le service →</a>
-</div>
+    <!-- Scan vulnérabilités -->
+    <div class="service-card">
+      <img src="/assets/icons/scan.svg" class="service-icon-img pink">
+      <h3>Scan de vulnérabilités</h3>
+      <p>Identifiez rapidement les failles les plus courantes présentes sur votre site web.</p>
+      <a href="/scan-vulnerabilites.html">Voir le service →</a>
+    </div>
 
-<!-- Pentest Web -->
-<div class="service-card">
-  <img src="/assets/icons/pentest.svg" class="service-icon-img">
-  <h3>Pentest Web (Light & Premium)</h3>
-  <p>Un test de sécurité complet pour détecter les risques avant qu’un pirate ne les exploite.</p>
-  <a href="/pentest_light.html">Voir le service →</a>
-</div>
+    <!-- Pentest Web -->
+    <div class="service-card">
+      <img src="/assets/icons/pentest.svg" class="service-icon-img">
+      <h3>Pentest Web (Light & Premium)</h3>
+      <p>Un test de sécurité complet pour détecter les risques avant qu’un pirate ne les exploite.</p>
+      <a href="/pentest_light.html">Voir le service →</a>
+    </div>
 
-<!-- Sensibilisation -->
-<div class="service-card">
-  <img src="/assets/icons/brain.svg" class="service-icon-img">
-  <h3>Sensibilisation cybersécurité</h3>
-  <p>Formez vos équipes à reconnaître les pièges, arnaques et comportements dangereux.</p>
-  <a href="/sensibilisation.html">Voir le service →</a>
-</div>
+    <!-- Sensibilisation -->
+    <div class="service-card">
+      <img src="/assets/icons/brain.svg" class="service-icon-img pink">
+      <h3>Sensibilisation cybersécurité</h3>
+      <p>Formez vos équipes à reconnaître les pièges, arnaques et comportements dangereux.</p>
+      <a href="/sensibilisation.html">Voir le service →</a>
+    </div>
 
-<!-- Phishing -->
-<div class="service-card">
-  <img src="/assets/icons/phishing.svg" class="service-icon-img">
-  <h3>Simulation de phishing</h3>
-  <p>Testez la réaction de vos employés face à un faux email piégé, en conditions réelles.</p>
-  <a href="/simulation-phishing.html">Voir le service →</a>
-</div>
-
+    <!-- Phishing -->
+    <div class="service-card">
+      <img src="/assets/icons/phishing.svg" class="service-icon-img">
+      <h3>Simulation de phishing</h3>
+      <p>Testez la réaction de vos employés face à un faux email piégé, en conditions réelles.</p>
+      <a href="/simulation-phishing.html">Voir le service →</a>
+    </div>
 
   </div>
 </section>
