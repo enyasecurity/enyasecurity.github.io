@@ -383,25 +383,3 @@ p {
         font-size: 2rem !important;
     }
 }
-
-.service-icon {
-  margin-top: -10px;   /* remonte l’icône */
-  margin-bottom: 5px;  /* espace juste avant le titre */
-
-   
-  font-size: 70px;      /* plus grand = effet néon mieux */
-  color: var(--cyan);   /* couleur EXACTE du logo */
-  filter:
-    brightness(0) saturate(100%) invert(81%) sepia(97%) saturate(747%) 
-    hue-rotate(159deg) brightness(113%) contrast(115%)
-    drop-shadow(0 0 10px var(--cyan-glow));
-}
-
-.service-icon.pink {
-  color: var(--pink);
-  filter:
-    brightness(0) saturate(100%) invert(15%) sepia(96%) saturate(7480%) 
-    hue-rotate(297deg) brightness(103%) contrast(132%)
-    drop-shadow(0 0 12px var(--pink-glow));
-}
-
