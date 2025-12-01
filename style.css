@@ -383,3 +383,99 @@ p {
         font-size: 2rem !important;
     }
 }
+
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+/* Variables couleurs du logo */
+:root {
+  --cyan: #00eaff;
+  --cyan-glow: #00eaff;
+  --pink: #ff00e6;
+  --pink-glow: #ff00e6;
+}
+
+/* Conteneur général */
+.services-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Titre SERVICES */
+.services-title {
+  color: var(--cyan);
+  font-size: 3rem;
+  text-shadow: 0 0 18px var(--cyan-glow);
+  margin-bottom: 50px;
+}
+
+/* Grid 5 services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 35px;
+}
+
+/* Carte */
+.service-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(0,234,255,0.28);
+  padding: 35px 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,234,255,0.15);
+  transition: 0.25s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 28px rgba(0,234,255,0.45);
+}
+
+/* Icônes emojis (style NEON LOGO) */
+.service-icon {
+  font-size: 60px;            /* plus grand */
+  margin-bottom: 5px;         /* remonte l’icône */
+  display: inline-block;
+  
+  color: var(--cyan);
+  filter: drop-shadow(0 0 8px var(--cyan-glow));
+}
+
+/* Variante rose */
+.service-icon.pink {
+  color: var(--pink);
+  filter: drop-shadow(0 0 8px var(--pink-glow));
+}
+
+/* Titres des cartes */
+.service-card h3 {
+  margin-top: 10px;
+  color: var(--cyan);
+  font-size: 1.3rem;
+  text-shadow: 0 0 8px var(--cyan-glow);
+}
+
+/* Texte */
+.service-card p {
+  color: #e3e3e3;
+  margin: 12px 0 18px 0;
+  line-height: 1.45;
+  min-height: 70px;
+}
+
+/* Lien en bas */
+.service-card a {
+  color: var(--cyan);
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0 0 6px var(--cyan-glow);
+  transition: 0.2s;
+}
+
+.service-card a:hover {
+  color: white;
+}
+
