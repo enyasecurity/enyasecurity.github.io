@@ -20,6 +20,14 @@
 <style>
 /* ===== STYLE SPÉCIFIQUE ===== */
 
+/* Couleurs du logo */
+:root {
+  --cyan: #00eaff;
+  --cyan-glow: #00eaff;
+  --pink: #ff00ff;
+  --pink-glow: #ff00ff;
+}
+
 .services-container {
   max-width: 1000px;
   margin: 60px auto;
@@ -28,62 +36,71 @@
 }
 
 .services-title {
-  color: #00f6ff;
+  color: var(--cyan);
   font-size: 3rem;
-  text-shadow: 0 0 15px #00f6ff;
+  text-shadow: 0 0 15px var(--cyan-glow);
   margin-bottom: 40px;
 }
 
+/* GRID */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
+/* CARDS */
 .service-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 246, 255, 0.3);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,234,255,0.3);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 246, 255, 0.25);
-  transition: 0.25s ease-in-out;
+  box-shadow: 0 0 12px rgba(0,234,255,0.2);
+  transition: 0.25s ease;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 18px rgba(0, 246, 255, 0.45);
+  box-shadow: 0 0 18px rgba(0,234,255,0.45);
 }
 
-/* Icônes emoji stylisées */
+/* Icônes emoji NEON */
 .service-icon {
-  font-size: 50px;
-  display: inline-block;
+  font-size: 55px;
   margin-bottom: 12px;
-  color: #00f6ff;
-  text-shadow: 0 0 6px #00f6ff;
+
+  /* Effet néon bleu du logo */
+  filter: drop-shadow(0 0 6px var(--cyan-glow));
+  color: var(--cyan);
 }
 
+/* Version rose (optionnelle) */
 .service-icon.pink {
-  color: #ff00ff;
-  text-shadow: 0 0 6px #ff00ff;
+  filter: drop-shadow(0 0 6px var(--pink-glow));
+  color: var(--pink);
 }
 
+/* Titres */
 .service-card h3 {
-  color: #00f6ff;
+  color: var(--cyan);
   margin-bottom: 10px;
+  text-shadow: 0 0 6px var(--cyan-glow);
 }
 
+/* Texte */
 .service-card p {
-  color: #bbb;
+  color: #cccccc;
   min-height: 65px;
 }
 
+/* Liens */
 .service-card a {
   display: inline-block;
   margin-top: 12px;
-  color: #00eaff;
+  color: var(--cyan);
   text-decoration: underline;
   font-weight: bold;
+  text-shadow: 0 0 6px var(--cyan-glow);
 }
 </style>
 
