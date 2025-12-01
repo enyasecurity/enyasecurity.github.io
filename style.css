@@ -390,10 +390,8 @@ p {
 
 /* Variables couleurs du logo */
 :root {
-  --cyan: #00eaff;
-  --cyan-glow: #00eaff;
-  --pink: #ff00e6;
-  --pink-glow: #ff00e6;
+--cyan: #00d2ff;
+  --cyan-glow: #00d2ff;
 }
 
 /* Conteneur général */
