@@ -41,38 +41,31 @@
 }
 
 .service-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(0,255,255,0.3);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 246, 255, 0.3);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,255,255,0.2);
+  box-shadow: 0 0 12px rgba(0, 246, 255, 0.25);
   transition: 0.25s ease-in-out;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 18px rgba(0,255,255,0.35);
+  box-shadow: 0 0 18px rgba(0, 246, 255, 0.45);
 }
 
-/* ★ Icônes recolorées en néon comme le logo ★ */
-.service-icon-img {
-  width: 55px;
-  height: 55px;
-  filter: 
-    invert(80%) 
-    sepia(100%) 
-    saturate(600%) 
-    hue-rotate(160deg)
-    drop-shadow(0 0 6px #00f6ff);
+/* Icônes emoji stylisées */
+.service-icon {
+  font-size: 50px;
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #00f6ff;
+  text-shadow: 0 0 6px #00f6ff;
 }
 
-.service-icon-img.pink {
-  filter: 
-    invert(80%) 
-    sepia(100%) 
-    saturate(600%) 
-    hue-rotate(290deg)
-    drop-shadow(0 0 6px #ff00ff);
+.service-icon.pink {
+  color: #ff00ff;
+  text-shadow: 0 0 6px #ff00ff;
 }
 
 .service-card h3 {
@@ -92,7 +85,6 @@
   text-decoration: underline;
   font-weight: bold;
 }
-
 </style>
 
 </head>
@@ -119,7 +111,6 @@
   </nav>
 </header>
 
-
 <section class="services-container">
   <h1 class="services-title">Services</h1>
 
@@ -127,7 +118,7 @@
 
     <!-- Analyse visibilité -->
     <div class="service-card">
-      <img src="/assets/icons/visibility.svg" class="service-icon-img">
+      <div class="service-icon">🔍</div>
       <h3>Analyse de la visibilité en ligne</h3>
       <p>Découvrez quelles informations sur votre entreprise sont visibles publiquement sans que vous le sachiez.</p>
       <a href="/analyse_visibilite_en_ligne.html">Voir le service →</a>
@@ -135,7 +126,7 @@
 
     <!-- Scan vulnérabilités -->
     <div class="service-card">
-      <img src="/assets/icons/scan.svg" class="service-icon-img pink">
+      <div class="service-icon pink">🧪</div>
       <h3>Scan de vulnérabilités</h3>
       <p>Identifiez rapidement les failles les plus courantes présentes sur votre site web.</p>
       <a href="/scan-vulnerabilites.html">Voir le service →</a>
@@ -143,7 +134,7 @@
 
     <!-- Pentest Web -->
     <div class="service-card">
-      <img src="/assets/icons/pentest.svg" class="service-icon-img">
+      <div class="service-icon">🛡️</div>
       <h3>Pentest Web (Light & Premium)</h3>
       <p>Un test de sécurité complet pour détecter les risques avant qu’un pirate ne les exploite.</p>
       <a href="/pentest_light.html">Voir le service →</a>
@@ -151,7 +142,7 @@
 
     <!-- Sensibilisation -->
     <div class="service-card">
-      <img src="/assets/icons/brain.svg" class="service-icon-img pink">
+      <div class="service-icon pink">🧠</div>
       <h3>Sensibilisation cybersécurité</h3>
       <p>Formez vos équipes à reconnaître les pièges, arnaques et comportements dangereux.</p>
       <a href="/sensibilisation.html">Voir le service →</a>
@@ -159,7 +150,7 @@
 
     <!-- Phishing -->
     <div class="service-card">
-      <img src="/assets/icons/phishing.svg" class="service-icon-img">
+      <div class="service-icon">🎣</div>
       <h3>Simulation de phishing</h3>
       <p>Testez la réaction de vos employés face à un faux email piégé, en conditions réelles.</p>
       <a href="/simulation-phishing.html">Voir le service →</a>
