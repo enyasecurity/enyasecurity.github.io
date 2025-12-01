@@ -385,8 +385,11 @@ p {
 }
 
 .service-icon {
+  margin-top: -10px;   /* remonte l’icône */
+  margin-bottom: 5px;  /* espace juste avant le titre */
+
+   
   font-size: 70px;      /* plus grand = effet néon mieux */
-  margin-bottom: 4px;   /* icônes plus hautes */
   color: var(--cyan);   /* couleur EXACTE du logo */
   filter:
     brightness(0) saturate(100%) invert(81%) sepia(97%) saturate(747%) 
