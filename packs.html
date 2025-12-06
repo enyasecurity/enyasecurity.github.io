@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB0S06Q6LJ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,24 +13,67 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/style.css">
 <title>Enya Security – Packs</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
-/* TITRE */
-h1, .packs-title {
-    text-align: center;
+/* TITRES */
+h1, h2, .packs-title {
     color: #fff;
+    text-align: center;
+}
+
+/* SECTION INTRO */
+.audit-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.audit-text {
+    max-width: 450px;
+}
+
+.audit-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.audit-text p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.audit-box {
+    background: #111;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 0 20px rgba(150, 50, 255, 0.2);
+    text-align: center;
+    width: 330px;
+}
+
+.audit-box .tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #0f0;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 /* GRID packs */
 .packs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
-    margin-top: 40px;
     padding: 0 30px;
+    margin-top: 40px;
 }
 
 /* CARD */
@@ -40,43 +83,57 @@ h1, .packs-title {
     border-radius: 18px;
     border: 1px solid rgba(255,255,255,0.06);
     box-shadow: 0 0 15px rgba(150, 50, 255, 0.15);
-    transition: all 0.25s ease;
     text-align: center;
+    transition: 0.25s;
 }
 
-/* HOVER EFFECT */
 .pack-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 0 25px rgba(150, 50, 255, 0.35);
-    border-color: rgba(180, 80, 255, 0.5);
 }
 
-/* ICONES CYBER */
 .pack-icon {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
+    font-size: 2.3rem;
+    margin-bottom: 12px;
     color: #a874ff;
 }
 
-/* TITRE PACK */
 .pack-card h3 {
-    font-size: 1.4rem;
-    color: #ffffff;
-    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 8px;
 }
 
-/* SOUS-TITRE */
-.pack-card .pack-subtitle {
+.pack-subtitle {
     color: #bb9fff;
     font-weight: 600;
-    margin-bottom: 10px;
 }
 
-/* PARAGRAPHE */
 .pack-card p {
-    color: #e5e5e5;
-    line-height: 1.5rem;
-    font-size: 0.95rem;
+    color: #ddd;
+}
+
+/* TABLEAU COMPARATIF */
+.compare-table {
+    margin: 60px auto;
+    width: 90%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.compare-table th, .compare-table td {
+    padding: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+}
+
+.compare-table th {
+    color: #bb9fff;
+    font-size: 1rem;
+}
+
+.check {
+    color: #8f5cff;
+    font-weight: bold;
 }
 
 </style>
@@ -88,10 +145,10 @@ h1, .packs-title {
 <header>
     <div class="header-left">
       <img src="/assets/logo.png" class="logo">
-       <div class="site-title">
-            <span class="title-enya">Enya</span>
-            <span class="title-security">Security</span>
-        </div>
+      <div class="site-title">
+        <span class="title-enya">Enya</span>
+        <span class="title-security">Security</span>
+      </div>
     </div>
 
     <nav>
@@ -99,123 +156,136 @@ h1, .packs-title {
         <a href="/services.html">Services</a>
         <a href="/packs.html">Packages</a>
         <a href="/contact.html">Contact</a>
-
         <a href="/en/home.html">EN</a>
         <a href="/it/home.html">IT</a>
     </nav>
 </header>
 
-<section class="section packs-section">
-  <h2 class="packs-title">Choisissez le pack adapté à votre besoin</h2>
 
-  <div class="packs-grid">
+<!-- SECTION INTRO + PACK GRATUIT -->
+<section class="audit-intro">
 
-    <!-- ⭐ NOUVEAU PACK GRATUIT -->
-    <div class="pack-card">
-      <div class="pack-icon">✨</div>
-      <h3>Pack Diagnostic Sécurité Gratuit</h3>
-      <p class="pack-subtitle">
-        Un diagnostic gratuit qui révèle les principaux points de vigilance visibles sur votre site.
-      </p>
-      <p>
-        Un aperçu essentiel de votre sécurité, conçu pour identifier les risques les plus évidents avant une analyse plus approfondie.
-      </p>
+    <div class="audit-text">
+        <h2>Pourquoi un audit de sécurité ?</h2>
+        <p>Évitez d’être à risque : découvrez nos packs et renforcez la sécurité de votre site.</p>
+        <a href="mailto:marinabruno@enyasecurity.com" class="cta-button">Demander un devis</a>
     </div>
 
-    <!-- PACK 1 -->
-    <div class="pack-card">
-      <div class="pack-icon">🔍</div>
-      <h3>Pack Web Check</h3>
-      <p class="pack-subtitle">
-        Un contrôle de votre présence en ligne pour identifier ce que votre site expose publiquement.
-      </p>
-      <p>
-        Idéal pour obtenir une vue claire de votre présence en ligne et corriger les points sensibles immédiatement.
-      </p>
+    <div class="audit-box">
+        <span class="tag">GRATUIT</span>
+        <div class="pack-icon">🔎</div>
+        <h3>Pack Diagnostic Sécurité Gratuit</h3>
+        <p>Un aperçu essentiel de votre sécurité, conçu pour identifier les risques les plus évidents avant une analyse plus approfondie. </p>
     </div>
 
-    <!-- PACK 2 -->
-    <div class="pack-card">
-      <div class="pack-icon">🛡️</div>
-      <h3>Pack Analyse Sécurité Web</h3>
-      <p class="pack-subtitle">
-        Une analyse complète de votre site pour détecter les failles les plus courantes.
-      </p>
-      <p>
-        Je vérifie ce que votre site expose publiquement, j’analyse les failles potentielles et je vous fournis un rapport clair avec les actions à mettre en place.
-      </p>
-    </div>
-
-    <!-- PACK 3 -->
-    <div class="pack-card">
-      <div class="pack-icon">⚡</div>
-      <h3>Pack Sécurité Web Avancé</h3>
-      <p class="pack-subtitle">
-        Un audit approfondi pour identifier les failles importantes et les risques qui pourraient vous impacter.
-      </p>
-      <p>
-        Je vérifie les points faibles du site, effectue des tests de sécurité non intrusifs et vous remets un rapport clair avec les recommandations essentielles.
-      </p>
-    </div>
-
-    <!-- PACK 4 -->
-    <div class="pack-card">
-      <div class="pack-icon">🔧</div>
-      <h3>Pack Analyse Sécurité WordPress</h3>
-      <p class="pack-subtitle">
-        Une analyse dédiée à WordPress pour repérer les failles des plugins, thèmes et versions.
-      </p>
-      <p>
-        Je vérifie l’état de votre WordPress : plugins, thèmes, fichiers exposés, versions et éléments sensibles. Le rapport final vous indique les risques et les actions à effectuer.
-      </p>
-    </div>
-
-    <!-- PACK 5 -->
-    <div class="pack-card">
-      <div class="pack-icon">🧠</div>
-      <h3>Pack Audit Web PME</h3>
-      <p class="pack-subtitle">
-        Une vision globale de la sécurité du site et de l’organisation pour mieux protéger l’entreprise.
-      </p>
-      <p>
-        Une analyse complète de votre site et de vos pratiques : exposition en ligne, vulnérabilités techniques, tests de sécurité, et simulation de phishing. Le rapport final présente les risques identifiés et un plan d’action pour renforcer votre sécurité.
-      </p>
-    </div>
-
-    <!-- PACK 6 -->
-    <div class="pack-card">
-      <div class="pack-icon">🎯</div>
-      <h3>Pack Sensibilisation & Phishing</h3>
-      <p class="pack-subtitle">
-        Aidez vos équipes à reconnaître les menaces et éviter les erreurs humaines.
-      </p>
-      <p>
-        Une simulation de phishing pour mesurer le niveau de vigilance, suivie d’une session de sensibilisation et d’un rapport complet avec statistiques et recommandations.
-      </p>
-    </div>
-
-    <!-- PACK 7 -->
-    <div class="pack-card">
-      <div class="pack-icon">🚨</div>
-      <h3>Pack Incident (Diagnostic d’urgence)</h3>
-      <p class="pack-subtitle">
-        Une analyse rapide pour comprendre l’origine d’un problème ou d’une suspicion d’incident.
-      </p>
-      <p>
-        Je réalise une vérification express : redirections, fichiers visibles, éléments suspects et traces éventuelles d’activité malveillante. Vous recevez un diagnostic clair avec les actions recommandées.
-      </p>
-    </div>
-
-  </div>
 </section>
+
+
+<!-- SECTION PACKS -->
+<h2 class="packs-title">Choisissez le pack adapté à votre besoin</h2>
+
+<div class="packs-grid">
+
+    <div class="pack-card">
+        <div class="pack-icon">🔍</div>
+        <h3>Pack Web Check</h3>
+        <p class="pack-subtitle">Contrôle de visibilité</p>
+        <p>Identifie ce que votre site expose publiquement.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🛡️</div>
+        <h3>Pack Analyse Sécurité Web</h3>
+        <p class="pack-subtitle">Analyse complète</p>
+        <p>Un contrôle complet de votre site pour repérer les failles les plus courantes avant qu’elles ne deviennent dangereuses.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">⚡</div>
+        <h3>Pack Sécurité Web Avancé</h3>
+        <p class="pack-subtitle">Audit approfondi</p>
+        <p>Un audit plus poussé pour comprendre si votre site est vraiment solide et identifier les faiblesses plus avancées.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🔧</div>
+        <h3>Pack Sécurité WordPress</h3>
+        <p class="pack-subtitle">Analyse WP</p>
+        <p>Un contrôle spécialisé WordPress pour vérifier si vos plugins, thèmes et réglages ne mettent pas votre site en danger.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🧠</div>
+        <h3>Pack Audit Web PME</h3>
+        <p class="pack-subtitle">Audit global</p>
+        <p>Une vision globale de la sécurité de votre site ET de vos pratiques internes pour protéger durablement votre entreprise</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🎯</div>
+        <h3>Pack Sensibilisation & Phishing</h3>
+        <p class="pack-subtitle">Formation + Tests</p>
+        <p>Aide vos équipes à reconnaître les menaces et réduire les erreurs humaines.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🚨</div>
+        <h3>Pack Incident (Urgence)</h3>
+        <p class="pack-subtitle">Diagnostic rapide</p>
+        <p>Analyse express pour comprendre la source d’un problème ou d’un piratage.</p>
+    </div>
+
+</div>
+
+
+<!-- TABLEAU COMPARATIF -->
+<h2 class="packs-title">Comparer les packs</h2>
+
+<table class="compare-table">
+    <tr>
+        <th>Fonctionnalité</th>
+        <th>Gratuit</th>
+        <th>Web Check</th>
+        <th>Analyse Web</th>
+        <th>Web Avancé</th>
+        <th>WordPress</th>
+        <th>Audit PME</th>
+        <th>Phishing</th>
+        <th>Incident</th>
+    </tr>
+
+    <tr>
+        <td>Contrôle de visibilité en ligne</td>
+        <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td></td><td class="check">✔</td>
+    </tr>
+
+    <tr>
+        <td>Détection des risques courants</td>
+        <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td></td><td class="check">✔</td>
+    </tr>
+
+    <tr>
+        <td>Analyse complète</td>
+        <td></td><td></td><td class="check">✔</td><td class="check">✔</td><td></td><td class="check">✔</td><td></td><td class="check">✔</td>
+    </tr>
+
+    <tr>
+        <td>Analyse WordPress</td>
+        <td></td><td></td><td></td><td></td><td class="check">✔</td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td>Simulation d’attaque / Phishing</td>
+        <td></td><td></td><td></td><td class="check">✔</td><td></td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
+    </tr>
+
+</table>
+
 
 <section class="section call-to-action">
     <h2>Besoin d’aide pour choisir un pack ?</h2>
     <p>Expliquez-moi votre situation, je vous oriente en quelques minutes.</p>
-
-    <a href="mailto:marinabruno@enyasecurity.com" class="cta-button">
-        Me contacter
-    </a>
+    <a href="mailto:marinabruno@enyasecurity.com" class="cta-button">Me contacter</a>
 </section>
 
 </body>
