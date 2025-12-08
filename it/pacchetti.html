@@ -1,54 +1,294 @@
-<!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB0S06Q6LJ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BB0S06Q6LJ');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BB0S06Q6LJ');
 </script>
-    
-    <meta charset="UTF-8">
-    <title>Enya Security – Pacchetti</title>
-    <link rel="stylesheet" href="../style.css">
 
-  <!-- taille smartphone --> 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/style.css">
+<title>Enya Security – Pacchetti</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+<style>
+
+/* TITOLI */
+h1, h2, .packs-title {
+    color: #fff;
+    text-align: center;
+}
+
+/* SECTION INTRO */
+.audit-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.audit-text {
+    max-width: 450px;
+}
+
+.audit-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.audit-text p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.audit-box {
+    background: #111;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 0 20px rgba(150, 50, 255, 0.2);
+    text-align: center;
+    width: 330px;
+}
+
+.audit-box .tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #0f0;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* GRID PACKS */
+.packs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 0 30px;
+    margin-top: 40px;
+}
+
+/* CARD */
+.pack-card {
+    background: #111;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 0 15px rgba(150, 50, 255, 0.15);
+    text-align: center;
+    transition: 0.25s;
+}
+
+.pack-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(150, 50, 255, 0.35);
+}
+
+.pack-icon {
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+    color: #a874ff;
+}
+
+.pack-card h3 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.pack-subtitle {
+    color: #bb9fff;
+    font-weight: 600;
+}
+
+.pack-card p {
+    color: #ddd;
+}
+
+/* TABLEAU COMPARATIVO */
+.compare-table {
+    margin: 25px auto;
+    width: 90%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.compare-table th, .compare-table td {
+    padding: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+.compare-table td:first-child,
+.compare-table th:first-child {
+    text-align: left;
+}
+
+.compare-table th {
+    color: #bb9fff;
+    font-size: 1rem;
+}
+
+.check {
+    color: #8f5cff;
+    font-weight: bold;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <header>
     <div class="header-left">
       <img src="/assets/logo.png" class="logo">
-     <div class="site-title">
-            <span class="title-enya">Enya</span>
-            <span class="title-security">Security</span>
-        </div>
+      <div class="site-title">
+        <span class="title-enya">Enya</span>
+        <span class="title-security">Security</span>
+      </div>
     </div>
+
     <nav>
         <a href="/it/home.html">Home</a>
-        <a href="/it/servizi.html">Servizi</a>
-        <a href="/it/pacchetti.html">Pacchetti</a>
-        <a href="/it/contatti.html">Contatti</a>
-
+        <a href="/it/services.html">Servizi</a>
+        <a href="/it/packs.html">Pacchetti</a>
+        <a href="/it/contact.html">Contatto</a>
         <a href="/index.html">FR</a>
         <a href="/en/home.html">EN</a>
     </nav>
 </header>
 
-<section class="page">
-    <h1 class="neon-title">Pacchetti di Sicurezza</h1>
 
-    <ul class="service-list">
-        <li>Pacchetto Base – Scansioni principali</li>
-        <li>Pacchetto Avanzato – Test completi</li>
-        <li>Pacchetto Premium – Protezione totale</li>
-    </ul>
+<!-- SECTION INTRO + PACK GRATUITO -->
+<section class="audit-intro">
+
+    <div class="audit-text">
+        <h2>Perché fare un audit di sicurezza?</h2>
+        <p>Evita rischi inutili: scopri i nostri pacchetti e rinforza la sicurezza del tuo sito web.</p>
+        <a href="mailto:marinabruno@enyasecurity.com" class="cta-button">Richiedi un preventivo</a>
+    </div>
+
+    <div class="audit-box">
+        <span class="tag">GRATUITO</span>
+        <div class="pack-icon">🔎</div>
+        <h3>Pacchetto Diagnosi Sicurezza Gratuito</h3>
+        <p>Una panoramica essenziale del livello di sicurezza del sito, per identificare i rischi più evidenti prima di un’analisi più approfondita.</p>
+    </div>
+
+</section>
+
+
+<!-- SECTION PACCHETTI -->
+<h2 class="packs-title">Scegli il pacchetto adatto alle tue esigenze</h2>
+
+<div class="packs-grid">
+
+    <div class="pack-card">
+        <div class="pack-icon">🔍</div>
+        <h3>Pacchetto Web Check</h3>
+        <p>Identifica ciò che il tuo sito espone pubblicamente.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🛡️</div>
+        <h3>Pacchetto Analisi Sicurezza Web</h3>
+        <p>Un controllo completo del sito per individuare le vulnerabilità più comuni prima che diventino pericolose.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">⚡</div>
+        <h3>Pacchetto Sicurezza Web Avanzato</h3>
+        <p>Un audit più approfondito per capire se il sito è realmente solido e identificare debolezze più tecniche.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🔧</div>
+        <h3>Pacchetto Sicurezza WordPress</h3>
+        <p class="pack-subtitle">Analisi WP</p>
+        <p>Un controllo specifico per WordPress per verificare se plugin, temi e configurazioni mettono a rischio il tuo sito.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🧠</div>
+        <h3>Pacchetto Audit Web PMI</h3>
+        <p>Una visione completa della sicurezza del sito E delle pratiche interne, per proteggere la tua azienda nel lungo periodo.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🎯</div>
+        <h3>Pacchetto Sensibilizzazione & Phishing</h3>
+        <p>Aiuta il tuo team a riconoscere le minacce e ridurre gli errori umani.</p>
+    </div>
+
+    <div class="pack-card">
+        <div class="pack-icon">🚨</div>
+        <h3>Pacchetto Incidenti (Emergenza)</h3>
+        <p>Analisi rapida per capire l'origine di un problema o di un attacco informatico.</p>
+    </div>
+
+</div>
+
+
+<!-- TABELLA COMPARATIVA -->
+<h2 class="packs-title">Confronta i pacchetti</h2>
+
+<table class="compare-table">
+    <tr>
+        <th>Servizi</th>
+        <th>Gratuito</th>
+        <th>Web Check</th>
+        <th>Analisi Web</th>
+        <th>Web Avanzato</th>
+        <th>WordPress</th>
+        <th>Audit PMI</th>
+        <th>Phishing</th>
+        <th>Incidente</th>
+    </tr>
+
+    <tr>
+        <td>Rilevamento dei rischi più comuni</td>
+        <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td>Analisi della visibilità online</td>
+        <td></td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td>Scan delle vulnerabilità</td>
+        <td></td><td></td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td>Analisi specifica WordPress</td>
+        <td></td><td></td><td></td><td class="check">✔</td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td>Simulazione attacco / Phishing</td>
+        <td></td><td></td><td></td><td></td><td></td><td class="check">✔</td><td class="check">✔</td><td></td>
+    </tr>
+
+    <tr>
+        <td>Diagnosi di incidente</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="check">✔</td>
+    </tr>
+
+</table>
+
+<section class="section call-to-action">
+    <h2>Hai bisogno di aiuto per scegliere?</h2>
+    <p>Spiegami la tua situazione: ti guiderò in pochi minuti.</p>
+    <a href="mailto:marinabruno@enyasecurity.com" class="cta-button">Contattami</a>
 </section>
 
 </body>
