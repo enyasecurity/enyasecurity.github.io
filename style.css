@@ -434,6 +434,15 @@ p {
   box-shadow: 0 0 24px rgba(0,234,255,0.45);
 }
 
+/* Lien */
+.service-card a {
+  color: var(--cyan);
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0 0 6px var(--cyan-glow);
+}
+
+
 /* Icônes plus petites */
 .service-icon {
   font-size: 48px;
@@ -473,4 +482,54 @@ p {
   text-decoration: underline;
   text-shadow: 0 0 6px var(--cyan-glow);
 }
+
+/* =========================================
+   SERVICES PAGE — améliorations néon
+========================================= */
+
+/* Sous-titre */
+.services-subtitle {
+  text-align: center;
+  color: #91e6ff;
+  font-size: 1.2rem;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #009dff;
+}
+
+/* Icônes SVG stylisées (pour remplacer emojis) */
+.service-icon img {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+/* Couleurs néon cohérentes avec ton logo */
+.neon-blue { color: #00c8ff; }
+.neon-pink { color: #ff00e6; }
+.neon-purple { color: #bf5bff; }
+
+/* Carte hover amélioré */
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #00eaff;
+  box-shadow: 
+      0 0 22px rgba(0,234,255,0.55),
+      0 0 30px rgba(0,140,255,0.35);
+}
+
+/* Titre harmonisé */
+.services-title {
+  font-size: 3rem !important;
+  margin-bottom: 18px;
+}
+
+/* Grille aérée */
+.services-grid {
+  gap: 40px !important;
+  width: 90%;
+  margin: 0 auto;
+}
+
 
