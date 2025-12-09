@@ -383,17 +383,16 @@ p {
         font-size: 2rem !important;
     }
 }
-
 /* =========================================
-   SERVICES PAGE — version compacte
+   SERVICES PAGE — version finale propre
 ========================================= */
 
-/* Couleurs */
 :root {
   --cyan: #00d2ff;
   --cyan-glow: #00d2ff;
   --pink: #ff00e6;
   --pink-glow: #ff00e6;
+  --purple: #bf5bff;
 }
 
 /* Conteneur général */
@@ -404,88 +403,13 @@ p {
   text-align: center;
 }
 
-/* Titre SERVICES */
+/* Titre principal */
 .services-title {
   color: var(--cyan);
-  font-size: 2.6rem;
+  font-size: 3rem;
+  margin-bottom: 18px;
   text-shadow: 0 0 16px var(--cyan-glow);
-  margin-bottom: 35px;
 }
-
-/* Grid plus compacte */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-}
-
-/* Cartes plus petites */
-.service-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(0,234,255,0.25);
-  padding: 22px 16px;
-  border-radius: 12px;
-  box-shadow: 0 0 16px rgba(0,234,255,0.15);
-  transition: 0.25s ease-in-out;
-}
-
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 24px rgba(0,234,255,0.45);
-}
-
-/* Lien */
-.service-card a {
-  color: var(--cyan);
-  font-weight: bold;
-  text-decoration: underline;
-  text-shadow: 0 0 6px var(--cyan-glow);
-}
-
-
-/* Icônes plus petites */
-.service-icon {
-  font-size: 48px;
-  margin-bottom: 5px;
-  display: inline-block;
-  color: var(--cyan);
-  filter: drop-shadow(0 0 6px var(--cyan-glow));
-}
-
-/* Icône rose */
-.service-icon.pink {
-  color: var(--pink);
-  filter: drop-shadow(0 0 6px var(--pink-glow));
-}
-
-/* Titres */
-.service-card h3 {
-  color: var(--cyan);
-  font-size: 1.15rem;
-  margin-top: 8px;
-  text-shadow: 0 0 6px var(--cyan-glow);
-}
-
-/* Texte */
-.service-card p {
-  color: #e3e3e3;
-  margin: 10px 0 16px;
-  font-size: 0.95rem;
-  line-height: 1.45;
-  min-height: 60px;
-}
-
-/* Lien */
-.service-card a {
-  color: var(--cyan);
-  font-weight: bold;
-  text-decoration: underline;
-  text-shadow: 0 0 6px var(--cyan-glow);
-}
-
-/* =========================================
-   SERVICES PAGE — améliorations néon
-========================================= */
 
 /* Sous-titre */
 .services-subtitle {
@@ -497,39 +421,70 @@ p {
   text-shadow: 0 0 10px #009dff;
 }
 
-/* Icônes SVG stylisées (pour remplacer emojis) */
-.service-icon img {
-  width: 58px;
-  height: 58px;
-  margin-bottom: 10px;
-  filter: drop-shadow(0 0 8px currentColor);
+/* Grille */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-/* Couleurs néon cohérentes avec ton logo */
-.neon-blue { color: #00c8ff; }
-.neon-pink { color: #ff00e6; }
-.neon-purple { color: #bf5bff; }
+/* Cartes */
+.service-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(0,234,255,0.25);
+  padding: 25px 18px;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0,234,255,0.15);
+  transition: 0.25s ease-in-out;
+}
 
-/* Carte hover amélioré */
+/* Hover */
 .service-card:hover {
   transform: translateY(-8px);
   border-color: #00eaff;
-  box-shadow: 
+  box-shadow:
       0 0 22px rgba(0,234,255,0.55),
       0 0 30px rgba(0,140,255,0.35);
 }
 
-/* Titre harmonisé */
-.services-title {
-  font-size: 3rem !important;
-  margin-bottom: 18px;
+/* Icônes — pour SVG */
+.service-icon img {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 8px currentColor);
 }
 
-/* Grille aérée */
-.services-grid {
-  gap: 40px !important;
-  width: 90%;
-  margin: 0 auto;
+/* Couleurs icône */
+.neon-blue { color: #00c8ff; }
+.neon-pink { color: #ff00e6; }
+.neon-purple { color: var(--purple); }
+
+/* Titres cartes */
+.service-card h3 {
+  color: var(--cyan);
+  font-size: 1.18rem;
+  margin-top: 8px;
+  text-shadow: 0 0 6px var(--cyan-glow);
+}
+
+/* Texte */
+.service-card p {
+  color: #e3e3e3;
+  margin: 10px 0 16px;
+  font-size: 0.96rem;
+  line-height: 1.45;
+  min-height: 55px;
+}
+
+/* Lien */
+.service-card a {
+  color: var(--cyan);
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0 0 6px var(--cyan-glow);
 }
 
 
