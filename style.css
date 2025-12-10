@@ -450,7 +450,18 @@ p {
 }
 
 /* Icônes — pour SVG */
+
+@keyframes neonPulse {
+  0% { filter: drop-shadow(0 0 10px rgba(0, 230, 255, 0.9)); }
+  50% { filter: drop-shadow(0 0 18px rgba(0, 230, 255, 1)); }
+  100% { filter: drop-shadow(0 0 10px rgba(0, 230, 255, 0.9)); }
+}
+
 .service-icon {
+
+     animation: neonPulse 2.5s infinite ease-in-out;
+
+   
   width: 90px;
   height: auto;
   margin-bottom: 15px;
