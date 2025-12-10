@@ -450,12 +450,16 @@ p {
 }
 
 /* Icônes — pour SVG */
-.service-icon img {
-  width: 70px;
-  height: 70px;
+.service-icon {
+  width: 90px;
+  height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 0 6px rgba(0, 230, 255, 0.9));
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 12px rgba(0, 230, 255, 0.9));
 }
+
 
 /* Couleurs icône */
 .neon-blue { color: #00c8ff; }
