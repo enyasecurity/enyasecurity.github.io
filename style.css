@@ -451,10 +451,10 @@ p {
 
 /* Icônes — pour SVG */
 .service-icon img {
-  width: 58px;
-  height: 58px;
-  margin-bottom: 12px;
-  filter: drop-shadow(0 0 8px currentColor);
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 6px rgba(0, 230, 255, 0.9));
 }
 
 /* Couleurs icône */
