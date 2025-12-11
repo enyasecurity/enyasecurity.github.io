@@ -23,7 +23,7 @@ h1, h2, .packs-title {
     text-align: center;
 }
 
-/* SECTION INTRO */
+/* SEZIONE INTRO */
 .audit-intro {
     display: flex;
     justify-content: center;
@@ -35,6 +35,7 @@ h1, h2, .packs-title {
 
 .audit-text {
     max-width: 450px;
+    text-align: center; /* centratura pulsante */
 }
 
 .audit-text h2 {
@@ -92,10 +93,11 @@ h1, h2, .packs-title {
     box-shadow: 0 0 25px rgba(150, 50, 255, 0.35);
 }
 
-.pack-icon {
-    font-size: 2.3rem;
+.pack-card img.pack-icon {
+    width: 80px;
+    height: 80px;
     margin-bottom: 12px;
-    color: #a874ff;
+    filter: drop-shadow(0 0 10px rgba(180, 0, 255, 0.55));
 }
 
 .pack-card h3 {
@@ -112,7 +114,7 @@ h1, h2, .packs-title {
     color: #ddd;
 }
 
-/* TABLEAU COMPARATIVO */
+/* TABELLA COMPARATIVA */
 .compare-table {
     margin: 25px auto;
     width: 90%;
@@ -178,7 +180,7 @@ h1, h2, .packs-title {
 
     <div class="audit-box">
         <span class="tag">GRATUITO</span>
-        <div class="pack-icon">🔎</div>
+        <img src="/assets/icons/pack_loupe.png" class="pack-icon" alt="Diagnosi sicurezza">
         <h3>Pacchetto Diagnosi Sicurezza Gratuito</h3>
         <p>Una panoramica essenziale del livello di sicurezza del sito, per identificare i rischi più evidenti prima di un’analisi più approfondita.</p>
     </div>
@@ -186,52 +188,52 @@ h1, h2, .packs-title {
 </section>
 
 
-<!-- SECTION PACCHETTI -->
+<!-- SEZIONE PACCHETTI -->
 <h2 class="packs-title">Scegli il pacchetto adatto alle tue esigenze</h2>
 
 <div class="packs-grid">
 
     <div class="pack-card">
-        <div class="pack-icon">🔍</div>
+        <img src="/assets/icons/pack_loupe.png" class="pack-icon" alt="Web Check">
         <h3>Pacchetto Web Check</h3>
         <p>Identifica ciò che il tuo sito espone pubblicamente.</p>
     </div>
 
     <div class="pack-card">
-        <div class="pack-icon">🛡️</div>
+        <img src="/assets/icons/pack_bouclier.png" class="pack-icon" alt="Analisi Sicurezza Web">
         <h3>Pacchetto Analisi Sicurezza Web</h3>
-        <p>Un controllo completo del sito per individuare le vulnerabilità più comuni prima che diventino pericolose.</p>
+        <p>Controllo completo per individuare vulnerabilità prima che diventino pericolose.</p>
     </div>
 
     <div class="pack-card">
-        <div class="pack-icon">⚡</div>
+        <img src="/assets/icons/pack_foudre.png" class="pack-icon" alt="Sicurezza Web Avanzato">
         <h3>Pacchetto Sicurezza Web Avanzato</h3>
-        <p>Un audit più approfondito per capire se il sito è realmente solido e identificare debolezze più tecniche.</p>
+        <p>Audit approfondito per capire la robustezza del sito e le debolezze avanzate.</p>
     </div>
 
     <div class="pack-card">
-        <div class="pack-icon">🔧</div>
+        <img src="/assets/icons/pack_wordpress.png" class="pack-icon" alt="WordPress">
         <h3>Pacchetto Sicurezza WordPress</h3>
         <p class="pack-subtitle">Analisi WP</p>
-        <p>Un controllo specifico per WordPress per verificare se plugin, temi e configurazioni mettono a rischio il tuo sito.</p>
+        <p>Controllo specifico di plugin, temi e configurazioni per evitare rischi.</p>
     </div>
 
     <div class="pack-card">
-        <div class="pack-icon">🧠</div>
+        <img src="/assets/icons/pack_cerveau.png" class="pack-icon" alt="Audit PMI">
         <h3>Pacchetto Audit Web PMI</h3>
-        <p>Una visione completa della sicurezza del sito E delle pratiche interne, per proteggere la tua azienda nel lungo periodo.</p>
+        <p>Analisi completa della sicurezza del sito e delle pratiche interne.</p>
     </div>
 
     <div class="pack-card">
-        <div class="pack-icon">🎯</div>
+        <img src="/assets/icons/pack_pishing.png" class="pack-icon" alt="Phishing">
         <h3>Pacchetto Sensibilizzazione & Phishing</h3>
-        <p>Aiuta il tuo team a riconoscere le minacce e ridurre gli errori umani.</p>
+        <p>Aiuta il tuo team a riconoscere minacce e ridurre errori umani.</p>
     </div>
 
     <div class="pack-card">
-        <div class="pack-icon">🚨</div>
+        <img src="/assets/icons/pack_gyrophare.png" class="pack-icon" alt="Incidente">
         <h3>Pacchetto Incidenti (Emergenza)</h3>
-        <p>Analisi rapida per capire l'origine di un problema o di un attacco informatico.</p>
+        <p>Analisi rapida per capire l'origine di un attacco o problema tecnico.</p>
     </div>
 
 </div>
@@ -284,6 +286,7 @@ h1, h2, .packs-title {
     </tr>
 
 </table>
+
 
 <section class="section call-to-action">
     <h2>Hai bisogno di aiuto per scegliere?</h2>
