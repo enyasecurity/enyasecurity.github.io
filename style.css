@@ -582,5 +582,9 @@ p {
     text-shadow: 0 0 10px #00d2ff;
 }
 
+.audit-text {
+    max-width: 450px;
+    text-align: center; /* 💜 Ajoute ceci */
+}
 
 
