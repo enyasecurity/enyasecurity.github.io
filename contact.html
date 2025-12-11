@@ -1,16 +1,6 @@
 <html>
 <head>
 
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB0S06Q6LJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BB0S06Q6LJ');
-</script>
-
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/style.css">
 <title>Contact</title>
@@ -36,6 +26,12 @@ tarteaucitron.init({
     "highPrivacy": true,
     "handleBrowserDNTRequest": false
 });
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
  
