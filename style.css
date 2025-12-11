@@ -588,3 +588,19 @@ p {
 }
 
 
+/* Bouton accepter */
+#tarteaucitronRoot .tarteaucitronAllow {
+    background-color: #8f00ff !important; /* violet neon */
+}
+
+/* Bouton refuser */
+#tarteaucitronRoot .tarteaucitronDeny {
+    background-color: #0acffe !important; /* bleu cyan neon */
+}
+
+/* Police du bandeau */
+#tarteaucitronRoot {
+    font-family: 'Inter', sans-serif !important;
+}
+
+
