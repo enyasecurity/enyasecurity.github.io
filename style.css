@@ -602,238 +602,122 @@ p {
 #tarteaucitronRoot {
     font-family: 'Inter', sans-serif !important;
 }
-
 /* =========================================
-   STYLES POUR LA NOUVELLE PAGE ANALYSE (2 PACKS)
-   Version cohérente avec le style néon du site
+   SECTION UNIFIÉE DES PACKS - STYLE FONCTIONNEL
 ========================================= */
 
-/* Styles pour les nouveaux packs */
-.pack-price {
-    font-size: 1.8rem;
-    color: #00eaff;
-    text-shadow: 0 0 15px #00eaff; /* GLOW NÉON */
-    margin: 10px 0;
-    font-weight: bold;
-}
-.pack-target {
-    font-style: italic;
-    color: #b0e6ff; /* Cyan clair */
-    margin-bottom: 20px;
-    font-size: 1rem;
-    text-shadow: 0 0 5px #b0e6ff;
-}
-.pack-cta {
-    margin-top: 25px;
-}
-
-/* Bouton dans les cartes - MÊME STYLE QUE .cta-button */
-.cta-button-small {
-    display: inline-block;
-    background: linear-gradient(90deg, #00eaff, #ff00d4); /* GRADIENT NÉON */
-    color: black !important; /* Force la couleur noire sur le texte */
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: 0.25s;
-    box-shadow: 0 0 15px rgba(0, 234, 255, 0.5); /* OMBRE NÉON */
-}
-.cta-button-small:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 0, 212, 0.7); /* GLOW PLUS FORT AU SURVOL */
-}
-
-/* Section "Ce que vous allez découvrir" */
-.packs-details-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Cartes de détails des packs - STYLE COHÉRENT */
-.pack-details-card {
-    background: rgba(10, 15, 30, 0.8); /* Fond sombre bleuté */
-    padding: 30px;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 234, 255, 0.3); /* Bordure cyan subtile */
-    box-shadow: 0 0 25px rgba(0, 234, 255, 0.25); /* Glow cyan */
-    text-align: left;
-    transition: 0.3s;
-}
-/* Effet hover léger sur les cartes de détails */
-.pack-details-card:hover {
-    box-shadow: 0 0 30px rgba(0, 234, 255, 0.4);
-    transform: translateY(-3px);
-}
-
-.pack-details-card h3 {
-    margin-top: 0;
-    color: #00d2ff; /* Cyan néon */
-    text-shadow: 0 0 8px #00d2ff; /* Glow sur le titre */
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-}
-
-/* Couleurs spécifiques aux packs (pour le texte) */
-.starter-text {
-    color: #00eaff;
-    text-shadow: 0 0 8px #00eaff;
-}
-.essentiel-text {
-    color: #ff00d4;
-    text-shadow: 0 0 8px #ff00d4;
-}
-
-/* Liste des bénéfices */
-.benefits-list {
-    list-style: none;
-    padding-left: 0;
-}
-.benefits-list li {
-    padding: 12px 0;
-    border-bottom: 1px dashed rgba(0, 234, 255, 0.3); /* Ligne de séparation cyan */
-    color: #e6e6e6; /* Texte principal clair */
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
-.benefits-list li:last-child {
-    border-bottom: none;
-}
-.benefits-list li strong {
-    color: #b0e6ff; /* Cyan clair pour les mots-clés */
-    text-shadow: 0 0 4px #b0e6ff;
-}
-
-/* =========================================
-   RESPONSIVE POUR LES NOUVEAUX ÉLÉMENTS
-========================================= */
-@media (max-width: 768px) {
-    .packs-details-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 15px;
-    }
-    .pack-details-card {
-        padding: 20px;
-    }
-    .pack-price {
-        font-size: 1.5rem;
-    }
-    .cta-button-small {
-        padding: 10px 20px;
-        font-size: 1rem;
-        display: block;
-        text-align: center;
-    }
-
-
-   
-}
-
-/* =========================================
-   SECTION UNIFIÉE DES PACKS
-========================================= */
-
+/* Conteneur principal */
 .unified-packs-section {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 0 20px;
+    text-align: center;
 }
 
+/* Titre de la section */
+.unified-packs-section .packs-title {
+    color: #00d2ff;
+    text-shadow: 0 0 15px #00d2ff;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* Grille des 2 packs */
 .unified-packs-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
+/* Carte de pack */
 .unified-pack-card {
-    background: rgba(20, 20, 30, 0.8);
-    border-radius: 15px;
-    padding: 30px;
-    border: 1px solid rgba(0, 234, 255, 0.2);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    background: rgba(20, 20, 30, 0.9);
+    border-radius: 16px;
+    padding: 35px;
+    border: 1px solid rgba(0, 234, 255, 0.25);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 .unified-pack-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 234, 255, 0.4);
+    transform: translateY(-8px);
+    border-color: #00eaff;
+    box-shadow: 0 0 40px rgba(0, 234, 255, 0.4),
+                0 0 60px rgba(0, 140, 255, 0.2);
 }
 .pack-highlight {
     border-color: rgba(255, 0, 212, 0.3);
-    box-shadow: 0 0 25px rgba(255, 0, 212, 0.2);
 }
 .pack-highlight:hover {
-    box-shadow: 0 0 35px rgba(255, 0, 212, 0.3);
+    border-color: #ff00d4;
+    box-shadow: 0 0 40px rgba(255, 0, 212, 0.4),
+                0 0 60px rgba(255, 0, 212, 0.2);
 }
 
 /* En-tête du pack */
 .pack-header {
-    text-align: center;
     margin-bottom: 25px;
-    border-bottom: 1px dashed rgba(0, 234, 255, 0.3);
     padding-bottom: 20px;
+    border-bottom: 1px dashed rgba(0, 234, 255, 0.4);
 }
 .pack-icon {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    display: block;
 }
 .pack-header h3 {
     color: #00d2ff;
-    text-shadow: 0 0 10px #00d2ff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 10px 0;
+    text-shadow: 0 0 12px #00d2ff;
 }
 .pack-price {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: #00eaff;
     text-shadow: 0 0 15px #00eaff;
-    margin: 10px 0;
+    margin: 15px 0;
+    font-weight: bold;
 }
 .pack-target {
     color: #b0e6ff;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-top: 10px;
 }
 
-/* Description */
+/* Description du pack */
 .pack-desc {
-    color: #e6e6e6;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 25px;
-    text-align: center;
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px 0 30px 0;
 }
 
 /* Section des bénéfices */
 .pack-benefits {
-    flex-grow: 1; /* Pousse cette section vers le bas pour aligner les boutons */
-    margin-bottom: 25px;
+    text-align: left;
+    margin: 25px 0;
+    flex-grow: 1;
 }
 .pack-benefits h4 {
-    color: #fff;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .pack-benefits ul {
     list-style: none;
     padding-left: 0;
 }
 .pack-benefits li {
-    padding: 10px 0;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
     color: #e6e6e6;
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 .pack-benefits li:last-child {
     border-bottom: none;
@@ -842,10 +726,25 @@ p {
     color: #b0e6ff;
 }
 
-/* Bouton CTA en bas de carte */
+/* Bouton dans la carte */
 .pack-cta {
-    text-align: center;
-    margin-top: auto; /* Pousse le bouton tout en bas */
+    margin-top: 30px;
+}
+.cta-button-small {
+    display: inline-block;
+    background: linear-gradient(90deg, #00eaff, #ff00d4);
+    color: black;
+    padding: 14px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.5);
+}
+.cta-button-small:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 212, 0.7);
 }
 
 /* =========================================
@@ -855,18 +754,31 @@ p {
     .unified-packs-container {
         grid-template-columns: 1fr;
         max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 @media (max-width: 768px) {
+    .unified-packs-container {
+        gap: 30px;
+    }
     .unified-pack-card {
-        padding: 20px;
+        padding: 25px 20px;
     }
     .pack-header h3 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     .pack-price {
         font-size: 1.6rem;
+    }
+    .pack-desc {
+        font-size: 1.1rem;
+    }
+    .pack-benefits li {
+        font-size: 1rem;
+    }
+    .cta-button-small {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
