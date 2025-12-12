@@ -731,4 +731,142 @@ p {
         display: block;
         text-align: center;
     }
+
+
+   
+}
+
+/* =========================================
+   SECTION UNIFIÉE DES PACKS
+========================================= */
+
+.unified-packs-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.unified-packs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.unified-pack-card {
+    background: rgba(20, 20, 30, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(0, 234, 255, 0.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: 0.3s;
+}
+.unified-pack-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 234, 255, 0.4);
+}
+.pack-highlight {
+    border-color: rgba(255, 0, 212, 0.3);
+    box-shadow: 0 0 25px rgba(255, 0, 212, 0.2);
+}
+.pack-highlight:hover {
+    box-shadow: 0 0 35px rgba(255, 0, 212, 0.3);
+}
+
+/* En-tête du pack */
+.pack-header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed rgba(0, 234, 255, 0.3);
+    padding-bottom: 20px;
+}
+.pack-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.pack-header h3 {
+    color: #00d2ff;
+    text-shadow: 0 0 10px #00d2ff;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+.pack-price {
+    font-size: 1.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff;
+    margin: 10px 0;
+}
+.pack-target {
+    color: #b0e6ff;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Description */
+.pack-desc {
+    color: #e6e6e6;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Section des bénéfices */
+.pack-benefits {
+    flex-grow: 1; /* Pousse cette section vers le bas pour aligner les boutons */
+    margin-bottom: 25px;
+}
+.pack-benefits h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.pack-benefits ul {
+    list-style: none;
+    padding-left: 0;
+}
+.pack-benefits li {
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    color: #e6e6e6;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.pack-benefits li:last-child {
+    border-bottom: none;
+}
+.pack-benefits li strong {
+    color: #b0e6ff;
+}
+
+/* Bouton CTA en bas de carte */
+.pack-cta {
+    text-align: center;
+    margin-top: auto; /* Pousse le bouton tout en bas */
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 1000px) {
+    .unified-packs-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 768px) {
+    .unified-pack-card {
+        padding: 20px;
+    }
+    .pack-header h3 {
+        font-size: 1.6rem;
+    }
+    .pack-price {
+        font-size: 1.6rem;
+    }
 }
