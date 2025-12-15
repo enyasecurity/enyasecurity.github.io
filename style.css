@@ -394,6 +394,31 @@ p {
     h1 {
         font-size: 2rem !important;
     }
+
+   @media (max-width: 768px) {
+
+    .nis2-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .nis2-intro {
+        font-size: 1.1rem;
+    }
+
+    .nis2-eligibility h2,
+    .nis2-consultation h2,
+    .nis2-after h2,
+    .nis2-transparency h2 {
+        font-size: 1.6rem;
+    }
+
+    .nis2-eligibility li,
+    .nis2-consultation li,
+    .nis2-after li {
+        font-size: 1rem;
+    }
+}
+
 }
 /* =========================================
    SERVICES PAGE — version finale propre
@@ -786,4 +811,109 @@ p {
         width: 100%;
         box-sizing: border-box;
     }
+
+
+   /* =========================================
+   PAGE NIS2
+========================================= */
+
+/* HERO NIS2 */
+.nis2-hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+.nis2-hero h1 {
+    color: #00d2ff;
+    font-size: 3rem;
+    text-shadow: 0 0 18px #00d2ff;
+    margin-bottom: 25px;
+}
+
+.nis2-intro {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    font-size: 1.3rem;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+.nis2-note {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+/* Sections NIS2 */
+.nis2-eligibility,
+.nis2-consultation,
+.nis2-after,
+.nis2-transparency {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.nis2-eligibility h2,
+.nis2-consultation h2,
+.nis2-after h2,
+.nis2-transparency h2 {
+    color: #00eaff;
+    text-shadow: 0 0 12px #00eaff;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Listes */
+.nis2-eligibility ul,
+.nis2-consultation ul,
+.nis2-after ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 25px 0;
+}
+
+.nis2-eligibility li,
+.nis2-consultation li,
+.nis2-after li {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #ff00e6;
+    padding: 15px 18px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    box-shadow: 0 0 12px rgba(255, 0, 230, 0.15);
+}
+
+/* Encadré avertissement */
+.nis2-consultation p,
+.nis2-after p,
+.nis2-transparency p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* CTA final */
+.nis2-cta-final {
+    text-align: center;
+    margin: 90px 0;
+}
+
+/* Bouton NIS2 (réutilise ton CTA existant mais accentué) */
+.cta-button.nis2 {
+    background: linear-gradient(90deg, #ff00e6, #00eaff);
+    color: black;
+    box-shadow: 0 0 30px rgba(255, 0, 230, 0.55);
+}
+
+.cta-button.nis2:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px rgba(0, 234, 255, 0.7);
+}
+
+
+   
 }
