@@ -634,7 +634,7 @@ p {
 .unified-pack-card {
     background: rgba(20, 20, 30, 0.9);
     border-radius: 16px;
-    padding: 35px;
+    padding: 24px 22px;
     border: 1px solid rgba(0, 234, 255, 0.25);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -659,8 +659,8 @@ p {
 
 /* En-tête du pack */
 .pack-header {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
     border-bottom: 1px dashed rgba(0, 234, 255, 0.4);
 }
 .pack-icon {
@@ -685,7 +685,7 @@ p {
     color: #b0e6ff;
     font-style: italic;
     font-size: 1.1rem;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 /* Description du pack */
@@ -703,7 +703,7 @@ p {
     margin: 15px 0;
     flex-grow: 1;
 }
-*
+
 .pack-benefits h4 {
     color: #ffffff;
     font-size: 1.25rem;
@@ -732,7 +732,7 @@ p {
 
 /* Bouton dans la carte */
 .pack-cta {
-    margin-top: 30px;
+    margin-top: 18px;
 }
 .cta-button-small {
     display: inline-block;
@@ -772,6 +772,7 @@ p {
     }
     .pack-price {
         font-size: 1.6rem;
+        margin: 10px 0;
     }
     .pack-desc {
         font-size: 1.1rem;
