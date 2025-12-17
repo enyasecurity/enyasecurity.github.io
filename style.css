@@ -564,9 +564,10 @@ p {
 
 .hero-button {
     display: block;
+   width: fit-content; 
+    max-width: 90%;
     padding: 14px 38px;
-    margin: 16px auto; 
-    margin-bottom: 50px;
+    margin: 16px auto 50px;
     font-size: 1.2rem;
     font-weight: bold;
     color: black;
