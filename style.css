@@ -567,7 +567,7 @@ p {
     width: fit-content;
     max-width: 90%;
     padding: 18px 52px;        /* ⬅️ boutons plus grands */
-    margin: 12px auto;         /* ⬅️ beaucoup plus rapprochés */
+    margin: 5px auto;         /* ⬅️ beaucoup plus rapprochés */
     font-size: 1.35rem;        /* ⬅️ texte plus lisible */
     font-weight: bold;
     color: black;
@@ -928,5 +928,16 @@ p {
     align-items: center;
     max-width: 720px;
     margin: 0 auto;
+}
+
+/* =========================================
+   HERO – GROUPES DE BOUTONS (CORRECTION)
+========================================= */
+
+.hero-ctas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px; /* ⬅️ contrôle précis de l'espacement */
 }
 
