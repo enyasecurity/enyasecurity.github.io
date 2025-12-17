@@ -564,19 +564,20 @@ p {
 
 .hero-button {
     display: block;
-   width: fit-content; 
+    width: fit-content;
     max-width: 90%;
-    padding: 14px 38px;
-    margin: 16px auto 50px;
-    font-size: 1.2rem;
+    padding: 18px 52px;        /* ⬅️ boutons plus grands */
+    margin: 12px auto;         /* ⬅️ beaucoup plus rapprochés */
+    font-size: 1.35rem;        /* ⬅️ texte plus lisible */
     font-weight: bold;
     color: black;
     background: linear-gradient(90deg, #00eaff, #ff00d4);
-    border-radius: 12px;
+    border-radius: 14px;       /* ⬅️ plus “premium” */
     text-decoration: none;
     transition: 0.25s;
-    box-shadow: 0 0 22px rgba(0,234,255,0.6);
+    box-shadow: 0 0 26px rgba(0,234,255,0.7);
 }
+
 
 .hero-button:hover {
     transform: scale(1.05);
