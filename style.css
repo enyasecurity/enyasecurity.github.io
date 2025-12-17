@@ -563,7 +563,7 @@ p {
 }
 
 .hero-button {
-    display: inline-block;
+    display: block;
     padding: 14px 38px;
     margin-bottom: 50px;
     font-size: 1.2rem;
