@@ -565,6 +565,7 @@ p {
 .hero-button {
     display: block;
     padding: 14px 38px;
+    margin: 16px auto; 
     margin-bottom: 50px;
     font-size: 1.2rem;
     font-weight: bold;
