@@ -538,6 +538,9 @@ p {
 }
 
 .hero-button {
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
    width:480px;
    max-width:95%;
    padding:18px 35px;
