@@ -30,7 +30,7 @@ header {
 
 /* LOGO */
 .logo {
-  height: 110px;     /* Taille du logo */
+  height: 145px;     /* Taille du logo */
   width: auto;
   margin-right: 25px;
   display: block;
@@ -44,18 +44,15 @@ header {
 }
 
 .title-enya {
-  color: #ff00e6;
-  font-size: 60px;
+  color: #ff2cc8;
+  font-size: 58px;
   font-weight: bold;
-  text-shadow: 0 0 18px #ff00e6;
+  text-shadow: none;
 }
 
 .title-security {
-  color: #ff00e6;
-  font-size: 48px;
-  font-weight: bold;
-  text-shadow: 0 0 12px #ff00e6;
-  margin-left: 10px;
+  color: #00cfff;
+  text-shadow: none;
 }
 
 .subtitle {
@@ -77,7 +74,7 @@ nav a {
   color: #00d2ff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 nav a:hover {
@@ -567,31 +564,32 @@ p {
 }
 
 .hero-subtitle {
-    color: #e6e6e6;
-    font-size: 1.3rem;
-    margin-bottom: 40px;
+   max-width:850px;
+   margin:0 auto 50px;
+   font-size:1.45rem;
+   line-height:1.8;
+   color:#d7d7d7;
 }
 
 .hero-button {
-    display: block;
-    width: fit-content;
-    max-width: 90%;
-    padding: 18px 52px;        /* ⬅️ boutons plus grands */
-    margin: 5px auto;         /* ⬅️ beaucoup plus rapprochés */
-    font-size: 1.35rem;        /* ⬅️ texte plus lisible */
-    font-weight: bold;
-    color: black;
-    background: linear-gradient(90deg, #00eaff, #ff00d4);
-    border-radius: 14px;       /* ⬅️ plus “premium” */
-    text-decoration: none;
-    transition: 0.25s;
-    box-shadow: 0 0 26px rgba(0,234,255,0.7);
+   width:480px;
+   max-width:95%;
+   padding:18px 35px;
+   background:#111;
+   border:1px solid rgba(0,210,255,.45);
+   border-radius:14px;
+   color:white;
+   font-size:1.25rem;
+   font-weight:600;
+   box-shadow:none;
+   transition:.25s;
 }
 
 
 .hero-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 28px rgba(255, 0, 212, 0.6);
+   background:#171717;
+   border-color:#00d2ff;
+   transform:translateY(-2px);
 }
 
 /* ICÔNES HERO */
@@ -608,16 +606,17 @@ p {
 }
 
 .hero-icon-block img {
-    width: 80px;
-    height: 80px;
-    filter: drop-shadow(0 0 8px rgba(0,234,255,0.7));
+    width: 92px;
+    height: 92px;
+    filter: none;
 }
 
 .hero-icon-block p {
-    margin-top: 10px;
-    color: #00d2ff;
-    font-size: 1.1rem;
-    text-shadow: 0 0 10px #00d2ff;
+   color:white;
+   font-size:1.15rem;
+   text-shadow:none;
+   margin-top:15px;
+   line-height:1.5;
 }
 
 .audit-text {
