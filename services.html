@@ -1,68 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
 <meta charset="UTF-8">
+<title>Enya Security – Services</title>
+<link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Enya Security - Cybersécurité pour TPE et PME">
-<title>Enya Security</title>
-<link rel="stylesheet" href="style.css">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
 </head>
+
 <body>
-<header class="header">
-<div class="brand">
-<img src="/assets/logo.png" class="logo" alt="Enya Security">
-<div>
-<h1 class="brand-title">Enya <span>Security</span></h1>
-<p class="brand-sub">Cybersécurité pour TPE & PME</p>
-</div>
-</div>
-<nav>
-<a href="index.html" class="active">Accueil</a>
-<a href="services.html">Services</a>
-<a href="packs.html">Packs</a>
-<a href="contact.html">Contact</a>
-<a href="/index.html">FR</a>
-<a href="/en/home.html">EN</a>
-<a href="/it/home.html">IT</a>
-</nav>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav>
+    <a href="/index.html">Accueil</a>
+    <a class="active" href="/services.html">Services</a>
+    <a href="/packs.html">Tarifs</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/services.html">FR</a>
+    <a href="/en/services.html">EN</a>
+    <a href="/it/services.html">IT</a>
+  </nav>
 </header>
 
-<section class="hero">
-<h2>Protégez vos actifs numériques.</h2>
-<p>Enya Security accompagne les TPE et PME avec des audits techniques, des analyses d'exposition et des simulations de phishing.</p>
-<div class="buttons">
-<a class="btn primary" href="services.html">Découvrir les services</a>
-<a class="btn" href="contact.html">Demander un devis</a>
-</div>
+<section class="services-container">
+
+  <h1 class="services-title">Services</h1>
+  <p class="services-subtitle">
+    Des audits humains et pédagogiques, pensés pour les TPE, PME et associations — sans intrusion, sans jargon.
+  </p>
+
+  <div class="services-grid">
+
+    <!-- Audit base de données -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icône audit base de données">
+      <h3>Audit de sécurité des bases de données</h3>
+      <p>Comptes, accès, sauvegardes, chiffrement et RGPD : un état des lieux clair de la sécurité de votre base de données.</p>
+      <span class="service-price">À partir de 449 €</span>
+      <a href="/audit-bases-de-donnees.html">Voir le service →</a>
+    </div>
+
+    <!-- Préparation ransomware -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_ransomware.png" class="service-icon" alt="Icône préparation ransomware">
+      <h3>Préparation à une attaque ransomware</h3>
+      <p>Anticipez une attaque par rançongiciel : plan de réponse, sauvegardes, procédures de crise prêtes à l'emploi.</p>
+      <span class="service-price">À partir de 449 €</span>
+      <a href="/preparation-ransomware.html">Voir le service →</a>
+    </div>
+
+    <!-- Analyse exposition / OSINT -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_expo.png" class="service-icon" alt="Icône analyse d'exposition">
+      <h3>Analyse de l'exposition en ligne</h3>
+      <p>Découvrez ce qui est visible publiquement sur votre entreprise : fuites de données, identifiants, exposition dark web.</p>
+      <span class="service-price">À partir de 349 €</span>
+      <a href="/analyse-exposition.html">Voir le service →</a>
+    </div>
+
+    <!-- Simulation phishing -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_pishing.png" class="service-icon" alt="Icône simulation phishing">
+      <h3>Simulation phishing & sensibilisation</h3>
+      <p>Testez et formez vos équipes face à de faux emails piégés, en conditions réelles et sans jugement.</p>
+      <span class="service-price">À partir de 390 €</span>
+      <a href="/simulation-phishing.html">Voir le service →</a>
+    </div>
+
+    <!-- Audit Android -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_android.png" class="service-icon" alt="Icône audit Android">
+      <h3>Audit de sécurité Android</h3>
+      <p>Un audit non-intrusif de la sécurité de votre application mobile : stockage, permissions, communications.</p>
+      <span class="service-price">À partir de 449 €</span>
+      <a href="/audit-android.html">Voir le service →</a>
+    </div>
+
+  </div>
 </section>
 
-<section class="services">
-<h2>Nos 4 services</h2>
-<div class="grid">
-<article class="card"><h3>Audit de sécurité des bases de données</h3><p>Analyse des accès, configuration, sauvegardes, chiffrement, vulnérabilités et environnements cloud.</p></article>
-<article class="card"><h3>Audit de préparation aux ransomwares</h3><p>Évaluez votre capacité à prévenir, détecter et répondre à une attaque.</p></article>
-<article class="card"><h3>Analyse de l'exposition en ligne</h3><p>Découvrez les informations visibles publiquement sur votre entreprise.</p></article>
-<article class="card"><h3>Simulation de phishing</h3><p>Campagnes de sensibilisation avec restitution des résultats.</p></article>
-</div>
-</section>
-
-<section class="why">
-<h2>Pourquoi Enya Security ?</h2>
-<ul>
-<li>✓ Audits réalisés à distance</li>
-<li>✓ Approche non intrusive</li>
-<li>✓ Rapports clairs et priorisés</li>
-<li>✓ Accompagnement des TPE et PME</li>
-</ul>
-</section>
-
-<section class="cta">
-<h2>Renforcez votre cybersécurité</h2>
-<a class="btn primary" href="contact.html">Contactez-nous</a>
-</section>
-
-<footer>
-<p><a href="mentions_legales.html">Mentions légales</a></p>
-</footer>
 </body>
 </html>
