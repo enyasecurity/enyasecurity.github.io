@@ -72,10 +72,47 @@ nav {
 
 nav a {
   margin: 0 18px;
-  color: #00d2ff;
+  color: #c9c9c9;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  position: relative;
+  padding-bottom: 8px;
+  transition: color .2s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a.active {
+  color: #00d2ff;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 28px;
+  margin: 0 auto;
+  background: #00d2ff;
+  border-radius: 2px;
+}
+
+.nav-divider {
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background: rgba(255,255,255,0.2);
+  margin: 0 14px;
+  vertical-align: middle;
+}
+
+nav a.lang-active {
+  color: #00d2ff;
 }
 
 
@@ -286,10 +323,38 @@ p {
 
 @media (max-width: 768px) {
 
-    h1, h2 {
+    .hero-title {
         font-size: 1.7rem !important;
         text-align: center;
     }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .hero-button-label {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+
+    .hero-button-icon {
+        margin-left: 16px;
+    }
+
+    .hero-button-arrow {
+        margin-right: 16px;
+    }
+
+    .trust-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .trust-item {
+        min-width: unset;
+    }
+
 
     .section p {
         font-size: 1.1rem;
@@ -517,16 +582,29 @@ p {
 }
 
 .hero-title {
-    font-size:4.4rem;
+    font-size:2.9rem;
     font-weight:900;
-    line-height:1.05;
-    letter-spacing:-1px;
-    color:#ececec;
-    margin-bottom:25px;
+    line-height:1.25;
+    letter-spacing:-0.5px;
+    color:#f2f2f2;
+    margin-bottom:0;
+    text-transform: uppercase;
 }
 
-.hero-title strong{
-    color:#00d2ff;
+.gradient-text{
+    background: linear-gradient(90deg, #ff2cc8 0%, #c86bff 45%, #00d2ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-divider {
+    width: 130px;
+    height: 3px;
+    margin: 22px auto 30px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #ff2cc8, #00d2ff);
+    opacity: 0.85;
 }
 
 .hero-subtitle {
@@ -541,24 +619,80 @@ p {
    display:flex;
    justify-content:space-between;
    align-items:center;
+   gap: 16px;
    width:480px;
    max-width:95%;
-   padding:18px 35px;
-   background:#111;
-   border:1px solid rgba(0,210,255,.45);
+   padding:2px;
    border-radius:14px;
-   color:#dddddd;
-   font-size:1.25rem;
-   font-weight:600;
-   box-shadow:none;
+   text-decoration:none;
+   background: linear-gradient(120deg, #ff2cc8, #00d2ff);
    transition:.25s;
 }
 
+.hero-button > * {
+   position: relative;
+}
+
+.hero-button::before {
+   content: "";
+   position: absolute;
+   inset: 2px;
+   background: #060608;
+   border-radius: 12px;
+   z-index: 0;
+}
+
+.hero-button-label,
+.hero-button-icon,
+.hero-button-arrow {
+   position: relative;
+   z-index: 1;
+}
+
+.hero-button-label {
+   flex: 1;
+   padding: 18px 0;
+   color: #e8e8e8;
+   font-size: 1.15rem;
+   font-weight: 600;
+   text-align: left;
+}
+
+.hero-button-icon,
+.hero-button-arrow {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+}
+
+.hero-button-icon {
+   margin-left: 26px;
+}
+
+.hero-button-arrow {
+   margin-right: 26px;
+}
+
+.hero-button-icon svg,
+.hero-button-arrow svg {
+   width: 22px;
+   height: 22px;
+}
+
+.hero-button-pink .hero-button-icon,
+.hero-button-pink .hero-button-arrow {
+   color: #ff2cc8;
+}
+
+.hero-button-cyan .hero-button-icon,
+.hero-button-cyan .hero-button-arrow {
+   color: #00d2ff;
+}
 
 .hero-button:hover {
-   background:#171717;
-   border-color:#00d2ff;
    transform:translateY(-2px);
+   filter: brightness(1.15);
 }
 
 /* ICÔNES HERO */
@@ -585,6 +719,74 @@ p {
    font-size:1.15rem;
    margin-top:15px;
    line-height:1.5;
+}
+
+.icon-underline {
+   display: block;
+   width: 34px;
+   height: 2px;
+   margin: 10px auto 0;
+   border-radius: 2px;
+}
+
+.underline-pink { background: #ff2cc8; }
+.underline-cyan { background: #00d2ff; }
+
+/* =========================================
+   BANDEAU DE CONFIANCE
+========================================= */
+
+.trust-row {
+   max-width: 1100px;
+   margin: 55px auto 0;
+   padding: 30px 25px 10px;
+   border-top: 1px solid rgba(255,255,255,0.08);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 45px;
+}
+
+.trust-item {
+   display: flex;
+   align-items: center;
+   gap: 14px;
+   min-width: 260px;
+}
+
+.trust-icon {
+   flex-shrink: 0;
+   width: 38px;
+   height: 38px;
+   border-radius: 50%;
+   border: 1.5px solid rgba(0,210,255,.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #00d2ff;
+}
+
+.trust-icon svg {
+   width: 18px;
+   height: 18px;
+}
+
+.trust-text {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+.trust-text strong {
+   color: #f0f0f0;
+   font-size: 1.02rem;
+   font-weight: 700;
+}
+
+.trust-text small {
+   color: #909090;
+   font-size: 0.85rem;
+   margin-top: 3px;
 }
 
 .audit-text {
