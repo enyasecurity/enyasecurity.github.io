@@ -565,6 +565,15 @@ p {
   min-height: 55px;
 }
 
+/* Prix */
+.service-price {
+  display: block;
+  color: #ff2cc8;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
 /* Lien */
 .service-card a {
   color: var(--cyan);
