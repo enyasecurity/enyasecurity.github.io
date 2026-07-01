@@ -714,8 +714,8 @@ p {
 }
 
 .hero-icon-block img {
-    width: 84px;
-    height: 84px;
+    width: 108px;
+    height: 108px;
 }
 
 .hero-icon-block p {
@@ -742,8 +742,8 @@ p {
 
 .trust-row {
    max-width: 1100px;
-   margin: 16px auto 0;
-   padding: 12px 25px 8px;
+   margin: 28px auto 0;
+   padding: 20px 25px 8px;
    border-top: 1px solid rgba(255,255,255,0.08);
    display: flex;
    justify-content: center;
