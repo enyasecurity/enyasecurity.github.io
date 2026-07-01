@@ -103,22 +103,22 @@
 
     .nis2-hero h1 {
         font-size: 2.1rem;
-    }
+                }
 
     .nis2-intro {
         font-size: 1.1rem;
-    }
+                }
 
     .nis2-eligibility h2,
     .nis2-consultation h2,
     .nis2-after h2,
     .nis2-transparency h2 {
         font-size: 1.6rem;
-    }
+                      }
 
     .nis2-eligibility li,
     .nis2-consultation li,
     .nis2-after li {
         font-size: 1rem;
-    }
+                   }
 }
