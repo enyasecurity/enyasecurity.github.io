@@ -545,15 +545,25 @@ p {
 ========================================= */
 
 .hero-home {
+    max-width: 1200px;
+    margin: 70px auto 0 auto;
+    padding: 0 40px;
     text-align: center;
-    margin-top: 80px;
+
 }
 
 .hero-title {
-    color: #00d2ff;
-    font-size: 3rem;
-    text-shadow: 0 0 18px #00d2ff;
-    margin-bottom: 18px;
+    font-size:4.8rem;
+    font-weight:800;
+    line-height:1.08;
+    letter-spacing:-1px;
+    color:white;
+    text-shadow:none;
+    margin-bottom:35px;
+}
+
+.hero-title strong{
+    color:#00d2ff;
 }
 
 .hero-subtitle {
