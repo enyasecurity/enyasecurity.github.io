@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Enya Security</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style.css">
 
-    <title>Enya Security</title>
-    <link rel="stylesheet" href="/style.css">
+<!-- ============================== -->
+<!--      TARTE AU CITRON           -->
+<!-- ============================== -->
 
-<!-- TarteAuCitron (gestion des cookies) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+
 <script>
 tarteaucitron.init({
     "privacyUrl": "",
@@ -28,99 +32,204 @@ tarteaucitron.init({
     "handleBrowserDNTRequest": false
 });
 </script>
-<!-- Google Analytics via TarteAuCitron -->
+
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
 tarteaucitron.user.gtagMore = function () {};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
-
 </head>
 
 <body>
 
+<!-- ====================================================== -->
+<!-- HEADER -->
+<!-- ====================================================== -->
+
 <header>
-    <div class="header-left">
-        <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
-        <div class="site-title">
-            <span class="title-enya">Enya</span>
-            <span class="title-security">Security</span>
-        </div>
+
+<div class="header-left">
+
+    <img src="/assets/logo.png"
+         class="logo"
+         alt="Logo Enya Security">
+
+    <div class="site-title">
+
+        <span class="title-enya">
+            Enya
+        </span>
+
+        <span class="title-security">
+            Security
+        </span>
+
     </div>
 
-    <nav>
-        <a class="active" href="/index.html">Accueil</a>
-        <a href="/services.html">Services</a>
-        <a href="/packs.html">Packs</a>
-        <a href="/contact.html">Contact</a>
+</div>
 
-        <a href="/index.html">FR</a>
-        <a href="/en/home.html">EN</a>
-        <a href="/it/home.html">IT</a>
-    </nav>
+<nav>
+
+    <a class="active" href="/index.html">Accueil</a>
+    <a href="/services.html">Services</a>
+    <a href="/packs.html">Tarifs</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+
+    <a href="/index.html">FR</a>
+    <a href="/en/home.html">EN</a>
+    <a href="/it/home.html">IT</a>
+
+</nav>
+
 </header>
 
-<!-- =============================== -->
-<!--          HERO SECTION           -->
-<!-- =============================== -->
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
 
 <section class="hero-home">
-    <h1 class="hero-title">Analyser. Détecter. Protéger.</h1>
-    <p class="hero-subtitle">Bienvenue chez <b>Enya Security</b>. Votre partenaire pour la cybersécurité.</p>
+
+<h1 class="hero-title">
+
+Identifier les risques.<br>
+Renforcer votre sécurité.
+
+</h1>
+
+<p class="hero-subtitle">
+
+<b>Enya Security</b> accompagne les TPE, PME et collectivités avec des audits techniques,
+des analyses d'exposition sur Internet et des campagnes de sensibilisation au phishing.
+
+</p>
 
 <div class="hero-buttons">
 
-    <!-- SERVICES -->
-    <div class="hero-buttons-inner">
+<div class="hero-buttons-inner">
 
-    <a href="/contact.html?objet=diagnostic" class="hero-button hero-button-primary">
-        Première évaluation de sécurité gratuite
-    </a>
+<a href="/contact.html?objet=diagnostic"
+class="hero-button hero-button-primary">
 
-    <a href="/services.html" class="hero-button hero-button-secondary">
-        Découvrir nos services
-    </a>
+Première évaluation gratuite
 
-    <a href="/nis2.html" class="hero-button hero-button-secondary hero-button-nis2">
-        Êtes-vous concerné par la directive européenne NIS2 ?
-    </a>
+</a>
 
-    <a href="/contact.html" class="hero-button hero-button-cta">
-        Consultation gratuite
-    </a>
+<a href="/services.html"
+class="hero-button hero-button-secondary">
+
+Découvrir nos services
+
+</a>
+
+<a href="/nis2.html"
+class="hero-button hero-button-secondary hero-button-nis2">
+
+Suis-je concerné par la directive NIS2 ?
+
+</a>
 
 </div>
 
+</div>
 
+<!-- ====================================================== -->
+<!-- SERVICES RAPIDES -->
+<!-- ====================================================== -->
 
+<div class="hero-icons">
+
+<div class="hero-icon-block">
+
+<img src="/assets/icons/icone_auditdb.png"
+alt="Audit Base de données">
+
+<p>
+
+Audit<br>
+Bases de données
+
+</p>
 
 </div>
 
-    <div class="hero-icons">
-        <div class="hero-icon-block">
-            <img src="/assets/icons/icone_visibilite.png" alt="Visibilité">
-            <p>Visibilité</p>
-        </div>
+<div class="hero-icon-block">
 
-        <div class="hero-icon-block">
-            <img src="/assets/icons/icone_pentest.png" alt="Pentest">
-            <p>Test de sécurité</p>
-        </div>
+<img src="/assets/icons/icone_exposition.png"
+alt="Analyse d'exposition">
 
-        <div class="hero-icon-block">
-            <img src="/assets/icons/icone_pishing.png" alt="Phishing">
-            <p>Phishing</p>
-        </div>
-    </div>
-    
+<p>
+
+Analyse<br>
+d'exposition
+
+</p>
+
+</div>
+
+<div class="hero-icon-block">
+
+<img src="/assets/icons/icone_phishing.png"
+alt="Campagnes phishing">
+
+<p>
+
+Campagnes<br>
+phishing
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ====================================================== -->
+<!-- POINTS FORTS -->
+<!-- ====================================================== -->
+
+<div class="hero-features">
+
+<span>✓ Télétravail dans toute la France</span>
+
+<span>✓ Rapport détaillé et priorisé</span>
+
+<span>✓ Restitution personnalisée</span>
+
+<span>✓ Première évaluation gratuite</span>
+
+</div>
+
 </section>
 
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
 <footer>
-    <p><a href="/mentions_legales.html">Mentions légales</a></p>
-    <p><a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a></p>
+
+<p>
+
+<a href="/mentions_legales.html">
+
+Mentions légales
+
+</a>
+
+</p>
+
+<p>
+
+<a href="#"
+onclick="tarteaucitron.userInterface.openPanel(); return false;">
+
+Gérer mes cookies
+
+</a>
+
+</p>
+
 </footer>
 
-    
 </body>
 </html>
