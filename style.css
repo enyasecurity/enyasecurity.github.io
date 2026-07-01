@@ -38,9 +38,10 @@ header {
 
 /* TITRE (Enya Security) */
 .site-title {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.85;
+   display: flex;
+   flex-direction: column;
+   line-height: 0.85;
+   gap:2px;
 }
 
 .title-enya {
@@ -51,9 +52,11 @@ header {
 }
 
 .title-security {
-  color: #00cfff;
-  text-shadow: none;
-}
+   color: #00cfff;
+   font-size:42px;
+   font-weight:700;
+   letter-spacing:1px;
+   line-height:0.95;}
 
 .subtitle {
   font-size: 2rem;   /* Taille plus petite que le H1 */
@@ -542,10 +545,14 @@ p {
 ========================================= */
 
 .hero-home {
-    max-width: 1200px;
-    margin: 70px auto 0 auto;
-    padding: 0 40px;
-    text-align: center;
+   max-width: 1200px;
+   margin: 30px auto;
+   min-height:78vh;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   padding: 0 40px;
+   text-align: center;
 
 }
 
@@ -554,7 +561,7 @@ p {
     font-weight:800;
     line-height:1.08;
     letter-spacing:-1px;
-    color:white;
+    color:#f2f2f2;
     text-shadow:none;
     margin-bottom:35px;
 }
@@ -564,11 +571,11 @@ p {
 }
 
 .hero-subtitle {
-   max-width:850px;
+   max-width:700px;
    margin:0 auto 50px;
    font-size:1.45rem;
    line-height:1.8;
-   color:#d7d7d7;
+   color:#b9c2c8;
 }
 
 .hero-button {
@@ -602,7 +609,8 @@ p {
 }
 
 .hero-icon-block {
-    text-align: center;
+   text-align: center;
+   color:#d2d2d2;
 }
 
 .hero-icon-block img {
@@ -932,11 +940,12 @@ p {
 
 
 .hero-buttons-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 720px;
-    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 720px;
+   margin: 0 auto;
+   color:#e8e8e8;
 }
 
 /* =========================================
