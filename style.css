@@ -30,7 +30,7 @@ header {
 
 /* LOGO */
 .logo {
-  height: 92px;     /* Taille du logo */
+  height: 120px;     /* Taille du logo */
   width: auto;
   margin-right: 22px;
   display: block;
@@ -46,16 +46,18 @@ header {
 
 .title-enya {
   color: #ff2cc8;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: bold;
 }
 
 .title-security {
    color: #00cfff;
-   font-size:25px;
+   font-size:34px;
    font-weight:700;
    letter-spacing:3px;
-   line-height:0.9;}
+   line-height:0.9;
+   text-transform: uppercase;
+}
 
 .subtitle {
   font-size: 2rem;   /* Taille plus petite que le H1 */
