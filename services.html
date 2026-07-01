@@ -1,110 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
 <meta charset="UTF-8">
-<title>Enya Security – Services</title>
-<link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
-<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
-<script>
-tarteaucitron.init({
-    "privacyUrl": "",
-    "hashtag": "#tarteaucitron",
-    "cookieName": "tarteaucitron",
-    "orientation": "bottom",
-    "showAlertSmall": false,
-    "cookieslist": true,
-    "showIcon": true,
-    "iconPosition": "BottomRight",
-    "DenyAllCta": true,
-    "AcceptAllCta": true,
-    "highPrivacy": true,
-    "handleBrowserDNTRequest": false
-});
-</script>
-<!-- Google Analytics via TarteAuCitron -->
-<script>
-tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
-(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-</script>
-
+<meta name="description" content="Enya Security - Cybersécurité pour TPE et PME">
+<title>Enya Security</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-  <div class="header-left">
-    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
-    <div class="site-title">
-      <span class="title-enya">Enya</span>
-      <span class="title-security">Security</span>
-    </div>
-  </div>
-
-  <nav>
-    <a href="/index.html">Accueil</a>
-    <a class="active" href="/services.html">Services</a>
-    <a href="/packs.html">Packs</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/en/home.html">EN</a>
-    <a href="/it/home.html">IT</a>
-  </nav>
+<header class="header">
+<div class="brand">
+<img src="/assets/logo.png" class="logo" alt="Enya Security">
+<div>
+<h1 class="brand-title">Enya <span>Security</span></h1>
+<p class="brand-sub">Cybersécurité pour TPE & PME</p>
+</div>
+</div>
+<nav>
+<a href="index.html" class="active">Accueil</a>
+<a href="services.html">Services</a>
+<a href="packs.html">Packs</a>
+<a href="contact.html">Contact</a>
+<a href="/index.html">FR</a>
+<a href="/en/home.html">EN</a>
+<a href="/it/home.html">IT</a>
+</nav>
 </header>
 
-<section class="services-container">
-
-  <h1 class="services-title">Services</h1>
-  <p class="services-subtitle">
-    Découvrez nos solutions pour améliorer la sécurité de votre site et de vos données.
-  </p>
-
-  <div class="services-grid">
-
-    <!-- Analyse visibilité -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_visibilite.png" class="service-icon" alt="Icône visibilité">
-      <h3>Analyse de la visibilité en ligne</h3>
-      <p>Découvrez quelles informations sur votre entreprise sont visibles publiquement sans que vous le sachiez.</p>
-      <a href="/analyse_visibilité_en_ligne.html">Voir le service →</a>
-    </div>
-
-    <!-- Scan vulnérabilités -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_scandevulnerabilite.png" class="service-icon" alt="Icône scan vulnérabilités">
-      <h3>Scan de vulnérabilités</h3>
-      <p>Identifiez rapidement les failles les plus courantes présentes sur votre site web.</p>
-      <a href="/scan-vulnerabilites.html">Voir le service →</a>
-    </div>
-
-    <!-- Pentest Web -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_pentest.png" class="service-icon" alt="Icône pentest">
-      <h3>Test d'intrusion</h3>
-      <p>Un test de sécurité complet pour détecter les risques avant qu’un pirate ne les exploite.</p>
-      <a href="/pentest_light.html">Voir le service →</a>
-    </div>
-
-    <!-- Sensibilisation -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_sensibilisation.png" class="service-icon" alt="Icône sensibilisation">
-      <h3>Sensibilisation cybersécurité</h3>
-      <p>Formez vos équipes à reconnaître les pièges, arnaques et comportements dangereux.</p>
-      <a href="/sensibilisation.html">Voir le service →</a>
-    </div>
-
-    <!-- Phishing -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_pishing.png" class="service-icon" alt="Icône contact/phishing">
-      <h3>Simulation de phishing</h3>
-      <p>Testez la réaction de vos employés face à un faux email piégé, en conditions réelles.</p>
-      <a href="/simulation-phishing.html">Voir le service →</a>
-    </div>
-
-  </div>
+<section class="hero">
+<h2>Protégez vos actifs numériques.</h2>
+<p>Enya Security accompagne les TPE et PME avec des audits techniques, des analyses d'exposition et des simulations de phishing.</p>
+<div class="buttons">
+<a class="btn primary" href="services.html">Découvrir les services</a>
+<a class="btn" href="contact.html">Demander un devis</a>
+</div>
 </section>
 
+<section class="services">
+<h2>Nos 4 services</h2>
+<div class="grid">
+<article class="card"><h3>Audit de sécurité des bases de données</h3><p>Analyse des accès, configuration, sauvegardes, chiffrement, vulnérabilités et environnements cloud.</p></article>
+<article class="card"><h3>Audit de préparation aux ransomwares</h3><p>Évaluez votre capacité à prévenir, détecter et répondre à une attaque.</p></article>
+<article class="card"><h3>Analyse de l'exposition en ligne</h3><p>Découvrez les informations visibles publiquement sur votre entreprise.</p></article>
+<article class="card"><h3>Simulation de phishing</h3><p>Campagnes de sensibilisation avec restitution des résultats.</p></article>
+</div>
+</section>
+
+<section class="why">
+<h2>Pourquoi Enya Security ?</h2>
+<ul>
+<li>✓ Audits réalisés à distance</li>
+<li>✓ Approche non intrusive</li>
+<li>✓ Rapports clairs et priorisés</li>
+<li>✓ Accompagnement des TPE et PME</li>
+</ul>
+</section>
+
+<section class="cta">
+<h2>Renforcez votre cybersécurité</h2>
+<a class="btn primary" href="contact.html">Contactez-nous</a>
+</section>
+
+<footer>
+<p><a href="mentions_legales.html">Mentions légales</a></p>
+</footer>
 </body>
 </html>
