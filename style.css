@@ -1044,6 +1044,9 @@ p {
   --pink-accent: #ff2cc8;
   --text-light: #eef3fb;
   --text-dim: #93a2bd;
+  --cream: #f8f4ea;
+  --cream-text: #1c2333;
+  --cream-dim: #5c6478;
 }
 
 body {
@@ -1061,6 +1064,22 @@ header {
   background: rgba(5, 11, 24, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(111, 179, 255, 0.12);
+  padding: 8px 30px !important;
+}
+
+/* Header plus compact : le logo à 150px prenait trop de hauteur */
+.logo {
+  height: 56px !important;
+  margin-right: 14px !important;
+}
+
+.title-enya {
+  font-size: 26px !important;
+}
+
+.title-security {
+  font-size: 16px !important;
+  letter-spacing: 2px !important;
 }
 
 .header-cta {
@@ -1088,7 +1107,7 @@ header {
 
 .hero-home {
   max-width: 1180px;
-  padding: 50px 25px 10px;
+  padding: 30px 25px 0;
   text-align: left;
 }
 
@@ -1096,7 +1115,7 @@ header {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .hero-content {
@@ -1224,7 +1243,7 @@ header {
 
 .hero-visual {
   position: relative;
-  height: 460px;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1232,8 +1251,8 @@ header {
 
 .hero-visual-glow {
   position: absolute;
-  width: 380px;
-  height: 380px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(47,125,250,0.35), transparent 70%);
   filter: blur(6px);
@@ -1242,8 +1261,8 @@ header {
 
 .hero-visual-rings {
   position: absolute;
-  width: 340px;
-  height: 340px;
+  width: 290px;
+  height: 290px;
   border-radius: 50%;
   border: 1px dashed rgba(111, 179, 255, 0.28);
   animation: spinSlow 40s linear infinite;
@@ -1332,28 +1351,54 @@ header {
   50% { transform: translateY(-14px); }
 }
 
-/* ---------- Bandeau de confiance : léger ajustement ---------- */
+/* ---------- Bandeau de confiance : sort du hero, devient la zone crème ---------- */
 
-.hero-home + .trust-row,
 .hero-home .trust-row {
-  margin-top: 42px;
+  position: relative;
+  z-index: 1;
+  margin-top: 34px;
+  padding: 26px 25px;
+  border-top: none;
 }
 
-/* ---------- SECTION EXPERTISE (même thème sombre que le hero) ---------- */
+.hero-home .trust-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: var(--cream);
+  z-index: -1;
+}
+
+.hero-home .trust-item .trust-icon {
+  border-color: rgba(47, 125, 250, 0.4);
+  color: var(--blue);
+}
+
+.hero-home .trust-item .trust-text strong {
+  color: var(--cream-text);
+}
+
+.hero-home .trust-item .trust-text small {
+  color: var(--cream-dim);
+}
+
+/* ---------- SECTION EXPERTISE (zone crème, pleine largeur) ---------- */
 
 .expertise-section {
-  background: transparent;
-  color: var(--text-light);
-  padding: 70px 25px 90px;
+  background: var(--cream);
+  color: var(--cream-text);
+  padding: 50px 25px 80px;
   text-align: center;
-  margin-top: 30px;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0;
+  max-width: none;
 }
 
 .expertise-kicker {
-  color: var(--blue-light);
+  color: var(--blue);
   font-weight: 800;
   letter-spacing: 2px;
   font-size: 0.82rem;
@@ -1363,14 +1408,14 @@ header {
 .expertise-title {
   font-size: 2.1rem;
   font-weight: 800;
-  color: var(--text-light);
+  color: var(--cream-text);
   margin: 0 0 14px;
 }
 
 .expertise-subtitle {
   max-width: 640px;
   margin: 0 auto 46px;
-  color: var(--text-dim);
+  color: var(--cream-dim);
   font-size: 1.02rem;
   line-height: 1.55;
 }
@@ -1384,36 +1429,36 @@ header {
 }
 
 .expertise-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(111, 179, 255, 0.18);
+  background: #ffffff;
+  border: 1px solid #e9e2d1;
   border-radius: 18px;
   padding: 34px 26px;
   text-align: left;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 18px rgba(20, 30, 60, 0.06);
   transition: .25s ease;
 }
 
 .expertise-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(111, 179, 255, 0.45);
-  box-shadow: 0 16px 34px rgba(47, 125, 250, 0.18);
+  border-color: rgba(47, 125, 250, 0.35);
+  box-shadow: 0 16px 34px rgba(20, 30, 60, 0.1);
 }
 
 .expertise-icon {
   width: 54px;
   height: 54px;
   margin-bottom: 20px;
-  filter: drop-shadow(0 0 10px rgba(47, 125, 250, 0.35));
+  filter: none;
 }
 
 .expertise-card h3 {
-  color: var(--text-light);
+  color: var(--cream-text);
   font-size: 1.15rem;
   margin: 0 0 10px;
 }
 
 .expertise-card p {
-  color: var(--text-dim);
+  color: var(--cream-dim);
   font-size: 0.95rem;
   line-height: 1.55;
   margin: 0;
@@ -1425,7 +1470,7 @@ header {
 
 .expertise-footer .btn-secondary {
   border-color: var(--blue);
-  color: var(--blue-light);
+  color: var(--blue);
 }
 
 .expertise-footer .btn-secondary:hover {
@@ -1435,7 +1480,17 @@ header {
 }
 
 footer {
-  background: var(--navy-1);
+  background: var(--cream);
+  color: var(--cream-dim);
+  border-top: 1px solid #e9e2d1;
+}
+
+footer a {
+  color: var(--cream-dim);
+}
+
+footer a:hover {
+  color: var(--blue);
 }
 
 /* ---------- RESPONSIVE : redesign ---------- */
