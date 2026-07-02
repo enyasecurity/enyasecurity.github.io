@@ -1118,14 +1118,14 @@ header {
 
 .hero-home {
   max-width: 1180px;
-  padding: 6px 25px 0;
+  padding: 0 25px 0;
   text-align: left;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
+  align-items: start;
   gap: 26px;
 }
 
