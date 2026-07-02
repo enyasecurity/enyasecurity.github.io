@@ -1118,6 +1118,7 @@ header {
 
 .hero-home {
   max-width: 1180px;
+  margin: 0 auto;
   padding: 0 25px 0;
   text-align: left;
 }
