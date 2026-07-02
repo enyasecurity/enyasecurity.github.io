@@ -1048,8 +1048,8 @@ p {
 
 body {
   background:
-    radial-gradient(1100px 600px at 85% -10%, rgba(47,125,250,0.16), transparent 60%),
-    radial-gradient(900px 500px at -10% 20%, rgba(255,44,200,0.08), transparent 55%),
+    radial-gradient(1100px 600px at 85% -10%, rgba(47,125,250,0.18), transparent 60%),
+    radial-gradient(900px 500px at -10% 30%, rgba(47,125,250,0.08), transparent 55%),
     linear-gradient(180deg, var(--navy-1) 0%, var(--navy-2) 45%, var(--navy-1) 100%);
   background-attachment: fixed;
 }
@@ -1254,7 +1254,15 @@ header {
   position: absolute;
   inset: -40px;
   border-radius: 50%;
-  border: 1px dashed rgba(255, 44, 200, 0.2);
+  border: 1px dashed rgba(111, 179, 255, 0.16);
+}
+
+/* Titre en dégradé : version bleu uni, cohérente avec le reste du site */
+.gradient-text {
+  background: linear-gradient(90deg, var(--blue-light) 0%, var(--blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-visual-logo {
@@ -1331,19 +1339,21 @@ header {
   margin-top: 42px;
 }
 
-/* ---------- SECTION EXPERTISE (fond clair) ---------- */
+/* ---------- SECTION EXPERTISE (même thème sombre que le hero) ---------- */
 
 .expertise-section {
-  background: linear-gradient(180deg, #f4f8ff 0%, #ffffff 100%);
-  color: #0b1220;
-  padding: 70px 25px 80px;
+  background: transparent;
+  color: var(--text-light);
+  padding: 70px 25px 90px;
   text-align: center;
-  margin-top: 46px;
-  border-radius: 34px 34px 0 0;
+  margin-top: 30px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .expertise-kicker {
-  color: var(--blue);
+  color: var(--blue-light);
   font-weight: 800;
   letter-spacing: 2px;
   font-size: 0.82rem;
@@ -1353,14 +1363,14 @@ header {
 .expertise-title {
   font-size: 2.1rem;
   font-weight: 800;
-  color: #0b1220;
+  color: var(--text-light);
   margin: 0 0 14px;
 }
 
 .expertise-subtitle {
   max-width: 640px;
   margin: 0 auto 46px;
-  color: #5a6478;
+  color: var(--text-dim);
   font-size: 1.02rem;
   line-height: 1.55;
 }
@@ -1374,36 +1384,36 @@ header {
 }
 
 .expertise-card {
-  background: #ffffff;
-  border: 1px solid #e7edf7;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(111, 179, 255, 0.18);
   border-radius: 18px;
   padding: 34px 26px;
   text-align: left;
-  box-shadow: 0 4px 18px rgba(20, 40, 80, 0.06);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
   transition: .25s ease;
 }
 
 .expertise-card:hover {
   transform: translateY(-6px);
-  border-color: #c6dcff;
-  box-shadow: 0 16px 34px rgba(20, 40, 80, 0.12);
+  border-color: rgba(111, 179, 255, 0.45);
+  box-shadow: 0 16px 34px rgba(47, 125, 250, 0.18);
 }
 
 .expertise-icon {
   width: 54px;
   height: 54px;
   margin-bottom: 20px;
-  filter: none;
+  filter: drop-shadow(0 0 10px rgba(47, 125, 250, 0.35));
 }
 
 .expertise-card h3 {
-  color: #0b1220;
+  color: var(--text-light);
   font-size: 1.15rem;
   margin: 0 0 10px;
 }
 
 .expertise-card p {
-  color: #5a6478;
+  color: var(--text-dim);
   font-size: 0.95rem;
   line-height: 1.55;
   margin: 0;
@@ -1415,7 +1425,7 @@ header {
 
 .expertise-footer .btn-secondary {
   border-color: var(--blue);
-  color: var(--blue);
+  color: var(--blue-light);
 }
 
 .expertise-footer .btn-secondary:hover {
