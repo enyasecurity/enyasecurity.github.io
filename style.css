@@ -2787,3 +2787,115 @@ a.contact-info-item:hover {
 .legal-card a:hover {
   color: #8b5cf6;
 }
+
+/* Grille des 3 premières cartes (Éditeur / Directrice / Hébergement) */
+.legal-grid-top {
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.legal-card-small {
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 2px 10px rgba(20, 30, 60, 0.05);
+}
+
+.legal-card-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(47, 125, 250, 0.1);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.legal-card-small h3,
+.legal-card-wide h3 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--cream-text);
+  margin: 0 0 10px;
+}
+
+.legal-card-small p {
+  color: var(--cream-dim);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Cartes pleine largeur (sections 4 à 8) */
+.legal-card-wide {
+  max-width: 1000px;
+  margin: 0 auto 16px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 16px;
+  padding: 22px 26px;
+  box-shadow: 0 2px 10px rgba(20, 30, 60, 0.05);
+  display: flex;
+  gap: 16px;
+}
+
+.legal-card-wide .legal-card-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.legal-card-wide-body p {
+  color: var(--cream-dim);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+
+.legal-card-wide-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Bas de page : liens + copyright */
+.legal-footer-links {
+  text-align: center;
+  padding: 20px 25px;
+  background: var(--cream);
+  font-size: 0.85rem;
+}
+
+.legal-footer-links a {
+  color: var(--cream-dim);
+  text-decoration: underline;
+}
+
+.legal-footer-links a:hover {
+  color: var(--blue);
+}
+
+.legal-footer-links span {
+  color: #c7cede;
+  margin: 0 10px;
+}
+
+.legal-copyright {
+  background: var(--navy-1);
+  color: var(--text-dim);
+  text-align: center;
+  padding: 14px 25px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .legal-grid-top {
+    grid-template-columns: 1fr;
+  }
+  .legal-card-wide {
+    flex-direction: column;
+  }
+}
