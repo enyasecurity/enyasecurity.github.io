@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<title>Glossaire de la cybersécurité - Enya Security</title>
+<meta name="description" content="Comprendre les principaux termes de la sécurité informatique, expliqués simplement, sans jargon inutile. Destiné aux TPE, PME et associations.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav class="nav-compact">
+    <a href="/index.html">Accueil</a>
+    <a href="/services.html">Services</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+    <a class="active" href="/glossaire.html">Glossaire</a>
+    <a href="/faq.html">FAQ</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/glossaire.html">FR</a>
+    <a href="/en/glossary.html">EN</a>
+    <a href="/it/glossario.html">IT</a>
+  </nav>
+
+  <a href="/contact.html?objet=diagnostic" class="header-cta">
+    Demander un audit
+  </a>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
+
+<section class="hero-home">
+
+  <div class="hero-grid">
+
+    <div class="hero-content">
+
+      <div class="hero-kicker-text">RESSOURCE</div>
+
+      <h1 class="hero-title">
+        Glossaire<br>
+        <span class="gradient-text">de la cybersécurité</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Comprendre les principaux termes de la sécurité informatique, expliqués
+        simplement, sans jargon inutile.
+      </p>
+
+      <div class="svc-chip-row">
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <span>Définitions claires<br>et accessibles</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+          </span>
+          <span>Exemples concrets<br>pour mieux comprendre</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          </span>
+          <span>Destiné aux TPE, PME<br>et associations</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-visual hero-visual-compact">
+      <div class="hero-visual-glow"></div>
+      <div class="hero-visual-rings"></div>
+      <img src="/assets/logo.png" class="hero-visual-logo" alt="Enya Security">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- RECHERCHE + ALPHABET + TERMES -->
+<!-- ====================================================== -->
+
+<section class="glossary-section">
+
+  <div class="glossary-search-wrap">
+    <div class="glossary-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" id="glossary-search-input" placeholder="Rechercher un terme...">
+    </div>
+  </div>
+
+  <div class="glossary-alpha">
+    <a href="#letter-A">A</a>
+    <a href="#letter-B">B</a>
+    <a href="#letter-C">C</a>
+    <a href="#letter-D">D</a>
+    <span>E</span>
+    <a href="#letter-F">F</a>
+    <span>G</span>
+    <a href="#letter-H">H</a>
+    <span>I</span>
+    <span>J</span>
+    <span>K</span>
+    <span>L</span>
+    <a href="#letter-M">M</a>
+    <span>N</span>
+    <span>O</span>
+    <span>P</span>
+    <span>Q</span>
+    <a href="#letter-R">R</a>
+    <a href="#letter-S">S</a>
+    <a href="#letter-T">T</a>
+    <span>U</span>
+    <a href="#letter-V">V</a>
+    <span>W</span>
+    <span>X</span>
+    <span>Y</span>
+    <a href="#letter-Z">Z</a>
+  </div>
+
+  <div class="glossary-layout">
+
+    <div class="glossary-main">
+
+      <!-- A -->
+      <h2 class="glossary-letter-heading" id="letter-A">A</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="authentification identité connexion">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <h3>Authentification</h3>
+          </div>
+          <p>
+            Processus permettant de vérifier l'identité d'un utilisateur avant
+            de lui donner accès à une ressource (application, base de données,
+            messagerie...).
+          </p>
+          <p><strong>Exemple :</strong> vous saisissez votre mot de passe pour vous connecter à votre messagerie professionnelle.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/audit-bases-de-donnees.html">Audit bases de données</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- B -->
+      <h2 class="glossary-letter-heading" id="letter-B">B</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="base de données stockage sgbd">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </span>
+            <h3>Base de données</h3>
+          </div>
+          <p>
+            Système permettant de stocker et d'organiser des informations de
+            manière structurée, pour pouvoir les retrouver et les exploiter
+            facilement.
+          </p>
+          <p><strong>Exemple :</strong> clients, commandes, factures, stocks — la plupart des logiciels métiers reposent sur une base de données.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/audit-bases-de-donnees.html">Audit bases de données</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- C -->
+      <h2 class="glossary-letter-heading" id="letter-C">C</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="chiffrement encryption clé">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+            </span>
+            <h3>Chiffrement</h3>
+          </div>
+          <p>
+            Transformation des données à l'aide d'une clé, afin qu'elles ne
+            puissent être lues que par une personne autorisée qui possède
+            cette clé.
+          </p>
+          <p><strong>Exemple :</strong> des données volées mais chiffrées restent illisibles pour l'attaquant qui ne possède pas la clé de déchiffrement.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/audit-bases-de-donnees.html">Audit bases de données</a>
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+          </div>
+        </div>
+
+        <div class="glossary-card" data-term="cve vulnérabilité identifiant mitre">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+            </span>
+            <h3>CVE</h3>
+          </div>
+          <p>
+            Identifiant public et standardisé attribué à une vulnérabilité de
+            sécurité connue dans un logiciel, un matériel ou un système. Le
+            registre est maintenu par l'organisme MITRE.
+          </p>
+          <p><strong>Exemple :</strong> CVE-2025-12345 (format CVE-année-numéro), une référence unique que tout professionnel peut consulter pour comprendre une faille précise.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- D -->
+      <h2 class="glossary-letter-heading" id="letter-D">D</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="dark web tor onion">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+            </span>
+            <h3>Dark Web</h3>
+          </div>
+          <p>
+            Partie d'Internet non indexée par les moteurs de recherche
+            classiques et accessible via des outils spécifiques (comme Tor).
+            Utilisée aussi bien pour des usages légitimes que malveillants.
+          </p>
+          <p><strong>Exemple :</strong> des identifiants volés lors d'une fuite de données peuvent être mis en vente sur des forums du dark web.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- F -->
+      <h2 class="glossary-letter-heading" id="letter-F">F</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="firewall pare-feu réseau">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v16"/></svg>
+            </span>
+            <h3>Firewall (pare-feu)</h3>
+          </div>
+          <p>
+            Équipement ou logiciel qui filtre le trafic réseau : il autorise
+            les connexions légitimes et bloque celles qui ne le sont pas.
+          </p>
+          <p><strong>Exemple :</strong> un pare-feu mal configuré peut laisser un port de base de données accessible depuis Internet, sans que personne ne s'en aperçoive.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+            <a href="/preparation-ransomware.html">Préparation ransomware</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- H -->
+      <h2 class="glossary-letter-heading" id="letter-H">H</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="hameçonnage phishing email piège">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </span>
+            <h3>Hameçonnage (Phishing)</h3>
+          </div>
+          <p>
+            Technique consistant à tromper une personne, le plus souvent par
+            email, afin qu'elle divulgue des informations confidentielles ou
+            clique sur un lien piégé.
+          </p>
+          <p><strong>Exemple :</strong> un faux email "Votre session Office 365 a expiré" incitant à cliquer sur un lien frauduleux.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/simulation-phishing.html">Simulation phishing</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- M -->
+      <h2 class="glossary-letter-heading" id="letter-M">M</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="malware logiciel malveillant virus">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+            </span>
+            <h3>Malware</h3>
+          </div>
+          <p>
+            Terme générique désignant tout logiciel malveillant conçu pour
+            endommager un système, voler des informations ou en prendre le
+            contrôle (virus, ransomware, spyware...).
+          </p>
+          <p><strong>Exemple :</strong> une pièce jointe piégée qui installe silencieusement un logiciel espion sur un poste de travail.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/preparation-ransomware.html">Préparation ransomware</a>
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+          </div>
+        </div>
+
+        <div class="glossary-card" data-term="mfa authentification multifacteur double">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/><circle cx="12" cy="15.5" r="1.5"/></svg>
+            </span>
+            <h3>MFA (authentification multifacteur)</h3>
+          </div>
+          <p>
+            Méthode de connexion qui ajoute une ou plusieurs vérifications
+            après le mot de passe, afin de confirmer l'identité de
+            l'utilisateur. Même si un mot de passe est volé, l'accès reste
+            bloqué sans le second facteur.
+          </p>
+          <p><strong>Exemple :</strong> vous saisissez votre mot de passe, puis votre téléphone vous demande de confirmer la connexion.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/preparation-ransomware.html">Préparation ransomware</a>
+            <a href="/audit-bases-de-donnees.html">Audit bases de données</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- R -->
+      <h2 class="glossary-letter-heading" id="letter-R">R</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="ransomware rançongiciel chiffrement rançon">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg>
+            </span>
+            <h3>Ransomware</h3>
+          </div>
+          <p>
+            Logiciel malveillant qui chiffre les fichiers d'un ordinateur ou
+            d'un serveur afin d'empêcher leur utilisation. Les attaquants
+            demandent ensuite une rançon en échange d'une clé de déchiffrement.
+            L'ANSSI déconseille fortement de payer : cela ne garantit pas la
+            récupération des données.
+          </p>
+          <p><strong>Exemple :</strong> un collaborateur ouvre une pièce jointe piégée ; en quelques minutes, les fichiers du serveur deviennent inaccessibles et une demande de paiement apparaît.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/preparation-ransomware.html">Préparation ransomware</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- S -->
+      <h2 class="glossary-letter-heading" id="letter-S">S</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="sauvegarde backup restauration">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+            </span>
+            <h3>Sauvegarde</h3>
+          </div>
+          <p>
+            Copie des données, réalisée régulièrement et idéalement isolée du
+            réseau principal, permettant leur restauration en cas de panne,
+            d'erreur ou d'attaque.
+          </p>
+          <p><strong>Exemple :</strong> une entreprise touchée par un ransomware restaure ses fichiers depuis une sauvegarde hors ligne, sans payer de rançon.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/preparation-ransomware.html">Préparation ransomware</a>
+            <a href="/audit-bases-de-donnees.html">Audit bases de données</a>
+          </div>
+        </div>
+
+        <div class="glossary-card" data-term="injection sql base de données requête">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </span>
+            <h3>SQL Injection</h3>
+          </div>
+          <p>
+            Technique permettant d'exécuter des requêtes SQL malveillantes
+            lorsqu'une application web ne vérifie pas correctement les
+            informations saisies par l'utilisateur.
+          </p>
+          <p><strong>Exemple :</strong> un attaquant modifie un formulaire ou une URL pour accéder à des données qu'il ne devrait pas pouvoir consulter.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/audit-bases-de-donnees.html">Audit bases de données</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- T -->
+      <h2 class="glossary-letter-heading" id="letter-T">T</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="tls ssl chiffrement communication https">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+            </span>
+            <h3>TLS</h3>
+          </div>
+          <p>
+            Protocole qui chiffre les communications entre un navigateur et un
+            serveur, garantissant la confidentialité des échanges. C'est ce
+            qui affiche le cadenas dans la barre d'adresse (HTTPS).
+          </p>
+          <p><strong>Exemple :</strong> sans certificat TLS valide, les données saisies sur un site (formulaire, paiement) peuvent être interceptées.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- V -->
+      <h2 class="glossary-letter-heading" id="letter-V">V</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="vpn réseau privé virtuel distant">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+            </span>
+            <h3>VPN</h3>
+          </div>
+          <p>
+            Connexion chiffrée permettant d'accéder à un réseau distant de
+            manière sécurisée, comme si l'utilisateur était physiquement
+            présent sur ce réseau.
+          </p>
+          <p><strong>Exemple :</strong> un salarié en télétravail utilise un VPN pour accéder en sécurité aux serveurs de son entreprise.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/preparation-ransomware.html">Préparation ransomware</a>
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Z -->
+      <h2 class="glossary-letter-heading" id="letter-Z">Z</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="zero-day vulnérabilité inconnue correctif">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+            </span>
+            <h3>Zero-Day</h3>
+          </div>
+          <p>
+            Vulnérabilité encore inconnue de l'éditeur du logiciel, et pour
+            laquelle aucun correctif n'existe au moment où elle est découverte
+            ou exploitée.
+          </p>
+          <p><strong>Exemple :</strong> une faille zero-day exploitée avant même que l'éditeur n'ait eu le temps de publier une mise à jour de sécurité.</p>
+          <div class="glossary-services-label">SERVICES CONCERNÉS</div>
+          <div class="glossary-services">
+            <a href="/analyse-exposition.html">Analyse d'exposition</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="glossary-empty" id="glossary-empty-msg">Aucun terme ne correspond à votre recherche.</p>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="glossary-sidebar">
+
+      <div class="glossary-side-card highlight">
+        <span class="glossary-side-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        </span>
+        <h3>Pourquoi un glossaire ?</h3>
+        <p>
+          La cybersécurité utilise beaucoup de termes techniques. Ce glossaire
+          vous aide à mieux comprendre les enjeux et nos services.
+        </p>
+        <ul class="glossary-side-list">
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+            Comprendre avant d'agir
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+            Mieux dialoguer avec les experts
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+            Prendre de meilleures décisions
+          </li>
+        </ul>
+      </div>
+
+      <div class="glossary-side-card">
+        <span class="glossary-side-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+        </span>
+        <h3>FAQ</h3>
+        <div class="glossary-side-faq">
+          <details>
+            <summary>Comment sont rédigées ces définitions ?</summary>
+            <p>
+              Chaque terme est vérifié à partir de sources de référence
+              (ANSSI, CNIL, MITRE, documentation officielle) puis reformulé
+              avec nos propres mots, dans un langage accessible.
+            </p>
+          </details>
+          <details>
+            <summary>Les définitions sont-elles exhaustives ?</summary>
+            <p>
+              Non, elles restent volontairement synthétiques. L'objectif est
+              de donner une compréhension claire et rapide, pas un cours
+              technique complet.
+            </p>
+          </details>
+          <details>
+            <summary>Je ne trouve pas un terme ?</summary>
+            <p>
+              Contactez-nous, nous l'ajouterons avec plaisir à ce glossaire.
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <div class="glossary-side-card">
+        <div class="glossary-side-contact">
+          <span class="glossary-side-icon" style="margin-bottom:0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </span>
+          <div>
+            <h3>Une question ?</h3>
+            <p>Contactez-nous, nous répondrons avec plaisir.</p>
+            <a href="/contact.html" class="glossary-card-link" style="color:var(--blue); font-weight:700; font-size:0.85rem; text-decoration:none;">
+              Nous contacter →
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
+
+<script>
+(function () {
+  const input = document.getElementById('glossary-search-input');
+  const cards = document.querySelectorAll('.glossary-card');
+  const headings = document.querySelectorAll('.glossary-letter-heading');
+  const emptyMsg = document.getElementById('glossary-empty-msg');
+
+  input.addEventListener('input', function () {
+    const q = input.value.trim().toLowerCase();
+    let anyVisible = false;
+
+    cards.forEach(function (card) {
+      const text = (card.dataset.term || '') + ' ' + card.textContent.toLowerCase();
+      const match = text.toLowerCase().includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match) anyVisible = true;
+    });
+
+    headings.forEach(function (h) {
+      let sib = h.nextElementSibling;
+      let hasVisible = false;
+      if (sib && sib.classList.contains('glossary-grid')) {
+        hasVisible = Array.from(sib.querySelectorAll('.glossary-card')).some(c => c.style.display !== 'none');
+      }
+      h.style.display = (q === '' || hasVisible) ? '' : 'none';
+      if (sib) sib.style.display = (q === '' || hasVisible) ? '' : 'none';
+    });
+
+    emptyMsg.style.display = (q !== '' && !anyVisible) ? 'block' : 'none';
+  });
+})();
+</script>
+
+</body>
+</html>
