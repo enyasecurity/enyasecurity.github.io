@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Contact - Enya Security</title>
+<title>À propos - Enya Security</title>
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- TarteAuCitron (gestion des cookies) -->
@@ -44,18 +44,21 @@ tarteaucitron.user.gtagMore = function () {};
     </div>
   </div>
 
-  <nav>
+  <nav class="nav-compact">
     <a href="/index.html">Accueil</a>
     <a href="/services.html">Services</a>
     <a href="/packs.html">Tarifs</a>
+    <a class="active" href="/apropos.html">À propos</a>
     <a href="/nis2.html">NIS2</a>
-    <a class="active" href="/contact.html">Contact</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/glossaire.html">Glossaire cybersécurité</a>
+    <a href="/faq.html">FAQ</a>
 
     <span class="nav-divider"></span>
 
-    <a class="lang-active" href="/contact.html">FR</a>
-    <a href="/en/contact.html">EN</a>
-    <a href="/it/contact.html">IT</a>
+    <a class="lang-active" href="/apropos.html">FR</a>
+    <a href="/en/about.html">EN</a>
+    <a href="/it/about.html">IT</a>
   </nav>
 
   <a href="/contact.html?objet=diagnostic" class="header-cta">
@@ -72,23 +75,21 @@ tarteaucitron.user.gtagMore = function () {};
 
   <div class="hero-grid">
 
-    <!-- COLONNE TEXTE -->
     <div class="hero-content">
 
-      <div class="hero-kicker-text">CONTACT</div>
+      <div class="hero-kicker-text">À PROPOS</div>
 
       <h1 class="hero-title">
-        Discutons de votre <span class="gradient-text">sécurité.</span>
+        À propos d'Enya <span class="gradient-text">Security</span>
       </h1>
 
       <p class="hero-subtitle">
-        Chaque organisation est unique. Décrivez-nous votre situation
-        et nous vous orienterons vers la solution la plus adaptée à vos besoins.
+        Enya Security accompagne les TPE, PME et associations dans l'amélioration
+        de leur cybersécurité grâce à des audits clairs, pédagogiques et non intrusifs.
       </p>
 
     </div>
 
-    <!-- COLONNE VISUELLE -->
     <div class="hero-visual hero-visual-compact">
       <div class="hero-visual-glow"></div>
       <div class="hero-visual-rings"></div>
@@ -100,99 +101,318 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- FORMULAIRE + INFOS -->
+<!-- MON PARCOURS + POINTS CLÉS -->
 <!-- ====================================================== -->
 
-<section class="contact-section">
+<section class="about-intro-section">
 
-  <div class="contact-grid">
+  <div class="about-intro-grid">
 
-    <!-- FORMULAIRE -->
-    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqevgvdb" method="POST">
+    <!-- Mon parcours -->
+    <div class="about-card-light">
 
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+      <div class="about-card-heading">
+        <h2>À propos de la fondatrice</h2>
       </div>
 
-      <div class="form-group">
-        <label for="objet">Sujet</label>
-        <select id="objet" name="objet">
-          <option value="diagnostic">Première évaluation gratuite</option>
-          <option value="audit-bdd">Audit de sécurité des bases de données</option>
-          <option value="preparation-ransomware">Préparation à une attaque ransomware</option>
-          <option value="analyse-exposition">Analyse de l'exposition en ligne</option>
-          <option value="simulation-phishing">Simulation phishing &amp; sensibilisation</option>
-          <option value="audit-android">Audit de sécurité Android</option>
-          <option value="autre">Autre demande</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required placeholder="Décrivez brièvement votre besoin, la taille de votre structure, vos délais..."></textarea>
-      </div>
-
-      <button type="submit" class="btn-primary">
-        Envoyer le message
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
-
-      <p class="contact-form-note">
-        En envoyant ce formulaire, vous acceptez d'être recontacté(e) par Enya Security.
-        Vos données ne sont jamais partagées avec des tiers.
+      <p>
+        Je m'appelle <b>Marina Bruno</b>, ingénieure en systèmes d'information
+        et fondatrice d'Enya Security.
       </p>
 
-    </form>
-
-    <!-- INFOS -->
-    <div class="contact-info-card">
-
-      <h3>Nous contacter directement</h3>
-
-      <a href="mailto:marinabruno@enyasecurity.com" class="contact-info-item">
-        <span class="contact-info-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
-        </span>
-        <span>marinabruno@enyasecurity.com</span>
-      </a>
-
-      <div class="contact-info-item">
-        <span class="contact-info-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        </span>
-        <span>Réponse sous 24-48h ouvrées</span>
-      </div>
-
-      <div class="contact-info-item">
-        <span class="contact-info-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-        </span>
-        <span>100% confidentiel, sans engagement</span>
-      </div>
-
-      <div class="contact-info-item">
-        <span class="contact-info-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        </span>
-        <span>France &amp; Italie — accompagnement à distance</span>
-      </div>
-
-      <div class="contact-info-divider"></div>
-
-      <p class="contact-info-footnote">
-        Vous préférez d'abord vous informer ? Consultez nos
-        <a href="/services.html">services</a> ou
-        <a href="/packs.html">tarifs</a>.
+      <p>
+        Depuis plusieurs années, j'accompagne des organisations dans l'analyse
+        de systèmes d'information, la résolution d'incidents, la documentation
+        technique et l'amélioration de processus métiers. Cette expérience
+        m'a permis de développer une approche rigoureuse, méthodique et
+        orientée vers la recherche de solutions concrètes.
       </p>
+
+      <p>
+        Passionnée par la cybersécurité, j'ai approfondi mes compétences
+        à travers des formations spécialisées, des laboratoires pratiques
+        et des certifications reconnues, notamment <b>Ethical Hacking Essentials
+        (EC-Council)</b> et <b>Pre-Security (TryHackMe)</b>.
+      </p>
+
+      <p>
+        J'ai créé Enya Security avec un objectif simple : rendre les audits
+        de cybersécurité accessibles aux TPE, PME et associations grâce à
+        une approche claire, pédagogique et non intrusive.
+      </p>
+
+      <p>
+        Chaque audit est réalisé avec indépendance, confidentialité et
+        pragmatisme. Mon objectif n'est pas seulement d'identifier des
+        vulnérabilités, mais surtout d'expliquer les risques et de proposer
+        des recommandations concrètes, adaptées à la réalité de chaque
+        structure.
+      </p>
+
+      <div class="about-badges">
+        <div class="about-badge">
+          <span class="about-badge-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10l-10-5L2 10l10 5 10-5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+          </span>
+          <span>
+            <strong>Ingénieure en systèmes d'information</strong>
+            <small>Diplôme Bac+3</small>
+          </span>
+        </div>
+      </div>
 
     </div>
+
+    <!-- Points clés -->
+    <div class="about-card-dark">
+
+      <div class="about-card-heading">
+        <h2>En quelques points clés</h2>
+      </div>
+
+      <div class="about-points">
+
+        <div class="about-point">
+          <span class="about-point-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </span>
+          <div>
+            <strong>Formation continue en cybersécurité</strong>
+            <p>Formations pratiques et certifications reconnues.</p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="about-point-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg>
+          </span>
+          <div>
+            <strong>Expérience terrain</strong>
+            <p>Plusieurs années d'expérience dans l'analyse de systèmes et le support métier.</p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="about-point-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.5"/></svg>
+          </span>
+          <div>
+            <strong>Approche pragmatique</strong>
+            <p>Des audits réalistes, compréhensibles et orientés solutions.</p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="about-point-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          </span>
+          <div>
+            <strong>Confidentialité &amp; confiance</strong>
+            <p>Indépendance, discrétion et respect de vos données à chaque étape.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- MON APPROCHE -->
+<!-- ====================================================== -->
+
+<section class="approach-section">
+
+  <div class="approach-inner">
+
+    <div class="about-card-heading">
+      <h2>Mon approche</h2>
+    </div>
+
+    <div class="approach-row">
+
+      <div class="approach-step">
+        <span class="approach-number">1</span>
+        <span class="approach-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10a5 5 0 0110 0v4a2 2 0 01-2 2H9"/><path d="M13 10a5 5 0 0110 0"/><path d="M21 14v2a2 2 0 01-2 2"/></svg>
+        </span>
+        <h3>Écouter</h3>
+        <p>Je prends le temps de comprendre votre activité, vos enjeux et vos contraintes.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">2</span>
+        <span class="approach-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </span>
+        <h3>Analyser</h3>
+        <p>J'évalue vos systèmes et votre exposition avec des méthodes rigoureuses et non intrusives.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">3</span>
+        <span class="approach-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+        </span>
+        <h3>Expliquer</h3>
+        <p>Je vous remets un rapport clair, pédagogique et priorisé, sans jargon inutile.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">4</span>
+        <span class="approach-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <h3>Accompagner</h3>
+        <p>Je vous aide à mettre en place des actions concrètes et adaptées à vos moyens.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- MES VALEURS -->
+<!-- ====================================================== -->
+
+<section class="values-section">
+
+  <div class="values-inner">
+
+    <h2>Mes valeurs</h2>
+
+    <div class="values-grid">
+
+      <div class="value-item">
+        <span class="value-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+        </span>
+        <div>
+          <strong>Confidentialité</strong>
+          <p>Vos informations sont traitées avec la plus grande discrétion. Votre confiance est essentielle.</p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <span class="value-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+        </span>
+        <div>
+          <strong>Pragmatisme</strong>
+          <p>Je me concentre sur les risques réels et les actions qui apportent le plus de valeur.</p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <span class="value-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <div>
+          <strong>Pédagogie</strong>
+          <p>Je vulgarise la sécurité informatique pour vous permettre de prendre les bonnes décisions.</p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <span class="value-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </span>
+        <div>
+          <strong>Indépendance</strong>
+          <p>Des recommandations objectives, sans conflit d'intérêt, pour votre sécurité avant tout.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- POURQUOI FAIRE CONFIANCE -->
+<!-- ====================================================== -->
+
+<section class="trust-band">
+
+  <div class="trust-band-inner">
+
+    <div class="trust-band-text">
+
+      <h2>Pourquoi faire confiance à Enya Security ?</h2>
+
+      <div class="trust-band-grid">
+
+        <div class="trust-band-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <div>
+            <strong>Audit non intrusif</strong>
+            <p>Aucun impact sur votre activité. Vos systèmes restent sous votre contrôle.</p>
+          </div>
+        </div>
+
+        <div class="trust-band-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <div>
+            <strong>Méthodologie claire</strong>
+            <p>Des processus structurés pour des résultats fiables et exploitables.</p>
+          </div>
+        </div>
+
+        <div class="trust-band-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <div>
+            <strong>Adapté à votre réalité</strong>
+            <p>Chaque audit est adapté à votre contexte, votre secteur et vos ressources.</p>
+          </div>
+        </div>
+
+        <div class="trust-band-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <div>
+            <strong>Suivi et conseils</strong>
+            <p>Je reste disponible pour vous accompagner dans la mise en œuvre des recommandations.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="trust-band-icon">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><circle cx="12" cy="11" r="2.4"/><path d="M12 13.4V15"/></svg>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- CTA FINALE -->
+<!-- ====================================================== -->
+
+<section class="about-cta-bar">
+
+  <div class="about-cta-bar-inner">
+
+    <span class="about-cta-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+    </span>
+
+    <div class="about-cta-text">
+      <strong>Discutons de votre projet</strong>
+      <p>Vous avez des questions ou un projet d'audit ? Je suis à votre écoute pour vous accompagner.</p>
+    </div>
+
+    <a href="/contact.html?objet=diagnostic" class="btn-primary">
+      Nous contacter
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
 
   </div>
 
@@ -213,21 +433,6 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
-
-<script>
-// Pré-sélectionne le sujet si le lien contient ?objet=...
-(function () {
-  const params = new URLSearchParams(window.location.search);
-  const objet = params.get('objet');
-  if (objet) {
-    const select = document.getElementById('objet');
-    if (select) {
-      const match = Array.from(select.options).find(o => o.value === objet);
-      if (match) select.value = objet;
-    }
-  }
-})();
-</script>
 
 </body>
 </html>
