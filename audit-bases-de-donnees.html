@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<title>Audit de sécurité des bases de données - Enya Security</title>
+<meta name="description" content="Identifiez les vulnérabilités de vos bases MySQL, PostgreSQL, MariaDB ou MongoDB grâce à un audit technique non-intrusif, réalisé à distance.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav class="nav-compact">
+    <a href="/index.html">Accueil</a>
+    <a class="active" href="/services.html">Services</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/glossaire.html">Glossaire</a>
+    <a href="/faq.html">FAQ</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/audit-bases-de-donnees.html">FR</a>
+    <a href="/en/database-audit.html">EN</a>
+    <a href="/it/audit-database.html">IT</a>
+  </nav>
+
+  <a href="/contact.html?objet=audit-bdd" class="header-cta">
+    Demander un audit
+  </a>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
+
+<section class="hero-home">
+
+  <div class="hero-grid">
+
+    <div class="hero-content">
+
+      <div class="hero-kicker-text">SERVICE</div>
+
+      <h1 class="hero-title">
+        Audit de sécurité<br>
+        <span class="gradient-text">des bases de données</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Identifiez les vulnérabilités de vos bases MySQL, PostgreSQL, MariaDB
+        ou MongoDB grâce à un audit technique non-intrusif, réalisé à distance.
+      </p>
+
+      <div class="svc-chip-row">
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <span>Audit non-intrusif<br>lecture seule</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <span>Rapport clair<br>et actionnable</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          </span>
+          <span>100% à distance<br>sans interruption</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
+          </span>
+          <span>Méthodologie<br>rigoureuse</span>
+        </div>
+
+      </div>
+
+      <a href="/contact.html?objet=audit-bdd" class="btn-primary">
+        Demander un devis
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <div class="svc-hero-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Réponse sous 24-48h ouvrées
+      </div>
+
+    </div>
+
+    <div class="hero-visual hero-visual-compact">
+      <div class="hero-visual-glow"></div>
+      <div class="hero-visual-rings"></div>
+      <img src="/assets/logo.png" class="hero-visual-logo" alt="Enya Security">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- POURQUOI CE SERVICE -->
+<!-- ====================================================== -->
+
+<section class="svc-why-section">
+
+  <div class="svc-why-grid">
+
+    <div class="svc-why-text">
+      <p class="expertise-kicker" style="text-align:left; margin-bottom:10px;">POURQUOI CE SERVICE ?</p>
+      <h2 style="font-size:1.6rem; font-weight:800; letter-spacing:-0.02em; color:var(--cream-text); margin:0 0 14px; line-height:1.2;">
+        Vos bases de données sont une cible stratégique pour les cyberattaques.
+      </h2>
+      <p>
+        Elles contiennent vos données les plus sensibles : informations clients,
+        données personnelles, mots de passe, données financières.
+      </p>
+      <p>
+        Une mauvaise configuration, un accès trop ouvert ou l'absence de
+        sauvegarde peuvent avoir des conséquences graves : fuite de données,
+        interruption d'activité, pertes financières et atteinte à votre
+        réputation.
+      </p>
+      <div class="svc-why-callout">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <p>Notre audit vous permet d'identifier ces failles avant qu'elles ne soient exploitées.</p>
+      </div>
+    </div>
+
+    <div class="svc-stat-grid">
+
+      <div class="svc-stat">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+        <strong>100+</strong>
+        <small>contrôles techniques ciblés et éprouvés</small>
+      </div>
+
+      <div class="svc-stat">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <strong>Score de risque</strong>
+        <small>pour prioriser vos actions</small>
+      </div>
+
+      <div class="svc-stat">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <strong>Rapport sous 5 à 10 jours</strong>
+        <small>selon le niveau choisi</small>
+      </div>
+
+      <div class="svc-stat">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+        <strong>Confidentialité</strong>
+        <small>données traitées selon le NDA signé</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- CE QUE NOUS VÉRIFIONS -->
+<!-- ====================================================== -->
+
+<section class="svc-verify-section">
+
+  <p class="expertise-kicker">CE QUE NOUS VÉRIFIONS</p>
+
+  <div class="svc-verify-grid">
+
+    <div class="svc-verify-card">
+      <span class="svc-verify-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      </span>
+      <strong>Comptes utilisateurs</strong>
+      <small>Accès, privilèges et authentification</small>
+    </div>
+
+    <div class="svc-verify-card">
+      <span class="svc-verify-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="15" r="4"/><path d="M10.5 12.5L20 3M20 3v5M20 3h-5"/></svg>
+      </span>
+      <strong>Droits d'accès</strong>
+      <small>Principe du moindre privilège et rôles</small>
+    </div>
+
+    <div class="svc-verify-card">
+      <span class="svc-verify-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+      </span>
+      <strong>Sauvegardes</strong>
+      <small>Existence, stockage et test de restauration</small>
+    </div>
+
+    <div class="svc-verify-card">
+      <span class="svc-verify-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+      </span>
+      <strong>Chiffrement</strong>
+      <small>Données en transit et au repos</small>
+    </div>
+
+    <div class="svc-verify-card">
+      <span class="svc-verify-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+      </span>
+      <strong>Journalisation</strong>
+      <small>Logs d'accès et détection d'anomalies</small>
+    </div>
+
+    <div class="svc-verify-card">
+      <span class="svc-verify-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </span>
+      <strong>Versions</strong>
+      <small>Exposition réseau, ports et mises à jour</small>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- NOTRE APPROCHE -->
+<!-- ====================================================== -->
+
+<section class="approach-section">
+
+  <p class="expertise-kicker">NOTRE APPROCHE EN 4 ÉTAPES</p>
+
+  <div class="approach-inner" style="text-align:center;">
+
+    <div class="approach-row" style="margin-top:0;">
+
+      <div class="approach-step">
+        <span class="approach-number">1</span>
+        <span class="approach-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/></svg>
+        </span>
+        <h3>Qualification</h3>
+        <p>Nous échangeons avec vous pour comprendre votre environnement et vos enjeux.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">2</span>
+        <span class="approach-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </span>
+        <h3>Audit technique</h3>
+        <p>Nous réalisons les contrôles sur vos bases en lecture seule, sans impacter votre activité.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">3</span>
+        <span class="approach-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+        </span>
+        <h3>Rapport</h3>
+        <p>Vous recevez un rapport clair avec le score de risque et des recommandations priorisées.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">4</span>
+        <span class="approach-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </span>
+        <h3>Restitution</h3>
+        <p>Nous vous présentons les résultats et vous aidons à définir les actions à mettre en œuvre.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- LIVRABLES + POURQUOI ENYA SECURITY -->
+<!-- ====================================================== -->
+
+<section class="svc-check-section">
+
+  <div class="svc-check-grid">
+
+    <div class="svc-check-col">
+      <h3>LIVRABLES</h3>
+      <ul class="svc-check-list">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Rapport d'audit PDF détaillé</strong></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Score de risque global</strong></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Vulnérabilités classées par priorité</strong><p>P1 (sous 48h), P2 (2 semaines), P3 (trimestre)</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Recommandations techniques et organisationnelles</strong></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Restitution orale</strong><p>30 min (Standard) · 45 min (Premium)</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Plan d'action chiffré</strong><p>Inclus en Premium</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Vérification post-correction</strong><p>Inclus en Premium</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="svc-check-col">
+      <h3>POURQUOI ENYA SECURITY ?</h3>
+      <ul class="svc-check-list">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          <div><strong>Indépendance totale</strong><p>Aucun partenariat avec un éditeur de solutions.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
+          <div><strong>Expertise ciblée</strong><p>Une méthodologie éprouvée et adaptée aux TPE/PME.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <div><strong>Clarté &amp; pédagogie</strong><p>Un rapport compréhensible par un dirigeant et son équipe.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <div><strong>Flexibilité</strong><p>Audits 100% à distance, sans interruption de votre activité.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div><strong>Transparence</strong><p>Tarifs forfaitaires et sans surprise.</p></div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FAQ + CTA -->
+<!-- ====================================================== -->
+
+<section class="svc-faq-section">
+
+  <div class="svc-faq-grid">
+
+    <div class="svc-faq-col">
+
+      <h3>QUESTIONS FRÉQUENTES</h3>
+
+      <details class="svc-faq-item">
+        <summary>Combien de temps dure un audit ?</summary>
+        <p>
+          Le temps de travail effectif varie selon le niveau : environ 9h pour
+          l'Express, 13h pour le Standard, 14 à 16h pour le Premium. Le délai
+          de livraison du rapport est respectivement de 5, 7 et 10 jours ouvrés.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Faut-il arrêter la production pendant l'audit ?</summary>
+        <p>
+          Non. L'audit est entièrement non-intrusif : il s'effectue en lecture
+          seule (requêtes SELECT, SHOW, DESCRIBE...), sans aucune modification
+          de vos données ni interruption de service.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Avez-vous besoin d'un accès administrateur ?</summary>
+        <p>
+          Non. Un accès en lecture seule, limité au périmètre défini dans les
+          Règles d'Engagement (RoE) signées avant toute intervention, est
+          suffisant pour réaliser l'audit.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Travaillez-vous uniquement à distance ?</summary>
+        <p>
+          Oui, toutes les missions sont réalisables à distance, aucun
+          déplacement n'est nécessaire.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Mes données sont-elles confidentielles ?</summary>
+        <p>
+          Oui. Un accord de confidentialité (NDA) est signé avant tout accès
+          technique. Vos identifiants d'accès sont détruits immédiatement
+          après la livraison du rapport, et les autres données collectées
+          (outputs techniques, notes) sont détruites 30 jours après la
+          livraison.
+        </p>
+      </details>
+
+    </div>
+
+    <div class="svc-cta-dark">
+      <span class="svc-cta-dark-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      </span>
+      <h3>Vous souhaitez connaître le niveau de sécurité de votre base de données ?</h3>
+      <p>Discutons de vos besoins et obtenez un devis personnalisé en moins de 48h.</p>
+      <a href="/contact.html?objet=audit-bdd" class="btn-primary">
+        Demander un devis
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="svc-cta-dark-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Réponse sous 24-48h ouvrées
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
+
+</body>
+</html>
