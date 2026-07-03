@@ -559,6 +559,10 @@ p {
   animation: none;
 }
 
+.service-icon-android {
+  padding: 4px;
+}
+
 .service-card:nth-child(2n) .service-icon {
   border-color: rgba(139, 92, 246, 0.3);
 }
