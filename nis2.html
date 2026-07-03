@@ -2,162 +2,354 @@
 <html lang="fr">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Éligibilité NIS2 – Enya Security</title>
-    <meta name="description" content="Vérifiez si votre organisation est concernée par la directive européenne NIS2. Consultation gratuite pour comprendre votre éligibilité et les premières étapes à envisager.">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="NIS2_style.css">
-
-    <!-- TarteAuCitron (gestion des cookies) -->
-    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
-    <script>
-    tarteaucitron.init({
-        "privacyUrl": "",
-        "hashtag": "#tarteaucitron",
-        "cookieName": "tarteaucitron",
-        "orientation": "bottom",
-        "showAlertSmall": false,
-        "cookieslist": true,
-        "showIcon": true,
-        "iconPosition": "BottomRight",
-        "DenyAllCta": true,
-        "AcceptAllCta": true,
-        "highPrivacy": true,
-        "handleBrowserDNTRequest": false
-    });
-    </script>
-
-    <!-- Google Analytics via TarteAuCitron -->
-    <script>
-    tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-    tarteaucitron.user.gtagMore = function () {};
-    (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-    </script>
+<meta charset="UTF-8">
+<title>Éligibilité NIS2 - Enya Security</title>
+<meta name="description" content="Vérifiez si votre organisation est concernée par la directive européenne NIS2. Consultation gratuite pour comprendre votre éligibilité et les premières étapes à envisager.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
 
 </head>
 
 <body>
 
 <header>
-    <div class="header-left">
-        <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
-        <div class="site-title">
-            <span class="title-enya">Enya</span>
-            <span class="title-security">Security</span>
-        </div>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
     </div>
+  </div>
 
-    <nav>
-        <a href="/index.html">Accueil</a>
-        <a href="/services.html">Services</a>
-        <a href="/packs.html">Packs</a>
-        <a href="/contact.html">Contact</a>
+  <nav class="nav-compact">
+    <a href="/index.html">Accueil</a>
+    <a href="/services.html">Services</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/apropos.html">À propos</a>
+    <a class="active" href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/glossaire.html">Glossaire</a>
+    <a href="/faq.html">FAQ</a>
 
-        <a href="/index.html">FR</a>
-        <a href="/en/home.html">EN</a>
-        <a href="/it/home.html">IT</a>
-    </nav>
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/nis2.html">FR</a>
+    <a href="/en/nis2.html">EN</a>
+    <a href="/it/nis2.html">IT</a>
+  </nav>
+
+  <a href="/contact.html?objet=nis2" class="header-cta">
+    Demander un audit
+  </a>
+
 </header>
 
-<!-- =============================== -->
-<!--            CONTENU NIS2          -->
-<!-- =============================== -->
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
 
-<main>
+<section class="hero-home">
 
-<section class="nis2-hero">
-  <h1>Vérifier votre éligibilité NIS2</h1>
+  <div class="hero-grid">
 
-  <p class="nis2-intro">
-    La directive européenne <strong>NIS2</strong> impose des obligations de cybersécurité
-    à certaines organisations.<br>
-    Beaucoup d’entreprises ne savent pas si elles sont concernées.
-  </p>
+    <div class="hero-content">
 
-  <a href="/contact.html?subject=NIS2" class="cta-button nis2">
-    Demander une consultation gratuite
-  </a>
+      <div class="hero-kicker-text">NIS2</div>
 
-  <p class="nis2-note">
-    Consultation gratuite – 20 minutes – sans engagement
-  </p>
+      <h1 class="hero-title">
+        Êtes-vous prêt pour la <span class="gradient-text">directive NIS2</span> ?
+      </h1>
+
+      <p class="hero-subtitle">
+        La directive européenne NIS2 renforce les exigences de cybersécurité pour
+        les entreprises et organisations essentielles et importantes.
+      </p>
+
+      <div class="nis2-chip-row">
+
+        <div class="nis2-chip">
+          <span class="nis2-chip-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <span>Obligations légales<br>et réglementaires</span>
+        </div>
+
+        <div class="nis2-chip">
+          <span class="nis2-chip-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <span>Gestion des risques<br>et incident response</span>
+        </div>
+
+        <div class="nis2-chip">
+          <span class="nis2-chip-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/></svg>
+          </span>
+          <span>Sensibilisation<br>et gouvernance</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-visual hero-visual-compact">
+      <div class="hero-visual-glow"></div>
+      <div class="hero-visual-rings"></div>
+      <img src="/assets/logo.png" class="hero-visual-logo" alt="Enya Security">
+    </div>
+
+  </div>
+
 </section>
 
-<section class="nis2-eligibility">
-  <h2>Êtes-vous concerné par NIS2 ?</h2>
+<!-- ====================================================== -->
+<!-- 3 CARTES -->
+<!-- ====================================================== -->
 
-  <p>Vous pouvez être concerné si votre organisation :</p>
+<section class="pricing-section">
 
-  <ul>
-    <li>compte <strong>50 salariés ou plus</strong> ou réalise plus de <strong>10 M€ de chiffre d’affaires</strong></li>
-    <li>opère dans un <strong>secteur critique</strong> (santé, transport, énergie, industrie, numérique…)</li>
-    <li>fournit un <strong>service essentiel</strong> ou critique pour d’autres organisations</li>
-  </ul>
+  <div class="nis2-grid">
 
-  <p>
-    Même sans certitude, il est recommandé de <strong>documenter votre situation</strong>.
-  </p>
+    <!-- Vue d'ensemble -->
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+        </span>
+        <h3>Vue d'ensemble</h3>
+      </div>
+      <p>
+        NIS2 vise à atteindre un niveau élevé commun de cybersécurité dans
+        l'ensemble de l'Union européenne. Environ 15 000 organisations
+        françaises seront concernées, réparties sur 18 secteurs critiques.
+      </p>
+      <ul class="nis2-card-list">
+        <li>Directive publiée le 27 décembre 2022</li>
+        <li>Transposition française attendue mi-2026</li>
+        <li>Sanctions jusqu'à 10 M€ ou 2 % du CA mondial</li>
+      </ul>
+      <a href="https://cyber.gouv.fr/reglementation/cybersecurite-systemes-dinformation/directives-nis-nis2-et-dispositif-saiv/directive-nis-2/" target="_blank" rel="noopener" class="nis2-card-link">
+        En savoir plus sur la directive NIS2
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <!-- Principales obligations -->
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3" cy="6" r="1"/><circle cx="3" cy="12" r="1"/><circle cx="3" cy="18" r="1"/></svg>
+        </span>
+        <h3>Principales obligations</h3>
+      </div>
+      <ul class="nis2-card-list">
+        <li>
+          Analyse et gestion des risques
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </li>
+        <li>
+          Mesures de sécurité proportionnées
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </li>
+        <li>
+          Notification des incidents
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </li>
+        <li>
+          Continuité et gestion de crise
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </li>
+        <li>
+          Gouvernance et responsabilité du dirigeant
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Comment je vous accompagne -->
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/><path d="M16 3.13a4 4 0 010 7.75"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg>
+        </span>
+        <h3>Comment je vous accompagne</h3>
+      </div>
+      <ul class="nis2-card-list">
+        <li>
+          Diagnostic de conformité NIS2
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        </li>
+        <li>
+          Analyse des risques et plan d'action
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        </li>
+        <li>
+          Conformité documentaire et gouvernance
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        </li>
+        <li>
+          Sensibilisation des équipes
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        </li>
+      </ul>
+      <a href="/services.html" class="nis2-card-link">
+        Découvrir nos services
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- APPROCHE + CTA -->
+  <!-- ====================================================== -->
+
+  <div class="about-intro-grid" style="margin-bottom: 20px;">
+
+    <div class="about-card-light">
+      <div class="about-card-heading">
+        <h2>Notre approche en 4 étapes</h2>
+      </div>
+
+      <div class="approach-row" style="margin-top: 10px;">
+
+        <div class="approach-step">
+          <span class="approach-number">1</span>
+          <span class="approach-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+          </span>
+          <h3>Cadrage</h3>
+          <p>Compréhension de votre activité et de vos enjeux.</p>
+        </div>
+
+        <div class="approach-step">
+          <span class="approach-number">2</span>
+          <span class="approach-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </span>
+          <h3>Diagnostic</h3>
+          <p>Évaluation de votre niveau de conformité NIS2.</p>
+        </div>
+
+        <div class="approach-step">
+          <span class="approach-number">3</span>
+          <span class="approach-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <h3>Plan d'action</h3>
+          <p>Recommandations priorisées et réalisables.</p>
+        </div>
+
+        <div class="approach-step">
+          <span class="approach-number">4</span>
+          <span class="approach-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <h3>Accompagnement</h3>
+          <p>Suivi et aide à la mise en œuvre.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="about-card-dark">
+      <div class="about-card-heading">
+        <span class="legal-card-icon" style="background: rgba(47,125,250,0.15); color: var(--blue-light); margin-bottom: 12px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </span>
+      </div>
+      <h2 style="font-size:1.15rem; font-weight:800; margin:0 0 10px;">
+        Faites le point sur votre conformité dès aujourd'hui.
+      </h2>
+      <p style="color: var(--text-dim); font-size:0.88rem; line-height:1.5; margin:0 0 18px;">
+        Un diagnostic NIS2 clair et actionnable pour préparer votre organisation,
+        sans attendre l'adoption définitive du texte.
+      </p>
+      <a href="/contact.html?objet=nis2" class="btn-primary" style="width:100%; justify-content:center; margin-bottom: 10px;">
+        Demander un diagnostic
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p style="text-align:center; color: var(--text-dim); font-size:0.78rem; margin:0;">
+        Réponse sous 24-48h ouvrées
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Citation -->
+  <div class="nis2-quote-bar">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg>
+    <span>
+      Je suis à vos côtés pour transformer cette obligation en opportunité :
+      renforcer votre cybersécurité, protéger votre activité et inspirer
+      confiance à vos clients et partenaires.
+    </span>
+  </div>
+
+  <!-- Transparence + sources -->
+  <div class="nis2-footnotes">
+    <h3>Transparence</h3>
+    <p>
+      Je n'interviens pas en tant qu'autorité de contrôle et je ne délivre
+      aucune certification NIS2. Mon rôle est de vous accompagner dans la
+      compréhension et la préparation aux exigences de la directive.
+      La consultation initiale ne comprend aucune analyse technique ni audit.
+    </p>
+
+    <div class="nis2-sources">
+      À retenir : la France a manqué l'échéance européenne de transposition
+      du 17 octobre 2024. Le projet de loi Résilience a été adopté par le
+      Sénat en mars 2025 ; son examen en séance publique à l'Assemblée
+      nationale est attendu lors d'une session extraordinaire en juillet 2026,
+      avec une promulgation espérée à l'été 2026. En attendant, l'ANSSI a publié
+      le 17 mars 2026 un référentiel de travail (ReCyF) recommandant d'anticiper
+      dès maintenant. Ces informations évoluent rapidement ; vérifiez les
+      dernières actualités sur le site de l'ANSSI.<br><br>
+      Sources : <a href="https://cyber.gouv.fr/reglementation/cybersecurite-systemes-dinformation/directives-nis-nis2-et-dispositif-saiv/directive-nis-2/" target="_blank" rel="noopener">ANSSI — cyber.gouv.fr</a>,
+      <a href="https://cyber.gouv.fr/actualites/nis-2-lanssi-poursuit-et-renforce-sa-dynamique-daccompagnement/" target="_blank" rel="noopener">ANSSI — communiqué ReCyF, 17 mars 2026</a>.
+    </div>
+  </div>
+
 </section>
 
-<section class="nis2-consultation">
-  <h2>Consultation gratuite – Orientation NIS2</h2>
-
-  <ul>
-    <li>Analyse de votre activité et de votre rôle</li>
-    <li>Vérification des critères d’éligibilité NIS2</li>
-    <li>Première orientation claire et compréhensible</li>
-  </ul>
-
-  <p>
-    ⚠️ Cette étape ne comprend aucune analyse technique ni audit.
-  </p>
-</section>
-
-<section class="nis2-after">
-  <h2>Et après la consultation ?</h2>
-
-  <p>
-    Si votre organisation est concernée ou présente des risques,
-    je propose un <strong>diagnostic initial NIS2</strong>.
-  </p>
-
-  <ul>
-    <li>Analyse d’éligibilité NIS2 documentée</li>
-    <li>Diagnostic de maturité cybersécurité</li>
-    <li>Évaluation des écarts par rapport aux attentes NIS2</li>
-    <li>Plan d’actions pragmatique et priorisé</li>
-  </ul>
-
-  <p>
-    📄 Livrable écrit – approche proportionnée – sans audit réglementaire
-  </p>
-</section>
-
-<section class="nis2-transparency">
-  <h2>Transparence</h2>
-
-  <p>
-    Je n’interviens pas en tant qu’autorité de contrôle
-    et je ne délivre aucune certification NIS2.
-    Mon rôle est de vous accompagner dans la compréhension
-    et la préparation aux exigences de la directive.
-  </p>
-</section>
-
-<section class="nis2-cta-final">
-  <a href="/contact.html?subject=NIS2" class="cta-button nis2">
-    Vérifier mon éligibilité NIS2
-  </a>
-</section>
-
-</main>
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
 
 <footer>
-    <p><a href="/mentions_legales.html">Mentions légales</a></p>
-    <p><a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a></p>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
 </footer>
 
 </body>
