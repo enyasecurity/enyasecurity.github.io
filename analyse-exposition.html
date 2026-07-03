@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<title>Analyse de l'exposition en ligne - Enya Security</title>
+<meta name="description" content="Découvrez les informations publiques accessibles sur votre entreprise et identifiez ce qu'un attaquant peut trouver sans même vous cibler.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav class="nav-compact">
+    <a href="/index.html">Accueil</a>
+    <a class="active" href="/services.html">Services</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/glossaire.html">Glossaire</a>
+    <a href="/faq.html">FAQ</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/analyse-exposition.html">FR</a>
+    <a href="/en/exposure-analysis.html">EN</a>
+    <a href="/it/analisi-esposizione.html">IT</a>
+  </nav>
+
+  <a href="/contact.html?objet=analyse-exposition" class="header-cta">
+    Demander un audit
+  </a>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
+
+<section class="hero-home">
+
+  <div class="hero-grid">
+
+    <div class="hero-content">
+
+      <div class="hero-kicker-text">SERVICE</div>
+
+      <h1 class="hero-title">
+        Analyse de<br>
+        l'<span class="gradient-text">exposition en ligne</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Découvrez les informations publiques accessibles sur votre entreprise
+        et identifiez ce qu'un attaquant peut trouver sans même vous cibler.
+      </p>
+
+      <div class="svc-chip-row">
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <span>Analyse 100% passive<br>aucun impact</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+          </span>
+          <span>Vision attaquant<br>méthode OSINT</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <span>Rapport clair<br>et priorisé</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          </span>
+          <span>Approche méthodique<br>et actionnable</span>
+        </div>
+
+      </div>
+
+      <div class="hero-buttons-new" style="margin-bottom: 8px;">
+        <a href="/contact.html?objet=analyse-exposition" class="btn-primary">
+          Demander une analyse
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="/contact.html?objet=exemple-rapport-exposition" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          Voir un exemple de rapport
+        </a>
+      </div>
+
+      <div class="svc-hero-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Réponse sous 24-48h ouvrées
+      </div>
+
+    </div>
+
+    <div class="hero-visual" style="height: 420px;">
+
+      <div class="radial-diagram">
+
+        <div class="radial-ring"></div>
+
+        <div class="radial-center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg>
+        </div>
+
+        <div class="radial-node n1">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+          </span>
+          <span>Domaines &amp; sous-domaines</span>
+        </div>
+
+        <div class="radial-node n2">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4 4 0 01-1-7.9A5 5 0 0116 8a4.5 4.5 0 011 8.9"/></svg>
+          </span>
+          <span>Cloud &amp; stockages</span>
+        </div>
+
+        <div class="radial-node n3">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          </span>
+          <span>GitHub &amp; code</span>
+        </div>
+
+        <div class="radial-node n4">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          </span>
+          <span>Certificats TLS/SSL</span>
+        </div>
+
+        <div class="radial-node n5">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+          </span>
+          <span>Services &amp; ports ouverts</span>
+        </div>
+
+        <div class="radial-node n6">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+          </span>
+          <span>Fuites &amp; databases</span>
+        </div>
+
+        <div class="radial-node n7">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          </span>
+          <span>Emails &amp; messagerie</span>
+        </div>
+
+        <div class="radial-node n8">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/><path d="M16 3.13a4 4 0 010 7.75"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg>
+          </span>
+          <span>Réseaux sociaux</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- CE QUE JE RECHERCHE -->
+<!-- ====================================================== -->
+
+<section class="svc-verify-section" style="padding-top:30px;">
+
+  <p class="expertise-kicker">CE QUE JE RECHERCHE</p>
+
+  <div class="nis2-grid nis2-grid-4">
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </span>
+        <h3>Surface Internet</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Domaines &amp; sous-domaines</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>DNS, IP &amp; hébergements</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Technologies détectées</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Certificats &amp; expirations</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Pages &amp; services publics</li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+        </span>
+        <h3>Messagerie</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Enregistrements SPF, DKIM, DMARC</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Domaines similaires</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Risques d'usurpation</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Configurations exposées</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Fuites d'adresses email</li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4 4 0 01-1-7.9A5 5 0 0116 8a4.5 4.5 0 011 8.9"/></svg>
+        </span>
+        <h3>Données publiques</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Dépôts GitHub &amp; code source</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Buckets cloud &amp; stockages</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Fichiers oubliés &amp; sauvegardes</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Archives web &amp; documents</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Informations sensibles exposées</li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+        </span>
+        <h3>Vulnérabilités visibles</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Versions &amp; technologies exposées</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>CVE connues &amp; vulnérabilités</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Ports &amp; services ouverts</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Gestion des en-têtes HTTP</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Configurations risquées</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- NOTRE APPROCHE EN 6 ÉTAPES -->
+<!-- ====================================================== -->
+
+<section class="approach-section">
+
+  <p class="expertise-kicker">NOTRE APPROCHE EN 6 ÉTAPES</p>
+
+  <div class="approach-inner" style="text-align:center;">
+
+    <div class="approach-row approach-row-6 svc-approach-outline" style="margin-top:0;">
+
+      <div class="approach-step">
+        <span class="approach-number">1</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg>
+        </span>
+        <h3>Découverte</h3>
+        <p>Définition du périmètre et des objectifs.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">2</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="12" r="4"/><circle cx="16" cy="12" r="4"/></svg>
+        </span>
+        <h3>Collecte</h3>
+        <p>Collecte d'informations publiques via sources OSINT.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">3</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </span>
+        <h3>Analyse</h3>
+        <p>Analyse de la surface et des risques identifiés.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">4</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+        </span>
+        <h3>Score</h3>
+        <p>Score d'exposition global et priorisation.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">5</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+        </span>
+        <h3>Rapport</h3>
+        <p>Rapport clair avec constats et recommandations.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">6</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.5"/></svg>
+        </span>
+        <h3>Plan d'action</h3>
+        <p>Plan de remédiation pour réduire votre exposition.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- LIVRABLES + POURQUOI ENYA SECURITY -->
+<!-- ====================================================== -->
+
+<section class="svc-check-section">
+
+  <div class="svc-check-grid">
+
+    <div class="svc-check-col">
+      <h3>LIVRABLES</h3>
+      <ul class="svc-check-list">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Rapport PDF protégé par mot de passe</strong><p>5-7 pages (Express) à 12-18 pages (Premium)</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Niveau d'exposition global</strong><p>Échelle 🟢 Faible → 🔴 Critique</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Tableau de synthèse par domaine</strong></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Plan d'action priorisé</strong><p>P1 (48h), P2 (2 semaines), P3 (30 jours)</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Résumé exécutif dirigeant</strong><p>Inclus en Premium — langage non technique</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Restitution orale</strong><p>30 min (Standard) · 45 min (Premium)</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="svc-check-col">
+      <h3>POURQUOI ENYA SECURITY ?</h3>
+      <ul class="svc-check-list">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          <div><strong>Analyse 100% passive</strong><p>Aucun accès à vos systèmes, aucun risque d'interruption.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+          <div><strong>Vision attaquant réelle</strong><p>Les mêmes sources qu'un attaquant : OSINT, Shodan, HIBP, dépôts publics.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          <div><strong>Confidentialité stricte</strong><p>Rapport protégé par mot de passe, données détruites à J+30.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg>
+          <div><strong>Module Dark Web en option</strong><p>Recherche passive stricte, sur confirmation écrite uniquement.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div><strong>Transparence</strong><p>Tarifs forfaitaires et sans surprise.</p></div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FAQ + CTA -->
+<!-- ====================================================== -->
+
+<section class="svc-faq-section">
+
+  <div class="svc-faq-grid">
+
+    <div class="svc-faq-col">
+
+      <h3>QUESTIONS FRÉQUENTES</h3>
+
+      <details class="svc-faq-item">
+        <summary>Est-ce que cette analyse peut affecter mon site ou mes systèmes ?</summary>
+        <p>
+          Non. L'analyse est entièrement passive et non intrusive : requêtes DNS
+          publiques, WHOIS, consultation d'outils comme Shodan ou Censys en mode
+          passif. Aucune exploitation de vulnérabilité, aucun test actif, aucun
+          accès à vos systèmes internes.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Avez-vous besoin d'un accès à mes systèmes ?</summary>
+        <p>
+          Non, aucun accès interne n'est nécessaire : pas de VPN client, pas
+          d'accès direct. L'analyse porte uniquement sur ce qui est visible et
+          accessible publiquement depuis Internet.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Qu'est-ce que le module Dark Web ?</summary>
+        <p>
+          Une recherche passive en lecture seule sur des sources publiquement
+          accessibles (Ahmia, ransomware.live, Hudson Rock), réalisée depuis un
+          environnement isolé. Aucune inscription, aucun achat, aucun contact
+          avec des acteurs malveillants. Disponible en option (+150€) sur tous
+          les niveaux, avec confirmation écrite obligatoire avant exécution.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Combien de temps dure l'analyse ?</summary>
+        <p>
+          Le temps de travail varie selon le niveau : environ 4h pour l'Express
+          (livraison sous 5 jours), 7h pour le Standard (7 jours), 10h pour le
+          Premium (10 jours ouvrés après réception du RoE signé).
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Le rapport est-il confidentiel ?</summary>
+        <p>
+          Oui. Le rapport est protégé par mot de passe (transmis séparément),
+          destiné exclusivement à votre organisation. Les données techniques
+          collectées sont détruites 30 jours après la livraison, et
+          l'obligation de confidentialité reste valable 5 ans après la fin
+          de la mission.
+        </p>
+      </details>
+
+    </div>
+
+    <div class="svc-cta-dark">
+      <span class="svc-cta-dark-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+      </span>
+      <h3>Envie de savoir ce qu'un attaquant peut voir de votre entreprise ?</h3>
+      <p>Discutons de votre situation et obtenez un devis personnalisé en moins de 48h.</p>
+      <a href="/contact.html?objet=analyse-exposition" class="btn-primary">
+        Demander une analyse
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="svc-cta-dark-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Réponse sous 24-48h ouvrées
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
+
+</body>
+</html>
