@@ -3608,3 +3608,26 @@ a.contact-info-item:hover {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+
+/* 4 cartes sur une ligne (page ransomware) */
+.nis2-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .nis2-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .nis2-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Numéros violets pour l'approche en 6 étapes */
+.approach-row.svc-approach-outline .approach-number {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
