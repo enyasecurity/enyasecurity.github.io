@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<title>Contact - Enya Security</title>
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav>
+    <a href="/index.html">Accueil</a>
+    <a href="/services.html">Services</a>
+    <a href="/packs.html">Tarifs</a>
+    <a href="/nis2.html">NIS2</a>
+    <a class="active" href="/contact.html">Contact</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/contact.html">FR</a>
+    <a href="/en/contact.html">EN</a>
+    <a href="/it/contact.html">IT</a>
+  </nav>
+
+  <a href="/contact.html?objet=diagnostic" class="header-cta">
+    Demander un audit
+  </a>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
+
+<section class="hero-home">
+
+  <div class="hero-grid">
+
+    <!-- COLONNE TEXTE -->
+    <div class="hero-content">
+
+      <div class="hero-kicker-text">CONTACT</div>
+
+      <h1 class="hero-title">
+        Discutons de votre <span class="gradient-text">sécurité.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Chaque organisation est unique. Décrivez-nous votre situation
+        et nous vous orienterons vers la solution la plus adaptée à vos besoins.
+      </p>
+
+    </div>
+
+    <!-- COLONNE VISUELLE -->
+    <div class="hero-visual hero-visual-compact">
+      <div class="hero-visual-glow"></div>
+      <div class="hero-visual-rings"></div>
+      <img src="/assets/logo.png" class="hero-visual-logo" alt="Enya Security">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FORMULAIRE + INFOS -->
+<!-- ====================================================== -->
+
+<section class="contact-section">
+
+  <div class="contact-grid">
+
+    <!-- FORMULAIRE -->
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqevgvdb" method="POST">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="objet">Sujet</label>
+        <select id="objet" name="objet">
+          <option value="diagnostic">Première évaluation gratuite</option>
+          <option value="audit-bdd">Audit de sécurité des bases de données</option>
+          <option value="preparation-ransomware">Préparation à une attaque ransomware</option>
+          <option value="analyse-exposition">Analyse de l'exposition en ligne</option>
+          <option value="simulation-phishing">Simulation phishing &amp; sensibilisation</option>
+          <option value="audit-android">Audit de sécurité Android</option>
+          <option value="autre">Autre demande</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Décrivez brièvement votre besoin, la taille de votre structure, vos délais..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">
+        Envoyer le message
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+
+      <p class="contact-form-note">
+        En envoyant ce formulaire, vous acceptez d'être recontacté(e) par Enya Security.
+        Vos données ne sont jamais partagées avec des tiers.
+      </p>
+
+    </form>
+
+    <!-- INFOS -->
+    <div class="contact-info-card">
+
+      <h3>Nous contacter directement</h3>
+
+      <a href="mailto:marinabruno@enyasecurity.com" class="contact-info-item">
+        <span class="contact-info-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+        </span>
+        <span>marinabruno@enyasecurity.com</span>
+      </a>
+
+      <div class="contact-info-item">
+        <span class="contact-info-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </span>
+        <span>Réponse sous 24-48h ouvrées</span>
+      </div>
+
+      <div class="contact-info-item">
+        <span class="contact-info-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+        </span>
+        <span>100% confidentiel, sans engagement</span>
+      </div>
+
+      <div class="contact-info-item">
+        <span class="contact-info-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </span>
+        <span>France &amp; Italie — accompagnement à distance</span>
+      </div>
+
+      <div class="contact-info-divider"></div>
+
+      <p class="contact-info-footnote">
+        Vous préférez d'abord vous informer ? Consultez nos
+        <a href="/services.html">services</a> ou
+        <a href="/packs.html">tarifs</a>.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
+</footer>
+
+<script>
+// Pré-sélectionne le sujet si le lien contient ?objet=...
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const objet = params.get('objet');
+  if (objet) {
+    const select = document.getElementById('objet');
+    if (select) {
+      const match = Array.from(select.options).find(o => o.value === objet);
+      if (match) select.value = objet;
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
