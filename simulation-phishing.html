@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<title>Simulation de phishing & sensibilisation - Enya Security</title>
+<meta name="description" content="Évaluez la vigilance de vos équipes face au phishing grâce à des campagnes de simulation réalistes, encadrées et 100% pédagogiques.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav class="nav-compact">
+    <a href="/index.html">Accueil</a>
+    <a class="active" href="/services.html">Services</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/glossaire.html">Glossaire</a>
+    <a href="/faq.html">FAQ</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/simulation-phishing.html">FR</a>
+    <a href="/en/phishing-simulation.html">EN</a>
+    <a href="/it/simulazione-phishing.html">IT</a>
+  </nav>
+
+  <a href="/contact.html?objet=simulation-phishing" class="header-cta">
+    Demander un audit
+  </a>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
+
+<section class="hero-home">
+
+  <div class="hero-grid">
+
+    <div class="hero-content">
+
+      <div class="hero-kicker-text">SERVICE</div>
+
+      <h1 class="hero-title">
+        Tests de <span class="gradient-text">phishing</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        <b>Évaluez. Sensibilisez. Protégez.</b><br>
+        Le phishing reste la première porte d'entrée des cyberattaques. Nos
+        campagnes simulées permettent d'évaluer le risque humain, de sensibiliser
+        vos équipes et de renforcer durablement votre niveau de sécurité.
+      </p>
+
+      <div class="svc-chip-row">
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <span>Campagnes personnalisées<br>et réalistes</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <span>Rapports détaillés et<br>actions concrètes</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </span>
+          <span>Sensibilisation continue<br>et efficace</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <span>100% légal, sécurisé<br>et sans impact</span>
+        </div>
+
+      </div>
+
+      <div class="hero-buttons-new" style="margin-bottom: 8px;">
+        <a href="/contact.html?objet=simulation-phishing" class="btn-primary">
+          Demander un audit phishing
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="/contact.html?objet=exemple-rapport-phishing" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          Voir un exemple de rapport
+        </a>
+      </div>
+
+      <div class="svc-hero-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Réponse sous 24-48h ouvrées
+      </div>
+
+    </div>
+
+    <div class="hero-visual" style="height: 420px;">
+
+      <div class="radial-diagram">
+
+        <div class="radial-ring"></div>
+
+        <div class="radial-center">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v12H4z"/><path d="M4 4l8 6 8-6"/><path d="M16 22c0-3 2-3 2-5.5a2 2 0 00-4 0"/></svg>
+        </div>
+
+        <div class="radial-node n1">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          </span>
+          <span>Emails trompeurs</span>
+        </div>
+
+        <div class="radial-node n2">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 007.07 0l2.83-2.83a5 5 0 00-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 00-7.07 0L4.1 13.83a5 5 0 007.07 7.07L12.5 19.5"/></svg>
+          </span>
+          <span>Liens malveillants</span>
+        </div>
+
+        <div class="radial-node n3">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+          </span>
+          <span>Identification des risques</span>
+        </div>
+
+        <div class="radial-node n4">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <span>Rapport &amp; actions</span>
+        </div>
+
+        <div class="radial-node n5">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/></svg>
+          </span>
+          <span>Sensibilisation</span>
+        </div>
+
+        <div class="radial-node n6">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+          </span>
+          <span>Mesure du risque humain</span>
+        </div>
+
+        <div class="radial-node n7">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+          </span>
+          <span>Analyse des résultats</span>
+        </div>
+
+        <div class="radial-node n8">
+          <span class="radial-node-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
+          </span>
+          <span>Pièces jointes</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- CE QUE NOUS ÉVALUONS -->
+<!-- ====================================================== -->
+
+<section class="svc-verify-section" style="padding-top:30px;">
+
+  <p class="expertise-kicker">CE QUE NOUS ÉVALUONS</p>
+
+  <div class="nis2-grid nis2-grid-4">
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+        </span>
+        <h3>Indicateurs mesurés</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Taux d'ouverture</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Taux de clic</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Taux de signalement</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Récidive (Standard+)</li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/><path d="M16 3.13a4 4 0 010 7.75"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg>
+        </span>
+        <h3>Populations &amp; thèmes</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>RH — Paie, congés, mutuelle</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>IT — MFA, VPN, Office 365</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Direction — Signature électronique</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Commercial — Livraison, Chronopost</li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+        </span>
+        <h3>Niveaux de difficulté</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>🟢 Facile — indices visibles</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>🟡 Moyenne — email crédible</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>🔴 Élevée — spear phishing ciblé</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Progression mesurable (récurrent)</li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10l-10-5L2 10l10 5 10-5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+        </span>
+        <h3>Sensibilisation</h3>
+      </div>
+      <ul class="svc-arrow-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Landing pédagogique au clic</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Présentation collective</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Fiche réflexes à distribuer</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Mini-atelier (Premium)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- NOTRE APPROCHE EN 6 ÉTAPES -->
+<!-- ====================================================== -->
+
+<section class="approach-section">
+
+  <p class="expertise-kicker">NOTRE APPROCHE EN 6 ÉTAPES</p>
+
+  <div class="approach-inner" style="text-align:center;">
+
+    <div class="approach-row approach-row-6 svc-approach-outline" style="margin-top:0;">
+
+      <div class="approach-step">
+        <span class="approach-number">1</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg>
+        </span>
+        <h3>Cadrage</h3>
+        <p>Définition des objectifs, du périmètre et des scénarios.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">2</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+        </span>
+        <h3>Conception</h3>
+        <p>Création de campagnes personnalisées et réalistes.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">3</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+        </span>
+        <h3>Déploiement</h3>
+        <p>Envoi contrôlé des emails de phishing.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">4</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+        </span>
+        <h3>Analyse</h3>
+        <p>Collecte et analyse des résultats obtenus.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">5</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+        </span>
+        <h3>Rapport</h3>
+        <p>Rapport clair avec constats, risques et recommandations.</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">6</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10l-10-5L2 10l10 5 10-5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+        </span>
+        <h3>Sensibilisation</h3>
+        <p>Actions de remédiation et accompagnement continu.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- LIVRABLES + POURQUOI ENYA SECURITY -->
+<!-- ====================================================== -->
+
+<section class="svc-check-section">
+
+  <div class="svc-check-grid">
+
+    <div class="svc-check-col">
+      <h3>LIVRABLES</h3>
+      <ul class="svc-check-list">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Rapport de campagne PDF protégé</strong><p>4-6 pages (Express) à 10-15 pages + résumé dirigeant (Premium)</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Landing pédagogique</strong><p>Micro-formation affichée au clic, sans aucune collecte de données</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Fiche réflexes</strong><p>1 page à distribuer et conserver par vos équipes</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Présentation de sensibilisation</strong><p>~20 min (Express) à 60 min + mini-atelier (Premium)</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Restitution orale</strong><p>30 min (Standard) · 45 min (Premium)</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          <div><strong>Formules de vigilance récurrente</strong><p>Continue, renforcée ou intensive — pour une progression mesurable</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="svc-check-col">
+      <h3>POURQUOI ENYA SECURITY ?</h3>
+      <ul class="svc-check-list">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div><strong>100% légal &amp; RGPD</strong><p>Enya Security intervient comme sous-traitant (art. 28 RGPD) ; la CNIL reconnaît ces campagnes comme une forme légitime de sensibilisation.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          <div><strong>Zéro collecte de mots de passe</strong><p>Aucune fausse page de connexion, capture de données désactivée — page purement pédagogique.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <div><strong>Résultats 100% anonymes</strong><p>Aucune analyse nominative — jamais "untel a cliqué", uniquement des chiffres agrégés.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/></svg>
+          <div><strong>Approche bienveillante</strong><p>Aucune sanction, aucune stigmatisation — l'objectif est d'apprendre, pas de piéger.</p></div>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div><strong>Transparence</strong><p>Tarifs forfaitaires et sans surprise.</p></div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FAQ + CTA -->
+<!-- ====================================================== -->
+
+<section class="svc-faq-section">
+
+  <div class="svc-faq-grid">
+
+    <div class="svc-faq-col">
+
+      <h3>QUESTIONS FRÉQUENTES</h3>
+
+      <details class="svc-faq-item">
+        <summary>Mes collaborateurs seront-ils piégés "pour de vrai" ?</summary>
+        <p>
+          Non. C'est une simulation strictement pédagogique et encadrée : aucune
+          collecte de mot de passe, aucune fausse page de connexion, aucune
+          pièce jointe réellement dangereuse. L'objectif est d'apprendre, pas
+          de sanctionner.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Les résultats identifient-ils qui a cliqué ?</summary>
+        <p>
+          Non, jamais. Seuls des chiffres agrégés et anonymes sont communiqués
+          (taux d'ouverture, de clic, de signalement) — aucune analyse
+          nominative individuelle.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Dois-je prévenir mes équipes ?</summary>
+        <p>
+          Oui. Conformément aux recommandations de la CNIL, vous devez informer
+          vos collaborateurs qu'une simulation d'hameçonnage est susceptible de
+          survenir (sans en préciser la date), et consulter le CSE selon votre
+          effectif. C'est un engagement formalisé dans l'Autorisation que vous
+          signez avant toute campagne.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Que se passe-t-il si quelqu'un clique ?</summary>
+        <p>
+          Une page pédagogique s'affiche immédiatement : elle explique que
+          c'était un test, rappelle les indices qui auraient permis de le
+          repérer, et propose le bon réflexe à adopter. Aucune sanction,
+          aucune donnée collectée.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Combien de temps les données de la campagne sont-elles conservées ?</summary>
+        <p>
+          Les données de campagne (liste, résultats, scénarios) sont détruites
+          10 jours après l'envoi. Seuls les documents contractuels et le
+          rapport final vous sont remis et conservés.
+        </p>
+      </details>
+
+    </div>
+
+    <div class="svc-cta-dark">
+      <span class="svc-cta-dark-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+      </span>
+      <h3>Prêt à évaluer la vigilance de vos équipes ?</h3>
+      <p>Discutons de votre situation et obtenez un devis personnalisé en moins de 48h.</p>
+      <a href="/contact.html?objet=simulation-phishing" class="btn-primary">
+        Demander un audit phishing
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="svc-cta-dark-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Réponse sous 24-48h ouvrées
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
+
+</body>
+</html>
