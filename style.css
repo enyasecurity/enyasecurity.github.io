@@ -1618,3 +1618,27 @@ footer a:hover {
     font-size: 1.6rem;
   }
 }
+
+/* =========================================================
+   BANNIÈRE COOKIES (Tarte au Citron) — version compacte
+   Le paramètre showAlertSmall est ignoré en mode highPrivacy,
+   donc on force un style plus discret nous-mêmes.
+========================================================= */
+
+#tarteaucitronAlertBig {
+  padding: 10px 20px !important;
+  min-height: unset !important;
+  font-size: 0.85rem !important;
+  line-height: 1.4 !important;
+}
+
+#tarteaucitronAlertBig .tarteaucitronCTAButton {
+  padding: 8px 16px !important;
+  font-size: 0.82rem !important;
+  margin: 2px 4px !important;
+}
+
+#tarteaucitronDisclaimerAlert {
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+}
