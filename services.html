@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
 <meta charset="UTF-8">
-<title>Enya Security – Services</title>
-<link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
+
+<title>Services - Enya Security</title>
+
+<link rel="stylesheet" href="/style.css">
+
+<!-- ============================== -->
+<!--      TARTE AU CITRON           -->
+<!-- ============================== -->
+
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+
 <script>
 tarteaucitron.init({
     "privacyUrl": "",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
-    "showAlertSmall": false,
+    "showAlertSmall": true,
     "cookieslist": true,
     "showIcon": true,
     "iconPosition": "BottomRight",
@@ -24,7 +32,7 @@ tarteaucitron.init({
     "handleBrowserDNTRequest": false
 });
 </script>
-<!-- Google Analytics via TarteAuCitron -->
+
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
 tarteaucitron.user.gtagMore = function () {};
@@ -35,16 +43,34 @@ tarteaucitron.user.gtagMore = function () {};
 
 <body>
 
-<header>
-  <div class="header-left">
-    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
-    <div class="site-title">
-      <span class="title-enya">Enya</span>
-      <span class="title-security">Security</span>
-    </div>
-  </div>
+<!-- ====================================================== -->
+<!-- HEADER -->
+<!-- ====================================================== -->
 
-  <nav>
+<header>
+
+<div class="header-left">
+
+    <img src="/assets/logo.png"
+         class="logo"
+         alt="Logo Enya Security">
+
+    <div class="site-title">
+
+        <span class="title-enya">
+            Enya
+        </span>
+
+        <span class="title-security">
+            Security
+        </span>
+
+    </div>
+
+</div>
+
+<nav>
+
     <a href="/index.html">Accueil</a>
     <a class="active" href="/services.html">Services</a>
     <a href="/packs.html">Tarifs</a>
@@ -56,65 +82,146 @@ tarteaucitron.user.gtagMore = function () {};
     <a class="lang-active" href="/services.html">FR</a>
     <a href="/en/services.html">EN</a>
     <a href="/it/services.html">IT</a>
-  </nav>
+
+</nav>
+
+<a href="/contact.html?objet=diagnostic" class="header-cta">
+    Demander un audit
+</a>
+
 </header>
 
-<section class="services-container">
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
 
-  <h1 class="services-title">Services</h1>
-  <p class="services-subtitle">
-    Des audits humains et pédagogiques, pensés pour les TPE, PME et associations — sans intrusion, sans jargon.
-  </p>
+<section class="page-hero">
 
-  <div class="services-grid">
+    <div class="page-hero-kicker">NOS SERVICES</div>
 
-    <!-- Audit base de données -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icône audit base de données">
-      <h3>Audit de sécurité des bases de données</h3>
-      <p>Comptes, accès, sauvegardes, chiffrement et RGPD : un état des lieux clair de la sécurité de votre base de données.</p>
-      <span class="service-price">À partir de 449 €</span>
-      <a href="/audit-bases-de-donnees.html">Voir le service →</a>
-    </div>
+    <h1 class="page-hero-title">
+        Des solutions concrètes pour votre sécurité
+    </h1>
 
-    <!-- Préparation ransomware -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_ransomware.png" class="service-icon" alt="Icône préparation ransomware">
-      <h3>Préparation à une attaque ransomware</h3>
-      <p>Anticipez une attaque par rançongiciel : plan de réponse, sauvegardes, procédures de crise prêtes à l'emploi.</p>
-      <span class="service-price">À partir de 449 €</span>
-      <a href="/preparation-ransomware.html">Voir le service →</a>
-    </div>
+    <p class="page-hero-subtitle">
+        Des audits indépendants, documentés et adaptés aux besoins des petites
+        et moyennes structures.
+    </p>
 
-    <!-- Analyse exposition / OSINT -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_expo.png" class="service-icon" alt="Icône analyse d'exposition">
-      <h3>Analyse de l'exposition en ligne</h3>
-      <p>Découvrez ce qui est visible publiquement sur votre entreprise : fuites de données, identifiants, exposition dark web.</p>
-      <span class="service-price">À partir de 349 €</span>
-      <a href="/analyse-exposition.html">Voir le service →</a>
-    </div>
-
-    <!-- Simulation phishing -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_pishing.png" class="service-icon" alt="Icône simulation phishing">
-      <h3>Simulation phishing & sensibilisation</h3>
-      <p>Testez et formez vos équipes face à de faux emails piégés, en conditions réelles et sans jugement.</p>
-      <span class="service-price">À partir de 390 €</span>
-      <a href="/simulation-phishing.html">Voir le service →</a>
-    </div>
-
-    <!-- Audit Android -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_android.png" class="service-icon" alt="Icône audit Android">
-      <h3>Audit de sécurité Android</h3>
-      <p>Un audit non-intrusif de la sécurité de votre application mobile : stockage, permissions, communications.</p>
-      <span class="service-price">À partir de 449 €</span>
-      <a href="/audit-android.html">Voir le service →</a>
-    </div>
-
-  </div>
 </section>
+
+<!-- ====================================================== -->
+<!-- GRILLE DE SERVICES -->
+<!-- ====================================================== -->
+
+<section class="expertise-section">
+
+    <div class="expertise-grid">
+
+        <div class="expertise-card">
+            <div class="expertise-icon-wrap">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2f7dfa" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </div>
+            <h3>Audit bases de données</h3>
+            <p>Analyse complète de votre environnement de bases de données pour identifier les risques et renforcer leur sécurité.</p>
+            <a href="/contact.html?objet=audit-bdd" class="expertise-more">
+                Demander ce service
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+        </div>
+
+        <div class="expertise-card">
+            <div class="expertise-icon-wrap">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Préparation ransomware</h3>
+            <p>Évaluation de votre niveau de préparation, plan d'action et recommandations pour faire face à une attaque.</p>
+            <a href="/contact.html?objet=preparation-ransomware" class="expertise-more">
+                Demander ce service
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+        </div>
+
+        <div class="expertise-card">
+            <div class="expertise-icon-wrap">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2f7dfa" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <h3>Analyse d'exposition en ligne</h3>
+            <p>Identification des informations exposées sur Internet et des failles visibles par les attaquants.</p>
+            <a href="/contact.html?objet=analyse-exposition" class="expertise-more">
+                Demander ce service
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+        </div>
+
+        <div class="expertise-card">
+            <div class="expertise-icon-wrap">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </div>
+            <h3>Simulation de phishing</h3>
+            <p>Campagnes de phishing simulées et rapports détaillés pour sensibiliser vos équipes.</p>
+            <a href="/contact.html?objet=simulation-phishing" class="expertise-more">
+                Demander ce service
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- CTA FINAL -->
+<!-- ====================================================== -->
+
+<section class="page-cta">
+
+    <h2 class="page-cta-title">Un besoin spécifique ?</h2>
+    <p class="page-cta-subtitle">
+        Chaque structure est différente. Discutons de vos enjeux pour construire
+        un accompagnement adapté à votre activité.
+    </p>
+
+    <div class="page-cta-buttons">
+        <a href="/contact.html?objet=diagnostic" class="btn-primary">
+            Première évaluation gratuite
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="/packs.html" class="btn-secondary">
+            Voir nos tarifs
+        </a>
+    </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+
+<a href="/mentions_legales.html">
+
+Mentions légales
+
+</a>
+
+</p>
+
+<p>
+
+<a href="#"
+onclick="tarteaucitron.userInterface.openPanel(); return false;">
+
+Gérer mes cookies
+
+</a>
+
+</p>
+
+</footer>
 
 </body>
 </html>
