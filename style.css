@@ -1314,7 +1314,7 @@ header {
 
 .hero-home .hero-subtitle {
   text-align: left;
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   max-width: 540px;
   color: var(--text-dim);
 }
@@ -1323,7 +1323,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .btn-primary {
@@ -1423,7 +1423,7 @@ header {
 
 .hero-visual {
   position: relative;
-  height: 270px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1431,8 +1431,8 @@ header {
 
 .hero-visual-glow {
   position: absolute;
-  width: 235px;
-  height: 235px;
+  width: 195px;
+  height: 195px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(0,207,255,0.35), transparent 70%);
   filter: blur(6px);
@@ -1441,8 +1441,8 @@ header {
 
 .hero-visual-rings {
   position: absolute;
-  width: 210px;
-  height: 210px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   border: 1px dashed rgba(111, 179, 255, 0.28);
   animation: spinSlow 40s linear infinite;
@@ -1468,8 +1468,8 @@ header {
   position: relative;
   z-index: 2;
   width: auto;
-  max-width: 175px;
-  max-height: 175px;
+  max-width: 145px;
+  max-height: 145px;
   filter: drop-shadow(0 0 30px rgba(47, 125, 250, 0.55));
 }
 
@@ -1536,8 +1536,28 @@ header {
   position: relative;
   z-index: 1;
   margin-top: 4px;
-  padding: 10px 25px;
+  padding: 8px 25px;
   border-top: none;
+  gap: 30px;
+}
+
+.hero-home .trust-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.hero-home .trust-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.hero-home .trust-text strong {
+  font-size: 0.92rem;
+}
+
+.hero-home .trust-text small {
+  font-size: 0.78rem;
+  margin-top: 1px;
 }
 
 .hero-home .trust-row::before {
@@ -1570,7 +1590,7 @@ header {
 .expertise-section {
   background: var(--cream);
   color: var(--cream-text);
-  padding: 4px 25px 24px;
+  padding: 2px 25px 18px;
   text-align: center;
   margin-top: 0;
   max-width: none;
@@ -1585,20 +1605,20 @@ header {
 }
 
 .expertise-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
   color: var(--cream-text);
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
 .expertise-subtitle {
   max-width: 640px;
-  margin: 0 auto 14px;
+  margin: 0 auto 10px;
   color: var(--cream-dim);
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .expertise-grid {
@@ -1612,8 +1632,8 @@ header {
 .expertise-card {
   background: #ffffff;
   border: 1px solid #e9edf5;
-  border-radius: 18px;
-  padding: 16px 16px;
+  border-radius: 16px;
+  padding: 14px 14px;
   text-align: left;
   box-shadow: 0 2px 10px rgba(20, 30, 60, 0.05);
   transition: .25s ease;
@@ -1626,18 +1646,18 @@ header {
 }
 
 .expertise-icon-wrap {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 10px;
+  margin: 0 auto 8px;
   background: #ffffff;
   border: 1px solid #e6ebf3;
   box-shadow: 0 2px 8px rgba(20, 30, 60, 0.06);
-  padding: 9px;
+  padding: 7px;
 }
 
 .expertise-card:nth-child(2) .expertise-icon-wrap,
@@ -1655,15 +1675,15 @@ header {
 
 .expertise-card h3 {
   color: var(--cream-text);
-  font-size: 1.05rem;
-  margin: 0 0 8px;
+  font-size: 1rem;
+  margin: 0 0 6px;
 }
 
 .expertise-card p {
   color: var(--cream-dim);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0 0 14px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  margin: 0 0 10px;
 }
 
 .expertise-more {
@@ -1681,7 +1701,7 @@ header {
 }
 
 .expertise-footer {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .expertise-footer .btn-secondary {
@@ -1699,6 +1719,13 @@ footer {
   background: var(--cream);
   color: var(--cream-dim);
   border-top: 1px solid #e6ebf3;
+  padding: 14px 25px;
+  text-align: center;
+}
+
+footer p {
+  margin: 4px 0;
+  font-size: 0.85rem;
 }
 
 footer a {
