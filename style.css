@@ -1602,6 +1602,7 @@ header {
   letter-spacing: 2px;
   font-size: 0.82rem;
   margin: 0 0 10px;
+  text-align: center;
 }
 
 .expertise-title {
@@ -2296,6 +2297,40 @@ a.contact-info-item:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+}
+
+.approach-row.svc-approach-outline {
+  position: relative;
+}
+
+.approach-row.svc-approach-outline::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 8%;
+  right: 8%;
+  border-top: 2px dashed rgba(47, 125, 250, 0.3);
+  z-index: 0;
+}
+
+.approach-row.svc-approach-outline .approach-step {
+  position: relative;
+  z-index: 1;
+}
+
+.approach-row.svc-approach-outline .approach-number {
+  width: 34px;
+  height: 34px;
+  background: #ffffff;
+  border: 1.5px solid var(--blue);
+  color: var(--blue);
+  font-size: 0.85rem;
+}
+
+.approach-row.svc-approach-outline .approach-icon {
+  background: #ffffff;
+  border: 1.5px solid rgba(47, 125, 250, 0.35);
+  color: var(--blue);
 }
 
 .approach-icon {
