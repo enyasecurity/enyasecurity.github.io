@@ -3970,3 +3970,248 @@ a.contact-info-item:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================================
+   PAGE FAQ
+========================================================= */
+
+.faq-section {
+  background: var(--cream);
+  padding: 30px 25px 0;
+}
+
+/* ---- Navigation rapide (pills de catégories) ---- */
+
+.faq-nav {
+  max-width: 1100px;
+  margin: 0 auto 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.faq-nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1.5px solid #e6ebf3;
+  background: #ffffff;
+  color: var(--cream-text);
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: border-color .2s ease, color .2s ease, background .2s ease;
+}
+
+.faq-nav-pill svg {
+  flex-shrink: 0;
+  color: var(--cream-dim);
+  transition: color .2s ease;
+}
+
+.faq-nav-pill:hover {
+  border-color: var(--blue);
+}
+
+.faq-nav-pill.active {
+  border-color: var(--blue);
+  background: rgba(47, 125, 250, 0.06);
+  color: var(--blue);
+}
+
+.faq-nav-pill.active svg {
+  color: var(--blue);
+}
+
+/* ---- Grille des blocs FAQ (2 colonnes) ---- */
+
+.faq-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 32px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faq-block {
+  scroll-margin-top: 110px;
+}
+
+.faq-block-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--cream-text);
+  margin: 0 0 16px;
+}
+
+.faq-block-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(47, 125, 250, 0.08);
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+/* ---- Contenu de réponse quand ce n'est pas un simple <p> ---- */
+/* (mêmes réglages que .svc-faq-item p, pour les réponses avec listes) */
+
+.svc-faq-item .faq-content {
+  padding: 0 18px 16px;
+  margin: 0;
+  color: var(--cream-dim);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.svc-faq-item .faq-content p {
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+.svc-faq-item .faq-content p:last-child {
+  margin-bottom: 0;
+}
+
+.svc-faq-item .faq-content ul {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.svc-faq-item .faq-content li {
+  margin-bottom: 4px;
+}
+
+.svc-faq-item .faq-content a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.svc-faq-item .faq-content a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Étapes numérotées (Comment se déroule un audit) ---- */
+
+.faq-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.faq-steps li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  margin-left: 12px;
+  padding-left: 18px;
+  border-left: 2px dashed rgba(47, 125, 250, 0.25);
+}
+
+.faq-steps li:last-child {
+  border-left: 2px dashed transparent;
+}
+
+.faq-step-num {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: -13px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- Bande CTA finale ---- */
+
+.faq-cta-band {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  background: var(--navy-1);
+  border-radius: 20px;
+  padding: 40px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.faq-cta-band-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue-light);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faq-cta-band-text h3 {
+  color: var(--text-light);
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.faq-cta-band-text p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  margin: 0 0 20px;
+}
+
+.faq-cta-band-icon {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(111, 179, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-light);
+  position: relative;
+}
+
+.faq-cta-glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35), transparent 70%);
+  filter: blur(10px);
+}
+
+@media (max-width: 700px) {
+  .faq-cta-band {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 24px;
+  }
+}
