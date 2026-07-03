@@ -61,6 +61,11 @@ tarteaucitron.user.gtagMore = function () {};
 
 <section class="services-container">
 
+  <div class="services-badge">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+    AUDITS NON INTRUSIFS
+  </div>
+
   <h1 class="services-title">Services</h1>
   <p class="services-subtitle">
     Des audits humains et pédagogiques, pensés pour les TPE, PME et associations — sans intrusion, sans jargon.
@@ -71,49 +76,99 @@ tarteaucitron.user.gtagMore = function () {};
     <!-- Audit base de données -->
     <div class="service-card">
       <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icône audit base de données">
+      <span class="service-tag">AUDIT</span>
       <h3>Audit de sécurité des bases de données</h3>
       <p>Comptes, accès, sauvegardes, chiffrement et RGPD : un état des lieux clair de la sécurité de votre base de données.</p>
-      <span class="service-price">À partir de 449 €</span>
+      <span class="service-price">
+        <span class="price-label">à partir de</span>
+        <span class="price-amount">449 €</span>
+      </span>
       <a href="/audit-bases-de-donnees.html">Voir le service →</a>
     </div>
 
     <!-- Préparation ransomware -->
     <div class="service-card">
       <img src="/assets/icons/icone_ransomware.png" class="service-icon" alt="Icône préparation ransomware">
+      <span class="service-tag">PRÉPARATION</span>
       <h3>Préparation à une attaque ransomware</h3>
       <p>Anticipez une attaque par rançongiciel : plan de réponse, sauvegardes, procédures de crise prêtes à l'emploi.</p>
-      <span class="service-price">À partir de 449 €</span>
+      <span class="service-price">
+        <span class="price-label">à partir de</span>
+        <span class="price-amount">449 €</span>
+      </span>
       <a href="/preparation-ransomware.html">Voir le service →</a>
     </div>
 
     <!-- Analyse exposition / OSINT -->
     <div class="service-card">
       <img src="/assets/icons/icone_expo.png" class="service-icon" alt="Icône analyse d'exposition">
+      <span class="service-tag">VISIBILITÉ</span>
       <h3>Analyse de l'exposition en ligne</h3>
       <p>Découvrez ce qui est visible publiquement sur votre entreprise : fuites de données, identifiants, exposition dark web.</p>
-      <span class="service-price">À partir de 349 €</span>
+      <span class="service-price">
+        <span class="price-label">à partir de</span>
+        <span class="price-amount">349 €</span>
+      </span>
       <a href="/analyse-exposition.html">Voir le service →</a>
     </div>
 
     <!-- Simulation phishing -->
     <div class="service-card">
       <img src="/assets/icons/icone_pishing.png" class="service-icon" alt="Icône simulation phishing">
+      <span class="service-tag">SENSIBILISATION</span>
       <h3>Simulation phishing & sensibilisation</h3>
       <p>Testez et formez vos équipes face à de faux emails piégés, en conditions réelles et sans jugement.</p>
-      <span class="service-price">À partir de 390 €</span>
+      <span class="service-price">
+        <span class="price-label">à partir de</span>
+        <span class="price-amount">390 €</span>
+      </span>
       <a href="/simulation-phishing.html">Voir le service →</a>
     </div>
 
     <!-- Audit Android -->
     <div class="service-card">
       <img src="/assets/icons/icone_android.png" class="service-icon" alt="Icône audit Android">
+      <span class="service-tag">NOUVEAU</span>
       <h3>Audit de sécurité Android</h3>
       <p>Un audit non-intrusif de la sécurité de votre application mobile : stockage, permissions, communications.</p>
-      <span class="service-price">À partir de 449 €</span>
+      <span class="service-price">
+        <span class="price-label">à partir de</span>
+        <span class="price-amount">449 €</span>
+      </span>
       <a href="/audit-android.html">Voir le service →</a>
     </div>
 
   </div>
+
+  <!-- CTA final -->
+  <div class="services-cta-card">
+
+    <div class="services-cta-text">
+      <div class="services-cta-kicker">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4l-6.3 4.4 2.3-7.2-6-4.4h7.6z"/></svg>
+        VOUS NE SAVEZ PAS PAR OÙ COMMENCER ?
+      </div>
+      <h2 class="services-cta-title">Discutons de vos besoins</h2>
+      <p class="services-cta-desc">
+        Chaque structure est différente. En quelques minutes, on identifie ensemble le service
+        le plus adapté à votre situation — sans engagement.
+      </p>
+      <a href="/contact.html?objet=diagnostic" class="btn-primary">
+        Prendre rendez-vous
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="services-cta-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+        100% confidentiel, sans engagement
+      </span>
+    </div>
+
+    <div class="services-cta-icon">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 3v2h6V3"/><path d="M9 10l2 2 4-4"/><path d="M9 15l2 2 4-4"/></svg>
+    </div>
+
+  </div>
+
 </section>
 
 </body>
