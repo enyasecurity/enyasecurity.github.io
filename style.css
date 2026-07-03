@@ -3505,3 +3505,106 @@ a.contact-info-item:hover {
     border-right: none !important;
   }
 }
+
+/* =========================================================
+   DIAGRAMME RADIAL (page ransomware)
+========================================================= */
+
+.radial-diagram {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.radial-ring {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  border: 1px dashed rgba(111, 179, 255, 0.25);
+}
+
+.radial-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34%;
+  height: 34%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139,92,246,0.55), rgba(47,125,250,0.25) 70%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(139,92,246,0.45);
+}
+
+.radial-center svg {
+  color: #ffffff;
+  width: 42%;
+  height: 42%;
+}
+
+.radial-node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 84px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.radial-node-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: rgba(8, 16, 32, 0.9);
+  border: 1px solid rgba(111, 179, 255, 0.3);
+  color: var(--blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radial-node span {
+  color: var(--text-light);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Positions des 8 nœuds (angles à 45°) */
+.radial-node.n1 { top: 2%;  left: 50%; }
+.radial-node.n2 { top: 15%; left: 84%; }
+.radial-node.n3 { top: 50%; left: 97%; }
+.radial-node.n4 { top: 85%; left: 84%; }
+.radial-node.n5 { top: 98%; left: 50%; }
+.radial-node.n6 { top: 85%; left: 16%; }
+.radial-node.n7 { top: 50%; left: 3%; }
+.radial-node.n8 { top: 15%; left: 16%; }
+
+@media (max-width: 640px) {
+  .radial-diagram {
+    display: none;
+  }
+}
+
+/* Approche 6 étapes */
+.approach-row-6 {
+  grid-template-columns: repeat(6, 1fr) !important;
+}
+
+@media (max-width: 900px) {
+  .approach-row-6 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .approach-row-6 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
