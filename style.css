@@ -3513,14 +3513,14 @@ a.contact-info-item:hover {
 .radial-diagram {
   position: relative;
   width: 100%;
-  max-width: 460px;
+  max-width: 380px;
   aspect-ratio: 1;
   margin: 0 auto;
 }
 
 .radial-ring {
   position: absolute;
-  inset: 8%;
+  inset: 10%;
   border-radius: 50%;
   border: 1px dashed rgba(111, 179, 255, 0.25);
 }
@@ -3530,8 +3530,8 @@ a.contact-info-item:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 34%;
-  height: 34%;
+  width: 30%;
+  height: 30%;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(139,92,246,0.55), rgba(47,125,250,0.25) 70%, transparent 100%);
   display: flex;
@@ -3552,15 +3552,16 @@ a.contact-info-item:hover {
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  width: 84px;
+  width: 78px;
   text-align: center;
   transform: translate(-50%, -50%);
 }
 
 .radial-node-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 11px;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
   background: rgba(8, 16, 32, 0.9);
   border: 1px solid rgba(111, 179, 255, 0.3);
   color: var(--blue-light);
@@ -3571,20 +3572,20 @@ a.contact-info-item:hover {
 
 .radial-node span {
   color: var(--text-light);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
-/* Positions des 8 nœuds (angles à 45°) */
-.radial-node.n1 { top: 2%;  left: 50%; }
-.radial-node.n2 { top: 15%; left: 84%; }
-.radial-node.n3 { top: 50%; left: 97%; }
-.radial-node.n4 { top: 85%; left: 84%; }
-.radial-node.n5 { top: 98%; left: 50%; }
-.radial-node.n6 { top: 85%; left: 16%; }
-.radial-node.n7 { top: 50%; left: 3%; }
-.radial-node.n8 { top: 15%; left: 16%; }
+/* Positions des 8 nœuds, calées sur le rayon du cercle (marge de 12% sur les bords) */
+.radial-node.n1 { top: 12%; left: 50%; }
+.radial-node.n2 { top: 24%; left: 79%; }
+.radial-node.n3 { top: 50%; left: 88%; }
+.radial-node.n4 { top: 76%; left: 79%; }
+.radial-node.n5 { top: 88%; left: 50%; }
+.radial-node.n6 { top: 76%; left: 21%; }
+.radial-node.n7 { top: 50%; left: 12%; }
+.radial-node.n8 { top: 24%; left: 21%; }
 
 @media (max-width: 640px) {
   .radial-diagram {
