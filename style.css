@@ -1865,7 +1865,7 @@ footer a:hover {
 
 .contact-section {
   background: var(--cream);
-  padding: 10px 25px 60px;
+  padding: 30px 25px 60px;
 }
 
 .contact-grid {
@@ -2028,4 +2028,14 @@ a.contact-info-item:hover {
   .form-row {
     grid-template-columns: 1fr;
   }
+}
+
+/* Petit label texte au-dessus du titre (page contact) */
+.hero-kicker-text {
+  color: var(--blue-light);
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
