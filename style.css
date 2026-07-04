@@ -555,12 +555,11 @@ p {
   border: 1px solid #e6ebf3;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(20, 30, 60, 0.06);
-  filter: none;
-  animation: none;
+  box-sizing: border-box;
 }
 
 .service-icon-android {
-  padding: 4px;
+  padding: 2px;
 }
 
 .service-card:nth-child(2n) .service-icon {
