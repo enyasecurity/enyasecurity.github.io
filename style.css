@@ -2440,7 +2440,12 @@ a.contact-info-item:hover {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.trust-band-text {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .trust-band-text h2 {
