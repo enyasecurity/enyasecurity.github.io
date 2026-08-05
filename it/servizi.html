@@ -6,11 +6,11 @@
 <title>Enya Security – Servizi</title>
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestione cookie) -->
+<!-- TarteAuCitron (gestione dei cookie) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -56,7 +58,7 @@ tarteaucitron.user.gtagMore = function () {};
 
     <span class="nav-divider"></span>
 
-    <a href="/index.html">FR</a>
+    <a href="/services.html">FR</a>
     <a href="/en/services.html">EN</a>
     <a class="lang-active" href="/it/servizi.html">IT</a>
   </nav>
@@ -76,9 +78,9 @@ tarteaucitron.user.gtagMore = function () {};
 
   <div class="services-grid" style="justify-content: center;">
 
-    <!-- Audit base di dati -->
+    <!-- Audit database -->
     <div class="service-card">
-      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icona audit base di dati">
+      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icona audit dei database">
       <span class="service-tag">AUDIT</span>
       <h3>Audit di sicurezza dei database</h3>
       <p>Accessi • Backup • Cifratura • Configurazione • GDPR</p>
@@ -89,7 +91,7 @@ tarteaucitron.user.gtagMore = function () {};
       <a href="/it/audit-database.html">Scopri il servizio →</a>
     </div>
 
-    <!-- Préparation ransomware -->
+    <!-- Preparazione ransomware -->
     <div class="service-card">
       <img src="/assets/icons/icone_ransomware.png" class="service-icon" alt="Icona preparazione ransomware">
       <span class="service-tag">PREPARAZIONE</span>
@@ -102,7 +104,7 @@ tarteaucitron.user.gtagMore = function () {};
       <a href="/it/preparazione-ransomware.html">Scopri il servizio →</a>
     </div>
 
-    <!-- Analyse exposition / OSINT -->
+    <!-- Analisi esposizione / OSINT -->
     <div class="service-card">
       <img src="/assets/icons/icone_expo.png" class="service-icon" alt="Icona analisi dell'esposizione">
       <span class="service-tag">VISIBILITÀ</span>
@@ -113,6 +115,19 @@ tarteaucitron.user.gtagMore = function () {};
         <span class="price-amount">349 €</span>
       </span>
       <a href="/it/analisi-esposizione.html">Scopri il servizio →</a>
+    </div>
+
+    <!-- NIS2 -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icona valutazione NIS2">
+      <span class="service-tag">CONFORMITÀ</span>
+      <h3>Valutazione del livello di adeguamento alla NIS2</h3>
+      <p>Requisiti applicabili • Analisi degli scostamenti • Piano d'azione</p>
+      <span class="service-price">
+        <span class="price-label">a partire da</span>
+        <span class="price-amount">449 €</span>
+      </span>
+      <a href="/it/nis2.html">Scopri il servizio →</a>
     </div>
 
     <!-- Audit Android -->
@@ -130,7 +145,7 @@ tarteaucitron.user.gtagMore = function () {};
 
   </div>
 
-  <!-- CTA final -->
+  <!-- CTA finale -->
   <div class="services-cta-card">
 
     <div class="services-cta-text">
@@ -168,19 +183,20 @@ tarteaucitron.user.gtagMore = function () {};
 <footer>
 
 <p>
-<a href="/it/note-legali.html">
-Note legali
-</a>
+<a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 
 <p>
-<a href="#"
-onclick="tarteaucitron.userInterface.openPanel(); return false;">
-Gestisci i cookie
-</a>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gestisci i cookie</a>
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tutti i diritti riservati.
+</div>
 
 </body>
 </html>
