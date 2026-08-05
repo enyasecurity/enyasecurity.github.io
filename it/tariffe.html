@@ -6,11 +6,11 @@
 <title>Tariffe - Enya Security</title>
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestione cookie) -->
+<!-- TarteAuCitron (gestione dei cookie) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -101,7 +103,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- AUDIT & TEST -->
+<!-- AUDIT & VALUTAZIONI -->
 <!-- ====================================================== -->
 
 <section class="pricing-section">
@@ -110,7 +112,7 @@ tarteaucitron.user.gtagMore = function () {};
 
   <div class="pricing-grid">
 
-    <!-- Audit BDD -->
+    <!-- Audit database -->
     <div class="pricing-card">
 
       <div class="pricing-card-header">
@@ -121,8 +123,8 @@ tarteaucitron.user.gtagMore = function () {};
       </div>
 
       <p class="pricing-card-desc">
-        Valutazione della sicurezza dei database: accessi, 
-          configurazione, backup, cifratura e aggiornamenti.
+        Valutazione della sicurezza dei database: accessi,
+        configurazione, backup, cifratura e aggiornamenti.
       </p>
 
       <div class="pricing-tiers">
@@ -158,7 +160,7 @@ tarteaucitron.user.gtagMore = function () {};
         </li>
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          Riunione di restituzione incluso nei livelli Standard e Premium
+          Incontro di restituzione incluso nei livelli Standard e Premium
         </li>
       </ul>
 
@@ -179,8 +181,8 @@ tarteaucitron.user.gtagMore = function () {};
       </div>
 
       <p class="pricing-card-desc">
-        Analisi delle informazioni e dei servizi pubblicamente visibili online: 
-          fughe di dati, credenziali esposte e presenza nel dark web.
+        Analisi delle informazioni e dei servizi pubblicamente visibili online:
+        fughe di dati, credenziali esposte e presenza nel dark web.
       </p>
 
       <div class="pricing-tiers">
@@ -237,8 +239,8 @@ tarteaucitron.user.gtagMore = function () {};
       </div>
 
       <p class="pricing-card-desc">
-        Valutazione della capacità di risposta a un attacco ransomware: backup, 
-          procedure di crisi e piano di risposta agli incidenti.
+        Valutazione della capacità di risposta a un attacco ransomware: backup,
+        procedure di crisi e piano di risposta agli incidenti.
       </p>
 
       <div class="pricing-tiers">
@@ -301,8 +303,8 @@ tarteaucitron.user.gtagMore = function () {};
       </div>
 
       <p class="pricing-card-desc">
-        Valutazione documentale dei requisiti applicabili, individuazione degli scostamenti e 
-          definizione di un piano d’azione prioritario.
+        Valutazione documentale dei requisiti applicabili, individuazione degli scostamenti e
+        definizione di un piano d'azione prioritario.
       </p>
 
       <div class="pricing-tiers">
@@ -341,10 +343,14 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
           Piano d'azione prioritario
         </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          Rapporto e incontro di restituzione
+        </li>
       </ul>
 
       <a href="/it/contatti.html?objet=nis2" class="btn-primary">
-        Rapporto e incontro di restituzione
+        Richiedi un preventivo
       </a>
 
     </div>
@@ -362,8 +368,8 @@ tarteaucitron.user.gtagMore = function () {};
       <span class="pricing-soon-badge">IN FASE DI SVILUPPO</span>
 
       <p class="pricing-card-desc">
-        Analisi della sicurezza di un’app Android: archiviazione dei dati, 
-          autorizzazioni, componenti esposti e comunicazioni di rete.
+        Analisi della sicurezza di un'app Android: archiviazione dei dati,
+        autorizzazioni, componenti esposti e comunicazioni di rete.
       </p>
 
       <a href="/it/contatti.html?objet=audit-android" class="btn-secondary">
@@ -377,7 +383,7 @@ tarteaucitron.user.gtagMore = function () {};
   <div class="pricing-note">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
     <span>
-      I prezzi indicati sono orientativi e possono variare in base al perimetro e alla complessità dell’incarico. <br>
+      I prezzi indicati sono orientativi e possono variare in base al perimetro e alla complessità dell'incarico. <br>
       Il prezzo definitivo sarà specificato in un preventivo personalizzato.
     </span>
   </div>
@@ -392,6 +398,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 
 <p>
@@ -399,6 +407,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tutti i diritti riservati.
+</div>
 
 </body>
 </html>
