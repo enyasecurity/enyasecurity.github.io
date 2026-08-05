@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<title>Politique de confidentialité - Enya Security</title>
+<meta name="description" content="Politique de confidentialité et traitement des données personnelles au titre des articles 13 et 14 du Règlement (UE) 2016/679 (RGPD) - Enya Security.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "/confidentialite.html",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+<!--
+  Styles spécifiques aux tableaux de la politique de confidentialité.
+  À terme : déplacer ce bloc dans /style.css (section "PAGE MENTIONS LÉGALES")
+  pour que les pages IT et EN puissent le réutiliser.
+-->
+<style>
+.legal-table-wrap {
+  overflow-x: auto;
+  margin: 4px 0 12px;
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  min-width: 520px;
+}
+
+.legal-table th {
+  text-align: left;
+  padding: 9px 12px;
+  background: rgba(47, 125, 250, 0.06);
+  color: var(--cream-text);
+  font-weight: 800;
+  font-size: 0.76rem;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #e6ebf3;
+}
+
+.legal-table td {
+  padding: 10px 12px;
+  color: var(--cream-dim);
+  line-height: 1.5;
+  border-bottom: 1px solid #f0f2f7;
+  vertical-align: top;
+}
+
+.legal-table tr:last-child td {
+  border-bottom: none;
+}
+
+.legal-table td strong {
+  color: var(--cream-text);
+  font-weight: 700;
+}
+
+.legal-list {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  color: var(--cream-dim);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.legal-list li {
+  margin-bottom: 5px;
+}
+
+.legal-list strong {
+  color: var(--cream-text);
+}
+
+.legal-anchor-nav {
+  max-width: 1000px;
+  margin: 0 auto 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.legal-anchor-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e6ebf3;
+  color: var(--cream-dim);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.legal-anchor-nav a:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.legal-update {
+  max-width: 1000px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+.legal-card-wide {
+  scroll-margin-top: 24px;
+}
+
+.legal-callout {
+  background: rgba(47, 125, 250, 0.05);
+  border: 1px solid rgba(47, 125, 250, 0.15);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 10px 0 0;
+}
+
+.legal-callout p {
+  margin: 0 !important;
+  font-size: 0.84rem !important;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav class="nav-compact">
+    <a href="/index.html">Accueil</a>
+    <a href="/services.html">Services</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/glossaire.html">Glossaire</a>
+    <a href="/faq.html">FAQ</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/confidentialite.html">FR</a>
+    <a href="/en/privacy.html">EN</a>
+    <a href="/it/privacy.html">IT</a>
+  </nav>
+
+  <a href="/contact.html?objet=diagnostic" class="header-cta">
+    Demander un audit
+  </a>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
+
+<section class="page-hero">
+
+  <p class="page-hero-kicker">CONFIDENTIALITÉ</p>
+
+  <h1 class="page-hero-title">Politique de confidentialité</h1>
+
+  <p class="page-hero-subtitle">
+    Information sur le traitement des données personnelles au titre des
+    articles 13 et 14 du Règlement (UE) 2016/679 (RGPD).
+    Vous trouverez ici quelles données nous collectons, pourquoi, combien de
+    temps nous les conservons et comment exercer vos droits.
+  </p>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- CONTENU -->
+<!-- ====================================================== -->
+
+<section class="legal-section">
+
+  <p class="legal-update">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    Dernière mise à jour : 4 août 2026 &nbsp;·&nbsp; Version 1.0
+  </p>
+
+  <!-- Navigation par ancres -->
+  <nav class="legal-anchor-nav">
+    <a href="#responsable">Responsable</a>
+    <a href="#donnees">Données collectées</a>
+    <a href="#finalites">Finalités et bases légales</a>
+    <a href="#destinataires">Destinataires</a>
+    <a href="#conservation">Conservation</a>
+    <a href="#securite">Sécurité</a>
+    <a href="#droits">Vos droits</a>
+    <a href="#cookies">Cookies</a>
+  </nav>
+
+  <!-- ---------- 3 cartes courtes ---------- -->
+  <div class="legal-grid-top" id="responsable">
+
+    <div class="legal-card-small">
+      <div class="legal-card-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V7z"/></svg>
+      </div>
+      <h3>Responsable du traitement</h3>
+      <p>
+        Enya Security — entreprise individuelle (micro-entreprise)<br>
+        Responsable : Marina Bruno<br>
+        SIRET : 993 348 382 00017<br>
+        Code APE : 6201Z<br>
+        Email : <a href="mailto:marinabruno@enyasecurity.com">marinabruno@enyasecurity.com</a>
+      </p>
+    </div>
+
+    <div class="legal-card-small">
+      <div class="legal-card-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
+      </div>
+      <h3>Délégué à la protection des données (DPO)</h3>
+      <p>
+        Enya Security n'a pas désigné de DPO : les conditions prévues à
+        l'article 37 du RGPD ne sont pas réunies. Pour toute question
+        relative aux données personnelles, vous pouvez écrire directement
+        à l'adresse indiquée ci-contre.
+      </p>
+    </div>
+
+    <div class="legal-card-small">
+      <div class="legal-card-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+      </div>
+      <h3>Champ d'application et droit applicable</h3>
+      <p>
+        La présente politique concerne le site enyasecurity.com et les
+        contacts qui en découlent. Enya Security est établie en France :
+        le RGPD et la loi n° 78-17 (Informatique et Libertés)
+        s'appliquent.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ---------- 1. Données collectées ---------- -->
+  <div class="legal-card-wide" id="donnees">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>1. Quelles données nous collectons</h3>
+
+      <p><strong>Données que vous nous transmettez</strong></p>
+      <ul class="legal-list">
+        <li><strong>Formulaire de contact</strong> — nom et prénom, adresse email, objet de la demande, contenu du message.</li>
+        <li><strong>Email direct</strong> — adresse de l'expéditeur et toute information que vous choisissez d'inclure dans votre message.</li>
+        <li><strong>Phase précontractuelle et contractuelle</strong> — données de l'organisation, interlocuteur, éléments nécessaires à l'établissement du devis et à la facturation.</li>
+      </ul>
+
+      <p><strong>Données collectées automatiquement</strong></p>
+      <ul class="legal-list">
+        <li><strong>Journaux techniques</strong> — adresse IP, type de navigateur, page demandée, date et heure. Collectés par nos prestataires d'hébergement et de protection du site pour en assurer le fonctionnement et la sécurité.</li>
+        <li><strong>Mesure d'audience</strong> — données statistiques de navigation, collectées uniquement si vous y consentez via le bandeau cookies (voir section 8).</li>
+      </ul>
+
+      <p>
+        Nous ne collectons pas de catégories particulières de données
+        (art. 9 RGPD) et nous vous invitons à ne pas en saisir dans le
+        formulaire de contact. Si vous devez nous transmettre des
+        informations sensibles dans le cadre d'un audit, cela se fait par
+        un canal dédié prévu au contrat.
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- 2. Finalités et bases légales ---------- -->
+  <div class="legal-card-wide" id="finalites">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l2 2 4-4"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>2. Pourquoi nous traitons vos données et sur quelle base légale</h3>
+
+      <div class="legal-table-wrap">
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Finalité</th>
+              <th>Base légale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Répondre à votre demande</strong> et identifier ensemble le service le plus adapté</td>
+              <td>Mesures précontractuelles prises à votre demande — art. 6.1.b du RGPD</td>
+            </tr>
+            <tr>
+              <td><strong>Établir un devis, conclure et exécuter le contrat</strong></td>
+              <td>Exécution du contrat — art. 6.1.b du RGPD</td>
+            </tr>
+            <tr>
+              <td><strong>Émettre et conserver factures et pièces comptables</strong></td>
+              <td>Obligation légale à laquelle la responsable est soumise — art. 6.1.c du RGPD</td>
+            </tr>
+            <tr>
+              <td><strong>Assurer la sécurité et le bon fonctionnement du site</strong> (journaux techniques, protection anti-abus)</td>
+              <td>Intérêt légitime à protéger le site et prévenir les abus — art. 6.1.f du RGPD</td>
+            </tr>
+            <tr>
+              <td><strong>Mesurer l'audience du site</strong> de façon agrégée</td>
+              <td>Consentement, révocable à tout moment — art. 6.1.a du RGPD</td>
+            </tr>
+            <tr>
+              <td><strong>Faire valoir un droit en justice</strong>, en cas de litige</td>
+              <td>Intérêt légitime — art. 6.1.f du RGPD</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Nous n'utilisons pas vos données pour des envois commerciaux
+        automatisés ni pour du profilage. Aucune décision automatisée au
+        sens de l'article 22 du RGPD n'est prise.
+      </p>
+
+      <div class="legal-callout">
+        <p>
+          <strong>La fourniture des données est facultative</strong>, mais le nom, l'email
+          et le message sont nécessaires pour pouvoir vous répondre : sans ces
+          informations, nous ne sommes pas en mesure de donner suite à la demande.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------- 3. Destinataires ---------- -->
+  <div class="legal-card-wide" id="destinataires">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="9" r="2.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2 19c0-2.8 2.2-5 5-5s5 2.2 5 5M12 19c0-2.8 2.2-5 5-5s5 2.2 5 5"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>3. Qui accède à vos données</h3>
+
+      <p>
+        Vos données ne sont <strong>jamais vendues, cédées ni échangées</strong> à des
+        tiers à des fins commerciales. Elles sont traitées par Marina Bruno,
+        seule personne de l'organisation à y avoir accès.
+      </p>
+
+      <p>
+        Pour faire fonctionner le site et la messagerie, nous faisons appel à
+        des prestataires techniques qui agissent en qualité de
+        <strong>sous-traitants</strong> au sens de l'article 28 du RGPD, sur la base de
+        contrats qui les lient à nos instructions :
+      </p>
+
+      <div class="legal-table-wrap">
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Prestataire</th>
+              <th>Rôle</th>
+              <th>Localisation / transferts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Formspree, Inc.</strong></td>
+              <td>Transmission des messages envoyés depuis le formulaire de contact</td>
+              <td>États-Unis — clauses contractuelles types de la Commission européenne</td>
+            </tr>
+            <tr>
+              <td><strong>GitHub, Inc.</strong></td>
+              <td>Hébergement des pages du site (GitHub Pages)</td>
+              <td>États-Unis — clauses contractuelles types</td>
+            </tr>
+            <tr>
+              <td><strong>Cloudflare, Inc.</strong></td>
+              <td>Diffusion des contenus et protection contre les attaques</td>
+              <td>États-Unis — clauses contractuelles types</td>
+            </tr>
+            <tr>
+              <td><strong>Google Ireland Ltd.</strong></td>
+              <td>Mesure d'audience (Google Analytics), uniquement après consentement</td>
+              <td>Irlande, avec transferts possibles vers Google LLC (États-Unis)</td>
+            </tr>
+            <tr>
+              <td><strong>OVH SAS</strong></td>
+              <td>Hébergement de la messagerie professionnelle</td>
+              <td>France — aucun transfert hors Union européenne</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <strong>Transferts hors Union européenne.</strong> Certains de ces prestataires
+        sont établis aux États-Unis. Les transferts s'effectuent sur la base
+        des clauses contractuelles types adoptées par la Commission européenne
+        (art. 46 du RGPD) et, le cas échéant, de la certification des
+        prestataires au titre du EU-U.S. Data Privacy Framework (décision
+        d'adéquation du 10 juillet 2023). Vous pouvez nous demander copie des
+        garanties mises en œuvre.
+      </p>
+
+      <p>
+        Les données peuvent également être communiquées à notre conseil
+        comptable et, sur demande motivée, aux autorités compétentes lorsque
+        la loi l'impose.
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- 4. Conservation ---------- -->
+  <div class="legal-card-wide" id="conservation">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>4. Combien de temps nous conservons les données</h3>
+
+      <div class="legal-table-wrap">
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Catégorie</th>
+              <th>Durée de conservation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Demandes de contact sans suite contractuelle</td>
+              <td>24 mois à compter du dernier contact, puis suppression</td>
+            </tr>
+            <tr>
+              <td>Données clients (contrats, correspondance de mission)</td>
+              <td>Durée de la relation, puis archivage jusqu'à la prescription applicable</td>
+            </tr>
+            <tr>
+              <td>Factures et pièces comptables</td>
+              <td>10 ans (obligation comptable, art. L123-22 du Code de commerce)</td>
+            </tr>
+            <tr>
+              <td>Données techniques collectées durant une mission d'audit</td>
+              <td>Supprimées sous 30 jours après la remise du rapport, avec attestation de suppression</td>
+            </tr>
+            <tr>
+              <td>Journaux techniques du site et de sécurité</td>
+              <td>Jusqu'à 12 mois</td>
+            </tr>
+            <tr>
+              <td>Données de mesure d'audience</td>
+              <td>2 mois (données d'événement et données utilisateur, configuration Google Analytics)</td>
+            </tr>
+            <tr>
+              <td>Preuve du consentement aux cookies</td>
+              <td>12 mois</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Au terme de ces durées, les données sont supprimées de manière
+        sécurisée ou anonymisées de façon irréversible.
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- 5. Sécurité ---------- -->
+  <div class="legal-card-wide" id="securite">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>5. Comment nous protégeons vos données</h3>
+
+      <p>
+        La sécurité est notre métier et nous nous appliquons à nous-mêmes les
+        mesures que nous recommandons à nos clients, au titre de l'article 32
+        du RGPD :
+      </p>
+
+      <ul class="legal-list">
+        <li>Site accessible exclusivement en HTTPS (chiffrement en transit).</li>
+        <li>Chiffrement intégral des supports de stockage du poste de travail.</li>
+        <li>Authentification multifacteur sur les comptes professionnels et gestionnaire de mots de passe dédié.</li>
+        <li>Environnements de travail isolés et dédiés pour chaque mission d'audit, détruits à l'issue.</li>
+        <li>Principe de minimisation : nous ne collectons que les données nécessaires à la finalité annoncée.</li>
+      </ul>
+
+      <p>
+        En cas de violation de données personnelles présentant un risque pour
+        vos droits et libertés, nous notifierons l'autorité de contrôle
+        compétente sous 72 heures et vous informerons directement lorsque le
+        risque est élevé (art. 33 et 34 du RGPD).
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- 6. Droits ---------- -->
+  <div class="legal-card-wide" id="droits">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l7-5 7 5"/><path d="M4 8l-2 6h6zM20 8l-2 6h6z"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>6. Vos droits</h3>
+
+      <p>Au titre des articles 15 à 22 du RGPD, vous disposez des droits suivants :</p>
+
+      <ul class="legal-list">
+        <li><strong>Accès</strong> — savoir quelles données vous concernant nous traitons et en obtenir copie.</li>
+        <li><strong>Rectification</strong> — corriger des données inexactes ou incomplètes.</li>
+        <li><strong>Effacement</strong> — demander la suppression des données, dans les limites de nos obligations légales de conservation.</li>
+        <li><strong>Limitation</strong> — demander la suspension temporaire du traitement.</li>
+        <li><strong>Portabilité</strong> — recevoir vos données dans un format structuré et lisible par machine.</li>
+        <li><strong>Opposition</strong> — vous opposer aux traitements fondés sur notre intérêt légitime.</li>
+        <li><strong>Retrait du consentement</strong> — à tout moment, pour les traitements fondés sur le consentement, sans remettre en cause la licéité du traitement antérieur.</li>
+      </ul>
+
+      <p>
+        Pour exercer ces droits, écrivez à
+        <a href="mailto:marinabruno@enyasecurity.com">marinabruno@enyasecurity.com</a>.
+        Nous répondons dans un délai d'un mois à compter de la réception de la
+        demande. Un élément confirmant votre identité peut vous être demandé
+        en cas de doute raisonnable sur l'identité du demandeur.
+      </p>
+
+      <p>
+        <strong>Réclamation.</strong> Si vous estimez que le traitement de vos données
+        n'est pas conforme à la réglementation, vous pouvez introduire une
+        réclamation auprès de la
+        <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a>,
+        autorité de contrôle compétente puisqu'Enya Security est établie en
+        France, ou auprès de l'autorité de l'État dans lequel vous résidez
+        habituellement.
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- 7. Missions d'audit ---------- -->
+  <div class="legal-card-wide">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>7. Données traitées dans le cadre d'une mission d'audit</h3>
+
+      <p>
+        Lorsque nous réalisons un audit, les données auxquelles nous accédons
+        appartiennent au client, qui en reste responsable du traitement : dans
+        ce cadre, Enya Security agit en qualité de sous-traitant, sur la base
+        d'un accord dédié (DPA) et de règles d'engagement signées avant
+        l'intervention.
+      </p>
+
+      <p>
+        Nos prestations sont non intrusives, de nature déclarative et
+        diagnostique : nous ne réalisons ni test d'intrusion, ni exploitation
+        active de vulnérabilités. Les données techniques collectées sont
+        supprimées sous 30 jours après la remise du rapport et le client
+        reçoit une attestation de suppression.
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- 8. Cookies ---------- -->
+  <div class="legal-card-wide" id="cookies">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="9.5" cy="10" r="1"/><circle cx="14" cy="14.5" r="1"/><circle cx="15" cy="9" r="1"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>8. Cookies et outils de mesure</h3>
+
+      <p>
+        Aucun cookie non nécessaire n'est déposé avant votre consentement.
+        Le bandeau est géré par Tarteaucitron et vous pouvez modifier vos
+        choix à tout moment.
+      </p>
+
+      <div class="legal-table-wrap">
+        <table class="legal-table">
+          <thead>
+            <tr>
+              <th>Cookie</th>
+              <th>Finalité</th>
+              <th>Durée</th>
+              <th>Consentement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>tarteaucitron</strong></td>
+              <td>Mémorise vos choix en matière de cookies</td>
+              <td>12 mois</td>
+              <td>Exempté (cookie nécessaire)</td>
+            </tr>
+            <tr>
+              <td><strong>_ga</strong></td>
+              <td>Distingue les visiteurs du site (Google Analytics 4)</td>
+              <td>12 mois</td>
+              <td>Requis</td>
+            </tr>
+            <tr>
+              <td><strong>_ga_BB0S06Q6LJ</strong></td>
+              <td>Conserve l'état de la session de mesure (Google Analytics 4)</td>
+              <td>12 mois</td>
+              <td>Requis</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes préférences cookies</a>
+        — vous pouvez accepter ou refuser, globalement ou outil par outil, et
+        changer d'avis quand vous le souhaitez. Le refus ne limite en rien
+        l'accès aux contenus du site.
+      </p>
+
+      <p>
+        Vous pouvez également configurer votre navigateur pour bloquer les
+        cookies. Dans ce cas, certaines fonctions statistiques ne seront pas
+        disponibles, mais le site continuera de fonctionner normalement.
+      </p>
+    </div>
+  </div>
+
+  <!-- ---------- 9. Mineurs & modifications ---------- -->
+  <div class="legal-card-wide">
+    <div class="legal-card-icon">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h5"/></svg>
+    </div>
+    <div class="legal-card-wide-body">
+      <h3>9. Mineurs, liens externes et modifications</h3>
+
+      <p>
+        <strong>Mineurs.</strong> Le site s'adresse à des professionnels et à des
+        organisations. Il n'est pas destiné aux mineurs et nous ne collectons
+        pas sciemment de données de personnes de moins de 15 ans. Si vous
+        estimez que cela s'est produit, écrivez-nous : nous supprimerons les
+        données.
+      </p>
+
+      <p>
+        <strong>Liens externes.</strong> Le site peut renvoyer vers des sites tiers.
+        Enya Security ne contrôle pas ces sites et n'est pas responsable de
+        leurs politiques en matière de données personnelles.
+      </p>
+
+      <p>
+        <strong>Modifications.</strong> Cette politique peut être mise à jour pour
+        refléter l'évolution de nos services ou de la réglementation. La
+        version en vigueur est toujours celle publiée sur cette page, avec la
+        date de dernière mise à jour indiquée en haut. En cas de modification
+        substantielle, nous informerons les personnes concernées lorsque nous
+        disposons de leurs coordonnées.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<div class="legal-footer-links">
+  <a href="/mentions_legales.html">Mentions légales</a>
+  <span>|</span>
+  <a href="/confidentialite.html">Politique de confidentialité</a>
+  <span>|</span>
+  <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+  <span>|</span>
+  <a href="/contact.html">Contact</a>
+</div>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
+
+</body>
+</html>
