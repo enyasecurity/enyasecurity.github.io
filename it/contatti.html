@@ -6,11 +6,11 @@
 <title>Contatti - Enya Security</title>
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
+<!-- TarteAuCitron (gestione dei cookie) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -75,7 +77,7 @@ tarteaucitron.user.gtagMore = function () {};
 
   <div class="hero-grid">
 
-    <!-- COLONNE TEXTE -->
+    <!-- COLONNA TESTO -->
     <div class="hero-content">
 
       <div class="hero-kicker-text">CONTATTI</div>
@@ -91,7 +93,7 @@ tarteaucitron.user.gtagMore = function () {};
 
     </div>
 
-    <!-- COLONNE VISUELLE -->
+    <!-- COLONNA VISIVA -->
     <div class="hero-visual hero-visual-compact">
       <div class="hero-visual-glow"></div>
       <div class="hero-visual-rings"></div>
@@ -103,14 +105,14 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- FORMULAIRE + INFOS -->
+<!-- MODULO + INFO -->
 <!-- ====================================================== -->
 
 <section class="contact-section">
 
   <div class="contact-grid">
 
-    <!-- FORMULAIRE -->
+    <!-- MODULO -->
     <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqevgvdb" method="POST">
 
       <div class="form-row">
@@ -155,7 +157,7 @@ tarteaucitron.user.gtagMore = function () {};
 
     </form>
 
-    <!-- INFOS -->
+    <!-- INFO -->
     <div class="contact-info-card">
 
       <h3>Contattami direttamente</h3>
@@ -210,6 +212,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 
 <p>
@@ -217,6 +221,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tutti i diritti riservati.
+</div>
 
 <script>
 // Preseleziona l'oggetto se il link contiene ?objet=...
