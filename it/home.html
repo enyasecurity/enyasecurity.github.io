@@ -18,7 +18,7 @@
 
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -35,7 +35,9 @@ tarteaucitron.init({
 
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -102,7 +104,7 @@ tarteaucitron.user.gtagMore = function () {};
 
 <div class="hero-grid">
 
-    <!-- COLONNE TEXTE -->
+    <!-- COLONNA TESTO -->
     <div class="hero-content">
 
         <h1 class="hero-title">
@@ -112,7 +114,7 @@ tarteaucitron.user.gtagMore = function () {};
 
         <p class="hero-subtitle">
         <b>Enya Security</b> affianca micro, piccole e medie imprese, studi professionali, associazioni ed enti pubblici attraverso audit tecnici,
-        analisi dell’esposizione online e campagne di sensibilizzazione contro il phishing.
+        analisi dell'esposizione online e campagne di sensibilizzazione contro il phishing.
         </p>
 
         <div class="hero-buttons-new">
@@ -128,14 +130,14 @@ tarteaucitron.user.gtagMore = function () {};
 
         </div>
 
-        <a href="/nis2.html" class="hero-link-nis2">
+        <a href="/it/nis2.html" class="hero-link-nis2">
             La tua organizzazione è soggetta alla NIS2?
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
 
     </div>
 
-    <!-- COLONNE VISUELLE -->
+    <!-- COLONNA VISIVA -->
     <div class="hero-visual">
 
         <div class="hero-visual-glow"></div>
@@ -148,7 +150,7 @@ tarteaucitron.user.gtagMore = function () {};
 </div>
 
 <!-- ====================================================== -->
-<!-- BANDEAU DE CONFIANCE -->
+<!-- BANDA DI FIDUCIA -->
 <!-- ====================================================== -->
 
 <div class="trust-row">
@@ -169,7 +171,7 @@ tarteaucitron.user.gtagMore = function () {};
 </span>
 <span class="trust-text">
 <strong>Riservatezza garantita</strong>
-<small>Dati utilizzati solo per l’audit</small>
+<small>Dati utilizzati solo per l'audit</small>
 </span>
 </div>
 
@@ -188,7 +190,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- NOS EXPERTISES (section claire) -->
+<!-- I NOSTRI SERVIZI -->
 <!-- ====================================================== -->
 
 <section class="expertise-section">
@@ -255,27 +257,20 @@ tarteaucitron.user.gtagMore = function () {};
 <footer>
 
 <p>
-
-<a href="/it/note-legali.html">
-
-Note legali
-
-</a>
-
+<a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 
 <p>
-
-<a href="#"
-onclick="tarteaucitron.userInterface.openPanel(); return false;">
-
-Gestisci i cookie
-
-</a>
-
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gestisci i cookie</a>
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tutti i diritti riservati.
+</div>
 
 </body>
 </html>
