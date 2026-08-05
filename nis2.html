@@ -11,7 +11,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/confidentialite.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -28,7 +28,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -102,7 +104,7 @@ tarteaucitron.user.gtagMore = function () {};
           <span class="nis2-chip-icon">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:26px;height:26px;flex-shrink:0;"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
           </span>
-          <span>Gestion des risques<br>et incident response</span>
+          <span>Gestion des risques<br>et réponse à incident</span>
         </div>
 
         <div class="nis2-chip">
@@ -144,13 +146,14 @@ tarteaucitron.user.gtagMore = function () {};
       </div>
       <p>
         NIS2 vise à atteindre un niveau élevé commun de cybersécurité dans
-        l'ensemble de l'Union européenne. Environ 15 000 organisations
-        françaises seront concernées, réparties sur 18 secteurs critiques.
+        l'ensemble de l'Union européenne. Selon l'ANSSI, plusieurs milliers
+        d'organisations françaises seront concernées, réparties sur
+        18 secteurs d'activité.
       </p>
       <ul class="nis2-card-list">
         <li>Directive publiée le 27 décembre 2022</li>
-        <li>Transposition française attendue mi-2026</li>
-        <li>Sanctions jusqu'à 10 M€ ou 2 % du CA mondial</li>
+        <li>Transposition française attendue en 2026</li>
+        <li>Sanctions jusqu'à 10 M€ ou 2 % du CA mondial pour les entités essentielles</li>
       </ul>
       <a href="https://cyber.gouv.fr/reglementation/cybersecurite-systemes-dinformation/directives-nis-nis2-et-dispositif-saiv/directive-nis-2/" target="_blank" rel="noopener" class="nis2-card-link">
         En savoir plus sur la directive NIS2
@@ -204,8 +207,8 @@ tarteaucitron.user.gtagMore = function () {};
         <li>Prioriser les actions les plus urgentes</li>
         <li>Préparer l'entrée en vigueur de la réglementation</li>
       </ul>
-      <a href="/services.html" class="nis2-card-link">
-        Découvrir nos services
+      <a href="/contact.html?objet=nis2" class="nis2-card-link">
+        Demander un diagnostic
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -331,6 +334,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/mentions_legales.html">Mentions légales</a>
+&nbsp;·&nbsp;
+<a href="/confidentialite.html">Politique de confidentialité</a>
 </p>
 
 <p>
@@ -338,6 +343,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
 
 </body>
 </html>
