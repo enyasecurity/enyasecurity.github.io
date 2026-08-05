@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/confidentialite.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -146,7 +148,7 @@ tarteaucitron.user.gtagMore = function () {};
       <ul class="pricing-features">
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          Tests non-intrusifs
+          Contrôles non-intrusifs
         </li>
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
@@ -286,9 +288,72 @@ tarteaucitron.user.gtagMore = function () {};
 
   </div>
 
-  <p class="pricing-kicker">SENSIBILISATION &amp; MOBILE</p>
+  <p class="pricing-kicker">CONFORMITÉ, SENSIBILISATION &amp; MOBILE</p>
 
   <div class="pricing-grid">
+
+    <!-- NIS2 -->
+    <div class="pricing-card">
+
+      <div class="pricing-card-header">
+        <span class="pricing-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 4.5v6c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11v-6L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <h3>Diagnostic de<br>préparation NIS2</h3>
+      </div>
+
+      <p class="pricing-card-desc">
+        Analyse d'écart documentaire par rapport au référentiel ANSSI :
+        exigences applicables, écarts identifiés et plan d'action priorisé.
+      </p>
+
+      <div class="pricing-tiers">
+        <div class="pricing-tier">
+          <span class="pricing-tier-name">Express</span>
+          <span class="pricing-tier-label">à partir de</span>
+          <span class="pricing-tier-amount">449 €</span>
+        </div>
+        <div class="pricing-tier">
+          <span class="pricing-tier-name">Standard</span>
+          <span class="pricing-tier-label">à partir de</span>
+          <span class="pricing-tier-amount">950 €</span>
+        </div>
+        <div class="pricing-tier">
+          <span class="pricing-tier-name">Premium</span>
+          <span class="pricing-tier-label">à partir de</span>
+          <span class="pricing-tier-amount">1 350 €</span>
+        </div>
+      </div>
+
+      <div class="pricing-addon">
+        <strong>Module Entité Essentielle</strong> (exigences étendues) :
+        + 1 190 €.
+      </div>
+
+      <ul class="pricing-features">
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          Évaluation des exigences applicables
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          Analyse d'écart documentaire
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          Plan d'action priorisé
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+          Rapport et restitution
+        </li>
+      </ul>
+
+      <a href="/contact.html?objet=nis2" class="btn-primary">
+        Demander un devis
+      </a>
+
+    </div>
 
     <!-- Phishing -->
     <div class="pricing-card">
@@ -335,7 +400,7 @@ tarteaucitron.user.gtagMore = function () {};
         </li>
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          Rapport &amp; statistiques
+          Rapport &amp; statistiques anonymes
         </li>
         <li>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
@@ -393,6 +458,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/mentions_legales.html">Mentions légales</a>
+&nbsp;·&nbsp;
+<a href="/confidentialite.html">Politique de confidentialité</a>
 </p>
 
 <p>
@@ -400,6 +467,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
 
 </body>
 </html>
