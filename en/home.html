@@ -8,7 +8,7 @@
 
 <title>Enya Security</title>
 
-<meta name="description" content="Enya Security supports small and medium-sized businesses with technical security audits, online exposure analysis, and phishing awareness campaigns.">
+<meta name="description" content="Enya Security supports small and medium-sized businesses with non-intrusive security audits: databases, ransomware readiness and Android applications.">
 
 <link rel="stylesheet" href="/style.css">
 
@@ -20,7 +20,7 @@
 
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/en/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -37,7 +37,9 @@ tarteaucitron.init({
 
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -77,7 +79,6 @@ tarteaucitron.user.gtagMore = function () {};
     <a href="/en/services.html">Services</a>
     <a href="/en/pricing.html">Pricing</a>
     <a href="/en/about.html">About</a>
-    <a href="/en/nis2.html">NIS2</a>
     <a href="/en/contact.html">Contact</a>
     <a href="/en/glossary.html">Glossary</a>
     <a href="/en/faq.html">FAQ</a>
@@ -104,7 +105,7 @@ tarteaucitron.user.gtagMore = function () {};
 
 <div class="hero-grid">
 
-    <!-- COLONNE TEXTE -->
+    <!-- TEXT COLUMN -->
     <div class="hero-content">
 
         <h1 class="hero-title">
@@ -113,8 +114,9 @@ tarteaucitron.user.gtagMore = function () {};
         </h1>
 
         <p class="hero-subtitle">
-        <b>Enya Security</b> supports small and medium-sized businesses and local authorities
-        with technical audits, online exposure analysis, and phishing awareness campaigns.
+        <b>Enya Security</b> supports small and medium-sized businesses, professional
+        practices and associations with non-intrusive security audits: databases,
+        ransomware readiness and Android applications.
         </p>
 
         <div class="hero-buttons-new">
@@ -130,14 +132,14 @@ tarteaucitron.user.gtagMore = function () {};
 
         </div>
 
-        <a href="/en/nis2.html" class="hero-link-nis2">
-            Am I affected by the NIS2 directive?
+        <a href="/en/services.html" class="hero-link-nis2">
+            Read how a non-intrusive audit works
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
 
     </div>
 
-    <!-- COLONNE VISUELLE -->
+    <!-- VISUAL COLUMN -->
     <div class="hero-visual">
 
         <div class="hero-visual-glow"></div>
@@ -150,7 +152,7 @@ tarteaucitron.user.gtagMore = function () {};
 </div>
 
 <!-- ====================================================== -->
-<!-- BANDEAU DE CONFIANCE -->
+<!-- TRUST ROW -->
 <!-- ====================================================== -->
 
 <div class="trust-row">
@@ -180,8 +182,8 @@ tarteaucitron.user.gtagMore = function () {};
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
 </span>
 <span class="trust-text">
-<strong>Compliance &amp; standards</strong>
-<small>Aligned with NIS2, GDPR, ISO...</small>
+<strong>Standards-aligned</strong>
+<small>GDPR, ANSSI and ISO good practice</small>
 </span>
 </div>
 
@@ -190,7 +192,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- NOS EXPERTISES (section claire) -->
+<!-- OUR EXPERTISE -->
 <!-- ====================================================== -->
 
 <section class="expertise-section">
@@ -198,8 +200,8 @@ tarteaucitron.user.gtagMore = function () {};
     <p class="expertise-kicker">OUR EXPERTISE</p>
     <h2 class="expertise-title">Practical solutions for your security</h2>
     <p class="expertise-subtitle">
-        We cover the essentials of your cybersecurity needs to protect
-        your business at every stage.
+        Focused, fixed-fee engagements designed to identify real risks and
+        give you something concrete to act on.
     </p>
 
     <div class="expertise-grid">
@@ -208,9 +210,9 @@ tarteaucitron.user.gtagMore = function () {};
             <div class="expertise-icon-wrap">
                 <img src="/assets/icons/icone_auditdb.png" alt="Database audit" class="expertise-icon">
             </div>
-            <h3>Audit &amp; Databases</h3>
-            <p>Comprehensive analysis of your systems and databases to identify critical vulnerabilities.</p>
-            <a href="/en/services.html#audit-bdd" class="expertise-more">
+            <h3>Database security audit</h3>
+            <p>A read-only review of accounts, access rights, backups, encryption and configuration to surface critical weaknesses.</p>
+            <a href="/en/database-audit.html" class="expertise-more">
                 Learn more
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -218,11 +220,11 @@ tarteaucitron.user.gtagMore = function () {};
 
         <div class="expertise-card">
             <div class="expertise-icon-wrap">
-                <img src="/assets/icons/icone_expo.png" alt="Exposure analysis" class="expertise-icon">
+                <img src="/assets/icons/icone_ransomware.png" alt="Ransomware readiness" class="expertise-icon">
             </div>
-            <h3>Exposure analysis</h3>
-            <p>Mapping your attack surface visible on the Internet, before cybercriminals find it.</p>
-            <a href="/en/services.html#analyse-exposition" class="expertise-more">
+            <h3>Ransomware readiness</h3>
+            <p>An assessment of how well you would withstand a ransomware attack — attack surface, backups, patching and response capability.</p>
+            <a href="/en/ransomware-readiness.html" class="expertise-more">
                 Learn more
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -230,11 +232,11 @@ tarteaucitron.user.gtagMore = function () {};
 
         <div class="expertise-card">
             <div class="expertise-icon-wrap">
-                <img src="/assets/icons/icone_phishing.png" alt="Phishing campaigns" class="expertise-icon">
+                <img src="/assets/icons/icone_android.png" alt="Android audit" class="expertise-icon">
             </div>
-            <h3>Phishing campaigns</h3>
-            <p>Realistic simulations and awareness training for your teams to reduce human risk.</p>
-            <a href="/en/services.html#phishing" class="expertise-more">
+            <h3>Android security audit</h3>
+            <p>A review of your mobile application: data storage, permissions, exposed components and network communications.</p>
+            <a href="/en/android-audit.html" class="expertise-more">
                 Learn more
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -257,27 +259,20 @@ tarteaucitron.user.gtagMore = function () {};
 <footer>
 
 <p>
-
-<a href="/en/legal-notice.html">
-
-Legal notice
-
-</a>
-
+<a href="/en/legal.html">Legal notice</a>
+&nbsp;·&nbsp;
+<a href="/en/privacy.html">Privacy policy</a>
 </p>
 
 <p>
-
-<a href="#"
-onclick="tarteaucitron.userInterface.openPanel(); return false;">
-
-Manage cookies
-
-</a>
-
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Manage cookies</a>
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — All rights reserved.
+</div>
 
 </body>
 </html>
