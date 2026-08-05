@@ -4,13 +4,14 @@
 
 <meta charset="UTF-8">
 <title>About - Enya Security</title>
+<meta name="description" content="Enya Security helps small and medium-sized businesses and associations improve their cybersecurity through clear, educational and non-intrusive audits.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
+<!-- TarteAuCitron (cookie management) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/en/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +28,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -84,8 +87,9 @@ tarteaucitron.user.gtagMore = function () {};
       </h1>
 
       <p class="hero-subtitle">
-        Enya Security helps small and medium-sized businesses and associations improve
-        their cybersecurity through clear, educational, and non-intrusive audits.
+        Enya Security helps small and medium-sized businesses, professional
+        practices and associations improve their cybersecurity through clear,
+        educational and non-intrusive audits.
       </p>
 
     </div>
@@ -101,14 +105,14 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- MON PARCOURS + POINTS CLÉS -->
+<!-- BACKGROUND + KEY POINTS -->
 <!-- ====================================================== -->
 
 <section class="about-intro-section">
 
   <div class="about-intro-grid">
 
-    <!-- Mon parcours -->
+    <!-- Background -->
     <div class="about-card-light">
 
       <div class="about-card-heading">
@@ -116,45 +120,45 @@ tarteaucitron.user.gtagMore = function () {};
       </div>
 
       <p>
-        My name is <b>Marina Bruno</b>, an information systems engineer
-        and founder of Enya Security.
+        My name is <b>Marina Bruno</b>. I hold a bachelor's degree in computer
+        systems engineering and a master's in engineering management, and I
+        founded Enya Security.
       </p>
 
       <p>
-        For several years, I have supported organizations in analyzing
-        information systems, resolving incidents, producing technical
-        documentation, and improving business processes. This experience
-        allowed me to develop a rigorous, methodical approach focused
-        on finding concrete solutions.
+        For several years I have worked with organisations on information
+        system analysis, incident resolution, technical documentation and
+        business process improvement. That experience shaped a rigorous,
+        methodical approach focused on finding workable solutions.
       </p>
 
       <p>
-        Passionate about cybersecurity, I deepened my skills through
-        specialized training, hands-on labs, and recognized certifications,
-        including <b>Ethical Hacking Essentials (EC-Council)</b> and
-        <b>Pre-Security (TryHackMe)</b>.
+        Cybersecurity is where that work led me. I have built my skills
+        through specialist training, hands-on labs and recognised
+        certifications, including <b>Ethical Hacking Essentials
+        (EC-Council)</b> and <b>Pre-Security (TryHackMe)</b>, and I keep
+        studying to stay current with how threats and good practice evolve.
       </p>
 
       <p>
-        I created Enya Security with a simple goal: make cybersecurity
-        audits accessible to small and medium-sized businesses and
-        associations through a clear, educational, and non-intrusive approach.
+        I founded Enya Security with a simple goal: to make cybersecurity
+        audits accessible to smaller organisations through an approach that is
+        clear, understandable and non-intrusive.
       </p>
 
       <p>
-        Audits are independent, confidential, and pragmatic. My goal
-        is not only to identify vulnerabilities but above all to explain
-        the risks they represent and to offer concrete recommendations
-        tailored to the reality of each organization.
+        Every audit is independent, confidential and pragmatic. The aim is not
+        only to identify vulnerabilities but to explain what they mean for you
+        and to propose recommendations that match your actual resources.
       </p>
 
     </div>
 
-    <!-- Points clés -->
+    <!-- Key points -->
     <div class="about-card-dark">
 
       <div class="about-card-heading about-card-heading-underline">
-        <h2>Key highlights</h2>
+        <h2>In brief</h2>
       </div>
 
       <div class="about-points">
@@ -164,8 +168,8 @@ tarteaucitron.user.gtagMore = function () {};
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
           </span>
           <div>
-            <strong>Ongoing cybersecurity training</strong>
-            <p>Hands-on training and recognized certifications.</p>
+            <strong>Continuous training in cybersecurity</strong>
+            <p>Specialist courses, practical labs and ongoing study.</p>
           </div>
         </div>
 
@@ -175,7 +179,7 @@ tarteaucitron.user.gtagMore = function () {};
           </span>
           <div>
             <strong>Field experience</strong>
-            <p>Several years of experience in systems analysis and business support.</p>
+            <p>Several years analysing systems and supporting organisations.</p>
           </div>
         </div>
 
@@ -184,8 +188,8 @@ tarteaucitron.user.gtagMore = function () {};
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.5"/></svg>
           </span>
           <div>
-            <strong>Pragmatic approach</strong>
-            <p>Realistic, understandable, solution-oriented audits.</p>
+            <strong>A pragmatic approach</strong>
+            <p>Realistic, readable audits focused on solutions.</p>
           </div>
         </div>
 
@@ -194,8 +198,8 @@ tarteaucitron.user.gtagMore = function () {};
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
           </span>
           <div>
-            <strong>Confidentiality &amp; trust</strong>
-            <p>Independence, discretion, and respect for your data at every step.</p>
+            <strong>Confidentiality and trust</strong>
+            <p>Independence, discretion and respect for your data at every step.</p>
           </div>
         </div>
 
@@ -208,7 +212,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- MON APPROCHE -->
+<!-- MY APPROACH -->
 <!-- ====================================================== -->
 
 <section class="approach-section">
@@ -227,7 +231,7 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 0 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 0 4 0"/></svg>
         </span>
         <h3>Listen</h3>
-        <p>I take the time to understand your business, your challenges, and your constraints.</p>
+        <p>I take the time to understand your business, your priorities and your constraints.</p>
       </div>
 
       <div class="approach-step">
@@ -235,7 +239,7 @@ tarteaucitron.user.gtagMore = function () {};
         <span class="approach-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
         </span>
-        <h3>Analyze</h3>
+        <h3>Analyse</h3>
         <p>I assess your systems and exposure using rigorous, non-intrusive methods.</p>
       </div>
 
@@ -245,7 +249,7 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
         </span>
         <h3>Explain</h3>
-        <p>I provide you with a clear, educational, and prioritized report, without unnecessary jargon.</p>
+        <p>You get a clear, prioritised report written without unnecessary jargon.</p>
       </div>
 
       <div class="approach-step">
@@ -254,7 +258,7 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
         </span>
         <h3>Support</h3>
-        <p>I help you implement concrete actions tailored to your means.</p>
+        <p>I help you put in place actions that fit the resources you actually have.</p>
       </div>
 
     </div>
@@ -264,7 +268,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- MES VALEURS -->
+<!-- VALUES -->
 <!-- ====================================================== -->
 
 <section class="values-section">
@@ -281,7 +285,7 @@ tarteaucitron.user.gtagMore = function () {};
         </span>
         <div>
           <strong>Confidentiality</strong>
-          <p>Your information is handled with the utmost discretion. Your trust is essential.</p>
+          <p>Your information is handled with discretion. Your trust matters more than any single engagement.</p>
         </div>
       </div>
 
@@ -291,7 +295,7 @@ tarteaucitron.user.gtagMore = function () {};
         </span>
         <div>
           <strong>Pragmatism</strong>
-          <p>I focus on real risks and the actions that bring the most value.</p>
+          <p>I focus on real risks and on the actions that deliver the most value.</p>
         </div>
       </div>
 
@@ -300,8 +304,8 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
         </span>
         <div>
-          <strong>Education</strong>
-          <p>I make cybersecurity understandable so you can make the right decisions.</p>
+          <strong>Clarity</strong>
+          <p>I translate security into plain language so you can make informed decisions.</p>
         </div>
       </div>
 
@@ -311,7 +315,7 @@ tarteaucitron.user.gtagMore = function () {};
         </span>
         <div>
           <strong>Independence</strong>
-          <p>Objective recommendations, free of conflicts of interest, with your security as the priority.</p>
+          <p>Objective recommendations, with no conflict of interest and nothing to upsell.</p>
         </div>
       </div>
 
@@ -322,7 +326,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- POURQUOI FAIRE CONFIANCE -->
+<!-- WHY TRUST US -->
 <!-- ====================================================== -->
 
 <section class="trust-band">
@@ -331,39 +335,39 @@ tarteaucitron.user.gtagMore = function () {};
 
     <div class="trust-band-text">
 
-      <h2>Why trust Enya Security?</h2>
+      <h2>Why work with Enya Security?</h2>
 
       <div class="trust-band-grid">
 
         <div class="trust-band-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
           <div>
-            <strong>Non-intrusive audit</strong>
-            <p>No impact on your business. Your systems remain under your control.</p>
+            <strong>Non-intrusive audits</strong>
+            <p>No impact on your operations. Your systems stay under your control.</p>
           </div>
         </div>
 
         <div class="trust-band-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
           <div>
-            <strong>Clear methodology</strong>
-            <p>Structured processes for reliable, actionable results.</p>
+            <strong>A clear methodology</strong>
+            <p>Structured processes producing reliable, usable results.</p>
           </div>
         </div>
 
         <div class="trust-band-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
           <div>
-            <strong>Tailored to your reality</strong>
-            <p>Every audit is adapted to your context, sector, and resources.</p>
+            <strong>Fitted to your reality</strong>
+            <p>Each audit is adapted to your context, your sector and your resources.</p>
           </div>
         </div>
 
         <div class="trust-band-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
           <div>
-            <strong>Follow-up &amp; guidance</strong>
-            <p>I remain available to support you in implementing the recommendations.</p>
+            <strong>Follow-up and advice</strong>
+            <p>I stay available to help you put the recommendations into practice.</p>
           </div>
         </div>
 
@@ -380,7 +384,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- CTA FINALE -->
+<!-- FINAL CTA -->
 <!-- ====================================================== -->
 
 <section class="about-cta-bar">
@@ -392,12 +396,12 @@ tarteaucitron.user.gtagMore = function () {};
     </span>
 
     <div class="about-cta-text">
-      <strong>Let's talk about your project</strong>
-      <p>Have questions or an audit project in mind? I'm happy to help.</p>
+      <strong>Let's discuss your project</strong>
+      <p>Questions, or an audit in mind? I'm happy to talk it through with no obligation.</p>
     </div>
 
     <a href="/en/contact.html?objet=diagnostic" class="btn-primary">
-      Contact us
+      Get in touch
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
 
@@ -412,7 +416,9 @@ tarteaucitron.user.gtagMore = function () {};
 <footer>
 
 <p>
-<a href="/en/legal-notice.html">Legal notice</a>
+<a href="/en/legal.html">Legal notice</a>
+&nbsp;·&nbsp;
+<a href="/en/privacy.html">Privacy policy</a>
 </p>
 
 <p>
@@ -420,6 +426,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — All rights reserved.
+</div>
 
 </body>
 </html>
