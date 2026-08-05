@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 </head>
@@ -257,7 +259,7 @@ tarteaucitron.user.gtagMore = function () {};
   </div>
 </section>
 <!-- ====================================================== -->
-<!-- LIVRABLE + PERCHÉ ENYA SECURITY -->
+<!-- DELIVERABLE + PERCHÉ ENYA SECURITY -->
 <!-- ====================================================== -->
 <section class="svc-check-section">
   <div class="svc-check-grid">
@@ -366,7 +368,8 @@ tarteaucitron.user.gtagMore = function () {};
           accesso tecnico. Le tue credenziali di accesso vengono distrutte
           immediatamente dopo la consegna del rapporto, e gli altri dati raccolti
           (output tecnici, note) vengono distrutti entro 30 giorni dalla
-          consegna.
+          consegna. Maggiori dettagli nella nostra
+          <a href="/it/privacy.html">informativa sulla privacy</a>.
         </p>
       </details>
     </div>
@@ -393,6 +396,8 @@ tarteaucitron.user.gtagMore = function () {};
 <footer>
 <p>
 <a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 <p>
 <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gestisci i cookie</a>
