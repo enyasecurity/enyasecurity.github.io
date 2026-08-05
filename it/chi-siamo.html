@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -122,9 +124,9 @@ tarteaucitron.user.gtagMore = function () {};
       </p>
 
       <p>
-        Da diversi anni supporto le organizzazioni nell’analisi dei sistemi informativi,
+        Da diversi anni supporto le organizzazioni nell'analisi dei sistemi informativi,
         nella gestione degli incidenti, nella documentazione tecnica e nel miglioramento
-        dei processi aziendali. Questa esperienza mi ha permesso di sviluppare un
+        dei processi aziendali. Questa esperienza mi ha permesso di sviluppare
         un metodo rigoroso, strutturato e orientato a soluzioni concrete.
       </p>
 
@@ -132,7 +134,7 @@ tarteaucitron.user.gtagMore = function () {};
         Appassionata di cybersicurezza, ho approfondito le mie competenze attraverso
         formazioni specialistiche, laboratori pratici e certificazioni riconosciute,
         tra cui <b>Ethical Hacking Essentials (EC-Council)</b> e <b>Pre-Security (TryHackMe)</b>.
-        Continuo inoltre ad aggiornarmi per seguire l’evoluzione delle minacce e delle buone pratiche di sicurezza.
+        Continuo inoltre ad aggiornarmi per seguire l'evoluzione delle minacce e delle buone pratiche di sicurezza.
       </p>
 
       <p>
@@ -144,7 +146,7 @@ tarteaucitron.user.gtagMore = function () {};
       <p>
         Ogni audit viene svolto con indipendenza, riservatezza e pragmatismo.
         Il mio obiettivo non è soltanto individuare le vulnerabilità, ma anche
-        spiegarne i rischi e proporre raccomandazioni concrete, adatte 
+        spiegarne i rischi e proporre raccomandazioni concrete, adatte
         alle caratteristiche e alle risorse di ogni organizzazione.
       </p>
 
@@ -175,7 +177,7 @@ tarteaucitron.user.gtagMore = function () {};
           </span>
           <div>
             <strong>Esperienza professionale</strong>
-            <p>Diversi anni di esperienza nell'analisi dei sistemi e nel supporto alle organizzazioni</p>
+            <p>Diversi anni di esperienza nell'analisi dei sistemi e nel supporto alle organizzazioni.</p>
           </div>
         </div>
 
@@ -281,7 +283,7 @@ tarteaucitron.user.gtagMore = function () {};
         </span>
         <div>
           <strong>Riservatezza</strong>
-          <p>Tratto le informazioni ricevute con discrezione e le utilizzo esclusivamente per lo svolgimento dell’incarico.</p>
+          <p>Tratto le informazioni ricevute con discrezione e le utilizzo esclusivamente per lo svolgimento dell'incarico.</p>
         </div>
       </div>
 
@@ -311,7 +313,7 @@ tarteaucitron.user.gtagMore = function () {};
         </span>
         <div>
           <strong>Indipendenza</strong>
-          <p>Formulo raccomandazioni obiettive, senza conflitti di interesse e nell’interesse della tua sicurezza.</p>
+          <p>Formulo raccomandazioni obiettive, senza conflitti di interesse e nell'interesse della tua sicurezza.</p>
         </div>
       </div>
 
@@ -339,7 +341,7 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
           <div>
             <strong>Audit non invasivi</strong>
-            <p>Le verifiche sono svolte senza interferire con la normale attività dell’organizzazione.</p>
+            <p>Le verifiche sono svolte senza interferire con la normale attività dell'organizzazione.</p>
           </div>
         </div>
 
@@ -362,7 +364,7 @@ tarteaucitron.user.gtagMore = function () {};
         <div class="trust-band-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
           <div>
-            <strong>Supporto dopo l’audit</strong>
+            <strong>Supporto dopo l'audit</strong>
             <p>Rimango disponibile per chiarire le raccomandazioni e supportarti nella loro attuazione.</p>
           </div>
         </div>
@@ -413,6 +415,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 
 <p>
@@ -420,6 +424,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tutti i diritti riservati.
+</div>
 
 </body>
 </html>
