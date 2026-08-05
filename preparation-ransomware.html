@@ -11,7 +11,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/confidentialite.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -28,7 +28,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -487,7 +489,8 @@ tarteaucitron.user.gtagMore = function () {};
         <p>
           Oui. Un accord de confidentialité (NDA) est signé avant tout échange
           technique, et les informations collectées sont traitées selon notre
-          politique interne de gestion des données.
+          politique interne de gestion des données. Plus de détails dans notre
+          <a href="/confidentialite.html">politique de confidentialité</a>.
         </p>
       </details>
 
@@ -521,6 +524,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/mentions_legales.html">Mentions légales</a>
+&nbsp;·&nbsp;
+<a href="/confidentialite.html">Politique de confidentialité</a>
 </p>
 
 <p>
