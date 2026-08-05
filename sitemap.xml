@@ -1,66 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- FR -->
+  <!-- ==================================================== -->
+  <!-- ACCUEIL                                              -->
+  <!-- ==================================================== -->
   <url>
-    <loc>https://enyasecurity.github.io/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://enyasecurity.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/home.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://enyasecurity.com/index.html"/>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://enyasecurity.github.io/services.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://enyasecurity.com/it/home.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/home.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://enyasecurity.com/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- SERVICES                                             -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/servizi.html"/>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://enyasecurity.github.io/packs.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://enyasecurity.com/it/servizi.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/servizi.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- TARIFS                                               -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/tarifs.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/tarifs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/tariffe.html"/>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://enyasecurity.github.io/contact.html</loc>
+    <loc>https://enyasecurity.com/it/tariffe.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/tarifs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/tariffe.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- PAGES SERVICE — AUDIT BASES DE DONNÉES               -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/audit-bases-de-donnees.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/audit-bases-de-donnees.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/audit-database.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/audit-database.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/audit-bases-de-donnees.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/audit-database.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- EN -->
+  <!-- ==================================================== -->
+  <!-- PAGES SERVICE — PRÉPARATION RANSOMWARE               -->
+  <!-- ==================================================== -->
   <url>
-    <loc>https://enyasecurity.github.io/en/index.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://enyasecurity.com/preparation-ransomware.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/preparation-ransomware.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/preparazione-ransomware.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://enyasecurity.github.io/en/services.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://enyasecurity.github.io/en/packs.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://enyasecurity.github.io/en/contact.html</loc>
+    <loc>https://enyasecurity.com/it/preparazione-ransomware.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/preparation-ransomware.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/preparazione-ransomware.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- IT -->
+  <!-- ==================================================== -->
+  <!-- PAGES SERVICE — ANALYSE D'EXPOSITION                 -->
+  <!-- ==================================================== -->
   <url>
-    <loc>https://enyasecurity.github.io/it/index.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://enyasecurity.com/analyse-exposition.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/analyse-exposition.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/analisi-esposizione.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/analisi-esposizione.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/analyse-exposition.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/analisi-esposizione.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- PAGES SERVICE — PHISHING / ANDROID                   -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/simulation-phishing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/audit-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/audit-android.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/audit-android.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/audit-android.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/audit-android.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/audit-android.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- NIS2                                                 -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/nis2.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/nis2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/nis2.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/nis2.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/nis2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/nis2.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- À PROPOS                                             -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/apropos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/apropos.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/chi-siamo.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/chi-siamo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/apropos.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/chi-siamo.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- CONTACT                                              -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/contatti.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/contatti.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/contatti.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- GLOSSAIRE                                            -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/glossaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/glossaire.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/glossario.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/glossario.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/glossaire.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/glossario.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- FAQ                                                  -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://enyasecurity.com/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://enyasecurity.com/it/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ==================================================== -->
+  <!-- PAGES LÉGALES                                        -->
+  <!-- ==================================================== -->
+  <url>
+    <loc>https://enyasecurity.com/mentions_legales.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/confidentialite.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/note-legali.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://enyasecurity.com/it/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!--
+    ====================================================
+    PAGES EN — à décommenter une fois les pages publiées.
+    Ne pas laisser d'URL en 404 dans un sitemap : Google
+    signale les erreurs dans la Search Console et la
+    confiance accordée au fichier diminue.
+    ====================================================
+
+  <url>
+    <loc>https://enyasecurity.com/en/home.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://enyasecurity.github.io/it/services.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://enyasecurity.com/en/services.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://enyasecurity.github.io/it/packs.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://enyasecurity.com/en/pricing.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://enyasecurity.github.io/it/contact.html</loc>
-    <changefre
+    <loc>https://enyasecurity.com/en/contact.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+
+</urlset>
