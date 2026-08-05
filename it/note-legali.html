@@ -6,11 +6,11 @@
 <title>Note legali - Enya Security</title>
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
+<!-- TarteAuCitron (gestione dei cookie) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -87,7 +89,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- CONTENU -->
+<!-- CONTENUTO -->
 <!-- ====================================================== -->
 
 <section class="legal-section">
@@ -102,8 +104,10 @@ tarteaucitron.user.gtagMore = function () {};
       <p>
         Enya Security<br>
         Micro-impresa individuale (diritto francese)<br>
+        Sede: Savenay (44), Francia — indirizzo completo comunicato
+        su richiesta professionale scritta<br>
         SIRET: 993 348 382 00017<br>
-        Codice APE: 6202A — Consulenza in sistemi e software informatici<br>
+        Codice APE: 6201Z — Programmazione informatica<br>
         IVA non applicabile — Articolo 293 B del Code Général des Impôts (Francia)
       </p>
     </div>
@@ -168,6 +172,12 @@ tarteaucitron.user.gtagMore = function () {};
         informazioni sotto la propria responsabilità.
       </p>
       <p>
+        I contenuti pubblicati su questo sito hanno finalità informativa e
+        non costituiscono né un audit né una consulenza personalizzata. Solo
+        un incarico formalizzato contrattualmente impegna Enya Security, nei
+        limiti previsti dalle sue condizioni generali.
+      </p>
+      <p>
         Enya Security non potrà essere ritenuta responsabile per danni
         diretti o indiretti derivanti dall'accesso al sito o dall'utilizzo
         dei suoi contenuti.
@@ -196,18 +206,21 @@ tarteaucitron.user.gtagMore = function () {};
     <div class="legal-card-wide-body">
       <h3>7. Dati personali</h3>
       <p>
-        Le informazioni raccolte tramite questo sito (email, modulo di
-        contatto) sono utilizzate esclusivamente nell'ambito delle richieste
-        di contatto o di audit. Conformemente al GDPR, hai diritto di
-        accesso, rettifica, opposizione e cancellazione dei tuoi dati.
+        Il trattamento dei dati raccolti tramite questo sito è descritto in
+        dettaglio nella nostra
+        <a href="/it/privacy.html">informativa sulla privacy</a>: finalità,
+        basi giuridiche, destinatari, durate di conservazione e modalità di
+        esercizio dei tuoi diritti.
       </p>
       <p>
-        Per esercitare questi diritti, contatta:
+        Enya Security non vende, non cede e non scambia alcun dato personale
+        a fini commerciali. Gli unici terzi che accedono ai dati sono i
+        fornitori tecnici necessari al funzionamento del sito e della
+        posta elettronica, elencati nell'informativa sulla privacy.
+      </p>
+      <p>
+        Per qualsiasi richiesta relativa ai tuoi dati:
         <a href="mailto:marinabruno@enyasecurity.com">marinabruno@enyasecurity.com</a>
-      </p>
-      <p>
-        Enya Security non condivide alcun dato con terzi e non rivende le
-        informazioni personali.
       </p>
     </div>
   </div>
@@ -219,10 +232,15 @@ tarteaucitron.user.gtagMore = function () {};
     <div class="legal-card-wide-body">
       <h3>8. Cookie</h3>
       <p>
-        Questo sito utilizza cookie solo previo consenso, tramite il banner
-        fornito da Tarteaucitron. I cookie possono essere utilizzati per
-        misurare l'audience (Google Analytics, in forma anonima) e
-        migliorare la navigazione.
+        Questo sito non deposita alcun cookie non necessario prima del tuo
+        consenso, raccolto tramite il banner Tarteaucitron. I cookie di
+        misurazione dell'audience (Google Analytics) vengono attivati solo
+        se li accetti.
+      </p>
+      <p>
+        Il dettaglio dei cookie depositati, la loro finalità e la loro durata
+        sono indicati nella
+        <a href="/it/privacy.html#cookie">informativa sulla privacy</a>.
       </p>
       <p>
         Puoi modificare le tue preferenze in qualsiasi momento:
@@ -240,7 +258,12 @@ tarteaucitron.user.gtagMore = function () {};
       <p>
         Le presenti note legali sono disciplinate dal diritto francese, Paese
         di stabilimento di Enya Security. In caso di controversia, saranno
-        competenti i tribunali del luogo in cui ha sede legale Enya Security.
+        competenti i tribunali del luogo in cui ha sede Enya Security.
+      </p>
+      <p>
+        Enya Security si rivolge esclusivamente a professionisti (imprese,
+        studi professionali, associazioni, enti pubblici) e non
+        commercializza prestazioni destinate a consumatori.
       </p>
     </div>
   </div>
@@ -254,9 +277,11 @@ tarteaucitron.user.gtagMore = function () {};
 <div class="legal-footer-links">
   <a href="/it/note-legali.html">Note legali</a>
   <span>|</span>
-  <a href="/confidentialite.html">Informativa sulla privacy</a>
+  <a href="/it/privacy.html">Informativa sulla privacy</a>
   <span>|</span>
   <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gestisci i cookie</a>
+  <span>|</span>
+  <a href="/it/contatti.html">Contatti</a>
 </div>
 
 <div class="legal-copyright">
