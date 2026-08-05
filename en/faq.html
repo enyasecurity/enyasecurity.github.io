@@ -4,14 +4,14 @@
 
 <meta charset="UTF-8">
 <title>FAQ - Enya Security</title>
-<meta name="description" content="All the answers to your questions about Enya Security's cybersecurity audits: process, pricing, confidentiality, and methodology.">
+<meta name="description" content="Answers to the most common questions about Enya Security's cybersecurity audits: how they run, pricing, confidentiality and methodology.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
+<!-- TarteAuCitron (cookie management) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/en/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -28,7 +28,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -81,13 +83,13 @@ tarteaucitron.user.gtagMore = function () {};
       <div class="hero-kicker-text">FAQ</div>
 
       <h1 class="hero-title">
-        All the answers<br>
-        <span class="gradient-text">to your questions</span>
+        Answers to<br>
+        <span class="gradient-text">your questions</span>
       </h1>
 
       <p class="hero-subtitle">
-        Want to understand how a cybersecurity audit works?
-        Find answers to the most frequently asked questions here.
+        Wondering how a cybersecurity audit actually works? Here are the
+        answers to the questions we hear most often.
       </p>
 
       <div class="hero-buttons-new">
@@ -110,7 +112,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- NAVIGATION RAPIDE (catégories) -->
+<!-- QUICK NAVIGATION -->
 <!-- ====================================================== -->
 
 <section class="faq-section">
@@ -122,35 +124,40 @@ tarteaucitron.user.gtagMore = function () {};
       General
     </a>
 
-    <a href="#deroulement" class="faq-nav-pill" data-target="deroulement">
+    <a href="#process" class="faq-nav-pill" data-target="process">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
       Process
     </a>
 
-    <a href="#technique" class="faq-nav-pill" data-target="technique">
+    <a href="#technical" class="faq-nav-pill" data-target="technical">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1 1.55V21a2 2 0 11-4 0v-.09a1.7 1.7 0 00-1-1.55 1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.7 1.7 0 00.34-1.87 1.7 1.7 0 00-1.55-1H3a2 2 0 110-4h.09a1.7 1.7 0 001.55-1 1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06a1.7 1.7 0 001.87.34H9a1.7 1.7 0 001-1.55V3a2 2 0 114 0v.09a1.7 1.7 0 001 1.55 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06a1.7 1.7 0 00-.34 1.87V9a1.7 1.7 0 001.55 1H21a2 2 0 110 4h-.09a1.7 1.7 0 00-1.55 1z"/></svg>
       Technical
     </a>
 
-    <a href="#tarifs" class="faq-nav-pill" data-target="tarifs">
+    <a href="#pricing" class="faq-nav-pill" data-target="pricing">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.59 13.41L11 3.83A2 2 0 009.5 3H4a1 1 0 00-1 1v5.5a2 2 0 00.59 1.41l9.58 9.58a2 2 0 002.83 0l4.59-4.59a2 2 0 000-2.83z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
       Pricing
     </a>
 
-    <a href="#donnees" class="faq-nav-pill" data-target="donnees">
+    <a href="#confidentiality" class="faq-nav-pill" data-target="confidentiality">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-      Data
+      Confidentiality
     </a>
 
-    <a href="#apres-audit" class="faq-nav-pill" data-target="apres-audit">
+    <a href="#after-audit" class="faq-nav-pill" data-target="after-audit">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
       After the audit
+    </a>
+
+    <a href="#nis2" class="faq-nav-pill" data-target="nis2">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18"/><path d="M12 3v18"/><path d="M3 7l5-4 5 4"/><path d="M11 7l5-4 5 4"/></svg>
+      NIS2
     </a>
 
   </div>
 
   <!-- ====================================================== -->
-  <!-- GRILLE FAQ -->
+  <!-- FAQ GRID -->
   <!-- ====================================================== -->
 
   <div class="faq-grid">
@@ -167,31 +174,36 @@ tarteaucitron.user.gtagMore = function () {};
 
       <details class="svc-faq-item">
         <summary>Could the audit disrupt my business?</summary>
-        <p><strong>No.</strong> Enya Security audits are carried out on a read-only basis. No changes are made to your database or systems during the engagement. The goal is to observe, analyze, and identify risks without interrupting your operations.</p>
+        <p><strong>No.</strong> Enya Security audits are carried out read-only. Nothing is modified on your databases or systems during the engagement. The aim is to observe, analyse and identify risks without interrupting your operations.</p>
       </details>
 
       <details class="svc-faq-item">
         <summary>Do you work remotely?</summary>
-        <p><strong>Yes.</strong> Most audits are carried out remotely through secure access (VPN, SSH, cloud console, or screen sharing depending on your environment).</p>
+        <p><strong>Yes.</strong> Engagements are delivered remotely through secure access — VPN, SSH, a cloud console or screen sharing, depending on your environment.</p>
       </details>
 
       <details class="svc-faq-item">
         <summary>Who are your services for?</summary>
         <div class="faq-content">
-          <p>Mainly:</p>
+          <p>Primarily:</p>
           <ul>
-            <li>Small businesses</li>
-            <li>Medium-sized businesses</li>
-            <li>Local authorities</li>
-            <li>Associations</li>
+            <li>Micro-businesses</li>
+            <li>Small and medium-sized businesses</li>
+            <li>Public bodies</li>
+            <li>Associations and non-profits</li>
           </ul>
         </div>
       </details>
 
+      <details class="svc-faq-item">
+        <summary>Do you carry out penetration testing?</summary>
+        <p><strong>No.</strong> All our engagements are strictly non-intrusive: we observe, analyse and report. We do not exploit vulnerabilities and we do not carry out remediation work on your systems — which is exactly what keeps our findings independent.</p>
+      </details>
+
     </div>
 
-    <!-- DEROULEMENT -->
-    <div class="faq-block" id="deroulement">
+    <!-- PROCESS -->
+    <div class="faq-block" id="process">
 
       <h2 class="faq-block-title">
         <span class="faq-block-icon">
@@ -201,16 +213,16 @@ tarteaucitron.user.gtagMore = function () {};
       </h2>
 
       <details class="svc-faq-item">
-        <summary>How does an audit unfold?</summary>
+        <summary>How does an audit run?</summary>
         <div class="faq-content">
           <ol class="faq-steps">
             <li><span class="faq-step-num">1</span> Initial call (10 minutes)</li>
             <li><span class="faq-step-num">2</span> Quote approval</li>
-            <li><span class="faq-step-num">3</span> NDA signed</li>
-            <li><span class="faq-step-num">4</span> Rules of Engagement signed</li>
+            <li><span class="faq-step-num">3</span> NDA signature</li>
+            <li><span class="faq-step-num">4</span> Rules of Engagement signature</li>
             <li><span class="faq-step-num">5</span> Technical audit</li>
-            <li><span class="faq-step-num">6</span> Report delivered</li>
-            <li><span class="faq-step-num">7</span> Results presentation</li>
+            <li><span class="faq-step-num">6</span> Report delivery</li>
+            <li><span class="faq-step-num">7</span> Debrief call</li>
           </ol>
         </div>
       </details>
@@ -218,23 +230,23 @@ tarteaucitron.user.gtagMore = function () {};
       <details class="svc-faq-item">
         <summary>How long does an audit take?</summary>
         <div class="faq-content">
-          <p><strong>It depends on the scope.</strong> On average:</p>
+          <p><strong>It depends on scope.</strong> On average:</p>
           <ul>
-            <li><strong>Express:</strong> a few hours</li>
-            <li><strong>Standard:</strong> 1 to 2 days</li>
-            <li><strong>Premium:</strong> 2 to 4 days</li>
+            <li><strong>Express:</strong> a few hours of work, report within 5 business days</li>
+            <li><strong>Standard:</strong> 1 to 2 days, report within 7 business days</li>
+            <li><strong>Premium:</strong> 2 to 4 days, report within 10 business days</li>
           </ul>
         </div>
       </details>
 
       <details class="svc-faq-item">
-        <summary>Will I receive a report?</summary>
+        <summary>Will I get a report?</summary>
         <div class="faq-content">
-          <p><strong>Yes.</strong> Every engagement results in a detailed report including:</p>
+          <p><strong>Yes.</strong> Every engagement ends with a detailed report covering:</p>
           <ul>
-            <li>Vulnerabilities identified</li>
-            <li>Their criticality level</li>
-            <li>Observed evidence</li>
+            <li>The vulnerabilities identified</li>
+            <li>Their severity</li>
+            <li>The evidence observed</li>
             <li>Remediation recommendations</li>
             <li>An overall risk score</li>
           </ul>
@@ -243,8 +255,8 @@ tarteaucitron.user.gtagMore = function () {};
 
     </div>
 
-    <!-- TECHNIQUE -->
-    <div class="faq-block" id="technique">
+    <!-- TECHNICAL -->
+    <div class="faq-block" id="technical">
 
       <h2 class="faq-block-title">
         <span class="faq-block-icon">
@@ -254,7 +266,7 @@ tarteaucitron.user.gtagMore = function () {};
       </h2>
 
       <details class="svc-faq-item">
-        <summary>What types of databases do you audit?</summary>
+        <summary>Which database systems do you audit?</summary>
         <div class="faq-content">
           <ul>
             <li>MySQL</li>
@@ -263,24 +275,24 @@ tarteaucitron.user.gtagMore = function () {};
             <li>MongoDB</li>
             <li>SQLite</li>
           </ul>
-          <p>As well as the main compatible cloud services.</p>
+          <p>Along with the main compatible cloud database services.</p>
         </div>
       </details>
 
       <details class="svc-faq-item">
-        <summary>Do you audit AWS, Azure, or Google Cloud?</summary>
-        <p><strong>Yes.</strong> When the database is hosted in the cloud, a dedicated module covers network exposure, IAM access, backups, encryption, logging, and other controls suited to cloud environments.</p>
+        <summary>Do you audit AWS, Azure or Google Cloud?</summary>
+        <p><strong>Yes.</strong> Where the database is cloud-hosted, a dedicated module covers network exposure, IAM permissions, backups, encryption, logging and other checks suited to cloud environments.</p>
       </details>
 
       <details class="svc-faq-item">
-        <summary>Do I need to give you administrator access?</summary>
-        <p><strong>No.</strong> Read-only access is preferred whenever possible.</p>
+        <summary>Do you need administrator access?</summary>
+        <p><strong>No.</strong> A read-only account is preferred wherever possible, limited to the scope defined in the Rules of Engagement.</p>
       </details>
 
     </div>
 
-    <!-- TARIFS -->
-    <div class="faq-block" id="tarifs">
+    <!-- PRICING -->
+    <div class="faq-block" id="pricing">
 
       <h2 class="faq-block-title">
         <span class="faq-block-icon">
@@ -292,26 +304,26 @@ tarteaucitron.user.gtagMore = function () {};
       <details class="svc-faq-item">
         <summary>How much does an audit cost?</summary>
         <div class="faq-content">
-          <p>Pricing depends on:</p>
+          <p>The fee depends on:</p>
           <ul>
-            <li>The number of databases</li>
-            <li>The type of hosting</li>
-            <li>The modules required</li>
-            <li>The tier chosen</li>
+            <li>The number of systems in scope</li>
+            <li>The hosting model</li>
+            <li>Any optional modules needed</li>
+            <li>The tier you choose</li>
           </ul>
-          <p>Check out the <a href="/en/pricing.html">Pricing page</a> or <a href="/en/contact.html?objet=faq">request a free quote</a>.</p>
+          <p>See our <a href="/en/pricing.html">pricing page</a> or <a href="/en/contact.html?objet=faq">request a free quote</a>.</p>
         </div>
       </details>
 
       <details class="svc-faq-item">
-        <summary>Are there any hidden fees?</summary>
-        <p><strong>No.</strong> The quote specifies the scope and any additional modules before the engagement begins.</p>
+        <summary>Are there hidden costs?</summary>
+        <p><strong>No.</strong> The quote sets out the scope and any additional modules before the engagement starts.</p>
       </details>
 
     </div>
 
-    <!-- DONNEES / CONFIDENTIALITE -->
-    <div class="faq-block" id="donnees">
+    <!-- CONFIDENTIALITY -->
+    <div class="faq-block" id="confidentiality">
 
       <h2 class="faq-block-title">
         <span class="faq-block-icon">
@@ -321,19 +333,22 @@ tarteaucitron.user.gtagMore = function () {};
       </h2>
 
       <details class="svc-faq-item">
-        <summary>Does my data stay confidential?</summary>
-        <p><strong>Yes.</strong> A non-disclosure agreement (NDA) is signed before any engagement begins. All technical information is handled confidentially, and data collected during the audit is destroyed after the engagement in line with the agreed commitments.</p>
+        <summary>Is my data kept confidential?</summary>
+        <div class="faq-content">
+          <p><strong>Yes.</strong> A non-disclosure agreement is signed before any work begins. All technical information is handled confidentially, and data collected during the audit is destroyed once the engagement is complete, in line with our commitments.</p>
+          <p>How personal data is handled is set out in our <a href="/en/privacy.html">privacy policy</a>.</p>
+        </div>
       </details>
 
       <details class="svc-faq-item">
-        <summary>Do you keep access to my systems?</summary>
-        <p><strong>No.</strong> Access provided is used solely to carry out the engagement and is then removed following the agreed procedure.</p>
+        <summary>Do you keep our access credentials?</summary>
+        <p><strong>No.</strong> Credentials are used solely to carry out the engagement and are then destroyed according to our documented procedure.</p>
       </details>
 
     </div>
 
-    <!-- APRES AUDIT -->
-    <div class="faq-block" id="apres-audit">
+    <!-- AFTER THE AUDIT -->
+    <div class="faq-block" id="after-audit">
 
       <h2 class="faq-block-title">
         <span class="faq-block-icon">
@@ -343,20 +358,58 @@ tarteaucitron.user.gtagMore = function () {};
       </h2>
 
       <details class="svc-faq-item">
-        <summary>Are you responsible for fixing the issues?</summary>
+        <summary>Do you handle the fixes?</summary>
         <div class="faq-content">
-          <p><strong>No.</strong> Enya Security performs audits and provides recommendations. You remain free to:</p>
+          <p><strong>No.</strong> Enya Security audits and recommends. You remain free to:</p>
           <ul>
-            <li>Make the fixes in-house</li>
+            <li>Apply the fixes in-house</li>
             <li>Hand them to your IT provider</li>
-            <li>Or use any other provider of your choice</li>
+            <li>Or use any other supplier you choose</li>
           </ul>
+          <p>This separation is deliberate: having nothing to sell you afterwards is what keeps the findings independent.</p>
         </div>
       </details>
 
       <details class="svc-faq-item">
-        <summary>Can you verify that the fixes were made?</summary>
-        <p><strong>Yes.</strong> A post-remediation verification service is available to confirm that the recommendations have been properly implemented.</p>
+        <summary>Can you verify the fixes afterwards?</summary>
+        <p><strong>Yes.</strong> A post-remediation verification is available to confirm that the recommendations have been correctly applied.</p>
+      </details>
+
+    </div>
+
+    <!-- NIS2 -->
+    <div class="faq-block" id="nis2">
+
+      <h2 class="faq-block-title">
+        <span class="faq-block-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18"/><path d="M12 3v18"/><path d="M3 7l5-4 5 4"/><path d="M11 7l5-4 5 4"/></svg>
+        </span>
+        NIS2
+      </h2>
+
+      <details class="svc-faq-item">
+        <summary>Is my organisation in scope for NIS2?</summary>
+        <p>It depends on your sector, size and turnover. Most small and medium-sized businesses are not directly in scope, but may be affected indirectly as a supplier or subcontractor to an organisation that is. The assessment clarifies where you stand.</p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>My organisation isn't in scope. Is the assessment still useful?</summary>
+        <p><strong>Yes.</strong> Most of the organisations we work with are not directly in scope. They commission the assessment either because a client or partner subject to the directive is asking for security guarantees, or simply to get ahead of it. It remains useful regardless of your regulatory status.</p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Is this a technical audit?</summary>
+        <p><strong>No.</strong> The assessment is declarative and documentary — interviews and document review. No intrusive testing and no active vulnerability scanning, consistent with our non-intrusive positioning across all services.</p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Does the assessment count as certification?</summary>
+        <p><strong>No.</strong> It is a readiness assessment — a gap analysis against the applicable requirements. It is not an attestation of legal compliance with NIS2 and does not replace a nationally qualified audit provider where one is required.</p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Does it apply outside France and Italy?</summary>
+        <p>NIS2 is an EU directive, so obligations and deadlines come from each member state's national transposition. Our methodology is built on the French and Italian frameworks. If you are established elsewhere in the EU, tell us at first contact and we will confirm what we can usefully cover before quoting.</p>
       </details>
 
     </div>
@@ -364,7 +417,7 @@ tarteaucitron.user.gtagMore = function () {};
   </div>
 
   <!-- ====================================================== -->
-  <!-- CTA FINAL -->
+  <!-- FINAL CTA -->
   <!-- ====================================================== -->
 
   <div class="faq-cta-band">
@@ -375,7 +428,7 @@ tarteaucitron.user.gtagMore = function () {};
         DIDN'T FIND YOUR ANSWER?
       </div>
       <h3>Get in touch.</h3>
-      <p>We typically respond within 24 hours.</p>
+      <p>We usually reply within 24 hours.</p>
       <a href="/en/contact.html" class="btn-primary">
         Contact us
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -398,7 +451,9 @@ tarteaucitron.user.gtagMore = function () {};
 <footer>
 
 <p>
-<a href="/en/legal-notice.html">Legal notice</a>
+<a href="/en/legal.html">Legal notice</a>
+&nbsp;·&nbsp;
+<a href="/en/privacy.html">Privacy policy</a>
 </p>
 
 <p>
@@ -412,7 +467,7 @@ tarteaucitron.user.gtagMore = function () {};
 </div>
 
 <!-- ====================================================== -->
-<!-- SCROLLSPY NAVIGATION RAPIDE -->
+<!-- SCROLLSPY -->
 <!-- ====================================================== -->
 
 <script>
