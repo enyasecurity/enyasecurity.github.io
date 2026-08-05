@@ -7,11 +7,11 @@
 <meta name="description" content="Verifica se la tua organizzazione è interessata dalla direttiva europea NIS2. Consulenza gratuita per comprendere la tua idoneità e i primi passi da considerare.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
+<!-- TarteAuCitron (gestione dei cookie) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -28,7 +28,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -81,13 +83,13 @@ tarteaucitron.user.gtagMore = function () {};
       <div class="hero-kicker-text">NIS2</div>
 
       <h1 class="hero-title">
-        La tua organizzazione é pronta per la <span class="gradient-text"> NIS2</span>?
+        La tua organizzazione è pronta per la <span class="gradient-text">NIS2</span>?
       </h1>
 
       <p class="hero-subtitle">
-        La NIS2 rafforza gli obblighi di cybersicurezza per numerose organizzazioni pubbliche e private.
-       In Italia è stata recepita con il D.Lgs. 138/2024 e gli adempimenti 
-          sono progressivamente diventati operativi.
+        La NIS2 rafforza gli obblighi di cybersicurezza per numerose organizzazioni
+        pubbliche e private. In Italia è stata recepita con il D.Lgs. 138/2024 e gli
+        adempimenti sono progressivamente diventati operativi.
       </p>
 
       <div class="nis2-chip-row">
@@ -96,21 +98,21 @@ tarteaucitron.user.gtagMore = function () {};
           <span class="nis2-chip-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
           </span>
-          <span>Obblighi normativi<br>e normativi</span>
+          <span>Obblighi normativi<br>e organizzativi</span>
         </div>
 
         <div class="nis2-chip">
           <span class="nis2-chip-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
           </span>
-          <span>Gestione del rischio e risposta agli incidenti</span>
+          <span>Gestione del rischio<br>e risposta agli incidenti</span>
         </div>
 
         <div class="nis2-chip">
           <span class="nis2-chip-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/></svg>
           </span>
-          <span>Formazione e governance</span>
+          <span>Formazione<br>e governance</span>
         </div>
 
       </div>
@@ -128,7 +130,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- 3 CARTES -->
+<!-- 3 CARTE -->
 <!-- ====================================================== -->
 
 <section class="pricing-section">
@@ -144,19 +146,19 @@ tarteaucitron.user.gtagMore = function () {};
         <h3>Quadro generale</h3>
       </div>
       <p>
-        La NIS2 mira a rafforzare il livello di cybersicurezza nell’Unione europea. 
-          In Italia, l’ACN ha individuato oltre 20.000 organizzazioni 
-          comprese nel perimetro NIS, di cui oltre 
-          5.000 classificate come soggetti essenziali.
+        La NIS2 mira a rafforzare il livello di cybersicurezza nell'Unione
+        europea. In Italia il perimetro dei soggetti NIS è definito dall'ACN
+        e comprende diverse migliaia di organizzazioni, classificate come
+        soggetti essenziali o importanti.
       </p>
       <ul class="nis2-card-list">
         <li>Direttiva pubblicata il 27 dicembre 2022</li>
         <li>Recepita con il D.Lgs. 138/2024, in vigore dal 16/10/2024</li>
-        <li>Sanzioni fino a 10 milioni di euro o al 2% del fatturato mondiale per i soggetti essenziali, 
-        fino a 7 milioni o all’1,4% per i soggetti importanti.</li>
+        <li>Sanzioni fino a 10 milioni di euro o al 2% del fatturato mondiale per i
+        soggetti essenziali, fino a 7 milioni o all'1,4% per i soggetti importanti</li>
       </ul>
       <a href="https://www.acn.gov.it/portale/nis" target="_blank" rel="noopener" class="nis2-card-link">
-        Approfondisci la normativa NIS2 →
+        Approfondisci la normativa NIS2
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -211,7 +213,7 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
         </li>
         <li>
-          Piano d’azione prioritario
+          Piano d'azione prioritario
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
         </li>
         <li>
@@ -219,8 +221,8 @@ tarteaucitron.user.gtagMore = function () {};
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
         </li>
       </ul>
-      <a href="/it/servizi.html" class="nis2-card-link">
-        Scopri il servizio NIS2 →
+      <a href="/it/tariffe.html" class="nis2-card-link">
+        Vedi le tariffe del servizio NIS2
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -228,7 +230,7 @@ tarteaucitron.user.gtagMore = function () {};
   </div>
 
   <!-- ====================================================== -->
-  <!-- APPROCHE + CTA -->
+  <!-- APPROCCIO + CTA -->
   <!-- ====================================================== -->
 
   <div class="about-intro-grid" style="margin-bottom: 20px;">
@@ -246,7 +248,7 @@ tarteaucitron.user.gtagMore = function () {};
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
           </span>
           <h3>Inquadramento</h3>
-          <p>Comprensione dell’attività, del perimetro e degli obblighi applicabili.</p>
+          <p>Comprensione dell'attività, del perimetro e degli obblighi applicabili.</p>
         </div>
 
         <div class="approach-step">
@@ -294,7 +296,7 @@ tarteaucitron.user.gtagMore = function () {};
         definire le azioni.
       </p>
       <a href="/it/contatti.html?objet=nis2" class="btn-primary" style="width:100%; justify-content:center; margin-bottom: 10px;">
-        Richiedi un primo confronto →
+        Richiedi un primo confronto
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <p style="text-align:center; color: var(--text-dim); font-size:0.78rem; margin:0;">
@@ -304,7 +306,7 @@ tarteaucitron.user.gtagMore = function () {};
 
   </div>
 
-  <!-- Citation -->
+  <!-- Citazione -->
   <div class="nis2-quote-bar">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg>
     <span>
@@ -314,24 +316,26 @@ tarteaucitron.user.gtagMore = function () {};
     </span>
   </div>
 
-  <!-- Transparence + sources -->
+  <!-- Trasparenza + fonti -->
   <div class="nis2-footnotes">
     <h3>Trasparenza</h3>
     <p>
-      Enya Security non opera in qualità di autorità di controllo e non rilascia certificazioni di conformità NIS2.
-      Il servizio consiste in una valutazione documentale del livello di adeguamento e nella
-      definizione di raccomandazioni prioritarie. Eventuali verifiche tecniche o attività di attuazione sono concordate separatamente.
-      Il primo colloquio è informativo e non costituisce un audit né comprende verifiche tecniche.
+      Enya Security non opera in qualità di autorità di controllo e non rilascia
+      certificazioni di conformità NIS2. Il servizio consiste in una valutazione
+      documentale del livello di adeguamento e nella definizione di raccomandazioni
+      prioritarie. Eventuali verifiche tecniche o attività di attuazione sono
+      concordate separatamente. Il primo colloquio è informativo e non costituisce
+      un audit né comprende verifiche tecniche.
     </p>
 
     <div class="nis2-sources">
-      La NIS2 è stata recepita in Italia con il Decreto Legislativo 4 settembre 2024, n. 138, 
-      in vigore dal 16 ottobre 2024. Gli adempimenti e le relative scadenze dipendono 
-      dalla situazione del singolo soggetto e dalla comunicazione di inserimento 
-      nell’elenco NIS. Le informazioni possono essere aggiornate: 
-      verifica sempre le indicazioni pubblicate dall’ACN.
-      La registrazione o il relativo aggiornamento si svolge generalmente dal 1° gennaio al 28 febbraio
-      di ogni anno; l’aggiornamento annuale delle informazioni
+      La NIS2 è stata recepita in Italia con il Decreto Legislativo 4 settembre 2024,
+      n. 138, in vigore dal 16 ottobre 2024. Gli adempimenti e le relative scadenze
+      dipendono dalla situazione del singolo soggetto e dalla comunicazione di
+      inserimento nell'elenco NIS. Le informazioni possono essere aggiornate:
+      verifica sempre le indicazioni pubblicate dall'ACN.
+      La registrazione o il relativo aggiornamento si svolge generalmente dal 1° gennaio
+      al 28 febbraio di ogni anno; l'aggiornamento annuale delle informazioni
       deve essere effettuato entro il 31 maggio. <br><br>
       Fonti: <a href="https://www.acn.gov.it/portale/nis" target="_blank" rel="noopener">ACN — acn.gov.it/portale/nis</a>,
       Decreto Legislativo 4 settembre 2024, n. 138 (Gazzetta Ufficiale n. 230 del 1° ottobre 2024).
@@ -348,6 +352,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 
 <p>
@@ -355,6 +361,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tutti i diritti riservati.
+</div>
 
 </body>
 </html>
