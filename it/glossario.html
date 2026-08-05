@@ -7,11 +7,11 @@
 <meta name="description" content="Comprendere i principali termini della sicurezza informatica, spiegati in modo semplice, senza inutile gergo tecnico. Pensato per micro imprese, PMI e associazioni.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TarteAuCitron (gestion des cookies) -->
+<!-- TarteAuCitron (gestione dei cookie) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/it/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -28,7 +28,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -128,7 +130,7 @@ tarteaucitron.user.gtagMore = function () {};
 </section>
 
 <!-- ====================================================== -->
-<!-- RECHERCHE + ALPHABET + TERMES -->
+<!-- RICERCA + ALFABETO + TERMINI -->
 <!-- ====================================================== -->
 
 <section class="glossary-section">
@@ -148,7 +150,7 @@ tarteaucitron.user.gtagMore = function () {};
     <span>E</span>
     <a href="#letter-F">F</a>
     <span>G</span>
-    <a href="#letter-H">H</a>
+    <span>H</span>
     <span>I</span>
     <span>J</span>
     <span>K</span>
@@ -156,7 +158,7 @@ tarteaucitron.user.gtagMore = function () {};
     <a href="#letter-M">M</a>
     <span>N</span>
     <span>O</span>
-    <span>P</span>
+    <a href="#letter-P">P</a>
     <span>Q</span>
     <a href="#letter-R">R</a>
     <a href="#letter-S">S</a>
@@ -192,7 +194,7 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> inserisci la tua password per accedere alla tua casella di posta aziendale.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/audit-bases-de-donnees.html">Audit dei database</a>
+            <a href="/it/audit-database.html">Audit dei database</a>
           </div>
         </div>
 
@@ -202,21 +204,23 @@ tarteaucitron.user.gtagMore = function () {};
       <h2 class="glossary-letter-heading" id="letter-B">B</h2>
       <div class="glossary-grid">
 
-        <div class="glossary-card" data-term="database archiviazione dbms">
+        <div class="glossary-card" data-term="backup salvataggio ripristino copia">
           <div class="glossary-card-header">
             <span class="glossary-card-icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
             </span>
-            <h3>Database</h3>
+            <h3>Backup</h3>
           </div>
           <p>
-            Sistema che consente di archiviare e organizzare informazioni in
-            modo strutturato, per poterle ritrovare e utilizzare facilmente.
+            Copia dei dati, effettuata regolarmente e idealmente isolata
+            dalla rete principale, che ne consente il ripristino in caso di
+            guasto, errore o attacco.
           </p>
-          <p><strong>Esempio:</strong> clienti, ordini, fatture, magazzino — la maggior parte dei software aziendali si basa su un database.</p>
+          <p><strong>Esempio:</strong> un'azienda colpita da un ransomware ripristina i propri file da un backup offline, senza pagare alcun riscatto.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/audit-bases-de-donnees.html">Audit dei database</a>
+            <a href="/it/preparazione-ransomware.html">Preparazione ransomware</a>
+            <a href="/it/audit-database.html">Audit dei database</a>
           </div>
         </div>
 
@@ -226,7 +230,7 @@ tarteaucitron.user.gtagMore = function () {};
       <h2 class="glossary-letter-heading" id="letter-C">C</h2>
       <div class="glossary-grid">
 
-        <div class="glossary-card" data-term="crittografia encryption chiave">
+        <div class="glossary-card" data-term="crittografia encryption chiave cifratura">
           <div class="glossary-card-header">
             <span class="glossary-card-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
@@ -241,8 +245,8 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> dati rubati ma crittografati restano illeggibili per l'attaccante che non possiede la chiave di decrittazione.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/audit-bases-de-donnees.html">Audit dei database</a>
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
+            <a href="/it/audit-database.html">Audit dei database</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
           </div>
         </div>
 
@@ -261,7 +265,7 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> CVE-2025-12345 (formato CVE-anno-numero), un riferimento univoco che ogni professionista può consultare per comprendere una falla specifica.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
           </div>
         </div>
 
@@ -270,6 +274,24 @@ tarteaucitron.user.gtagMore = function () {};
       <!-- D -->
       <h2 class="glossary-letter-heading" id="letter-D">D</h2>
       <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="database archiviazione dbms base di dati">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </span>
+            <h3>Database</h3>
+          </div>
+          <p>
+            Sistema che consente di archiviare e organizzare informazioni in
+            modo strutturato, per poterle ritrovare e utilizzare facilmente.
+          </p>
+          <p><strong>Esempio:</strong> clienti, ordini, fatture, magazzino — la maggior parte dei software aziendali si basa su un database.</p>
+          <div class="glossary-services-label">SERVIZI CORRELATI</div>
+          <div class="glossary-services">
+            <a href="/it/audit-database.html">Audit dei database</a>
+          </div>
+        </div>
 
         <div class="glossary-card" data-term="dark web tor onion">
           <div class="glossary-card-header">
@@ -286,7 +308,7 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> credenziali rubate durante una violazione di dati possono essere messe in vendita su forum del dark web.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
           </div>
         </div>
 
@@ -296,7 +318,7 @@ tarteaucitron.user.gtagMore = function () {};
       <h2 class="glossary-letter-heading" id="letter-F">F</h2>
       <div class="glossary-grid">
 
-        <div class="glossary-card" data-term="firewall rete">
+        <div class="glossary-card" data-term="firewall rete filtro">
           <div class="glossary-card-header">
             <span class="glossary-card-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v16"/></svg>
@@ -310,33 +332,8 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> un firewall configurato male può lasciare una porta del database accessibile da Internet, senza che nessuno se ne accorga.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
-            <a href="/preparation-ransomware.html">Preparazione ransomware</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- H -->
-      <h2 class="glossary-letter-heading" id="letter-H">H</h2>
-      <div class="glossary-grid">
-
-        <div class="glossary-card" data-term="phishing email trappola inganno">
-          <div class="glossary-card-header">
-            <span class="glossary-card-icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
-            </span>
-            <h3>Phishing</h3>
-          </div>
-          <p>
-            Tecnica che consiste nell'ingannare una persona, il più delle
-            volte tramite email, affinché divulghi informazioni riservate o
-            clicchi su un link fraudolento.
-          </p>
-          <p><strong>Esempio:</strong> una falsa email "La tua sessione Office 365 è scaduta" che invita a cliccare su un link fraudolento.</p>
-          <div class="glossary-services-label">SERVIZI CORRELATI</div>
-          <div class="glossary-services">
-            <a href="/simulation-phishing.html">Simulazione phishing</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
+            <a href="/it/preparazione-ransomware.html">Preparazione ransomware</a>
           </div>
         </div>
 
@@ -361,8 +358,8 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> un allegato fraudolento che installa silenziosamente uno spyware su una postazione di lavoro.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/preparation-ransomware.html">Preparazione ransomware</a>
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
+            <a href="/it/preparazione-ransomware.html">Preparazione ransomware</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
           </div>
         </div>
 
@@ -382,8 +379,33 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> inserisci la tua password, poi il tuo telefono ti chiede di confermare l'accesso.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/preparation-ransomware.html">Preparazione ransomware</a>
-            <a href="/audit-bases-de-donnees.html">Audit dei database</a>
+            <a href="/it/preparazione-ransomware.html">Preparazione ransomware</a>
+            <a href="/it/audit-database.html">Audit dei database</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- P -->
+      <h2 class="glossary-letter-heading" id="letter-P">P</h2>
+      <div class="glossary-grid">
+
+        <div class="glossary-card" data-term="phishing email trappola inganno">
+          <div class="glossary-card-header">
+            <span class="glossary-card-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </span>
+            <h3>Phishing</h3>
+          </div>
+          <p>
+            Tecnica che consiste nell'ingannare una persona, il più delle
+            volte tramite email, affinché divulghi informazioni riservate o
+            clicchi su un link fraudolento.
+          </p>
+          <p><strong>Esempio:</strong> una falsa email "La tua sessione Office 365 è scaduta" che invita a cliccare su un link fraudolento.</p>
+          <div class="glossary-services-label">SERVIZI CORRELATI</div>
+          <div class="glossary-services">
+            <a href="/it/servizi.html">Simulazione phishing</a>
           </div>
         </div>
 
@@ -403,14 +425,15 @@ tarteaucitron.user.gtagMore = function () {};
           <p>
             Software malevolo che crittografa i file di un computer o di un
             server per impedirne l'utilizzo. Gli attaccanti chiedono poi un
-            riscatto in cambio di una chiave di decrittazione. L'ANSSI
-            (l'agenzia francese per la cybersicurezza) sconsiglia fortemente
-            di pagare: non garantisce il recupero dei dati.
+            riscatto in cambio di una chiave di decrittazione. Le autorità di
+            cybersicurezza sconsigliano fortemente di pagare: il pagamento non
+            garantisce il recupero dei dati e alimenta il modello economico
+            degli attaccanti.
           </p>
           <p><strong>Esempio:</strong> un dipendente apre un allegato fraudolento; in pochi minuti i file del server diventano inaccessibili e compare una richiesta di pagamento.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/preparation-ransomware.html">Preparazione ransomware</a>
+            <a href="/it/preparazione-ransomware.html">Preparazione ransomware</a>
           </div>
         </div>
 
@@ -420,27 +443,7 @@ tarteaucitron.user.gtagMore = function () {};
       <h2 class="glossary-letter-heading" id="letter-S">S</h2>
       <div class="glossary-grid">
 
-        <div class="glossary-card" data-term="backup salvataggio ripristino">
-          <div class="glossary-card-header">
-            <span class="glossary-card-icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
-            </span>
-            <h3>Backup</h3>
-          </div>
-          <p>
-            Copia dei dati, effettuata regolarmente e idealmente isolata
-            dalla rete principale, che ne consente il ripristino in caso di
-            guasto, errore o attacco.
-          </p>
-          <p><strong>Esempio:</strong> un'azienda colpita da un ransomware ripristina i propri file da un backup offline, senza pagare alcun riscatto.</p>
-          <div class="glossary-services-label">SERVIZI CORRELATI</div>
-          <div class="glossary-services">
-            <a href="/preparation-ransomware.html">Preparazione ransomware</a>
-            <a href="/audit-bases-de-donnees.html">Audit dei database</a>
-          </div>
-        </div>
-
-        <div class="glossary-card" data-term="sql injection database query">
+        <div class="glossary-card" data-term="sql injection database query iniezione">
           <div class="glossary-card-header">
             <span class="glossary-card-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
@@ -455,7 +458,7 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> un attaccante modifica un modulo o un URL per accedere a dati che non dovrebbe poter consultare.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/audit-bases-de-donnees.html">Audit dei database</a>
+            <a href="/it/audit-database.html">Audit dei database</a>
           </div>
         </div>
 
@@ -480,7 +483,7 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> senza un certificato TLS valido, i dati inseriti su un sito (modulo, pagamento) possono essere intercettati.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
           </div>
         </div>
 
@@ -505,8 +508,8 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> un dipendente in smart working utilizza una VPN per accedere in sicurezza ai server della propria azienda.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/preparation-ransomware.html">Preparazione ransomware</a>
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
+            <a href="/it/preparazione-ransomware.html">Preparazione ransomware</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
           </div>
         </div>
 
@@ -531,7 +534,7 @@ tarteaucitron.user.gtagMore = function () {};
           <p><strong>Esempio:</strong> una falla zero-day sfruttata ancor prima che lo sviluppatore abbia avuto il tempo di rilasciare un aggiornamento di sicurezza.</p>
           <div class="glossary-services-label">SERVIZI CORRELATI</div>
           <div class="glossary-services">
-            <a href="/analyse-exposition.html">Analisi dell'esposizione</a>
+            <a href="/it/analisi-esposizione.html">Analisi dell'esposizione</a>
           </div>
         </div>
 
@@ -579,8 +582,9 @@ tarteaucitron.user.gtagMore = function () {};
             <summary>Come vengono redatte queste definizioni?</summary>
             <p>
               Ogni termine viene verificato a partire da fonti di riferimento
-              (ANSSI, CNIL, MITRE, documentazione ufficiale) e poi
-              riformulato con parole nostre, in un linguaggio accessibile.
+              (ACN, ANSSI, Garante Privacy, MITRE, documentazione ufficiale)
+              e poi riformulato con parole nostre, in un linguaggio
+              accessibile.
             </p>
           </details>
           <details>
@@ -628,6 +632,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/it/note-legali.html">Note legali</a>
+&nbsp;·&nbsp;
+<a href="/it/privacy.html">Informativa sulla privacy</a>
 </p>
 
 <p>
