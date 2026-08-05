@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/confidentialite.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -148,8 +150,10 @@ tarteaucitron.user.gtagMore = function () {};
       </button>
 
       <p class="contact-form-note">
-        En envoyant ce formulaire, vous acceptez d'être recontacté(e) par Enya Security.
-        Vos données ne sont jamais partagées avec des tiers.
+        Les données que vous transmettez servent uniquement à répondre à votre
+        demande et ne sont jamais vendues ni cédées à des tiers à des fins
+        commerciales. Pour en savoir plus :
+        <a href="/confidentialite.html">politique de confidentialité</a>.
       </p>
 
     </form>
@@ -209,6 +213,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/mentions_legales.html">Mentions légales</a>
+&nbsp;·&nbsp;
+<a href="/confidentialite.html">Politique de confidentialité</a>
 </p>
 
 <p>
@@ -216,6 +222,10 @@ tarteaucitron.user.gtagMore = function () {};
 </p>
 
 </footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
 
 <script>
 // Pré-sélectionne le sujet si le lien contient ?objet=...
