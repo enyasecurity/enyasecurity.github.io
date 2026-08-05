@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Simulation de phishing & sensibilisation - Enya Security</title>
+<title>Simulation de phishing &amp; sensibilisation - Enya Security</title>
 <meta name="description" content="Évaluez la vigilance de vos équipes face au phishing grâce à des campagnes de simulation réalistes, encadrées et 100% pédagogiques.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/confidentialite.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -28,7 +28,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -59,7 +61,7 @@ tarteaucitron.user.gtagMore = function () {};
 
     <a class="lang-active" href="/simulation-phishing.html">FR</a>
     <a href="/en/phishing-simulation.html">EN</a>
-    <a href="/it/simulazione-phishing.html">IT</a>
+    <a href="/it/servizi.html">IT</a>
   </nav>
 
   <a href="/contact.html?objet=simulation-phishing" class="header-cta">
@@ -118,7 +120,7 @@ tarteaucitron.user.gtagMore = function () {};
           <span class="svc-chip-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
           </span>
-          <span>100% légal, sécurisé<br>et sans impact</span>
+          <span>Encadré, sécurisé<br>et sans impact</span>
         </div>
 
       </div>
@@ -251,7 +253,7 @@ tarteaucitron.user.gtagMore = function () {};
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>RH — Paie, congés, mutuelle</li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>IT — MFA, VPN, Office 365</li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Direction — Signature électronique</li>
-        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Commercial — Livraison, Chronopost</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5l10 7-10 7z"/></svg>Commercial — Livraison, transporteur</li>
       </ul>
     </div>
 
@@ -404,7 +406,7 @@ tarteaucitron.user.gtagMore = function () {};
       <ul class="svc-check-list">
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-          <div><strong>100% légal &amp; RGPD</strong><p>Enya Security intervient comme sous-traitant (art. 28 RGPD) ; la CNIL reconnaît ces campagnes comme une forme légitime de sensibilisation.</p></div>
+          <div><strong>Cadre juridique respecté</strong><p>Enya Security intervient comme sous-traitant (art. 28 RGPD), avec information préalable des salariés et consultation du CSE selon votre effectif.</p></div>
         </li>
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
@@ -463,11 +465,10 @@ tarteaucitron.user.gtagMore = function () {};
       <details class="svc-faq-item">
         <summary>Dois-je prévenir mes équipes ?</summary>
         <p>
-          Oui. Conformément aux recommandations de la CNIL, vous devez informer
-          vos collaborateurs qu'une simulation d'hameçonnage est susceptible de
-          survenir (sans en préciser la date), et consulter le CSE selon votre
-          effectif. C'est un engagement formalisé dans l'Autorisation que vous
-          signez avant toute campagne.
+          Oui. Vous devez informer vos collaborateurs qu'une simulation
+          d'hameçonnage est susceptible de survenir (sans en préciser la date),
+          et consulter le CSE selon votre effectif. C'est un engagement
+          formalisé dans l'Autorisation que vous signez avant toute campagne.
         </p>
       </details>
 
@@ -486,7 +487,8 @@ tarteaucitron.user.gtagMore = function () {};
         <p>
           Les données de campagne (liste, résultats, scénarios) sont détruites
           10 jours après l'envoi. Seuls les documents contractuels et le
-          rapport final vous sont remis et conservés.
+          rapport final vous sont remis et conservés. Le détail figure dans
+          notre <a href="/confidentialite.html">politique de confidentialité</a>.
         </p>
       </details>
 
@@ -520,6 +522,8 @@ tarteaucitron.user.gtagMore = function () {};
 
 <p>
 <a href="/mentions_legales.html">Mentions légales</a>
+&nbsp;·&nbsp;
+<a href="/confidentialite.html">Politique de confidentialité</a>
 </p>
 
 <p>
