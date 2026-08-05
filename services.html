@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/confidentialite.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -27,7 +27,9 @@ tarteaucitron.init({
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
@@ -119,13 +121,26 @@ tarteaucitron.user.gtagMore = function () {};
     <div class="service-card">
       <img src="/assets/icons/icone_phishing.png" class="service-icon" alt="Icône simulation phishing">
       <span class="service-tag">SENSIBILISATION</span>
-      <h3>Simulation phishing & sensibilisation</h3>
+      <h3>Simulation phishing &amp; sensibilisation</h3>
       <p>Emails piégés • Conditions réelles • Sans jugement</p>
       <span class="service-price">
         <span class="price-label">à partir de</span>
         <span class="price-amount">390 €</span>
       </span>
       <a href="/simulation-phishing.html">Voir le service →</a>
+    </div>
+
+    <!-- Diagnostic NIS2 -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icône diagnostic NIS2">
+      <span class="service-tag">CONFORMITÉ</span>
+      <h3>Diagnostic de préparation NIS2</h3>
+      <p>Analyse d'écart • Exigences applicables • Plan d'action</p>
+      <span class="service-price">
+        <span class="price-label">à partir de</span>
+        <span class="price-amount">449 €</span>
+      </span>
+      <a href="/nis2.html">Voir le service →</a>
     </div>
 
     <!-- Audit Android -->
@@ -173,6 +188,28 @@ tarteaucitron.user.gtagMore = function () {};
   </div>
 
 </section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+&nbsp;·&nbsp;
+<a href="/confidentialite.html">Politique de confidentialité</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
 
 </body>
 </html>
