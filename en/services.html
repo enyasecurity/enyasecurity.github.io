@@ -3,16 +3,15 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Enya Security – Services</title>
-<link rel="stylesheet" href="../style.css">
+<title>Services - Enya Security</title>
+<meta name="description" content="Non-intrusive cybersecurity audits for small and medium-sized businesses: database security, ransomware readiness, and Android application security.">
+<link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <!-- TarteAuCitron (gestion des cookies) -->
+<!-- TarteAuCitron (cookie management) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
 tarteaucitron.init({
-    "privacyUrl": "",
+    "privacyUrl": "/en/privacy.html",
     "hashtag": "#tarteaucitron",
     "cookieName": "tarteaucitron",
     "orientation": "bottom",
@@ -26,15 +25,15 @@ tarteaucitron.init({
     "handleBrowserDNTRequest": false
 });
 </script>
-
 <!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {};
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
-  
 </head>
 
 <body>
@@ -48,69 +47,143 @@ tarteaucitron.user.gtagMore = function () {};
     </div>
   </div>
 
-  <nav>
+  <nav class="nav-compact">
     <a href="/en/home.html">Home</a>
     <a class="active" href="/en/services.html">Services</a>
-    <a href="/en/packages.html">Packages</a>
+    <a href="/en/pricing.html">Pricing</a>
+    <a href="/en/about.html">About</a>
+    <a href="/en/nis2.html">NIS2</a>
     <a href="/en/contact.html">Contact</a>
+    <a href="/en/glossary.html">Glossary</a>
+    <a href="/en/faq.html">FAQ</a>
 
-    <a href="/index.html">FR</a>
-    <a href="/it/home.html">IT</a>
+    <span class="nav-divider"></span>
+
+    <a href="/services.html">FR</a>
+    <a class="lang-active" href="/en/services.html">EN</a>
+    <a href="/it/servizi.html">IT</a>
   </nav>
-</header>
 
+  <a href="/en/contact.html?objet=diagnostic" class="header-cta">
+    Request an audit
+  </a>
+
+</header>
 
 <section class="services-container">
 
-  <h1 class="services-title">Our Services</h1>
+  <h1 class="services-title">Services</h1>
   <p class="services-subtitle">
-    Discover our solutions to help improve the security of your website and your data.
+    Clear, educational and non-intrusive cybersecurity audits, designed for small
+    and medium-sized businesses, professional practices and associations.
   </p>
 
-  <div class="services-grid">
+  <div class="services-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 860px;">
 
-    <!-- Online visibility analysis -->
+    <!-- Database security audit -->
     <div class="service-card">
-      <img src="/assets/icons/icone_visibilite.png" class="service-icon" alt="Visibility icon">
-      <h3>Online Visibility Analysis</h3>
-      <p>Discover what information about your business is publicly accessible without your knowledge.</p>
-      <a href="/en/online_visibility_analysis.html">View service →</a>
+      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Database audit icon">
+      <span class="service-tag">AUDIT</span>
+      <h3>Database security audit</h3>
+      <p>Accounts • Backups • Encryption • Configuration • GDPR</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€449</span>
+      </span>
+      <a href="/en/database-audit.html">View service →</a>
     </div>
 
-    <!-- Vulnerability Scan -->
+    <!-- Ransomware readiness -->
     <div class="service-card">
-      <img src="/assets/icons/icone_scandevulnerabilite.png" class="service-icon" alt="Vulnerability scan icon">
-      <h3>Vulnerability Scan</h3>
-      <p>Quickly identify the most common vulnerabilities present on your website.</p>
-      <a href="/en/vulnerability_scan.html">View service →</a>
+      <img src="/assets/icons/icone_ransomware.png" class="service-icon" alt="Ransomware readiness icon">
+      <span class="service-tag">READINESS</span>
+      <h3>Ransomware attack readiness</h3>
+      <p>Incident response plan • Backups • Crisis procedures</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€449</span>
+      </span>
+      <a href="/en/ransomware-readiness.html">View service →</a>
     </div>
 
-    <!-- Web Pentest -->
+    <!-- Android security audit -->
     <div class="service-card">
-      <img src="/assets/icons/icone_pentest.png" class="service-icon" alt="Pentest icon">
-      <h3>Penetration Test</h3>
-      <p>A complete security test to uncover risks before attackers exploit them.</p>
-      <a href="/en/pentest_light.html">View service →</a>
-    </div>
-
-    <!-- Security Awareness -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_sensibilisation.png" class="service-icon" alt="Awareness icon">
-      <h3>Cybersecurity Awareness</h3>
-      <p>Train your staff to recognize phishing, scams, fake websites, and risky behaviours.</p>
-      <a href="/en/security_awareness.html">View service →</a>
-    </div>
-
-    <!-- Phishing Simulation -->
-    <div class="service-card">
-      <img src="/assets/icons/icone_pishing.png" class="service-icon" alt="Phishing icon">
-      <h3>Phishing Simulation</h3>
-      <p>Test your team's reaction to a controlled phishing attempt under real conditions.</p>
-      <a href="/en/phishing_simulation.html">View service →</a>
+      <img src="/assets/icons/icone_android.png" class="service-icon service-icon-android" alt="Android audit icon">
+      <span class="service-tag">MOBILE</span>
+      <h3>Android security audit</h3>
+      <p>Storage • Permissions • Communications</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€449</span>
+      </span>
+      <a href="/en/android-audit.html">View service →</a>
     </div>
 
   </div>
+
+  <!-- Scope note -->
+  <div class="pricing-note" style="max-width: 860px; margin: 26px auto 0;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+    <span>
+      All our engagements are strictly non-intrusive: we observe, analyse and
+      report. We do not carry out penetration testing, active exploitation of
+      vulnerabilities, or remediation work on your systems — which is precisely
+      what keeps our findings independent.
+    </span>
+  </div>
+
+  <!-- CTA final -->
+  <div class="services-cta-card">
+
+    <div class="services-cta-text">
+      <div class="services-cta-kicker">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4l-6.3 4.4 2.3-7.2-6-4.4h7.6z"/></svg>
+        WHERE TO START?
+      </div>
+      <h2 class="services-cta-title">Let's talk about your needs</h2>
+      <p class="services-cta-desc">
+        Every organisation is different. In just a few minutes, we'll identify
+        together which service fits your situation — with no obligation.
+      </p>
+      <a href="/en/contact.html?objet=diagnostic" class="btn-primary">
+        Book a call
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="services-cta-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+        100% confidential
+      </span>
+    </div>
+
+    <div class="services-cta-icon">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 3v2h6V3"/><path d="M9 10l2 2 4-4"/><path d="M9 15l2 2 4-4"/></svg>
+    </div>
+
+  </div>
+
 </section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p>
+<a href="/en/legal.html">Legal notice</a>
+&nbsp;·&nbsp;
+<a href="/en/privacy.html">Privacy policy</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Manage cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — All rights reserved.
+</div>
 
 </body>
 </html>
