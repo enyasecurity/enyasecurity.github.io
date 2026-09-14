@@ -4,7 +4,7 @@
 
 <meta charset="UTF-8">
 <title>Enya Security – Formazione e sensibilizzazione</title>
-<meta name="description" content="Seminari e interventi di sensibilizzazione alla cybersicurezza per studi professionali, ordini, associazioni e PMI. Contenuto neutro, checklist operativa inclusa.">
+<meta name="description" content="Seminario di cybersicurezza per studi professionali, ordini, associazioni e PMI: ransomware, accessi, backup, esposizione online e gestione dell'incidente. Contenuto neutro.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- TarteAuCitron (gestione dei cookie) -->
@@ -36,10 +36,9 @@ tarteaucitron.user.gtagMore = function () {
 
 <!-- ====================================================== -->
 <!-- STILI SPECIFICI DI QUESTA PAGINA                       -->
-<!-- Solo layout: le schede restano quelle di /style.css    -->
 <!-- ====================================================== -->
 <style>
-/* Griglia a tre colonne: evita che la sesta scheda resti sola in fondo */
+/* Griglia a tre colonne: sei schede fanno due righe piene */
 .services-grid.grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -52,44 +51,54 @@ tarteaucitron.user.gtagMore = function () {
     .services-grid.grid-3 { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Nota sui tempi sotto la griglia del programma */
-.programma-nota {
-    max-width: 1020px;
-    margin: 18px auto 0;
-    text-align: center;
-    font-size: 0.92rem;
-    opacity: 0.75;
+/* Blocchi di testo semplice: larghezza di lettura contenuta */
+.blocco-testo {
+    max-width: 760px;
+    margin: 0 auto;
 }
+
+/* Elenco «come si svolge» */
+.svolgimento {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 22px 40px;
+    text-align: left;
+}
+.svolgimento div strong { display: block; margin-bottom: 4px; }
+.svolgimento div span { font-size: 0.94rem; line-height: 1.5; }
 
 /* Blocco relatrice */
 .relatrice-box {
-    max-width: 1020px;
+    max-width: 880px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
+    text-align: left;
 }
 .relatrice-foto {
-    width: 128px;
-    height: 128px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     flex: 0 0 auto;
 }
-.relatrice-testo { flex: 1 1 380px; }
+.relatrice-testo { flex: 1 1 340px; }
 .relatrice-testo p { margin: 0 0 12px; }
 
-/* Fascia modalità */
-.modalita-lista {
-    max-width: 1020px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 20px 36px;
+/* I blocchi aggiunti non ereditano eventuali animazioni di comparsa del sito */
+.blocco-testo,
+.svolgimento,
+.svolgimento div,
+.relatrice-box,
+.relatrice-testo {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
 }
-.modalita-voce strong { display: block; margin-bottom: 4px; }
-.modalita-voce span { font-size: 0.94rem; opacity: 0.8; }
 </style>
 
 </head>
@@ -134,54 +143,19 @@ tarteaucitron.user.gtagMore = function () {
 
   <h1 class="services-title">Formazione e sensibilizzazione</h1>
   <p class="services-subtitle">
-    Interventi su misura per studi professionali, ordini e associazioni di categoria, PMI ed enti pubblici.
-    Contenuto neutro e verificabile: nessun prodotto, nessun fornitore, nessuna soluzione commerciale.
+    Un seminario di tre ore su ciò che colpisce davvero studi professionali e piccole imprese:
+    ransomware e phishing, protezione degli accessi, backup, esposizione online e gestione dell'incidente.
+    Per ordini professionali, associazioni di categoria, PMI ed enti pubblici.
   </p>
-
-  <!-- ====================================================== -->
-  <!-- I FORMATI -->
-  <!-- ====================================================== -->
-
-  <p class="expertise-kicker">I FORMATI</p>
-  <h2 class="expertise-title">Tre durate, lo stesso metodo</h2>
-  <p class="expertise-subtitle">
-    Il programma si adatta al tempo disponibile e al pubblico. In ogni formato i partecipanti
-    escono con una checklist di misure applicabili alla propria organizzazione.
-  </p>
-
-  <div class="services-grid grid-3">
-
-    <div class="service-card">
-      <span class="service-tag">3 ORE</span>
-      <h3>Seminario completo</h3>
-      <p>Sei moduli • Due esercizi guidati • 20 minuti di domande</p>
-      <a href="/it/contatti.html?objet=formazione">Richiedi un preventivo →</a>
-    </div>
-
-    <div class="service-card">
-      <span class="service-tag">2 × 90 MIN</span>
-      <h3>Due incontri</h3>
-      <p>Stesso programma diviso in due sessioni • Adatto alle fasce serali</p>
-      <a href="/it/contatti.html?objet=formazione">Richiedi un preventivo →</a>
-    </div>
-
-    <div class="service-card">
-      <span class="service-tag">1 ORA</span>
-      <h3>Modulo introduttivo di sensibilizzazione</h3>
-      <p>I rischi essenziali, le misure prioritarie e le prime azioni da conoscere in caso di incidente.</p>
-      <a href="/it/contatti.html?objet=formazione">Richiedi un preventivo →</a>
-    </div>
-
-  </div>
 
   <!-- ====================================================== -->
   <!-- IL PROGRAMMA -->
   <!-- ====================================================== -->
 
   <p class="expertise-kicker">IL PROGRAMMA</p>
-  <h2 class="expertise-title">Un principio guida: verificare, non soltanto dichiarare</h2>
+  <h2 class="expertise-title">Verificare, non soltanto dichiarare</h2>
   <p class="expertise-subtitle">
-    Ogni misura viene presentata insieme al modo concreto in cui verificarne l'effettiva applicazione,
+    Ogni misura viene presentata insieme al modo concreto in cui verificarne l'applicazione,
     perché una protezione dichiarata ma mai controllata potrebbe non funzionare nel momento del bisogno.
   </p>
 
@@ -196,13 +170,13 @@ tarteaucitron.user.gtagMore = function () {
     <div class="service-card">
       <span class="service-tag">30 MIN</span>
       <h3>Protezione degli accessi</h3>
-      <p>Autenticazione a più fattori, gestione dei privilegi, password, account condivisi e account che nessuno disattiva. Include il primo esercizio guidato.</p>
+      <p>Autenticazione a più fattori, privilegi, password, account condivisi e account che nessuno disattiva. Con il primo esercizio guidato.</p>
     </div>
 
     <div class="service-card">
       <span class="service-tag">30 MIN</span>
       <h3>Backup e ransomware readiness</h3>
-      <p>Cosa va verificato prima di un incidente: regola 3-2-1, copie protette dalla propagazione automatica, test di ripristino. Include il secondo esercizio guidato.</p>
+      <p>Cosa va verificato prima di un incidente: regola 3-2-1, copie protette dalla propagazione automatica, test di ripristino. Con il secondo esercizio.</p>
     </div>
 
     <div class="service-card">
@@ -225,87 +199,59 @@ tarteaucitron.user.gtagMore = function () {
 
   </div>
 
-  <p class="programma-nota">
-    Sei moduli per 160 minuti, più 20 minuti di domande distribuiti lungo l'incontro: tre ore effettive di didattica,
-    cui si aggiunge una pausa di 15 minuti. I due esercizi guidati si svolgono all'interno dei moduli 2 e 3.
-  </p>
-
   <!-- ====================================================== -->
-  <!-- MATERIALI -->
+  <!-- COME SI SVOLGE -->
   <!-- ====================================================== -->
 
-  <p class="expertise-kicker">COSA RESTA DOPO</p>
-  <h2 class="expertise-title">Materiali consegnati ai partecipanti</h2>
-  <p class="expertise-subtitle">
-    La formazione continua anche dopo l'incontro: ai partecipanti restano strumenti operativi da consultare e utilizzare nella propria organizzazione.
-  </p>
+  <p class="expertise-kicker">COME SI SVOLGE</p>
+  <h2 class="expertise-title">Organizzazione</h2>
 
-  <div class="services-grid grid-3">
+  <div class="svolgimento">
 
-    <div class="service-card">
-      <span class="service-tag">PDF</span>
-      <h3>Slide del seminario</h3>
-      <p>Con tutte le fonti pubbliche e istituzionali citate durante l'intervento.</p>
+    <div>
+      <strong>Durata e formati</strong>
+      <span>Tre ore effettive, più una pausa di quindici minuti. In alternativa due incontri da novanta minuti, oppure un modulo introduttivo di un'ora.</span>
     </div>
 
-    <div class="service-card">
-      <span class="service-tag">CHECKLIST</span>
-      <h3>Misure prioritarie</h3>
-      <p>Due pagine, ordinate per rapporto fra effetto sulla riduzione del rischio e sforzo richiesto.</p>
+    <div>
+      <strong>A distanza o in presenza</strong>
+      <span>Formazione a distanza in diretta, con interazione in tempo reale. In presenza su richiesta, compatibilmente con il calendario.</span>
     </div>
 
-    <div class="service-card">
-      <span class="service-tag">SCHEDA</span>
-      <h3>Prime 24 ore</h3>
-      <p>Cosa fare e cosa non fare in caso di incidente, con un elenco dei contatti di emergenza da compilare e conservare anche fuori dai sistemi informatici.</p>
+    <div>
+      <strong>Partecipanti</strong>
+      <span>Da un piccolo gruppo di studio fino a un centinaio di iscritti collegati. Gli esercizi funzionano con qualunque numero.</span>
     </div>
 
-  </div>
-
-  <!-- ====================================================== -->
-  <!-- MODALITÀ -->
-  <!-- ====================================================== -->
-
-  <p class="expertise-kicker">ORGANIZZAZIONE</p>
-  <h2 class="expertise-title">Modalità</h2>
-
-  <div class="modalita-lista">
-
-    <div class="modalita-voce">
-      <strong>In presenza o a distanza</strong>
-      <span>Formazione a distanza in diretta, con interazione in tempo reale; in presenza su richiesta, compatibilmente con il calendario.</span>
+    <div>
+      <strong>Nessun computer necessario</strong>
+      <span>I due esercizi guidati si svolgono su carta e restano ai partecipanti: nessuna installazione, nessun accesso ai sistemi.</span>
     </div>
 
-    <div class="modalita-voce">
-      <strong>Numero di partecipanti</strong>
-      <span>Da un piccolo gruppo di studio fino a un centinaio di iscritti a distanza. Gli esercizi funzionano con qualunque numero.</span>
-    </div>
-
-    <div class="modalita-voce">
+    <div>
       <strong>Esempi personalizzabili</strong>
       <span>Casi e priorità adattati al settore e alla dimensione dei partecipanti, definiti in una chiamata preliminare.</span>
     </div>
 
-    <div class="modalita-voce">
-      <strong>Nessun computer necessario</strong>
-      <span>I due esercizi si svolgono su carta e restano ai partecipanti: nessuna installazione, nessun accesso ai sistemi.</span>
-    </div>
-
-    <div class="modalita-voce">
-      <strong>Lingue</strong>
-      <span>Italiano, francese e inglese.</span>
-    </div>
-
-    <div class="modalita-voce">
-      <strong>Attestato di partecipazione</strong>
-      <span>Attestato nominativo rilasciato su richiesta dell'organizzatore, sulla base delle presenze da lui rilevate.</span>
+    <div>
+      <strong>Lingue e attestato</strong>
+      <span>Italiano, francese e inglese. Attestato nominativo di partecipazione su richiesta dell'organizzatore, sulla base delle presenze da lui rilevate.</span>
     </div>
 
   </div>
 
   <!-- ====================================================== -->
-  <!-- LA RELATRICE -->
+  <!-- COSA RESTA / RELATRICE / NOTA -->
   <!-- ====================================================== -->
+
+  <p class="expertise-kicker">COSA RESTA DOPO</p>
+  <h2 class="expertise-title">Materiali per i partecipanti</h2>
+
+  <p class="expertise-subtitle blocco-testo">
+    Le slide in PDF con tutte le fonti pubbliche citate, una checklist di due pagine con le misure prioritarie
+    ordinate per effetto e sforzo, e una scheda «prime 24 ore» con l'elenco dei contatti di emergenza
+    da compilare e conservare anche fuori dai sistemi informatici.
+  </p>
 
   <p class="expertise-kicker">CHI CONDUCE L'INCONTRO</p>
   <h2 class="expertise-title">La relatrice</h2>
@@ -319,29 +265,22 @@ tarteaucitron.user.gtagMore = function () {
     <div class="relatrice-testo">
       <p>
         <strong>Marina Bruno</strong> — fondatrice e consulente in cybersicurezza. Laureata in Ingegneria
-        dell'Informazione all'Università del Salento e in Ingegneria Gestionale al Politecnico di Bari.
-      </p>
-      <p>
-        Nove anni come ingegnera consulente in ambienti industriali complessi del settore aeronautico, con attività
-        che hanno incluso il supporto applicativo, l'analisi degli incidenti, la progettazione di un modello dei ruoli
-        di accesso e la formazione di un team di supporto internazionale.
+        dell'Informazione all'Università del Salento e in Ingegneria Gestionale al Politecnico di Bari,
+        con nove anni come ingegnera consulente in ambienti industriali complessi del settore aeronautico.
       </p>
       <p>
         Con Enya Security conduce audit documentali e non intrusivi per organizzazioni di piccole dimensioni,
-        basati su standard, benchmark e linee guida pubblicamente disponibili. Nessuna vendita di software o hardware,
-        nessun accordo con fornitori di soluzioni.
-      </p>
-      <p>
+        basati su standard, benchmark e linee guida pubblicamente disponibili.
         <a href="/it/chi-siamo.html">Scopri di più su Enya Security →</a>
       </p>
     </div>
 
   </div>
 
-  <p class="services-subtitle">
+  <p class="services-subtitle blocco-testo">
     Gli interventi presso ordini professionali e associazioni sono organizzati e accreditati dall'ente ospitante,
-    che resta l'unico soggetto competente per l'eventuale riconoscimento di crediti formativi.
-    Durante gli incontri non viene proposto né citato alcun prodotto, fornitore o servizio commerciale.
+    unico soggetto competente per l'eventuale riconoscimento di crediti formativi. Durante gli incontri non viene
+    proposto né citato alcun prodotto, fornitore o servizio commerciale.
   </p>
 
   <!-- ====================================================== -->
