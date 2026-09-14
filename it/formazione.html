@@ -34,6 +34,64 @@ tarteaucitron.user.gtagMore = function () {
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
+<!-- ====================================================== -->
+<!-- STILI SPECIFICI DI QUESTA PAGINA                       -->
+<!-- Solo layout: le schede restano quelle di /style.css    -->
+<!-- ====================================================== -->
+<style>
+/* Griglia a tre colonne: evita che la sesta scheda resti sola in fondo */
+.services-grid.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 960px) {
+    .services-grid.grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Nota sui tempi sotto la griglia del programma */
+.programma-nota {
+    max-width: 1020px;
+    margin: 18px auto 0;
+    text-align: center;
+    font-size: 0.92rem;
+    opacity: 0.75;
+}
+
+/* Blocco relatrice */
+.relatrice-box {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+.relatrice-foto {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+.relatrice-testo { flex: 1 1 380px; }
+.relatrice-testo p { margin: 0 0 12px; }
+
+/* Fascia modalità */
+.modalita-lista {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px 36px;
+}
+.modalita-voce strong { display: block; margin-bottom: 4px; }
+.modalita-voce span { font-size: 0.94rem; opacity: 0.8; }
+</style>
+
 </head>
 
 <body>
@@ -91,15 +149,12 @@ tarteaucitron.user.gtagMore = function () {
     escono con una checklist di misure applicabili alla propria organizzazione.
   </p>
 
-  <div class="services-grid" style="justify-content: center;">
+  <div class="services-grid grid-3">
 
     <div class="service-card">
       <span class="service-tag">3 ORE</span>
       <h3>Seminario completo</h3>
-      <p>Sei moduli • Due esercizi pratici • Checklist operativa</p>
-      <span class="service-price">
-        <span class="price-amount">Su preventivo</span>
-      </span>
+      <p>Sei moduli • Due esercizi guidati • 20 minuti di domande</p>
       <a href="/it/contatti.html?objet=formazione">Richiedi un preventivo →</a>
     </div>
 
@@ -107,19 +162,13 @@ tarteaucitron.user.gtagMore = function () {
       <span class="service-tag">2 × 90 MIN</span>
       <h3>Due incontri</h3>
       <p>Stesso programma diviso in due sessioni • Adatto alle fasce serali</p>
-      <span class="service-price">
-        <span class="price-amount">Su preventivo</span>
-      </span>
       <a href="/it/contatti.html?objet=formazione">Richiedi un preventivo →</a>
     </div>
 
     <div class="service-card">
       <span class="service-tag">1 ORA</span>
-      <h3>Modulo introduttivo</h3>
-      <p>Accessi • Backup • Prime ore dell'incidente • Checklist</p>
-      <span class="service-price">
-        <span class="price-amount">Su preventivo</span>
-      </span>
+      <h3>Modulo introduttivo di sensibilizzazione</h3>
+      <p>I rischi essenziali, le misure prioritarie e le prime azioni da conoscere in caso di incidente.</p>
       <a href="/it/contatti.html?objet=formazione">Richiedi un preventivo →</a>
     </div>
 
@@ -132,11 +181,11 @@ tarteaucitron.user.gtagMore = function () {
   <p class="expertise-kicker">IL PROGRAMMA</p>
   <h2 class="expertise-title">Un principio guida: verificare, non soltanto dichiarare</h2>
   <p class="expertise-subtitle">
-    «Ogni misura viene presentata insieme al modo concreto in cui verificarne l’effettiva applicazione.
-    Perché una protezione dichiarata, ma mai controllata, potrebbe non funzionare nel momento del bisogno.
+    Ogni misura viene presentata insieme al modo concreto in cui verificarne l'effettiva applicazione,
+    perché una protezione dichiarata ma mai controllata potrebbe non funzionare nel momento del bisogno.
   </p>
 
-  <div class="services-grid" style="justify-content: center;">
+  <div class="services-grid grid-3">
 
     <div class="service-card">
       <span class="service-tag">25 MIN</span>
@@ -147,13 +196,13 @@ tarteaucitron.user.gtagMore = function () {
     <div class="service-card">
       <span class="service-tag">30 MIN</span>
       <h3>Protezione degli accessi</h3>
-      <p>Autenticazione a più fattori, gestione dei privilegi, password, account condivisi e account che nessuno disattiva.</p>
+      <p>Autenticazione a più fattori, gestione dei privilegi, password, account condivisi e account che nessuno disattiva. Include il primo esercizio guidato.</p>
     </div>
 
     <div class="service-card">
       <span class="service-tag">30 MIN</span>
       <h3>Backup e ransomware readiness</h3>
-      <p>Cosa va verificato prima di un incidente: regola 3-2-1, copie protette dalla propagazione automatica, test di ripristino.</p>
+      <p>Cosa va verificato prima di un incidente: regola 3-2-1, copie protette dalla propagazione automatica, test di ripristino. Include il secondo esercizio guidato.</p>
     </div>
 
     <div class="service-card">
@@ -165,16 +214,21 @@ tarteaucitron.user.gtagMore = function () {
     <div class="service-card">
       <span class="service-tag">25 MIN</span>
       <h3>Gestione dell'incidente</h3>
-      <p>Le prime ore, gli errori da evitare, la valutazione dell'eventuale violazione di dati personali e i soggetti da contattare.</p>
+      <p>Le prime azioni da compiere, gli errori da evitare, la gestione di un'eventuale violazione dei dati personali e i soggetti da contattare.</p>
     </div>
 
     <div class="service-card">
       <span class="service-tag">25 MIN</span>
-      <h3>Checklist operativa</h3>
-      <p>Le misure prioritarie, ordinate per impatto e sforzo, applicabili anche a uno studio di due o tre persone.</p>
+      <h3>Checklist conclusiva</h3>
+      <p>Le misure prioritarie, ordinate per impatto e sforzo, applicabili anche a uno studio di due o tre persone, e un piano su quattro settimane.</p>
     </div>
 
   </div>
+
+  <p class="programma-nota">
+    Sei moduli per 160 minuti, più 20 minuti di domande distribuiti lungo l'incontro: tre ore effettive di didattica,
+    cui si aggiunge una pausa di 15 minuti. I due esercizi guidati si svolgono all'interno dei moduli 2 e 3.
+  </p>
 
   <!-- ====================================================== -->
   <!-- MATERIALI -->
@@ -183,10 +237,10 @@ tarteaucitron.user.gtagMore = function () {
   <p class="expertise-kicker">COSA RESTA DOPO</p>
   <h2 class="expertise-title">Materiali consegnati ai partecipanti</h2>
   <p class="expertise-subtitle">
-    La formazione continua anche dopo l’incontro: ai partecipanti restano strumenti operativi da consultare e utilizzare nella propria organizzazione.
+    La formazione continua anche dopo l'incontro: ai partecipanti restano strumenti operativi da consultare e utilizzare nella propria organizzazione.
   </p>
 
-  <div class="services-grid" style="justify-content: center;">
+  <div class="services-grid grid-3">
 
     <div class="service-card">
       <span class="service-tag">PDF</span>
@@ -203,7 +257,83 @@ tarteaucitron.user.gtagMore = function () {
     <div class="service-card">
       <span class="service-tag">SCHEDA</span>
       <h3>Prime 24 ore</h3>
-      <p>Cosa fare e cosa non fare in caso di incidente, con l'annuario di crisi da compilare e tenere fuori dal computer.</p>
+      <p>Cosa fare e cosa non fare in caso di incidente, con un elenco dei contatti di emergenza da compilare e conservare anche fuori dai sistemi informatici.</p>
+    </div>
+
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- MODALITÀ -->
+  <!-- ====================================================== -->
+
+  <p class="expertise-kicker">ORGANIZZAZIONE</p>
+  <h2 class="expertise-title">Modalità</h2>
+
+  <div class="modalita-lista">
+
+    <div class="modalita-voce">
+      <strong>In presenza o a distanza</strong>
+      <span>Formazione a distanza in diretta, con interazione in tempo reale; in presenza su richiesta, compatibilmente con il calendario.</span>
+    </div>
+
+    <div class="modalita-voce">
+      <strong>Numero di partecipanti</strong>
+      <span>Da un piccolo gruppo di studio fino a un centinaio di iscritti a distanza. Gli esercizi funzionano con qualunque numero.</span>
+    </div>
+
+    <div class="modalita-voce">
+      <strong>Esempi personalizzabili</strong>
+      <span>Casi e priorità adattati al settore e alla dimensione dei partecipanti, definiti in una chiamata preliminare.</span>
+    </div>
+
+    <div class="modalita-voce">
+      <strong>Nessun computer necessario</strong>
+      <span>I due esercizi si svolgono su carta e restano ai partecipanti: nessuna installazione, nessun accesso ai sistemi.</span>
+    </div>
+
+    <div class="modalita-voce">
+      <strong>Lingue</strong>
+      <span>Italiano, francese e inglese.</span>
+    </div>
+
+    <div class="modalita-voce">
+      <strong>Attestato di partecipazione</strong>
+      <span>Attestato nominativo rilasciato su richiesta dell'organizzatore, sulla base delle presenze da lui rilevate.</span>
+    </div>
+
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- LA RELATRICE -->
+  <!-- ====================================================== -->
+
+  <p class="expertise-kicker">CHI CONDUCE L'INCONTRO</p>
+  <h2 class="expertise-title">La relatrice</h2>
+
+  <div class="relatrice-box">
+
+    <!-- Sostituisci con una fotografia: /assets/marina-bruno.jpg
+    <img src="/assets/marina-bruno.jpg" class="relatrice-foto" alt="Marina Bruno">
+    -->
+
+    <div class="relatrice-testo">
+      <p>
+        <strong>Marina Bruno</strong> — fondatrice e consulente in cybersicurezza. Laureata in Ingegneria
+        dell'Informazione all'Università del Salento e in Ingegneria Gestionale al Politecnico di Bari.
+      </p>
+      <p>
+        Nove anni come ingegnera consulente in ambienti industriali complessi del settore aeronautico, con attività
+        che hanno incluso il supporto applicativo, l'analisi degli incidenti, la progettazione di un modello dei ruoli
+        di accesso e la formazione di un team di supporto internazionale.
+      </p>
+      <p>
+        Con Enya Security conduce audit documentali e non intrusivi per organizzazioni di piccole dimensioni,
+        basati su standard, benchmark e linee guida pubblicamente disponibili. Nessuna vendita di software o hardware,
+        nessun accordo con fornitori di soluzioni.
+      </p>
+      <p>
+        <a href="/it/chi-siamo.html">Scopri di più su Enya Security →</a>
+      </p>
     </div>
 
   </div>
