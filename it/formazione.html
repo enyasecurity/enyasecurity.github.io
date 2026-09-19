@@ -41,7 +41,11 @@ tarteaucitron.user.gtagMore = function () {
 <style>
 .fo-wrap      { --fo-navy:#0F2545; --fo-blue:#2563EB; --fo-violet:#7C5CFF;
                 --fo-grey:#5A6472; --fo-line:#E3E8F0; --fo-card:#FFFFFF;
-                --fo-soft:#F6F8FC; }
+                --fo-soft:#F6F8FC;
+                background:#FFFFFF; color:var(--fo-navy); }
+.fo-band, .fo-hero { background:#FFFFFF; }
+.fo-wrap h1, .fo-wrap h2, .fo-wrap h3, .fo-wrap strong { color:var(--fo-navy); }
+.fo-wrap p, .fo-wrap li, .fo-wrap span { color:inherit; }
 .fo-wrap *    { box-sizing:border-box; }
 .fo-section   { max-width:1180px; margin:0 auto; padding:0 24px; }
 
@@ -62,16 +66,13 @@ tarteaucitron.user.gtagMore = function () {
 .fo-point span   { font-size:.86rem; line-height:1.45; color:var(--fo-grey); }
 .fo-ico       { flex:0 0 auto; width:38px; height:38px; border-radius:11px;
                 background:#E7EEFB; display:flex; align-items:center; justify-content:center; }
-.fo-visual    { position:relative; border-radius:20px; overflow:hidden; min-height:300px;
-                background:linear-gradient(140deg,#13284A 0%,#1F3864 55%,#2B4A86 100%);
-                display:flex; flex-direction:column; align-items:center; justify-content:center;
-                gap:18px; padding:34px; text-align:center; }
-.fo-visual img{ width:96px; height:auto; }
-.fo-visual p  { color:#DCE5F5; font-size:1.18rem; line-height:1.5; margin:0; font-style:italic; }
+.fo-visual img{ width:100%; height:auto; display:block; border-radius:20px;
+                box-shadow:0 12px 34px rgba(15,37,69,.16); }
 
 /* ---------- SEZIONI ---------- */
-.fo-band      { padding:58px 0; }
+.fo-band      { padding:58px 0; background:#FFFFFF; }
 .fo-band.alt  { background:var(--fo-soft); }
+.fo-hero      { background:linear-gradient(180deg,#F7F9FD 0%,#EEF3FB 100%); }
 .fo-head      { text-align:center; max-width:720px; margin:0 auto 38px; }
 .fo-head h2   { font-size:2rem; line-height:1.2; color:var(--fo-navy); margin:0 0 12px; font-weight:800; }
 .fo-head p    { font-size:1rem; line-height:1.6; color:var(--fo-grey); margin:0; }
@@ -85,6 +86,20 @@ tarteaucitron.user.gtagMore = function () {
                 background:#EAF0FE; border-radius:999px; padding:5px 11px; white-space:nowrap; }
 .fo-card h3   { font-size:1.06rem; line-height:1.3; color:var(--fo-navy); margin:0 0 10px; font-weight:700; }
 .fo-card > p  { font-size:.9rem; line-height:1.55; color:var(--fo-grey); margin:0 0 18px; }
+.fo-aud       { font-size:.78rem; font-weight:600; letter-spacing:.02em;
+                color:var(--fo-blue); margin:0 0 9px; }
+.fo-card.v .fo-aud { color:var(--fo-violet); }
+
+/* scheda specialistica, a tutta larghezza fra le due righe */
+.fo-grid.three{ grid-template-columns:repeat(3,1fr); }
+.fo-feature   { margin:22px 0; display:flex; flex-wrap:wrap; gap:26px; align-items:center;
+                background:linear-gradient(120deg,#F3F6FE 0%,#EFF2FD 100%);
+                border:1px solid #DFE6F7; border-radius:16px; padding:26px 28px; }
+.fo-feature .fo-ico-sq { width:52px; height:52px; }
+.fo-feature-txt { flex:1 1 440px; }
+.fo-feature-txt h3 { font-size:1.12rem; margin:0 0 8px; }
+.fo-feature-txt p  { font-size:.9rem; line-height:1.55; color:var(--fo-grey); margin:0; }
+.fo-feature details { flex:0 0 auto; }
 .fo-card details { margin-top:auto; }
 .fo-card summary { list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:7px;
                 font-size:.86rem; font-weight:600; color:var(--fo-blue);
@@ -138,7 +153,7 @@ tarteaucitron.user.gtagMore = function () {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width:1080px){
-  .fo-grid { grid-template-columns:repeat(2,1fr); }
+  .fo-grid, .fo-grid.three { grid-template-columns:repeat(2,1fr); }
   .fo-why  { grid-template-columns:repeat(2,1fr); }
 }
 @media (max-width:860px){
@@ -148,7 +163,7 @@ tarteaucitron.user.gtagMore = function () {
   .fo-visual  { min-height:220px; order:-1; }
 }
 @media (max-width:620px){
-  .fo-grid { grid-template-columns:1fr; }
+  .fo-grid, .fo-grid.three { grid-template-columns:1fr; }
   .fo-why  { grid-template-columns:1fr; }
   .fo-custom, .fo-final { padding:26px 22px; }
 }
@@ -204,8 +219,8 @@ tarteaucitron.user.gtagMore = function () {
       <p class="fo-kicker">Formazione e sensibilizzazione</p>
       <h1>Competenze concrete<br>per un'azienda più sicura</h1>
       <p class="fo-lead">
-        Formazione pratica, basata su casi reali, per aiutare professionisti, PMI e organizzazioni
-        a prevenire gli incidenti e ad adottare buone pratiche di cybersicurezza verificabili.
+        Formazione pratica, basata su scenari realistici ed esercizi guidati, per aiutare professionisti,
+        PMI e organizzazioni a prevenire gli incidenti e ad adottare buone pratiche di cybersicurezza verificabili.
       </p>
 
       <div class="fo-points">
@@ -215,7 +230,7 @@ tarteaucitron.user.gtagMore = function () {
           </span>
           <span class="fo-point-txt">
             <strong>Approccio pratico</strong>
-            <span>Casi reali ed esercizi concreti</span>
+            <span>Scenari realistici ed esercizi guidati</span>
           </span>
         </div>
         <div class="fo-point">
@@ -232,19 +247,18 @@ tarteaucitron.user.gtagMore = function () {
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
           </span>
           <span class="fo-point-txt">
-            <strong>In presenza o online</strong>
+            <strong>Online o in presenza</strong>
             <span>La stessa qualità, maggiore flessibilità</span>
           </span>
         </div>
       </div>
     </div>
 
-    <!-- Colonna visiva. Per usare una fotografia al posto del blocco colorato,
-         sostituisci l'intero <div class="fo-visual"> con:
-         <img src="/assets/formazione-hero.jpg" alt="" style="width:100%;border-radius:20px;"> -->
+    <!-- Immagine: caricare il file in /assets/formazione-hero.png -->
     <div class="fo-visual">
-      <img src="/assets/logo.png" alt="Enya Security">
-      <p>Formare oggi,<br>proteggere domani.</p>
+      <img src="/assets/formazione-hero.png"
+           alt="Formazione cybersecurity Enya Security — formare oggi, proteggere domani"
+           width="1536" height="1024" loading="lazy">
     </div>
 
   </div>
@@ -265,7 +279,6 @@ tarteaucitron.user.gtagMore = function () {
 
     <div class="fo-grid">
 
-      <!-- 1 -->
       <div class="fo-card">
         <div class="fo-card-top">
           <span class="fo-ico-sq">
@@ -273,7 +286,8 @@ tarteaucitron.user.gtagMore = function () {
           </span>
           <span class="fo-badge">3 h</span>
         </div>
-        <h3>Fondamentali di cybersicurezza per TPE/PMI</h3>
+        <h3>Cybersecurity essenziale per professionisti e PMI</h3>
+        <p class="fo-aud">Tutti i collaboratori</p>
         <p>Panoramica delle minacce, buone pratiche, protezione degli accessi, email, cloud e telelavoro.</p>
         <details>
           <summary>Scopri di più</summary>
@@ -287,29 +301,6 @@ tarteaucitron.user.gtagMore = function () {
         </details>
       </div>
 
-      <!-- 2 -->
-      <div class="fo-card v">
-        <div class="fo-card-top">
-          <span class="fo-ico-sq">
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#7C5CFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          </span>
-          <span class="fo-badge">1 h 30</span>
-        </div>
-        <h3>Phishing e ingegneria sociale</h3>
-        <p>Riconoscere i tentativi di frode, analizzare email e link sospetti, esercizi pratici e casi reali.</p>
-        <details>
-          <summary>Scopri di più</summary>
-          <ul>
-            <li>I sei segnali da controllare, in ordine di priorità</li>
-            <li>Dominio del mittente, link reali e allegati pericolosi</li>
-            <li>Frode del falso fornitore e cambio di coordinate bancarie</li>
-            <li>Cosa fare quando la richiesta arriva da una casella legittima compromessa</li>
-            <li>Esercizio di analisi su messaggi reali anonimizzati</li>
-          </ul>
-        </details>
-      </div>
-
-      <!-- 3 -->
       <div class="fo-card">
         <div class="fo-card-top">
           <span class="fo-ico-sq">
@@ -318,6 +309,7 @@ tarteaucitron.user.gtagMore = function () {
           <span class="fo-badge">3 h</span>
         </div>
         <h3>Ransomware e prime ore</h3>
+        <p class="fo-aud">Professionisti · PMI · Ordini</p>
         <p>Come prevenire un attacco, che cosa fare nelle prime ore e come ripartire.</p>
         <details>
           <summary>Scopri di più</summary>
@@ -332,7 +324,6 @@ tarteaucitron.user.gtagMore = function () {
         </details>
       </div>
 
-      <!-- 4 -->
       <div class="fo-card v">
         <div class="fo-card-top">
           <span class="fo-ico-sq">
@@ -340,8 +331,9 @@ tarteaucitron.user.gtagMore = function () {
           </span>
           <span class="fo-badge">3 h</span>
         </div>
-        <h3>NIS2 per organi di direzione</h3>
-        <p>Obblighi, responsabilità e azioni prioritarie per le organizzazioni interessate. Focus pratico per dirigenti e responsabili.</p>
+        <h3>NIS2 per dirigenti e responsabili</h3>
+        <p class="fo-aud">Dirigenti e responsabili</p>
+        <p>Responsabilità, gestione del rischio, incidenti, fornitori e misure prioritarie previste dalla normativa.</p>
         <details>
           <summary>Scopri di più</summary>
           <ul>
@@ -354,29 +346,55 @@ tarteaucitron.user.gtagMore = function () {
         </details>
       </div>
 
-      <!-- 5 -->
-      <div class="fo-card">
+      <div class="fo-card v">
         <div class="fo-card-top">
           <span class="fo-ico-sq">
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2" y="16" width="6" height="5" rx="1"/><rect x="16" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M5 16v-2h14v2"/></svg>
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#7C5CFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           </span>
-          <span class="fo-badge">3 h</span>
+          <span class="fo-badge">1 h 30</span>
         </div>
-        <h3>Catena di approvvigionamento e rischio fornitori</h3>
-        <p>Come valutare i rischi, gestire i fornitori e integrare la sicurezza nei rapporti contrattuali.</p>
+        <h3>Phishing e ingegneria sociale</h3>
+        <p class="fo-aud">Tutti i collaboratori</p>
+        <p>Riconoscere i tentativi di frode, analizzare email e link sospetti, esercizi guidati su scenari realistici.</p>
         <details>
           <summary>Scopri di più</summary>
           <ul>
-            <li>Perché i committenti trasferiscono requisiti di sicurezza ai fornitori</li>
-            <li>Come leggere e compilare un questionario di sicurezza cliente</li>
-            <li>Criteri per classificare i propri fornitori per criticità</li>
-            <li>Clausole contrattuali e livelli di servizio: cosa chiedere</li>
-            <li>Cosa preparare prima che un cliente lo domandi</li>
+            <li>I sei segnali da controllare, in ordine di priorità</li>
+            <li>Dominio del mittente, link reali e allegati pericolosi</li>
+            <li>Frode del falso fornitore e cambio di coordinate bancarie</li>
+            <li>Cosa fare quando la richiesta arriva da una casella legittima compromessa</li>
+            <li>Esercizio di analisi su messaggi ricostruiti a scopo didattico</li>
           </ul>
         </details>
       </div>
 
-      <!-- 6 -->
+    </div>
+
+    <div class="fo-feature">
+      <span class="fo-ico-sq">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2" y="16" width="6" height="5" rx="1"/><rect x="16" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M5 16v-2h14v2"/></svg>
+      </span>
+      <div class="fo-feature-txt">
+        <span class="fo-badge">Formazione specialistica</span>
+        <h3 style="margin-top:10px;">Catena di approvvigionamento e rischio fornitori</h3>
+        <p class="fo-aud">3 h · Direzione · Acquisti · IT</p>
+        <p>Identificare i fornitori critici, valutare accessi e dipendenze e integrare requisiti
+           di sicurezza nei rapporti con terze parti.</p>
+      </div>
+      <details>
+        <summary>Scopri di più</summary>
+        <ul>
+          <li>Perché i committenti trasferiscono requisiti di sicurezza ai fornitori</li>
+          <li>Come leggere e compilare un questionario di sicurezza cliente</li>
+          <li>Criteri per classificare i propri fornitori per criticità</li>
+          <li>Clausole contrattuali e livelli di servizio: cosa chiedere</li>
+          <li>Cosa preparare prima che un cliente lo domandi</li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="fo-grid three">
+
       <div class="fo-card v">
         <div class="fo-card-top">
           <span class="fo-ico-sq">
@@ -385,11 +403,12 @@ tarteaucitron.user.gtagMore = function () {
           <span class="fo-badge">2 h</span>
         </div>
         <h3>GDPR dal punto di vista cyber</h3>
+        <p class="fo-aud">Direzione · Referenti privacy</p>
         <p>Le misure di sicurezza dell'art. 32, la gestione dei dati personali e i principali rischi.</p>
         <details>
           <summary>Scopri di più</summary>
           <ul>
-            <li>Misure tecniche adeguate: cosa significa in concreto per una piccola struttura</li>
+            <li>Misure tecniche adeguate: cosa significa per una piccola struttura</li>
             <li>Violazione dei dati personali: come riconoscerla, anche senza furto</li>
             <li>Notifica al Garante entro 72 ore e comunicazione agli interessati</li>
             <li>Documentare la valutazione anche quando non si notifica</li>
@@ -398,7 +417,6 @@ tarteaucitron.user.gtagMore = function () {
         </details>
       </div>
 
-      <!-- 7 -->
       <div class="fo-card">
         <div class="fo-card-top">
           <span class="fo-ico-sq">
@@ -407,6 +425,7 @@ tarteaucitron.user.gtagMore = function () {
           <span class="fo-badge">2 h</span>
         </div>
         <h3>IA generativa e rischi cyber</h3>
+        <p class="fo-aud">Direzione · Tutti i collaboratori</p>
         <p>Opportunità, rischi e buone pratiche per un utilizzo sicuro dell'IA in azienda.</p>
         <details>
           <summary>Scopri di più</summary>
@@ -420,7 +439,6 @@ tarteaucitron.user.gtagMore = function () {
         </details>
       </div>
 
-      <!-- 8 -->
       <div class="fo-card">
         <div class="fo-card-top">
           <span class="fo-ico-sq">
@@ -429,6 +447,7 @@ tarteaucitron.user.gtagMore = function () {
           <span class="fo-badge">Moduli da 1 h</span>
         </div>
         <h3>Cyber Express</h3>
+        <p class="fo-aud">Tutti i collaboratori</p>
         <p>Moduli brevi e pratici: MFA, password, cloud, backup, gestione dell'incidente. Ideali per sessioni di sensibilizzazione rapide.</p>
         <details>
           <summary>Scopri di più</summary>
@@ -494,8 +513,8 @@ tarteaucitron.user.gtagMore = function () {
         <span class="fo-ico-sq">
           <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg>
         </span>
-        <strong>Esperienza sul campo</strong>
-        <span>Casi reali e ritorno dall'esperienza industriale</span>
+        <strong>Esperienza industriale</strong>
+        <span>Un approccio pragmatico maturato in nove anni di consulenza in ambienti industriali complessi</span>
       </div>
 
       <div>
@@ -518,11 +537,16 @@ tarteaucitron.user.gtagMore = function () {
         <span class="fo-ico-sq">
           <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
         </span>
-        <strong>Attestato di partecipazione</strong>
-        <span>Rilasciato su richiesta dell'organizzatore</span>
+        <strong>Esercizi e casi concreti</strong>
+        <span>Situazioni realistiche adattate al settore e al pubblico</span>
       </div>
 
     </div>
+
+    <p class="fo-note" style="margin-top:30px;">
+      Attestato nominativo di partecipazione rilasciato su richiesta dell'organizzatore,
+      sulla base delle presenze da lui rilevate.
+    </p>
 
   </div>
 </section>
