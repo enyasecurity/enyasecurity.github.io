@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<title>Webinaire gratuit — Cyberattaque : 10 vérifications essentielles pour protéger une TPE/PME | Enya Security</title>
+<meta name="description" content="Webinaire gratuit de sensibilisation dans le cadre du Cybermois 2026. 10 vérifications concrètes pour évaluer la préparation d'une TPE ou PME face aux principaux risques cyber. Sans prérequis technique.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Partage social -->
+<meta property="og:title" content="Webinaire gratuit — Cyberattaque : 10 vérifications essentielles pour protéger une TPE/PME">
+<meta property="og:description" content="Cybermois 2026. Webinaire gratuit de sensibilisation pour dirigeants de TPE/PME, artisans et associations sans service informatique interne.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.enyasecurity.com/webinaire-cybermois.html">
+<meta property="og:image" content="https://www.enyasecurity.com/assets/webinaire-cybermois.png">
+
+<!-- TarteAuCitron (gestion des cookies) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "/confidentialite.html",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Logo Enya Security">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav class="nav-compact">
+    <a href="/index.html">Accueil</a>
+    <a href="/services.html">Services</a>
+    <a href="/tarifs.html">Tarifs</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/nis2.html">NIS2</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/glossaire.html">Glossaire</a>
+    <a href="/faq.html">FAQ</a>
+
+    <span class="nav-divider"></span>
+
+    <a class="lang-active" href="/webinaire-cybermois.html">FR</a>
+  </nav>
+
+  <!-- CTA volontairement NON commercial sur cette page : l'agenda du Cybermois
+       exclut les évènements à vocation commerciale. -->
+  <a href="mailto:marinabruno@enyasecurity.com?subject=Inscription%20au%20webinaire%20Cybermois%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m'inscrire%20au%20webinaire%20gratuit%20%C2%AB%20Cyberattaque%20%3A%2010%20v%C3%A9rifications%20essentielles%20pour%20prot%C3%A9ger%20une%20TPE%2FPME%20%C2%BB.%0D%0A%0D%0ANom%20%3A%20%0D%0AStructure%20%3A%20%0D%0AFonction%20%3A%20%0D%0A%0D%0AMerci." class="header-cta">
+    S'inscrire au webinaire
+  </a>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- HERO -->
+<!-- ====================================================== -->
+
+<section class="hero-home">
+
+  <div class="hero-grid">
+
+    <div class="hero-content">
+
+      <div class="hero-kicker-text">WEBINAIRE GRATUIT · CYBERMOIS 2026</div>
+
+      <h1 class="hero-title">
+        Cyberattaque :<br>
+        <span class="gradient-text">10 vérifications essentielles</span><br>
+        pour protéger une TPE/PME
+      </h1>
+
+      <p class="hero-subtitle">
+        Des conseils concrets et applicables, spécialement pensés pour les dirigeants
+        de petites structures <b>sans service informatique interne</b>.
+      </p>
+
+      <div class="svc-chip-row">
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <!-- DATE ET HORAIRE : à modifier ici, dans le visuel et dans le bloc « Informations pratiques » -->
+          <span>Vendredi 23 octobre 2026<br>12h00 — 13h00</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          </span>
+          <span>En ligne<br>1 heure</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <span>Gratuit<br>sans prérequis technique</span>
+        </div>
+
+        <div class="svc-chip">
+          <span class="svc-chip-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          </span>
+          <span>Checklist offerte<br>à tous les participants</span>
+        </div>
+
+      </div>
+
+      <div class="hero-buttons-new" style="margin-bottom: 8px;">
+        <a href="mailto:marinabruno@enyasecurity.com?subject=Inscription%20au%20webinaire%20Cybermois%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m'inscrire%20au%20webinaire%20gratuit%20%C2%AB%20Cyberattaque%20%3A%2010%20v%C3%A9rifications%20essentielles%20pour%20prot%C3%A9ger%20une%20TPE%2FPME%20%C2%BB.%0D%0A%0D%0ANom%20%3A%20%0D%0AStructure%20%3A%20%0D%0AFonction%20%3A%20%0D%0A%0D%0AMerci." class="btn-primary">
+          S'inscrire par email
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#programme" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+          Voir le programme
+        </a>
+      </div>
+
+      <div class="svc-hero-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+        Aucune présentation commerciale, aucune promotion d'offres payantes.
+      </div>
+
+    </div>
+
+    <div class="hero-visual" style="height: 420px; display:flex; align-items:center; justify-content:center;">
+      <img src="/assets/webinaire-cybermois.png"
+           alt="Webinaire gratuit — Cyberattaque : 10 vérifications essentielles pour protéger une TPE/PME"
+           style="max-width:100%; max-height:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.35);">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- À QUI S'ADRESSE CE WEBINAIRE -->
+<!-- ====================================================== -->
+
+<section class="svc-verify-section" style="padding-top:30px;">
+
+  <p class="expertise-kicker">À QUI S'ADRESSE CE WEBINAIRE</p>
+
+  <div class="nis2-grid nis2-grid-4">
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+        </span>
+        <h3>TPE et PME</h3>
+      </div>
+      <ul class="nis2-card-list">
+        <li>Sans responsable sécurité interne <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+        <li>Avec un site web et une base clients <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3l7 7-4 4-7-7z"/><path d="M10 7L3 14v7h7l7-7"/></svg>
+        </span>
+        <h3>Artisans &amp; indépendants</h3>
+      </div>
+      <ul class="nis2-card-list">
+        <li>Devis, factures et données clients <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+        <li>Un ordinateur, un téléphone, un cloud <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
+        </span>
+        <h3>Associations</h3>
+      </div>
+      <ul class="nis2-card-list">
+        <li>Fichiers d'adhérents et de donateurs <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+        <li>Bénévoles aux accès partagés <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+      </ul>
+    </div>
+
+    <div class="nis2-card">
+      <div class="nis2-card-header">
+        <span class="nis2-card-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V5a2 2 0 012-2h12a2 2 0 012 2v16"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+        </span>
+        <h3>Cabinets &amp; petites structures</h3>
+      </div>
+      <ul class="nis2-card-list">
+        <li>Données sensibles ou réglementées <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+        <li>Informatique confiée à un prestataire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- PROGRAMME -->
+<!-- ====================================================== -->
+
+<section class="approach-section" id="programme">
+
+  <p class="expertise-kicker">LES 5 POINTS TRAITÉS EN DÉTAIL PENDANT L'HEURE</p>
+
+  <div class="approach-inner" style="text-align:center;">
+
+    <div class="approach-row approach-row-6 svc-approach-outline" style="margin-top:0;">
+
+      <div class="approach-step">
+        <span class="approach-number">1</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+        </span>
+        <h3>Sauvegardes</h3>
+        <p>Ai-je une sauvegarde réellement restaurable — et l'ai-je déjà testée ?</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">2</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+        </span>
+        <h3>Comptes &amp; MFA</h3>
+        <p>Mes comptes sensibles sont-ils correctement protégés ?</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">3</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 010 18a15 15 0 010-18z"/></svg>
+        </span>
+        <h3>Exposition Internet</h3>
+        <p>Qu'est-ce qu'un attaquant peut déjà découvrir sur mon entreprise ?</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">4</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </span>
+        <h3>Phishing</h3>
+        <p>Mes collaborateurs sauraient-ils reconnaître une tentative crédible ?</p>
+      </div>
+
+      <div class="approach-step">
+        <span class="approach-number">5</span>
+        <span class="approach-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M5.6 5.6l2.8 2.8M3 12h4M12 13a4 4 0 014 4v4H8v-4a4 4 0 014-4z"/></svg>
+        </span>
+        <h3>Premières heures</h3>
+        <p>Saurais-je quoi faire pendant les premières heures d'un incident ?</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- LA CHECKLIST DES 10 VÉRIFICATIONS -->
+<!-- ====================================================== -->
+
+<section class="svc-check-section">
+
+  <div class="svc-check-grid">
+
+    <div class="svc-check-col">
+      <h3>LA CHECKLIST DES 10 VÉRIFICATIONS</h3>
+      <p style="margin-bottom:14px;">
+        Les cinq points ci-dessus sont traités en détail pendant la session.
+        La checklist complète des dix vérifications est envoyée gratuitement
+        à tous les participants à l'issue du webinaire.
+      </p>
+      <ul class="svc-check-list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>1. Sauvegardes</strong><p>Ai-je une sauvegarde réellement restaurable ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>2. Comptes et MFA</strong><p>Les comptes sensibles sont-ils correctement protégés ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>3. Droits administrateur</strong><p>Qui possède réellement des privilèges élevés ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>4. Mises à jour</strong><p>Sais-je quels systèmes ne sont pas à jour ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>5. Exposition Internet et accès distants</strong><p>VPN, RDP, cloud, comptes externes : qu'est-ce qui est visible ?</p></div></li>
+      </ul>
+    </div>
+
+    <div class="svc-check-col">
+      <h3>&nbsp;</h3>
+      <ul class="svc-check-list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>6. Phishing</strong><p>Mes collaborateurs sauraient-ils reconnaître une tentative crédible ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>7. Données sensibles</strong><p>Où sont les données importantes et qui peut y accéder ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>8. Ransomware</strong><p>Saurais-je quoi faire pendant les premières heures ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>9. Prestataires et sous-traitants</strong><p>Qui, en dehors de mon équipe, a un accès à mes systèmes ?</p></div></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>10. Journalisation</strong><p>Saurait-on reconstituer ce qui s'est passé après un incident ?</p></div></li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- INFORMATIONS PRATIQUES + FAQ -->
+<!-- ====================================================== -->
+
+<section class="svc-faq-section">
+
+  <div class="svc-faq-grid">
+
+    <div class="svc-faq-col">
+
+      <h3>QUESTIONS FRÉQUENTES</h3>
+
+      <details class="svc-faq-item">
+        <summary>Faut-il des connaissances techniques ?</summary>
+        <p>
+          Non, aucune. Le webinaire est conçu pour des dirigeants et des
+          responsables qui n'ont pas de service informatique interne. Chaque
+          vérification est expliquée à partir d'un exemple concret, sans
+          vocabulaire spécialisé.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Est-ce vraiment gratuit ?</summary>
+        <p>
+          Oui. Le webinaire est gratuit et ne comporte aucune présentation
+          commerciale ni promotion d'offres payantes. Il s'inscrit dans le
+          Cybermois, le Mois européen de la cybersécurité, qui se déroule
+          du 1er au 31 octobre.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Je ne suis pas disponible à cet horaire, puis-je recevoir la checklist ?</summary>
+        <p>
+          Oui. Inscrivez-vous quand même : la checklist des dix vérifications
+          est envoyée à toutes les personnes inscrites, présentes ou non.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Comment se passe l'inscription ?</summary>
+        <p>
+          Par simple email à
+          <a href="mailto:marinabruno@enyasecurity.com">marinabruno@enyasecurity.com</a>,
+          en indiquant votre nom et votre structure. Le lien de connexion vous
+          est envoyé en retour, puis rappelé la veille du webinaire.
+        </p>
+      </details>
+
+      <details class="svc-faq-item">
+        <summary>Que devient mon adresse email ?</summary>
+        <p>
+          Elle est utilisée uniquement pour l'organisation de ce webinaire et
+          l'envoi de la checklist. Aucune cession à des tiers. Vous pouvez
+          demander sa suppression à tout moment. Voir la
+          <a href="/confidentialite.html">politique de confidentialité</a>.
+        </p>
+      </details>
+
+    </div>
+
+    <div class="svc-cta-dark">
+      <span class="svc-cta-dark-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+      </span>
+      <h3>Réservez votre place</h3>
+      <!-- DATE ET HORAIRE : à modifier ici aussi si le créneau change -->
+      <p>
+        Vendredi 23 octobre 2026, de 12h00 à 13h00.<br>
+        En ligne · 1 heure · gratuit · sur inscription par email.
+      </p>
+      <a href="mailto:marinabruno@enyasecurity.com?subject=Inscription%20au%20webinaire%20Cybermois%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m'inscrire%20au%20webinaire%20gratuit%20%C2%AB%20Cyberattaque%20%3A%2010%20v%C3%A9rifications%20essentielles%20pour%20prot%C3%A9ger%20une%20TPE%2FPME%20%C2%BB.%0D%0A%0D%0ANom%20%3A%20%0D%0AStructure%20%3A%20%0D%0AFonction%20%3A%20%0D%0A%0D%0AMerci." class="btn-primary">
+        S'inscrire par email
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="svc-cta-dark-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
+        Checklist des 10 vérifications offerte à tous les inscrits
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================== -->
+
+<footer>
+
+<p style="margin-bottom:10px;">
+  Webinaire organisé dans le cadre du <strong>Cybermois 2026</strong>, le Mois européen
+  de la cybersécurité, du 1er au 31 octobre.
+</p>
+
+<p>
+<a href="/mentions_legales.html">Mentions légales</a>
+&nbsp;·&nbsp;
+<a href="/confidentialite.html">Politique de confidentialité</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — Tous droits réservés.
+</div>
+
+</body>
+</html>
