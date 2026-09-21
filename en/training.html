@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Training and awareness - Enya Security</title>
+<meta name="description" content="Practical cybersecurity training for small businesses, professional practices and associations: fundamentals, phishing, ransomware, NIS2, supply chain, GDPR and generative AI.">
+<link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TarteAuCitron (cookie management) -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
+<script>
+tarteaucitron.init({
+    "privacyUrl": "/en/privacy.html",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "showAlertSmall": false,
+    "cookieslist": true,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false
+});
+</script>
+<!-- Google Analytics via TarteAuCitron -->
+<script>
+tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
+tarteaucitron.user.gtagMore = function () {
+    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
+};
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+</script>
+
+<!-- ====================================================================== -->
+<!-- PAGE-SPECIFIC STYLES (prefix fo-)                                       -->
+<!-- Self-contained: identical to /formation.html and /it/formazione.html    -->
+<!-- ====================================================================== -->
+<style>
+.fo-wrap      { --fo-navy:#0F2545; --fo-blue:#2563EB; --fo-violet:#7C5CFF;
+                --fo-grey:#5A6472; --fo-line:#E3E8F0; --fo-card:#FFFFFF; --fo-green:#12A37E;
+                --fo-soft:#F6F8FC;
+                background:#FFFFFF; color:var(--fo-navy); }
+.fo-band, .fo-hero { background:#FFFFFF; }
+.fo-wrap h1, .fo-wrap h2, .fo-wrap h3, .fo-wrap strong { color:var(--fo-navy); }
+.fo-wrap p, .fo-wrap li, .fo-wrap span { color:inherit; }
+.fo-wrap *    { box-sizing:border-box; }
+.fo-section   { max-width:1180px; margin:0 auto; padding:0 24px; }
+
+/* ---------- HERO ---------- */
+.fo-hero      { background:linear-gradient(180deg,#F7F9FD 0%,#EEF3FB 100%);
+                padding:64px 0 56px; }
+.fo-hero-grid { max-width:1180px; margin:0 auto; padding:0 24px;
+                display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
+.fo-kicker    { font-size:.72rem; font-weight:700; letter-spacing:.14em;
+                text-transform:uppercase; color:var(--fo-blue); margin:0 0 14px; }
+.fo-hero h1   { font-size:2.65rem; line-height:1.15; color:var(--fo-navy);
+                margin:0 0 18px; font-weight:800; }
+.fo-hero p.fo-lead { font-size:1.06rem; line-height:1.65; color:var(--fo-grey);
+                max-width:560px; margin:0 0 30px; }
+.fo-points    { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.fo-point     { display:flex; gap:12px; align-items:flex-start; }
+.fo-point strong { display:block; font-size:.95rem; color:var(--fo-navy); margin-bottom:3px; }
+.fo-point span   { font-size:.86rem; line-height:1.45; color:var(--fo-grey); }
+.fo-ico       { flex:0 0 auto; width:38px; height:38px; border-radius:11px;
+                background:#E7EEFB; display:flex; align-items:center; justify-content:center; }
+.fo-visual img{ width:100%; height:auto; display:block; border-radius:20px;
+                box-shadow:0 12px 34px rgba(15,37,69,.16); }
+
+/* ---------- SECTIONS ---------- */
+.fo-band      { padding:58px 0; background:#FFFFFF; }
+.fo-band.alt  { background:var(--fo-soft); }
+.fo-head      { text-align:center; max-width:720px; margin:0 auto 38px; }
+.fo-head h2   { font-size:2rem; line-height:1.2; color:var(--fo-navy); margin:0 0 12px; font-weight:800; }
+.fo-head p    { font-size:1rem; line-height:1.6; color:var(--fo-grey); margin:0; }
+
+/* ---------- TRAINING CARDS ---------- */
+.fo-grid      { display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+.fo-grid.three{ grid-template-columns:repeat(3,1fr); }
+.fo-card      { background:var(--fo-card); border:1px solid var(--fo-line);
+                border-radius:16px; padding:24px 22px 22px; display:flex; flex-direction:column; }
+.fo-card-top  { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px; }
+.fo-badge     { font-size:.74rem; font-weight:700; color:var(--fo-blue);
+                background:#EAF0FE; border-radius:999px; padding:5px 11px; white-space:nowrap; }
+.fo-card h3   { font-size:1.06rem; line-height:1.3; color:var(--fo-navy); margin:0 0 10px; font-weight:700; }
+.fo-card > p  { font-size:.9rem; line-height:1.55; color:var(--fo-grey); margin:0 0 18px; }
+.fo-aud       { font-size:.78rem; font-weight:600; letter-spacing:.02em;
+                color:var(--fo-blue); margin:0 0 9px; }
+.fo-card.v .fo-aud { color:var(--fo-violet); }
+.fo-card details { margin-top:auto; }
+.fo-card summary { list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:7px;
+                font-size:.86rem; font-weight:600; color:var(--fo-blue);
+                background:#EAF0FE; border-radius:9px; padding:9px 14px; }
+.fo-card summary::-webkit-details-marker { display:none; }
+.fo-card summary::after { content:"→"; transition:transform .15s ease; }
+.fo-card details[open] summary::after { transform:rotate(90deg); }
+.fo-card details ul { margin:14px 0 0; padding-left:18px; }
+.fo-card details li { font-size:.85rem; line-height:1.5; color:var(--fo-grey); margin-bottom:7px; }
+
+/* full-width featured card between the two rows */
+.fo-feature   { margin:22px 0; display:flex; flex-wrap:wrap; gap:26px; align-items:center;
+                background:linear-gradient(120deg,#F3F6FE 0%,#EFF2FD 100%);
+                border:1px solid #DFE6F7; border-radius:16px; padding:26px 28px; }
+.fo-feature .fo-ico-sq { width:52px; height:52px; }
+.fo-feature-txt { flex:1 1 440px; }
+.fo-feature-txt h3 { font-size:1.12rem; margin:0 0 8px; }
+.fo-feature-txt p  { font-size:.9rem; line-height:1.55; color:var(--fo-grey); margin:0; }
+.fo-feature details { flex:0 0 auto; }
+
+/* accent colours */
+.fo-card.v .fo-ico-sq,.fo-card.v summary { background:#F0EBFE; }
+.fo-card.v summary,.fo-card.v .fo-badge  { color:var(--fo-violet); }
+.fo-card.v .fo-badge { background:#F0EBFE; }
+
+.fo-card.g .fo-ico-sq,.fo-card.g summary { background:#E4F6F0; }
+.fo-card.g summary,.fo-card.g .fo-badge  { color:var(--fo-green); }
+.fo-card.g .fo-badge { background:#E4F6F0; }
+.fo-card.g .fo-aud { color:var(--fo-green); }
+
+.fo-feature.g { background:linear-gradient(120deg,#EAF7F2 0%,#EFF6FB 100%); border-color:#D6ECE3; }
+.fo-feature.g .fo-ico-sq, .fo-feature.g summary { background:#E4F6F0; }
+.fo-feature.g summary, .fo-feature.g .fo-badge, .fo-feature.g .fo-aud { color:var(--fo-green); }
+.fo-feature.g .fo-badge { background:#E4F6F0; }
+.fo-ico-sq    { width:42px; height:42px; border-radius:12px; background:#E7EEFB;
+                display:flex; align-items:center; justify-content:center; }
+
+/* ---------- TAILORED BANNER ---------- */
+.fo-custom    { background:linear-gradient(120deg,#F2F1FE 0%,#EAF0FE 100%);
+                border:1px solid #E1E5F6; border-radius:20px; padding:34px 36px;
+                display:flex; flex-wrap:wrap; align-items:center; gap:28px; }
+.fo-custom-ico{ width:64px; height:64px; border-radius:18px; background:#FFFFFF;
+                display:flex; align-items:center; justify-content:center; flex:0 0 auto; }
+.fo-custom-txt{ flex:1 1 420px; }
+.fo-custom-txt h3 { font-size:1.35rem; color:var(--fo-navy); margin:0 0 8px; font-weight:700; }
+.fo-custom-txt p  { font-size:.95rem; line-height:1.6; color:var(--fo-grey); margin:0; }
+.fo-custom-cta{ flex:0 0 auto; text-align:center; }
+.fo-custom-cta small { display:block; margin-top:10px; font-size:.8rem; color:var(--fo-grey); }
+
+/* ---------- WHY ---------- */
+.fo-why       { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; text-align:center; }
+.fo-why div strong { display:block; font-size:1rem; color:var(--fo-navy); margin:14px 0 6px; }
+.fo-why div span   { font-size:.88rem; line-height:1.5; color:var(--fo-grey); }
+.fo-why .fo-ico-sq { margin:0 auto; }
+
+/* ---------- SPEAKER ---------- */
+.fo-speaker   { display:flex; flex-wrap:wrap; gap:26px; align-items:center;
+                max-width:900px; margin:0 auto; }
+.fo-speaker img { width:110px; height:110px; border-radius:50%; object-fit:cover; flex:0 0 auto; }
+.fo-speaker div { flex:1 1 380px; }
+.fo-speaker p { font-size:.94rem; line-height:1.6; color:var(--fo-grey); margin:0 0 10px; }
+
+/* ---------- FINAL CTA + NOTE ---------- */
+.fo-final     { background:#EAF0FE; border:1px solid #DCE4F7; border-radius:20px;
+                padding:32px 36px; display:flex; flex-wrap:wrap; gap:24px;
+                align-items:center; justify-content:space-between; }
+.fo-final h3  { font-size:1.4rem; color:var(--fo-navy); margin:0 0 8px; font-weight:700; }
+.fo-final p   { font-size:.95rem; color:var(--fo-grey); margin:0; }
+.fo-note      { max-width:820px; margin:26px auto 0; text-align:center;
+                font-size:.82rem; line-height:1.6; color:#8A94A3; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1080px){
+  .fo-grid, .fo-grid.three { grid-template-columns:repeat(2,1fr); }
+  .fo-why  { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:860px){
+  .fo-hero-grid { grid-template-columns:1fr; }
+  .fo-hero h1 { font-size:2.1rem; }
+  .fo-points  { grid-template-columns:1fr; }
+  .fo-visual  { min-height:220px; order:-1; }
+}
+@media (max-width:620px){
+  .fo-grid, .fo-grid.three { grid-template-columns:1fr; }
+  .fo-why  { grid-template-columns:1fr; }
+  .fo-custom, .fo-final { padding:26px 22px; }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/assets/logo.png" class="logo" alt="Enya Security logo">
+    <div class="site-title">
+      <span class="title-enya">Enya</span>
+      <span class="title-security">Security</span>
+    </div>
+  </div>
+
+  <nav class="nav-compact">
+    <a href="/en/home.html">Home</a>
+    <a href="/en/services.html">Services</a>
+    <a class="active" href="/en/training.html">Training</a>
+    <a href="/en/pricing.html">Pricing</a>
+    <a href="/en/about.html">About</a>
+    <a href="/en/nis2.html">NIS2</a>
+    <a href="/en/contact.html">Contact</a>
+    <a href="/en/glossary.html">Glossary</a>
+    <a href="/en/faq.html">FAQ</a>
+
+    <span class="nav-divider"></span>
+
+    <a href="/formation.html">FR</a>
+    <a class="lang-active" href="/en/training.html">EN</a>
+    <a href="/it/formazione.html">IT</a>
+  </nav>
+
+  <a href="/en/contact.html?objet=training" class="header-cta">
+    Request a quote
+  </a>
+
+</header>
+
+<div class="fo-wrap">
+
+<!-- ====================================================================== -->
+<!-- HERO -->
+<!-- ====================================================================== -->
+<section class="fo-hero">
+  <div class="fo-hero-grid">
+
+    <div>
+      <p class="fo-kicker">Training and awareness</p>
+      <h1>Practical skills<br>for a safer organisation</h1>
+      <p class="fo-lead">
+        Hands-on training built on realistic scenarios and guided exercises, helping
+        professionals, small businesses and organisations prevent incidents and adopt
+        security practices they can actually verify.
+      </p>
+
+      <div class="fo-points">
+        <div class="fo-point">
+          <span class="fo-ico">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5 6-5s6 1.7 6 5"/><path d="M17 11a3 3 0 100-6"/><path d="M19 20c0-2.5-1-4.2-3-4.8"/></svg>
+          </span>
+          <span class="fo-point-txt">
+            <strong>Hands-on</strong>
+            <span>Realistic scenarios and guided exercises</span>
+          </span>
+        </div>
+        <div class="fo-point">
+          <span class="fo-ico">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg>
+          </span>
+          <span class="fo-point-txt">
+            <strong>Tailored</strong>
+            <span>Adapted to your sector and your audience</span>
+          </span>
+        </div>
+        <div class="fo-point">
+          <span class="fo-ico">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          </span>
+          <span class="fo-point-txt">
+            <strong>Remote or on site</strong>
+            <span>Same quality, more flexibility</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE: create the English version of the visual and place it at
+         /assets/training-hero.jpg — the existing file carries Italian text
+         and is not suitable for this page. -->
+    <div class="fo-visual">
+      <img src="/assets/training-hero.jpg"
+           alt="Enya Security cybersecurity training — train today, protect tomorrow"
+           width="1433" height="910" loading="lazy">
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- TRAINING CATALOGUE -->
+<!-- ====================================================================== -->
+<section class="fo-band">
+  <div class="fo-section">
+
+    <div class="fo-head">
+      <p class="fo-kicker">Our sessions</p>
+      <h2>Concrete topics, immediate results</h2>
+      <p>Pick the session that matches your needs. Every topic can be tailored to your
+         sector and to the maturity level of your teams.</p>
+    </div>
+
+    <div class="fo-grid">
+
+      <div class="fo-card">
+        <div class="fo-card-top">
+          <span class="fo-ico-sq">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3.5v5c0 4.8-3.3 8.6-8 10-4.7-1.4-8-5.2-8-10v-5L12 3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <span class="fo-badge">3 hrs</span>
+        </div>
+        <h3>Cybersecurity essentials for professionals and small businesses</h3>
+        <p class="fo-aud">All staff</p>
+        <p>Threat landscape, good practice, protecting access, email, cloud and remote work.</p>
+        <details>
+          <summary>Learn more</summary>
+          <ul>
+            <li>How attacks against small organisations actually unfold</li>
+            <li>Passwords, multi-factor authentication and shared accounts</li>
+            <li>Email and attachments: what to check before clicking</li>
+            <li>Cloud, personal devices and remote work</li>
+            <li>Closing checklist of priority measures</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="fo-card g">
+        <div class="fo-card-top">
+          <span class="fo-ico-sq">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#12A37E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
+          </span>
+          <span class="fo-badge">3 hrs</span>
+        </div>
+        <h3>Ransomware and the first hours</h3>
+        <p class="fo-aud">Professionals · Small businesses · Professional bodies</p>
+        <p>How to prevent an attack, what to do in the first hours, and how to recover.</p>
+        <details>
+          <summary>Learn more</summary>
+          <ul>
+            <li>The real threats facing professionals and small businesses (25 min)</li>
+            <li>Protecting access, with a guided exercise (30 min)</li>
+            <li>Backups and ransomware readiness, with a guided exercise (30 min)</li>
+            <li>Online exposure (25 min)</li>
+            <li>Incident handling: the first hours and the mistakes to avoid (25 min)</li>
+            <li>Closing checklist and a four-week plan (25 min)</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="fo-card v">
+        <div class="fo-card-top">
+          <span class="fo-ico-sq">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#7C5CFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5 6-5s6 1.7 6 5"/><path d="M17 11a3 3 0 100-6"/><path d="M19 20c0-2.5-1-4.2-3-4.8"/></svg>
+          </span>
+          <span class="fo-badge">3 hrs</span>
+        </div>
+        <h3>NIS2 for directors and managers</h3>
+        <p class="fo-aud">Leadership and management</p>
+        <p>Accountability, risk management, incidents, suppliers and the priority measures set out in the directive.</p>
+        <details>
+          <summary>Learn more</summary>
+          <ul>
+            <li>Who falls within scope, and at which level of obligation</li>
+            <li>Management-body accountability (Directive (EU) 2022/2555, art. 20)</li>
+            <li>The risk-management measures expected (art. 21)</li>
+            <li>Incident reporting: deadlines, recipients and content</li>
+            <li>How national transposition varies, and what is worth doing now regardless</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="fo-card v">
+        <div class="fo-card-top">
+          <span class="fo-ico-sq">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#7C5CFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </span>
+          <span class="fo-badge">90 min</span>
+        </div>
+        <h3>Phishing and social engineering</h3>
+        <p class="fo-aud">All staff</p>
+        <p>Spotting fraud attempts, analysing suspicious messages and links, guided exercises on realistic scenarios.</p>
+        <details>
+          <summary>Learn more</summary>
+          <ul>
+            <li>The six signals to check, in order of priority</li>
+            <li>Sender domains, real link destinations and dangerous attachments</li>
+            <li>Invoice fraud and changes to bank details</li>
+            <li>What to do when the request comes from a legitimate but compromised mailbox</li>
+            <li>Analysis exercise on messages reconstructed for teaching purposes</li>
+          </ul>
+        </details>
+      </div>
+
+    </div>
+
+    <div class="fo-feature g">
+      <span class="fo-ico-sq">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12A37E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2" y="16" width="6" height="5" rx="1"/><rect x="16" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M5 16v-2h14v2"/></svg>
+      </span>
+      <div class="fo-feature-txt">
+        <span class="fo-badge">Specialist session</span>
+        <h3 style="margin-top:10px;">Supply chain and third-party risk</h3>
+        <p class="fo-aud">3 hrs · Leadership · Procurement · IT</p>
+        <p>Identifying critical suppliers, assessing access and dependencies, and building
+           security requirements into third-party relationships.</p>
+      </div>
+      <details>
+        <summary>Learn more</summary>
+        <ul>
+          <li>Why large customers push security requirements down to their suppliers</li>
+          <li>How to read and complete a customer security questionnaire</li>
+          <li>Criteria for ranking your own suppliers by criticality</li>
+          <li>Contract clauses and service levels: what to ask for</li>
+          <li>What to prepare before a customer asks for it</li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="fo-grid three">
+
+      <div class="fo-card v">
+        <div class="fo-card-top">
+          <span class="fo-ico-sq">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#7C5CFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z"/><path d="M14 3v5h5"/><path d="M9 14h6M9 17h4"/></svg>
+          </span>
+          <span class="fo-badge">2 hrs</span>
+        </div>
+        <h3>GDPR from a security angle</h3>
+        <p class="fo-aud">Leadership · Data protection leads</p>
+        <p>The security measures of Article 32, handling personal data and the main risks.</p>
+        <details>
+          <summary>Learn more</summary>
+          <ul>
+            <li>Appropriate technical measures: what that means for a small organisation</li>
+            <li>Recognising a personal data breach, even when nothing was stolen</li>
+            <li>Notifying the supervisory authority within 72 hours, and informing data subjects</li>
+            <li>Documenting the assessment even when you decide not to notify</li>
+            <li>Processors: the link between contract and security</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="fo-card">
+        <div class="fo-card-top">
+          <span class="fo-ico-sq">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/><path d="M18 16l.9 2.1L21 19l-2.1.9L18 22l-.9-2.1L15 19l2.1-.9L18 16z"/></svg>
+          </span>
+          <span class="fo-badge">2 hrs</span>
+        </div>
+        <h3>Generative AI and cyber risk</h3>
+        <p class="fo-aud">Leadership · All staff</p>
+        <p>Opportunities, risks and good practice for using AI tools without losing control.</p>
+        <details>
+          <summary>Learn more</summary>
+          <ul>
+            <li>What actually leaves the organisation when someone uses an AI assistant</li>
+            <li>Confidential and personal data in generative tools</li>
+            <li>AI-assisted fraud: convincing messages, cloned voices and video</li>
+            <li>Internal usage rules: what to write and how to make them stick</li>
+            <li>What to check before approving a new tool</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="fo-card g">
+        <div class="fo-card-top">
+          <span class="fo-ico-sq">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#12A37E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h12M20 17h0"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="17" r="2"/></svg>
+          </span>
+          <span class="fo-badge">1-hour modules</span>
+        </div>
+        <h3>Cyber Express</h3>
+        <p class="fo-aud">All staff</p>
+        <p>Short, practical modules: MFA, passwords, cloud, backups, incident response. Ideal for quick awareness sessions.</p>
+        <details>
+          <summary>Learn more</summary>
+          <ul>
+            <li>Passwords and multi-factor authentication</li>
+            <li>Backups: the 3-2-1 rule and the restore test</li>
+            <li>Remote work, cloud and personal devices</li>
+            <li>The first steps when an incident happens</li>
+            <li>Combine them, or slot one into a meeting you already hold</li>
+          </ul>
+        </details>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- TAILORED TRAINING -->
+<!-- ====================================================================== -->
+<section class="fo-band alt">
+  <div class="fo-section">
+    <div class="fo-custom">
+
+      <span class="fo-custom-ico">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#7C5CFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4L2 8.5 12 13l10-4.5L12 4z"/><path d="M6 10.6v4.6c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.6"/><path d="M21 9v5"/></svg>
+      </span>
+
+      <div class="fo-custom-txt">
+        <p class="fo-kicker">Tailored training</p>
+        <h3>We adapt every session to your audience</h3>
+        <p>Duration, content and examples tailored to your sector, the level of the
+           participants and your objectives. Get in touch and we'll shape the programme together.</p>
+      </div>
+
+      <div class="fo-custom-cta">
+        <a href="/en/contact.html?objet=training" class="btn-primary">
+          Let's talk
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <small>First conversation, no obligation</small>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- WHY ENYA SECURITY -->
+<!-- ====================================================================== -->
+<section class="fo-band">
+  <div class="fo-section">
+
+    <div class="fo-head">
+      <p class="fo-kicker">Why Enya Security</p>
+      <h2>Training that is useful, not just theoretical</h2>
+    </div>
+
+    <div class="fo-why">
+
+      <div>
+        <span class="fo-ico-sq">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg>
+        </span>
+        <strong>Industrial experience</strong>
+        <span>A pragmatic approach built over nine years of consulting in complex industrial environments</span>
+      </div>
+
+      <div>
+        <span class="fo-ico-sq">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 16h4"/></svg>
+        </span>
+        <strong>Materials included</strong>
+        <span>Slides, checklists and practical resources for every participant</span>
+      </div>
+
+      <div>
+        <span class="fo-ico-sq">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5 6-5s6 1.7 6 5"/><path d="M17 11a3 3 0 100-6"/><path d="M19 20c0-2.5-1-4.2-3-4.8"/></svg>
+        </span>
+        <strong>Small groups</strong>
+        <span>Room for interaction, questions and tailored exercises</span>
+      </div>
+
+      <div>
+        <span class="fo-ico-sq">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+        </span>
+        <strong>Exercises and real cases</strong>
+        <span>Realistic situations matched to the sector and the audience</span>
+      </div>
+
+    </div>
+
+    <p class="fo-note" style="margin-top:30px;">
+      Named certificates of attendance are issued at the host organisation's request,
+      based on the attendance it has recorded.
+    </p>
+
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- THE TRAINER  (optional block: can be removed without touching the rest) -->
+<!-- ====================================================================== -->
+<section class="fo-band alt">
+  <div class="fo-section">
+
+    <div class="fo-head">
+      <p class="fo-kicker">Who delivers the session</p>
+      <h2>The trainer</h2>
+    </div>
+
+    <div class="fo-speaker">
+
+      <!-- Uncomment once a photograph is available at /assets/marina-bruno.jpg
+      <img src="/assets/marina-bruno.jpg" alt="Marina Bruno">
+      -->
+
+      <div>
+        <p>
+          <strong>Marina Bruno</strong> — founder and cybersecurity consultant. She holds
+          degrees in Information Engineering (University of Salento) and Management
+          Engineering (Politecnico di Bari), with nine years as a consulting engineer in
+          complex industrial environments in the aerospace sector.
+        </p>
+        <p>
+          Through Enya Security she carries out documentary, non-intrusive audits for small
+          organisations, based on publicly available standards, configuration benchmarks and
+          guidance.
+          <a href="/en/about.html">More about Enya Security →</a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- FINAL CTA -->
+<!-- ====================================================================== -->
+<section class="fo-band">
+  <div class="fo-section">
+
+    <div class="fo-final">
+      <div>
+        <p class="fo-kicker">Ready to arrange a session?</p>
+        <h3>Get in touch for a tailored programme</h3>
+        <p>Remote or on site, for your team, your professional body or your association.</p>
+      </div>
+      <a href="/en/contact.html?objet=training" class="btn-primary">
+        Request a quote
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <p class="fo-note">
+      Sessions delivered for professional bodies and associations are organised by the host
+      organisation, which alone decides whether continuing-education credit applies. No
+      product, vendor or commercial service is promoted or named during a session.
+    </p>
+
+    <p class="fo-note" style="margin-top:12px;">
+      Sessions are delivered in English, French or Italian, and are invoiced directly to the
+      client organisation.
+    </p>
+
+  </div>
+</section>
+
+</div><!-- /.fo-wrap -->
+
+<!-- ====================================================================== -->
+<!-- FOOTER -->
+<!-- ====================================================================== -->
+
+<footer>
+
+<p>
+<a href="/en/legal.html">Legal notice</a>
+&nbsp;·&nbsp;
+<a href="/en/privacy.html">Privacy policy</a>
+</p>
+
+<p>
+<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Manage cookies</a>
+</p>
+
+</footer>
+
+<div class="legal-copyright">
+  © 2026 Enya Security — All rights reserved.
+</div>
+
+</body>
+</html>
