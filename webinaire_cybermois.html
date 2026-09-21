@@ -58,6 +58,17 @@ tarteaucitron.user.gtagMore = function () {
 .webi-ok strong { display:block; font-size:1.05rem; margin:8px 0 6px; }
 .webi-ok p { margin:0; opacity:.8; line-height:1.5; }
 #inscription { scroll-margin-top: 110px; }
+
+/* Étapes : numéros sans cercle */
+.webi-steps .approach-number {
+  border: 0 !important; background: transparent !important; box-shadow: none !important;
+  width: auto !important; height: auto !important; font-weight: 700; }
+/* 5 étapes au lieu de 6 : répartition égale, évite que la première soit coupée à gauche */
+@media (min-width: 901px) {
+  .webi-steps { display: grid !important; grid-template-columns: repeat(5, 1fr); gap: 24px;
+                overflow: visible; max-width: 1100px; margin-left: auto; margin-right: auto; }
+  .webi-steps .approach-step { min-width: 0; }
+}
 </style>
 
 </head>
@@ -177,7 +188,7 @@ tarteaucitron.user.gtagMore = function () {
 
   <div class="approach-inner" style="text-align:center;">
 
-    <div class="approach-row approach-row-6 svc-approach-outline" style="margin-top:0;">
+    <div class="approach-row approach-row-6 svc-approach-outline webi-steps" style="margin-top:0;">
 
       <div class="approach-step">
         <span class="approach-number">1</span>
@@ -247,11 +258,11 @@ tarteaucitron.user.gtagMore = function () {
         </li>
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>Une heure concrète</strong><p>Cinq points approfondis, avec des exemples tirés de petites structures.</p></div>
+          <div><strong>Une heure concrète</strong><p>Cinq points approfondis, avec des exemples et des actions directement applicables.</p></div>
         </li>
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>Un temps de questions</strong><p>Pour repartir avec des réponses adaptées à votre situation.</p></div>
+          <div><strong>Un temps de questions</strong><p>Dix minutes prévues en fin de session pour répondre à vos questions.</p></div>
         </li>
       </ul>
     </div>
@@ -261,11 +272,11 @@ tarteaucitron.user.gtagMore = function () {
       <ul class="svc-check-list">
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
-          <div><strong>Marina Bruno, fondatrice d'Enya Security</strong><p>Ingénieure, audits de cybersécurité pour TPE, PME et associations.</p></div>
+          <div><strong>Marina Bruno, fondatrice d'Enya Security</strong><p>Ingénieure, je propose des audits de cybersécurité pour les TPE, PME et associations.</p></div>
         </li>
         <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-          <div><strong>Indépendance totale</strong><p>Aucun outil à vendre, aucun partenariat avec un éditeur de solutions.</p></div>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <div><strong>Une approche accessible</strong><p>Des explications pensées pour les structures sans équipe cybersécurité interne.</p></div>
         </li>
       </ul>
     </div>
