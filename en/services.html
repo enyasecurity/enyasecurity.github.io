@@ -3,8 +3,8 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Ransomware readiness audit - Enya Security</title>
-<meta name="description" content="Assess how well your organisation would withstand a ransomware attack and strengthen your resilience before one happens.">
+<title>Services - Enya Security</title>
+<meta name="description" content="Non-intrusive cybersecurity audits and practical training for small and medium-sized businesses: database security, online exposure, ransomware readiness, NIS2 and Android applications.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- TarteAuCitron (cookie management) -->
@@ -34,6 +34,46 @@ tarteaucitron.user.gtagMore = function () {
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
+<!-- ====================================================== -->
+<!-- TRAINING BLOCK STYLES (prefix sv-)                     -->
+<!-- Identical to /services.html and /it/servizi.html       -->
+<!-- ====================================================== -->
+<style>
+.sv-formation {
+    max-width:1020px; margin:0 auto 46px;
+    background:linear-gradient(120deg,#EAF7F2 0%,#EDF2FD 100%);
+    border:1px solid #D9E8E2; border-radius:20px;
+    padding:30px 34px; display:flex; flex-wrap:wrap; align-items:center; gap:28px;
+    text-align:left;
+}
+.sv-formation-ico {
+    flex:0 0 auto; width:62px; height:62px; border-radius:18px; background:#FFFFFF;
+    display:flex; align-items:center; justify-content:center;
+}
+.sv-formation-txt { flex:1 1 430px; }
+.sv-kicker {
+    font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:#12A37E; margin:0 0 8px;
+}
+.sv-formation-txt h2 { font-size:1.42rem; line-height:1.25; color:#0F2545; margin:0 0 10px; font-weight:700; }
+.sv-formation-txt p  { font-size:.95rem; line-height:1.6; color:#5A6472; margin:0 0 14px; }
+.sv-tags { display:flex; flex-wrap:wrap; gap:8px; }
+.sv-tags span {
+    font-size:.78rem; font-weight:600; color:#0F2545; background:#FFFFFF;
+    border:1px solid #DDE7F0; border-radius:999px; padding:6px 12px;
+}
+.sv-formation-cta { flex:0 0 auto; text-align:center; }
+.sv-formation-cta small { display:block; margin-top:9px; font-size:.79rem; color:#5A6472; }
+.sv-divider { max-width:1020px; margin:0 auto 26px; text-align:center; }
+.sv-divider p { font-size:.72rem; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:#2563EB; margin:0 0 6px; }
+.sv-divider h2 { font-size:1.55rem; color:#0F2545; margin:0; font-weight:700; }
+@media (max-width:620px){
+  .sv-formation { padding:24px 22px; }
+  .sv-formation-cta { width:100%; }
+}
+</style>
+
 </head>
 
 <body>
@@ -60,468 +100,175 @@ tarteaucitron.user.gtagMore = function () {
 
     <span class="nav-divider"></span>
 
-    <a href="/preparation-ransomware.html">FR</a>
-    <a class="lang-active" href="/en/ransomware-readiness.html">EN</a>
-    <a href="/it/preparazione-ransomware.html">IT</a>
+    <a href="/services.html">FR</a>
+    <a class="lang-active" href="/en/services.html">EN</a>
+    <a href="/it/servizi.html">IT</a>
   </nav>
 
-  <a href="/en/contact.html?objet=preparation-ransomware" class="header-cta">
+  <a href="/en/contact.html?objet=diagnostic" class="header-cta">
     Request a quote
   </a>
 
 </header>
 
-<!-- ====================================================== -->
-<!-- HERO -->
-<!-- ====================================================== -->
+<section class="services-container">
 
-<section class="hero-home">
+  <h1 class="services-title">Services</h1>
+  <p class="services-subtitle">
+    Clear, educational and non-intrusive cybersecurity audits and training, designed for
+    small and medium-sized businesses, professional practices and associations.
+  </p>
 
-  <div class="hero-grid">
+  <!-- ====================================================== -->
+  <!-- TRAINING BLOCK -->
+  <!-- ====================================================== -->
 
-    <div class="hero-content">
+  <div class="sv-formation">
 
-      <div class="hero-kicker-text">SERVICE</div>
+    <span class="sv-formation-ico">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#12A37E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4L2 8.5 12 13l10-4.5L12 4z"/><path d="M6 10.6v4.6c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.6"/><path d="M21 9v5"/></svg>
+    </span>
 
-      <h1 class="hero-title">
-        Ransomware<br>
-        <span class="gradient-text">readiness audit</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        Assess how well your organisation would withstand a ransomware attack
-        and strengthen your resilience before one happens.
-      </p>
-
-      <div class="svc-chip-row">
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-          </span>
-          <span>Technical and<br>operational approach</span>
-        </div>
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-          </span>
-          <span>100% remote<br>no downtime</span>
-        </div>
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
-          </span>
-          <span>Concrete, prioritised<br>recommendations</span>
-        </div>
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
-          </span>
-          <span>Rigorous<br>methodology</span>
-        </div>
-
+    <div class="sv-formation-txt">
+      <p class="sv-kicker">Training and awareness</p>
+      <h2>Train the people, not just the systems</h2>
+      <p>Sessions and short modules for teams, practices, professional bodies and
+         associations. Realistic scenarios, guided exercises and practical materials
+         that participants keep.</p>
+      <div class="sv-tags">
+        <span>Cybersecurity essentials</span>
+        <span>Ransomware and the first hours</span>
+        <span>NIS2 for directors</span>
+        <span>Phishing</span>
+        <span>Supply chain</span>
       </div>
-
-      <div class="hero-buttons-new" style="margin-bottom: 8px;">
-        <a href="/en/contact.html?objet=preparation-ransomware" class="btn-primary">
-          Request a ransomware audit
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="/en/contact.html?objet=exemple-rapport-ransomware" class="btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
-          See a sample report
-        </a>
-      </div>
-
-      <div class="svc-hero-note">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        Response within 24-48 business hours
-      </div>
-
     </div>
 
-    <div class="hero-visual" style="height: 420px;">
-
-      <div class="radial-diagram">
-
-        <div class="radial-ring"></div>
-
-        <div class="radial-center">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10.5 11V9a1.5 1.5 0 013 0v2"/></svg>
-        </div>
-
-        <div class="radial-node n1">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
-          </span>
-          <span>Workstations &amp; servers</span>
-        </div>
-
-        <div class="radial-node n2">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6"/><path d="M17 14l2 2 4-4"/></svg>
-          </span>
-          <span>Identity &amp; access</span>
-        </div>
-
-        <div class="radial-node n3">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/></svg>
-          </span>
-          <span>Detection &amp; response</span>
-        </div>
-
-        <div class="radial-node n4">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v6h-6"/></svg>
-          </span>
-          <span>Recovery plan</span>
-        </div>
-
-        <div class="radial-node n5">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
-          </span>
-          <span>Network</span>
-        </div>
-
-        <div class="radial-node n6">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </span>
-          <span>Staff awareness</span>
-        </div>
-
-        <div class="radial-node n7">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-          </span>
-          <span>Critical data</span>
-        </div>
-
-        <div class="radial-node n8">
-          <span class="radial-node-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
-          </span>
-          <span>Backups</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- WHAT WE ASSESS -->
-<!-- ====================================================== -->
-
-<section class="svc-verify-section" style="padding-top:30px;">
-
-  <p class="expertise-kicker">WHAT WE ASSESS</p>
-
-  <div class="nis2-grid nis2-grid-4">
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg>
-        </span>
-        <h3>Attack surface</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>Exposed services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Remote access (RDP, VPN...) <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Known vulnerabilities <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Filtering &amp; segmentation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
-        </span>
-        <h3>Backups</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>3-2-1 rule applied <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Offline copies <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Restore test &lt; 6 months <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Network isolation of backups <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
-        </span>
-        <h3>Systems &amp; patching</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>Antivirus deployed &amp; current <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Critical patches &lt; 30 days <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Office macros disabled <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>MFA on critical access <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/></svg>
-        </span>
-        <h3>Response &amp; resilience</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>Incident response plan <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Crisis RACI matrix <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Former staff accounts disabled <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Password manager in place <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- OUR APPROACH IN 6 STEPS -->
-<!-- ====================================================== -->
-
-<section class="approach-section">
-
-  <p class="expertise-kicker">OUR APPROACH IN 6 STEPS</p>
-
-  <div class="approach-inner" style="text-align:center;">
-
-    <div class="approach-row approach-row-6 svc-approach-outline" style="margin-top:0;">
-
-      <div class="approach-step">
-        <span class="approach-number">1</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/></svg>
-        </span>
-        <h3>Discovery</h3>
-        <p>Understanding your environment and what matters to you.</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">2</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6"/></svg>
-        </span>
-        <h3>Collection</h3>
-        <p>Gathering technical and organisational information.</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">3</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
-        </span>
-        <h3>Analysis</h3>
-        <p>Assessing your readiness against a ransomware scenario.</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">4</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
-        </span>
-        <h3>Scoring</h3>
-        <p>Overall readiness score and risk prioritisation (P1, P2, P3).</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">5</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
-        </span>
-        <h3>Report</h3>
-        <p>A clear report with findings, impacts and practical recommendations.</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">6</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v6h-6"/></svg>
-        </span>
-        <h3>Action plan</h3>
-        <p>Debrief call and an action plan to strengthen your resilience.</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- DELIVERABLES + WHY ENYA SECURITY -->
-<!-- ====================================================== -->
-
-<section class="svc-check-section">
-
-  <div class="svc-check-grid">
-
-    <div class="svc-check-col">
-      <h3>DELIVERABLES</h3>
-      <ul class="svc-check-list">
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>PDF audit report</strong><p>4-5 pages (Express) to 8-12 pages (Standard)</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>Incident response plan</strong><p>1-page crisis sheet (Express) or full 2-page plan with RACI matrix (Standard)</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>Kill switch sheet</strong><p>Network isolation procedure to print and post on the wall</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>Incident report template</strong><p>Pre-filled Word document to support a report to the authorities</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>Crisis contact directory</strong><p>5 to 10 key contacts depending on the tier</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
-          <div><strong>Awareness handout</strong><p>1 page to circulate among your team</p></div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="svc-check-col">
-      <h3>WHY ENYA SECURITY?</h3>
-      <ul class="svc-check-list">
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-          <div><strong>Complete independence</strong><p>No partnership with any software vendor.</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
-          <div><strong>Modules matched to your setup</strong><p>Cloud, Active Directory, regulated sector, IT providers — only where relevant.</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
-          <div><strong>Clarity over jargon</strong><p>A report and crisis plan the whole team can follow.</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          <div><strong>Flexibility</strong><p>Fully remote engagements, with no interruption to your business.</p></div>
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          <div><strong>Transparency</strong><p>Fixed fees, no surprises.</p></div>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- FAQ + CTA -->
-<!-- ====================================================== -->
-
-<section class="svc-faq-section">
-
-  <div class="svc-faq-grid">
-
-    <div class="svc-faq-col">
-
-      <h3>FREQUENTLY ASKED QUESTIONS</h3>
-
-      <details class="svc-faq-item">
-        <summary>What does this audit involve in practice?</summary>
-        <p>
-          It assesses how ready you are for a ransomware attack: attack
-          surface, backups, systems and patching, and response capability.
-          Unlike an intrusive technical audit, it relies on a questionnaire,
-          an inventory and, where available, read-only access or screen
-          sharing.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Will this disrupt my operations?</summary>
-        <p>
-          No. The audit is non-intrusive: interviews, document review and
-          light technical checks such as an external exposure scan. No
-          service interruption is required.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>What if I have no server or Active Directory?</summary>
-        <p>
-          The Express tier is designed exactly for small organisations
-          without complex infrastructure — standalone workstations, no
-          domain. Optional modules (Cloud, Active Directory, regulated
-          sector, IT providers) are only activated, and only billed, where
-          they are relevant to your setup.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Would you recommend paying the ransom?</summary>
-        <p>
-          No. In line with guidance from national cybersecurity agencies,
-          paying a ransom is strongly discouraged: it does not guarantee
-          you get your data back and it funds criminal groups. The response
-          plan we build with you is designed precisely to reduce your
-          dependence on that option.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Can you also train our staff?</summary>
-        <p>
-          Yes. The <a href="/en/training.html">"Ransomware and the first hours"</a>
-          session is a natural companion to this audit: it walks your team
-          through prevention, the first steps when an incident hits, and the
-          mistakes to avoid. It works on its own or as a follow-up to the
-          action plan.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Is my data kept confidential?</summary>
-        <p>
-          Yes. A non-disclosure agreement is signed before any technical
-          discussion, and the information collected is handled under our
-          internal data management policy. More detail in our
-          <a href="/en/privacy.html">privacy policy</a>.
-        </p>
-      </details>
-
-    </div>
-
-    <div class="svc-cta-dark">
-      <span class="svc-cta-dark-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-      </span>
-      <h3>Ready to test your resilience against ransomware?</h3>
-      <p>Tell us about your situation and get a tailored quote in under 48 hours.</p>
-      <a href="/en/contact.html?objet=preparation-ransomware" class="btn-primary">
-        Request a quote
+    <div class="sv-formation-cta">
+      <a href="/en/training.html" class="btn-primary">
+        Explore the training
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
-      <span class="svc-cta-dark-note">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        Response within 24-48 business hours
+      <small>1 to 3 hours · remote or on site</small>
+    </div>
+
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- AUDITS AND ASSESSMENTS -->
+  <!-- ====================================================== -->
+
+  <div class="sv-divider">
+    <p>Audits and assessments</p>
+    <h2>Find out where you are exposed</h2>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- Database security audit -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Database audit icon">
+      <span class="service-tag">AUDIT</span>
+      <h3>Database security audit</h3>
+      <p>Accounts • Backups • Encryption • Configuration • GDPR</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€449</span>
       </span>
+      <a href="/en/database-audit.html">View service →</a>
+    </div>
+
+    <!-- Ransomware readiness -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_ransomware.png" class="service-icon" alt="Ransomware readiness icon">
+      <span class="service-tag">READINESS</span>
+      <h3>Ransomware attack readiness</h3>
+      <p>Incident response plan • Backups • Crisis procedures</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€449</span>
+      </span>
+      <a href="/en/ransomware-readiness.html">View service →</a>
+    </div>
+
+    <!-- Online exposure analysis -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_expo.png" class="service-icon" alt="Exposure analysis icon">
+      <span class="service-tag">VISIBILITY</span>
+      <h3>Online exposure analysis</h3>
+      <p>Data breaches • Leaked credentials • Dark web</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€349</span>
+      </span>
+      <a href="/en/exposure-analysis.html">View service →</a>
+    </div>
+
+    <!-- NIS2 -->
+    <div class="service-card">
+      <!-- Temporary SVG icon: can be replaced with /assets/icons/icone_nis2.png -->
+      <svg class="service-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="NIS2 readiness icon"><path d="M12 2l9 4.5v6c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11v-6L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
+      <span class="service-tag">COMPLIANCE</span>
+      <h3>NIS2 readiness assessment</h3>
+      <p>Applicable requirements • Gap analysis • Action plan</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€449</span>
+      </span>
+      <a href="/en/nis2.html">View service →</a>
+    </div>
+
+    <!-- Android security audit -->
+    <div class="service-card">
+      <img src="/assets/icons/icone_android.png" class="service-icon service-icon-android" alt="Android audit icon">
+      <span class="service-tag">MOBILE</span>
+      <h3>Android security audit</h3>
+      <p>Storage • Permissions • Communications</p>
+      <span class="service-price">
+        <span class="price-label">from</span>
+        <span class="price-amount">€449</span>
+      </span>
+      <a href="/en/android-audit.html">View service →</a>
+    </div>
+
+  </div>
+
+  <!-- Scope note -->
+  <div class="pricing-note">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+    <span>
+      All our audit engagements are strictly non-intrusive: we observe, analyse and
+      report. We do not carry out penetration testing, active exploitation of
+      vulnerabilities, or remediation work on your systems — which is precisely
+      what keeps our findings independent.
+    </span>
+  </div>
+
+  <!-- CTA final -->
+  <div class="services-cta-card">
+
+    <div class="services-cta-text">
+      <div class="services-cta-kicker">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2L12 16.4l-6.3 4.4 2.3-7.2-6-4.4h7.6z"/></svg>
+        WHERE TO START?
+      </div>
+      <h2 class="services-cta-title">Let's talk about your needs</h2>
+      <p class="services-cta-desc">
+        Every organisation is different. In just a few minutes, we'll identify
+        together which service fits your situation — with no obligation.
+      </p>
+      <a href="/en/contact.html?objet=diagnostic" class="btn-primary">
+        Book a call
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="services-cta-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+        100% confidential
+      </span>
+    </div>
+
+    <div class="services-cta-icon">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 3v2h6V3"/><path d="M9 10l2 2 4-4"/><path d="M9 15l2 2 4-4"/></svg>
     </div>
 
   </div>
