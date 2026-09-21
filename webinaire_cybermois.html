@@ -1,47 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
 <meta charset="UTF-8">
 <title>Webinaire gratuit — Cyberattaque : 10 vérifications essentielles pour protéger une TPE/PME | Enya Security</title>
-<meta name="description" content="Webinaire gratuit de sensibilisation dans le cadre du Cybermois 2026. 10 vérifications concrètes pour évaluer la préparation d'une TPE ou PME face aux principaux risques cyber. Sans prérequis technique.">
-<link rel="stylesheet" href="/style.css">
+<meta name="description" content="Webinaire gratuit du Cybermois 2026, jeudi 22 octobre de 12h à 13h. Des conseils concrets pour les dirigeants de petites structures sans service informatique interne.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style.css">
 
-<!-- Partage social -->
 <meta property="og:title" content="Webinaire gratuit — Cyberattaque : 10 vérifications essentielles pour protéger une TPE/PME">
-<meta property="og:description" content="Cybermois 2026. Webinaire gratuit de sensibilisation pour dirigeants de TPE/PME, artisans et associations sans service informatique interne.">
+<meta property="og:description" content="Cybermois 2026 · jeudi 22 octobre, 12h–13h · en ligne · gratuit, sans prérequis technique.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.enyasecurity.com/webinaire-cybermois.html">
-<meta property="og:image" content="https://www.enyasecurity.com/assets/webinaire-cybermois.png">
+<meta property="og:url" content="https://enyasecurity.com/webinaire_cybermois.html">
+<meta property="og:image" content="https://enyasecurity.com/assets/webinaire-cybermois.png">
 
-<!-- TarteAuCitron (gestion des cookies) -->
 <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js"></script>
 <script>
-tarteaucitron.init({
-    "privacyUrl": "/confidentialite.html",
-    "hashtag": "#tarteaucitron",
-    "cookieName": "tarteaucitron",
-    "orientation": "bottom",
-    "showAlertSmall": false,
-    "cookieslist": true,
-    "showIcon": true,
-    "iconPosition": "BottomRight",
-    "DenyAllCta": true,
-    "AcceptAllCta": true,
-    "highPrivacy": true,
-    "handleBrowserDNTRequest": false
-});
+tarteaucitron.init({"privacyUrl":"/confidentialite.html","hashtag":"#tarteaucitron","cookieName":"tarteaucitron",
+"orientation":"bottom","showAlertSmall":false,"cookieslist":true,"showIcon":true,"iconPosition":"BottomRight",
+"DenyAllCta":true,"AcceptAllCta":true,"highPrivacy":true,"handleBrowserDNTRequest":false});
 </script>
-<!-- Google Analytics via TarteAuCitron -->
 <script>
 tarteaucitron.user.gtagUa = "G-BB0S06Q6LJ";
-tarteaucitron.user.gtagMore = function () {
-    gtag('config', 'G-BB0S06Q6LJ', { 'cookie_flags': 'SameSite=Lax;Secure' });
-};
+tarteaucitron.user.gtagMore = function () { gtag('config','G-BB0S06Q6LJ',{'cookie_flags':'SameSite=Lax;Secure'}); };
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
+<style>
+/* Styles propres à cette page, préfixés wb- pour ne pas interférer avec style.css */
+.wb *{box-sizing:border-box}
+.wb{--navy:#07162b;--navy2:#0b2242;--blue:#1e7bff;--cyan:#1ec8ff;--ink:#0d1b2e;--muted:#5b6b7e;--line:#dde6f0;--soft:#eef4fb;
+    font-family:inherit;color:var(--ink)}
+.wb-wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* HERO */
+.wb-hero{background:radial-gradient(1200px 500px at 85% 40%,#0f3a74 0%,var(--navy) 60%);color:#fff;padding:48px 0 44px}
+.wb-hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
+.wb-kicker{color:var(--cyan);font-size:.82rem;font-weight:700;letter-spacing:.14em;margin:0 0 14px}
+.wb-h1{font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.12;margin:0 0 16px;font-weight:800;color:#fff}
+.wb-h1 .wb-hl{background:linear-gradient(90deg,#2f8bff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wb-sub{font-size:1.08rem;line-height:1.55;color:#c9d6e6;margin:0 0 24px;max-width:540px}
+.wb-sub b{color:#fff}
+.wb-facts{display:flex;flex-wrap:wrap;gap:20px 28px;margin:0 0 26px}
+.wb-fact{display:flex;gap:10px;align-items:center}
+.wb-fact-ic{width:38px;height:38px;border-radius:50%;background:rgba(30,123,255,.22);display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:#8cc4ff}
+.wb-fact strong{display:block;font-size:.92rem;color:#fff}
+.wb-fact span{font-size:.86rem;color:#a9bbd0}
+.wb-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,#1e6fff,#1ea8ff);color:#fff !important;
+        font-weight:700;font-size:1.02rem;padding:15px 30px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;
+        box-shadow:0 10px 28px rgba(30,123,255,.35);transition:transform .15s,box-shadow .15s}
+.wb-btn:hover{transform:translateY(-1px);box-shadow:0 14px 34px rgba(30,123,255,.45)}
+.wb-note{display:flex;align-items:center;gap:8px;font-size:.86rem;color:#a9bbd0;margin-top:14px}
+.wb-note-light{color:var(--muted);justify-content:center}
+
+/* visuel hero : dessiné en CSS/SVG, aucune image à charger */
+.wb-visual{position:relative;height:340px;border-radius:18px;overflow:hidden;
+           background:radial-gradient(420px 300px at 75% 55%,rgba(30,200,255,.28),transparent 70%),linear-gradient(160deg,#0c2750,#061226);
+           border:1px solid rgba(120,180,255,.15)}
+.wb-visual-words{position:absolute;left:32px;top:50%;transform:translateY(-50%);color:#dfe9f6;font-size:.86rem;letter-spacing:.2em;font-weight:600;line-height:2.1}
+.wb-visual-words i{display:block;width:44px;height:3px;background:var(--cyan);border-radius:2px;margin-top:14px}
+.wb-visual svg{position:absolute;right:26px;top:50%;transform:translateY(-50%);filter:drop-shadow(0 0 22px rgba(30,200,255,.55))}
+
+/* SECTIONS CLAIRES */
+.wb-light{background:#f5f9fd;padding:56px 0 20px}
+.wb-bar{width:44px;height:4px;border-radius:2px;background:var(--cyan);margin:0 auto 16px}
+.wb-h2{text-align:center;font-size:clamp(1.45rem,2.6vw,1.85rem);margin:0 0 32px;color:var(--ink);font-weight:800}
+.wb-topics{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;text-align:center;margin-bottom:40px}
+.wb-topic-ic{width:66px;height:66px;margin:0 auto 14px;border-radius:50%;border:1px solid #b9d4f3;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+.wb-topic h3{font-size:1rem;margin:0 0 6px;color:var(--ink)}
+.wb-topic p{font-size:.9rem;line-height:1.45;color:var(--muted);margin:0}
+
+.wb-card{display:flex;align-items:center;gap:26px;background:linear-gradient(90deg,#e9f2fd,#f3f8fe);border:1px solid var(--line);
+         border-radius:16px;padding:24px 30px;margin-bottom:22px}
+.wb-card-ic{color:var(--blue);flex:0 0 auto;padding-right:26px;border-right:1px solid #b9d4f3}
+.wb-card h3{margin:0 0 4px;font-size:1.1rem;color:var(--ink)}
+.wb-card p{margin:0;color:var(--muted);font-size:.95rem;line-height:1.5}
+
+.wb-speaker{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 24px;margin-bottom:50px}
+.wb-speaker img{width:52px;height:52px;object-fit:contain;flex:0 0 auto}
+.wb-speaker strong{font-size:1rem;color:var(--ink)}
+.wb-speaker span{color:var(--muted);font-size:.9rem}
+.wb-speaker p{margin:4px 0 0;color:var(--muted);font-size:.92rem;line-height:1.5}
+
+/* INSCRIPTION */
+.wb-join{text-align:center;padding:10px 0 46px;scroll-margin-top:90px}
+.wb-join-meta{color:var(--muted);font-size:1.02rem;margin:-18px 0 24px}
+.wb-form{max-width:560px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;
+         box-shadow:0 12px 34px rgba(13,27,46,.07);text-align:left}
+.wb-row{display:grid;grid-template-columns:1fr 1.4fr;gap:12px;margin-bottom:14px}
+.wb-form label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.wb-form input[type=text],.wb-form input[type=email]{width:100%;padding:13px 14px;border:1px solid #c9d6e4;border-radius:10px;font-size:1rem;font-family:inherit;background:#fbfdff}
+.wb-form input:focus{outline:2px solid rgba(30,123,255,.35);border-color:var(--blue)}
+.wb-form .wb-btn{width:100%;justify-content:center}
+.wb-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.wb-legal{font-size:.78rem;line-height:1.5;color:var(--muted);margin:14px 0 0}
+.wb-legal a{color:var(--blue)}
+.wb-ok{display:none;text-align:center;padding:10px 4px}
+.wb-ok h3{margin:10px 0 6px;color:var(--ink)}
+.wb-ok p{margin:0;color:var(--muted);line-height:1.55}
+.wb-err{display:none;color:#b3261e;font-size:.88rem;margin-top:10px}
+
+/* FAQ */
+.wb-faq{border-top:1px solid var(--line);padding:40px 0 56px}
+.wb-faq h2{font-size:1.4rem;margin:0 0 20px;color:var(--ink)}
+.wb-faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:0 20px}
+.wb-faq summary{cursor:pointer;list-style:none;padding:17px 0;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;align-items:center}
+.wb-faq summary::-webkit-details-marker{display:none}
+.wb-faq summary::after{content:"+";color:var(--blue);font-size:1.4rem;font-weight:400}
+.wb-faq details[open] summary::after{content:"–"}
+.wb-faq details p{margin:0 0 16px;color:var(--muted);line-height:1.6}
+
+@media (max-width:900px){
+  .wb-hero-grid{grid-template-columns:1fr}
+  .wb-visual{height:220px}
+  .wb-topics{grid-template-columns:repeat(2,1fr)}
+  .wb-topics .wb-topic:last-child{grid-column:1/-1}
+}
+@media (max-width:560px){
+  .wb-row{grid-template-columns:1fr}
+  .wb-card{flex-direction:column;align-items:flex-start;gap:14px}
+  .wb-card-ic{border-right:0;padding-right:0}
+  .wb-visual-words{display:none}
+  .wb-visual svg{right:50%;transform:translate(50%,-50%)}
+}
+</style>
 </head>
 
 <body>
@@ -54,7 +135,6 @@ tarteaucitron.user.gtagMore = function () {
       <span class="title-security">Security</span>
     </div>
   </div>
-
   <nav class="nav-compact">
     <a href="/index.html">Accueil</a>
     <a href="/services.html">Services</a>
@@ -62,434 +142,207 @@ tarteaucitron.user.gtagMore = function () {
     <a href="/apropos.html">À propos</a>
     <a href="/nis2.html">NIS2</a>
     <a href="/contact.html">Contact</a>
-    <a href="/glossaire.html">Glossaire</a>
     <a href="/faq.html">FAQ</a>
-
     <span class="nav-divider"></span>
-
-    <a class="lang-active" href="/webinaire-cybermois.html">FR</a>
+    <a class="lang-active" href="/webinaire_cybermois.html">FR</a>
   </nav>
-
-  <!-- CTA volontairement NON commercial sur cette page : l'agenda du Cybermois
-       exclut les évènements à vocation commerciale. -->
-  <a href="mailto:marinabruno@enyasecurity.com?subject=Inscription%20au%20webinaire%20Cybermois%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m'inscrire%20au%20webinaire%20gratuit%20%C2%AB%20Cyberattaque%20%3A%2010%20v%C3%A9rifications%20essentielles%20pour%20prot%C3%A9ger%20une%20TPE%2FPME%20%C2%BB.%0D%0A%0D%0ANom%20%3A%20%0D%0AStructure%20%3A%20%0D%0AFonction%20%3A%20%0D%0A%0D%0AMerci." class="header-cta">
-    S'inscrire au webinaire
-  </a>
-
+  <!-- CTA non commercial : l'agenda du Cybermois exclut les évènements à vocation commerciale -->
+  <a href="#inscription" class="header-cta">S'inscrire au webinaire</a>
 </header>
 
-<!-- ====================================================== -->
-<!-- HERO -->
-<!-- ====================================================== -->
+<main class="wb">
 
-<section class="hero-home">
+<!-- ================= HERO ================= -->
+<section class="wb-hero">
+  <div class="wb-wrap wb-hero-grid">
+    <div>
+      <p class="wb-kicker">WEBINAIRE GRATUIT · CYBERMOIS 2026</p>
+      <h1 class="wb-h1">Cyberattaque :<br><span class="wb-hl">10 vérifications essentielles</span><br>pour protéger une TPE/PME</h1>
+      <p class="wb-sub">Des conseils concrets et applicables pour les dirigeants de petites structures <b>sans service informatique interne</b>.</p>
 
-  <div class="hero-grid">
-
-    <div class="hero-content">
-
-      <div class="hero-kicker-text">WEBINAIRE GRATUIT · CYBERMOIS 2026</div>
-
-      <h1 class="hero-title">
-        Cyberattaque :<br>
-        <span class="gradient-text">10 vérifications essentielles</span><br>
-        pour protéger une TPE/PME
-      </h1>
-
-      <p class="hero-subtitle">
-        Des conseils concrets et applicables, spécialement pensés pour les dirigeants
-        de petites structures <b>sans service informatique interne</b>.
-      </p>
-
-      <div class="svc-chip-row">
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </span>
-          <!-- DATE ET HORAIRE : à modifier ici, dans le visuel et dans le bloc « Informations pratiques » -->
-          <span>Jeudi 22 octobre 2026<br>12h00 — 13h00</span>
+      <div class="wb-facts">
+        <!-- DATE ET HORAIRE : à modifier ici et dans la section « Rejoignez le webinaire » -->
+        <div class="wb-fact">
+          <span class="wb-fact-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+          <div><strong>Jeudi 22 octobre 2026</strong><span>12h00 – 13h00</span></div>
         </div>
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
-          </span>
-          <span>En ligne<br>1 heure</span>
+        <div class="wb-fact">
+          <span class="wb-fact-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+          <div><strong>En ligne</strong><span>1 heure</span></div>
         </div>
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-          </span>
-          <span>Gratuit<br>sans prérequis technique</span>
+        <div class="wb-fact">
+          <span class="wb-fact-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.6 13.4l-7.2 7.2a2 2 0 01-2.8 0L3 13V3h10l7.6 7.6a2 2 0 010 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
+          <div><strong>Gratuit</strong><span>Sans prérequis technique</span></div>
         </div>
-
-        <div class="svc-chip">
-          <span class="svc-chip-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
-          </span>
-          <span>Checklist offerte<br>à tous les participants</span>
-        </div>
-
       </div>
 
-      <div class="hero-buttons-new" style="margin-bottom: 8px;">
-        <a href="mailto:marinabruno@enyasecurity.com?subject=Inscription%20au%20webinaire%20Cybermois%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m'inscrire%20au%20webinaire%20gratuit%20%C2%AB%20Cyberattaque%20%3A%2010%20v%C3%A9rifications%20essentielles%20pour%20prot%C3%A9ger%20une%20TPE%2FPME%20%C2%BB.%0D%0A%0D%0ANom%20%3A%20%0D%0AStructure%20%3A%20%0D%0AFonction%20%3A%20%0D%0A%0D%0AMerci." class="btn-primary">
-          S'inscrire par email
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#programme" class="btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
-          Voir le programme
-        </a>
-      </div>
-
-      <div class="svc-hero-note">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <a href="#inscription" class="wb-btn">S'inscrire gratuitement
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="wb-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10V7a5 5 0 00-10 0v3H5v12h14V10h-2zm-8-3a3 3 0 016 0v3H9V7z"/></svg>
         Aucune présentation commerciale, aucune promotion d'offres payantes.
-      </div>
-
-    </div>
-
-    <div class="hero-visual" style="height: 420px; display:flex; align-items:center; justify-content:center;">
-      <img src="/assets/webinaire-cybermois.png"
-           alt="Webinaire gratuit — Cyberattaque : 10 vérifications essentielles pour protéger une TPE/PME"
-           style="max-width:100%; max-height:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.35);">
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- À QUI S'ADRESSE CE WEBINAIRE -->
-<!-- ====================================================== -->
-
-<section class="svc-verify-section" style="padding-top:30px;">
-
-  <p class="expertise-kicker">À QUI S'ADRESSE CE WEBINAIRE</p>
-
-  <div class="nis2-grid nis2-grid-4">
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
-        </span>
-        <h3>TPE et PME</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>Sans responsable sécurité interne <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Avec un site web et une base clients <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3l7 7-4 4-7-7z"/><path d="M10 7L3 14v7h7l7-7"/></svg>
-        </span>
-        <h3>Artisans &amp; indépendants</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>Devis, factures et données clients <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Un ordinateur, un téléphone, un cloud <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
-        </span>
-        <h3>Associations</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>Fichiers d'adhérents et de donateurs <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Bénévoles aux accès partagés <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-    <div class="nis2-card">
-      <div class="nis2-card-header">
-        <span class="nis2-card-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V5a2 2 0 012-2h12a2 2 0 012 2v16"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
-        </span>
-        <h3>Cabinets &amp; petites structures</h3>
-      </div>
-      <ul class="nis2-card-list">
-        <li>Données sensibles ou réglementées <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-        <li>Informatique confiée à un prestataire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></li>
-      </ul>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- PROGRAMME -->
-<!-- ====================================================== -->
-
-<section class="approach-section" id="programme">
-
-  <p class="expertise-kicker">LES 5 POINTS TRAITÉS EN DÉTAIL PENDANT L'HEURE</p>
-
-  <div class="approach-inner" style="text-align:center;">
-
-    <div class="approach-row approach-row-6 svc-approach-outline" style="margin-top:0;">
-
-      <div class="approach-step">
-        <span class="approach-number">1</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
-        </span>
-        <h3>Sauvegardes</h3>
-        <p>Ai-je une sauvegarde réellement restaurable — et l'ai-je déjà testée ?</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">2</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-        </span>
-        <h3>Comptes &amp; MFA</h3>
-        <p>Mes comptes sensibles sont-ils correctement protégés ?</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">3</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 010 18a15 15 0 010-18z"/></svg>
-        </span>
-        <h3>Exposition Internet</h3>
-        <p>Qu'est-ce qu'un attaquant peut déjà découvrir sur mon entreprise ?</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">4</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-        </span>
-        <h3>Phishing</h3>
-        <p>Mes collaborateurs sauraient-ils reconnaître une tentative crédible ?</p>
-      </div>
-
-      <div class="approach-step">
-        <span class="approach-number">5</span>
-        <span class="approach-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M5.6 5.6l2.8 2.8M3 12h4M12 13a4 4 0 014 4v4H8v-4a4 4 0 014-4z"/></svg>
-        </span>
-        <h3>Premières heures</h3>
-        <p>Saurais-je quoi faire pendant les premières heures d'un incident ?</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- LA CHECKLIST DES 10 VÉRIFICATIONS -->
-<!-- ====================================================== -->
-
-<section class="svc-check-section">
-
-  <div class="svc-check-grid">
-
-    <div class="svc-check-col">
-      <h3>LA CHECKLIST DES 10 VÉRIFICATIONS</h3>
-      <p style="margin-bottom:14px;">
-        <b>Repartez avec votre checklist d'auto-évaluation : 10 questions concrètes
-        à reprendre dans votre entreprise.</b> Les 5 points prioritaires sont
-        approfondis pendant le webinaire, et la checklist complète est envoyée
-        gratuitement à tous les participants.
       </p>
-      <ul class="svc-check-list">
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>1. Sauvegardes</strong><p>Ai-je une sauvegarde réellement restaurable ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>2. Comptes et MFA</strong><p>Les comptes sensibles sont-ils correctement protégés ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>3. Droits administrateur</strong><p>Qui possède réellement des privilèges élevés ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>4. Mises à jour</strong><p>Sais-je quels systèmes ne sont pas à jour ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>5. Exposition Internet et accès distants</strong><p>VPN, RDP, cloud, comptes externes : qu'est-ce qui est visible ?</p></div></li>
-      </ul>
     </div>
 
-    <div class="svc-check-col">
-      <h3>&nbsp;</h3>
-      <ul class="svc-check-list">
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>6. Phishing</strong><p>Mes collaborateurs sauraient-ils reconnaître une tentative crédible ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>7. Données sensibles</strong><p>Où sont les données importantes et qui peut y accéder ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>8. Premières heures d'un incident</strong><p>Saurais-je quoi faire immédiatement en cas de ransomware ou d'incident majeur ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>9. Prestataires et sous-traitants</strong><p>Qui, en dehors de mon équipe, a un accès à mes systèmes ?</p></div></li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg><div><strong>10. Traces et journaux</strong><p>Pourrais-je comprendre ce qui s'est passé après un incident ?</p></div></li>
-      </ul>
+    <div class="wb-visual" aria-hidden="true">
+      <div class="wb-visual-words">ANTICIPER<br>COMPRENDRE<br>SE PROTÉGER<i></i></div>
+      <svg width="150" height="170" viewBox="0 0 24 27" fill="none" stroke="#39c6ff" stroke-width="0.9" stroke-linejoin="round">
+        <path d="M12 1.5l9 3.8v6.4c0 5.9-3.8 10.6-9 13-5.2-2.4-9-7.1-9-13V5.3l9-3.8z" fill="rgba(30,200,255,.08)"/>
+        <rect x="8.2" y="12" width="7.6" height="6.4" rx="1.2" fill="#1ec8ff" stroke="none"/>
+        <path d="M9.8 12V9.9a2.2 2.2 0 014.4 0V12"/>
+        <circle cx="12" cy="14.8" r=".9" fill="#07162b" stroke="none"/>
+      </svg>
     </div>
-
   </div>
-
 </section>
 
-<!-- ====================================================== -->
-<!-- QUI ANIME LE WEBINAIRE -->
-<!-- ====================================================== -->
+<!-- ================= PROGRAMME ================= -->
+<section class="wb-light">
+  <div class="wb-wrap">
+    <div class="wb-bar"></div>
+    <h2 class="wb-h2">En 1 heure, vous saurez…</h2>
 
-<section class="svc-verify-section" style="padding-top:10px;">
+    <div class="wb-topics">
+      <div class="wb-topic">
+        <div class="wb-topic-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+        <h3>Sauvegardes</h3><p>vérifier que vos données sont réellement restaurables</p>
+      </div>
+      <div class="wb-topic">
+        <div class="wb-topic-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div>
+        <h3>Comptes &amp; MFA</h3><p>protéger en priorité les comptes qui ouvrent tout</p>
+      </div>
+      <div class="wb-topic">
+        <div class="wb-topic-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18a14 14 0 010-18z"/></svg></div>
+        <h3>Exposition Internet</h3><p>repérer ce qu'un attaquant peut déjà voir de vous</p>
+      </div>
+      <div class="wb-topic">
+        <div class="wb-topic-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <h3>Phishing</h3><p>reconnaître un message frauduleux crédible</p>
+      </div>
+      <div class="wb-topic">
+        <div class="wb-topic-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M4.9 5.9l2 2M19.1 5.9l-2 2M6 19v-4a6 6 0 0112 0v4M4 19h16"/></svg></div>
+        <h3>Premières heures</h3><p>savoir quoi faire dès les premières heures d'un incident</p>
+      </div>
+    </div>
 
-  <p class="expertise-kicker">QUI ANIME CE WEBINAIRE</p>
+    <div class="wb-card">
+      <div class="wb-card-ic"><svg width="40" height="46" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2h9l5 5v17H6z"/><path d="M15 2v5h5"/><path d="M9 12h2M13 12h4M9 16h2M13 16h4M9 20h2M13 20h4"/></svg></div>
+      <div>
+        <h3>Checklist des 10 vérifications offerte</h3>
+        <p>Votre outil d'auto-évaluation, envoyé gratuitement à tous les inscrits — y compris si vous ne pouvez pas assister à la session.</p>
+      </div>
+    </div>
 
-  <div style="max-width:760px;margin:0 auto;padding:26px 30px;
-              border:1px solid rgba(0,174,239,.28);border-radius:16px;
-              background:rgba(0,174,239,.05);">
+    <div class="wb-speaker">
+      <img src="/assets/logo.png" alt="Enya Security">
+      <div>
+        <strong>Marina Bruno</strong> <span>· Fondatrice d'Enya Security</span>
+        <p>Ingénieure, audits de cybersécurité pour TPE, PME et associations. Approche pédagogique et indépendante : aucun outil à vendre, aucun éditeur partenaire.</p>
+      </div>
+    </div>
 
-    <div style="display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;">
+    <!-- ================= INSCRIPTION ================= -->
+    <div id="inscription" class="wb-join">
+      <div class="wb-bar"></div>
+      <h2 class="wb-h2">Rejoignez le webinaire</h2>
+      <p class="wb-join-meta">Jeudi 22 octobre 2026 · 12h00 à 13h00 · En ligne · Gratuit</p>
 
-      <img src="/assets/logo.png" alt="Enya Security"
-           style="width:64px;height:64px;object-fit:contain;flex:0 0 auto;">
+      <div class="wb-form">
+        <!--
+          CONFIGURATION DU FORMULAIRE (une seule fois)
+          1. Créer le formulaire chez le prestataire d'emailing (Brevo recommandé : champs Prénom + Email,
+             email de confirmation automatique activé).
+          2. Remplacer ACTION_URL_DU_FORMULAIRE ci-dessous par l'URL « action » fournie par le prestataire.
+          3. Vérifier que les attributs name (FIRSTNAME, EMAIL) correspondent à ceux du prestataire.
+        -->
+        <form id="wb-form" action="ACTION_URL_DU_FORMULAIRE" method="POST" target="wb-sink" novalidate>
+          <div class="wb-row">
+            <div>
+              <label for="wb-prenom">Prénom</label>
+              <input type="text" id="wb-prenom" name="FIRSTNAME" autocomplete="given-name" required>
+            </div>
+            <div>
+              <label for="wb-email">Adresse e-mail</label>
+              <input type="email" id="wb-email" name="EMAIL" autocomplete="email" required>
+            </div>
+          </div>
+          <!-- anti-spam : champ invisible, laissé vide par les humains -->
+          <div class="wb-hp" aria-hidden="true"><input type="text" name="email_address_check" tabindex="-1" autocomplete="off" value=""></div>
+          <input type="hidden" name="locale" value="fr">
 
-      <div style="flex:1 1 320px;">
-        <h3 style="margin:0 0 4px;">Marina Bruno</h3>
-        <p style="margin:0 0 12px;opacity:.75;font-size:.92em;">
-          Fondatrice d'Enya Security
-        </p>
-        <p style="margin:0 0 10px;">
-          Ingénieure, je réalise des audits de cybersécurité pour des TPE, des PME
-          et des associations qui n'ont pas de service informatique interne.
-        </p>
-        <p style="margin:0;">
-          Mon approche est pédagogique et indépendante : je ne vends aucun outil et
-          je ne suis liée à aucun éditeur de solutions. Cela me permet de dire
-          simplement ce qui compte vraiment, et ce qui peut attendre.
-        </p>
+          <button type="submit" class="wb-btn">S'inscrire au webinaire
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="wb-err" id="wb-err">Merci d'indiquer votre prénom et une adresse e-mail valide.</p>
+
+          <p class="wb-legal">
+            Vos prénom et adresse e-mail servent uniquement à gérer votre inscription et à vous envoyer les informations
+            liées à ce webinaire (confirmation, lien de connexion, rappel, checklist). Aucun abonnement automatique à des
+            communications commerciales, aucune cession à des tiers. Suppression sur simple demande à
+            <a href="mailto:marinabruno@enyasecurity.com">marinabruno@enyasecurity.com</a>.
+            <a href="/confidentialite.html">Politique de confidentialité</a>.
+          </p>
+        </form>
+
+        <div class="wb-ok" id="wb-ok" role="status">
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#1e9e5a" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>
+          <h3>Inscription enregistrée</h3>
+          <p>Un e-mail de confirmation vient de vous être envoyé. Le lien de connexion vous sera rappelé la veille du webinaire.<br>Pensez à vérifier vos courriers indésirables.</p>
+        </div>
+        <iframe name="wb-sink" title="envoi" style="display:none"></iframe>
       </div>
 
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ====================================================== -->
-<!-- INFORMATIONS PRATIQUES + FAQ -->
-<!-- ====================================================== -->
-
-<section class="svc-faq-section">
-
-  <div class="svc-faq-grid">
-
-    <div class="svc-faq-col">
-
-      <h3>QUESTIONS FRÉQUENTES</h3>
-
-      <details class="svc-faq-item">
-        <summary>Faut-il des connaissances techniques ?</summary>
-        <p>
-          Non, aucune. Le webinaire est conçu pour des dirigeants et des
-          responsables qui n'ont pas de service informatique interne. Chaque
-          vérification est expliquée à partir d'un exemple concret, sans
-          vocabulaire spécialisé.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Est-ce vraiment gratuit ?</summary>
-        <p>
-          Oui. Le webinaire est gratuit et ne comporte aucune présentation
-          commerciale ni promotion d'offres payantes. Il s'inscrit dans le
-          Cybermois, le Mois européen de la cybersécurité, qui se déroule
-          du 1er au 31 octobre.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Je ne suis pas disponible à cet horaire, puis-je recevoir la checklist ?</summary>
-        <p>
-          Oui. Inscrivez-vous quand même et précisez-le simplement dans votre email :
-          la checklist des dix vérifications est envoyée à toutes les personnes
-          inscrites, qu'elles aient pu assister ou non à la session. Vous pouvez
-          également m'indiquer une question précise, j'y répondrai par écrit.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Comment se passe l'inscription ?</summary>
-        <p>
-          Par simple email à
-          <a href="mailto:marinabruno@enyasecurity.com">marinabruno@enyasecurity.com</a>,
-          en indiquant votre nom et votre structure. Le lien de connexion vous
-          est envoyé en retour, puis rappelé la veille du webinaire.
-        </p>
-      </details>
-
-      <details class="svc-faq-item">
-        <summary>Que devient mon adresse email ?</summary>
-        <p>
-          Elle sert exclusivement à gérer votre inscription et à vous envoyer les
-          informations liées à ce webinaire : confirmation, lien de connexion,
-          rappel la veille et checklist à l'issue de la session.
-        </p>
-        <p>
-          <b>Votre inscription n'entraîne aucun abonnement automatique à des
-          communications commerciales.</b> Votre adresse n'est ni cédée, ni
-          transmise à des tiers, et elle est supprimée à votre demande, à tout
-          moment et sans justification, par simple email. Voir la
-          <a href="/confidentialite.html">politique de confidentialité</a>.
-        </p>
-      </details>
-
-    </div>
-
-    <div class="svc-cta-dark">
-      <span class="svc-cta-dark-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-      </span>
-      <h3>Réservez votre place</h3>
-      <!-- DATE ET HORAIRE : à modifier ici aussi si le créneau change -->
-      <p>
-        Jeudi 22 octobre 2026, de 12h00 à 13h00.<br>
-        En ligne · 1 heure · gratuit · sur inscription par email.
+      <p class="wb-note wb-note-light">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10V7a5 5 0 00-10 0v3H5v12h14V10h-2zm-8-3a3 3 0 016 0v3H9V7z"/></svg>
+        Aucune présentation commerciale, aucune promotion d'offres payantes.
       </p>
-      <a href="mailto:marinabruno@enyasecurity.com?subject=Inscription%20au%20webinaire%20Cybermois%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m'inscrire%20au%20webinaire%20gratuit%20%C2%AB%20Cyberattaque%20%3A%2010%20v%C3%A9rifications%20essentielles%20pour%20prot%C3%A9ger%20une%20TPE%2FPME%20%C2%BB.%0D%0A%0D%0ANom%20%3A%20%0D%0AStructure%20%3A%20%0D%0AFonction%20%3A%20%0D%0A%0D%0AMerci." class="btn-primary">
-        S'inscrire par email
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <span class="svc-cta-dark-note">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg>
-        Checklist des 10 vérifications offerte à tous les inscrits
-      </span>
     </div>
-
   </div>
-
 </section>
 
-<!-- ====================================================== -->
-<!-- FOOTER -->
-<!-- ====================================================== -->
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wb-wrap wb-faq">
+    <h2>Questions fréquentes</h2>
+    <details>
+      <summary>Faut-il des connaissances techniques ?</summary>
+      <p>Non, aucune. Le webinaire s'adresse aux dirigeants et responsables qui n'ont pas de service informatique interne. Chaque point est expliqué à partir d'un exemple concret, sans jargon.</p>
+    </details>
+    <details>
+      <summary>Comment se passe l'inscription ?</summary>
+      <p>Indiquez votre prénom et votre adresse e-mail dans le formulaire. Vous recevez immédiatement un e-mail de confirmation, puis le lien de connexion la veille du webinaire. Si vous ne pouvez pas assister à la session, inscrivez-vous quand même : la checklist vous sera envoyée.</p>
+    </details>
+    <details>
+      <summary>Que devient mon adresse e-mail ?</summary>
+      <p>Elle sert exclusivement à gérer votre inscription et à vous envoyer les informations liées à ce webinaire. Votre inscription n'entraîne aucun abonnement automatique à des communications commerciales. Votre adresse n'est ni cédée ni transmise à des tiers, et elle est supprimée sur simple demande.</p>
+    </details>
+  </div>
+</section>
+
+</main>
 
 <footer>
-
-<p style="margin-bottom:10px;">
-  Webinaire organisé dans le cadre du <strong>Cybermois 2026</strong>, le Mois européen
-  de la cybersécurité, du 1er au 31 octobre.
-</p>
-
-<p>
-<a href="/mentions_legales.html">Mentions légales</a>
-&nbsp;·&nbsp;
-<a href="/confidentialite.html">Politique de confidentialité</a>
-</p>
-
-<p>
-<a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a>
-</p>
-
+  <p style="margin-bottom:10px;">Webinaire organisé dans le cadre du <strong>Cybermois 2026</strong>, le Mois européen de la cybersécurité.</p>
+  <p><a href="/mentions_legales.html">Mentions légales</a> &nbsp;·&nbsp; <a href="/confidentialite.html">Politique de confidentialité</a> &nbsp;·&nbsp; <a href="/contact.html">Contact</a></p>
+  <p><a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;">Gérer mes cookies</a></p>
 </footer>
+<div class="legal-copyright">© 2026 Enya Security — Tous droits réservés.</div>
 
-<div class="legal-copyright">
-  © 2026 Enya Security — Tous droits réservés.
-</div>
+<script>
+(function(){
+  var f=document.getElementById('wb-form'), ok=document.getElementById('wb-ok'), err=document.getElementById('wb-err');
+  f.addEventListener('submit',function(e){
+    var p=f.FIRSTNAME.value.trim(), m=f.EMAIL.value.trim();
+    var valid=p.length>0 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m);
+    if(!valid){ e.preventDefault(); err.style.display='block'; return; }
+    if(f.email_address_check.value!==''){ e.preventDefault(); return; }   /* robot */
+    if(f.getAttribute('action')==='ACTION_URL_DU_FORMULAIRE'){           /* formulaire non encore configuré */
+      e.preventDefault(); err.textContent="Le formulaire n'est pas encore configuré."; err.style.display='block'; return;
+    }
+    err.style.display='none';
+    setTimeout(function(){ f.style.display='none'; ok.style.display='block'; },400);
+  });
+})();
+</script>
 
 </body>
 </html>
