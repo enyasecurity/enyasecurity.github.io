@@ -339,15 +339,11 @@ tarteaucitron.user.gtagMore = function () {
       <!-- DATE ET HORAIRE : à modifier ici aussi si le créneau change -->
       <p>Jeudi 22 octobre 2026 · 12h00 à 13h00<br>En ligne · gratuit</p>
 
-      <!--
-        CONFIGURATION DU FORMULAIRE (une seule fois)
-        1. Créer le formulaire dans Brevo (champs Prénom + Email, e-mail de confirmation activé).
-        2. Remplacer ACTION_URL_DU_FORMULAIRE par l'URL « action » du code HTML fourni par Brevo.
-        3. Vérifier que les attributs name (FIRSTNAME, EMAIL) sont identiques à ceux de Brevo.
-      -->
-      <form class="webi-form" id="webi-form" action="ACTION_URL_DU_FORMULAIRE" method="POST" target="webi-sink" novalidate>
+      <!-- Formulaire relié à Brevo (liste webinaire Cybermois 2026).
+           Champs envoyés : NOM (contient le prénom saisi) et EMAIL, noms imposés par le formulaire Brevo. -->
+      <form class="webi-form" id="webi-form" action="https://604fc081.sibforms.com/serve/MUIFADyQmJRvCyuYFDVL8rsEqzW7F77Gnmh8xhSS9h8rHwmqwUDHPiZryy8jp88pGbje6GJRcK8FK2S-INuUMMilZIRg7A2m57aOrINOqT2AcfqliVFIVDrcs8Hc0e8t_TUMr-4oLpRFr5zPPCoaRrDMLsME-4BXOHPWOng1nDx1Y1mWjl-K7KKdzYlEEpScRDmfBK4k9DmaFyD3cA==" data-type="subscription" method="POST" target="webi-sink" novalidate>
         <label for="webi-prenom">Prénom</label>
-        <input type="text" id="webi-prenom" name="FIRSTNAME" autocomplete="given-name" required>
+        <input type="text" id="webi-prenom" name="NOM" autocomplete="given-name" required>
 
         <label for="webi-email">Adresse e-mail</label>
         <input type="email" id="webi-email" name="EMAIL" autocomplete="email" required>
@@ -373,7 +369,7 @@ tarteaucitron.user.gtagMore = function () {
       <div class="webi-ok" id="webi-ok" role="status">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>
         <strong>Inscription enregistrée</strong>
-        <p>Un e-mail de confirmation vient de vous être envoyé. Pensez à vérifier vos courriers indésirables.</p>
+        <p>Votre inscription au webinaire est confirmée. Un e-mail de confirmation vient de vous être envoyé — pensez à vérifier vos courriers indésirables. Rendez-vous le 22 octobre à 12h00&nbsp;!</p>
       </div>
 
       <iframe name="webi-sink" title="envoi" style="display:none"></iframe>
@@ -414,16 +410,27 @@ tarteaucitron.user.gtagMore = function () {
 (function () {
   var f = document.getElementById('webi-form'),
       ok = document.getElementById('webi-ok'),
-      err = document.getElementById('webi-err');
+      err = document.getElementById('webi-err'),
+      sink = document.querySelector('iframe[name="webi-sink"]'),
+      btn = f.querySelector('button[type="submit"]'),
+      sent = false;
+
+  sink.addEventListener('load', function () {
+    if (!sent) return;                       /* ignore le chargement initial de l'iframe */
+    f.style.display = 'none'; ok.style.display = 'block';
+  });
+
   f.addEventListener('submit', function (e) {
-    var p = f.FIRSTNAME.value.trim(), m = f.EMAIL.value.trim();
-    if (!p || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m)) { e.preventDefault(); err.style.display = 'block'; return; }
-    if (f.email_address_check.value !== '') { e.preventDefault(); return; }
-    if (f.getAttribute('action') === 'ACTION_URL_DU_FORMULAIRE') {
-      e.preventDefault(); err.textContent = "Le formulaire n'est pas encore configuré."; err.style.display = 'block'; return;
+    var p = f.NOM.value.trim(), m = f.EMAIL.value.trim();
+    if (!p || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m)) {
+      e.preventDefault(); err.style.display = 'block'; return;
     }
+    if (f.email_address_check.value !== '') { e.preventDefault(); return; }   /* robot */
     err.style.display = 'none';
-    setTimeout(function () { f.style.display = 'none'; ok.style.display = 'block'; }, 400);
+    sent = true;
+    btn.disabled = true; btn.style.opacity = '.7';
+    /* filet de sécurité si l'iframe ne signale pas son chargement */
+    setTimeout(function () { if (ok.style.display !== 'block') { f.style.display = 'none'; ok.style.display = 'block'; } }, 6000);
   });
 })();
 </script>
