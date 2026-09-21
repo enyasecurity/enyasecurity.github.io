@@ -4,7 +4,7 @@
 
 <meta charset="UTF-8">
 <title>Services - Enya Security</title>
-<meta name="description" content="Non-intrusive cybersecurity audits for small and medium-sized businesses: database security, online exposure, ransomware readiness, NIS2 and Android applications.">
+<meta name="description" content="Non-intrusive cybersecurity audits and practical training for small and medium-sized businesses: database security, online exposure, ransomware readiness, NIS2 and Android applications.">
 <link rel="stylesheet" href="/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- TarteAuCitron (cookie management) -->
@@ -34,6 +34,46 @@ tarteaucitron.user.gtagMore = function () {
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
 
+<!-- ====================================================== -->
+<!-- TRAINING BLOCK STYLES (prefix sv-)                     -->
+<!-- Identical to /services.html and /it/servizi.html       -->
+<!-- ====================================================== -->
+<style>
+.sv-formation {
+    max-width:1020px; margin:0 auto 46px;
+    background:linear-gradient(120deg,#EAF7F2 0%,#EDF2FD 100%);
+    border:1px solid #D9E8E2; border-radius:20px;
+    padding:30px 34px; display:flex; flex-wrap:wrap; align-items:center; gap:28px;
+    text-align:left;
+}
+.sv-formation-ico {
+    flex:0 0 auto; width:62px; height:62px; border-radius:18px; background:#FFFFFF;
+    display:flex; align-items:center; justify-content:center;
+}
+.sv-formation-txt { flex:1 1 430px; }
+.sv-kicker {
+    font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:#12A37E; margin:0 0 8px;
+}
+.sv-formation-txt h2 { font-size:1.42rem; line-height:1.25; color:#0F2545; margin:0 0 10px; font-weight:700; }
+.sv-formation-txt p  { font-size:.95rem; line-height:1.6; color:#5A6472; margin:0 0 14px; }
+.sv-tags { display:flex; flex-wrap:wrap; gap:8px; }
+.sv-tags span {
+    font-size:.78rem; font-weight:600; color:#0F2545; background:#FFFFFF;
+    border:1px solid #DDE7F0; border-radius:999px; padding:6px 12px;
+}
+.sv-formation-cta { flex:0 0 auto; text-align:center; }
+.sv-formation-cta small { display:block; margin-top:9px; font-size:.79rem; color:#5A6472; }
+.sv-divider { max-width:1020px; margin:0 auto 26px; text-align:center; }
+.sv-divider p { font-size:.72rem; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:#2563EB; margin:0 0 6px; }
+.sv-divider h2 { font-size:1.55rem; color:#0F2545; margin:0; font-weight:700; }
+@media (max-width:620px){
+  .sv-formation { padding:24px 22px; }
+  .sv-formation-cta { width:100%; }
+}
+</style>
+
 </head>
 
 <body>
@@ -50,6 +90,7 @@ tarteaucitron.user.gtagMore = function () {
   <nav class="nav-compact">
     <a href="/en/home.html">Home</a>
     <a class="active" href="/en/services.html">Services</a>
+    <a href="/en/training.html">Training</a>
     <a href="/en/pricing.html">Pricing</a>
     <a href="/en/about.html">About</a>
     <a href="/en/nis2.html">NIS2</a>
@@ -65,7 +106,7 @@ tarteaucitron.user.gtagMore = function () {
   </nav>
 
   <a href="/en/contact.html?objet=diagnostic" class="header-cta">
-    Request an audit
+    Request a quote
   </a>
 
 </header>
@@ -74,9 +115,53 @@ tarteaucitron.user.gtagMore = function () {
 
   <h1 class="services-title">Services</h1>
   <p class="services-subtitle">
-    Clear, educational and non-intrusive cybersecurity audits, designed for small
-    and medium-sized businesses, professional practices and associations.
+    Clear, educational and non-intrusive cybersecurity audits and training, designed for
+    small and medium-sized businesses, professional practices and associations.
   </p>
+
+  <!-- ====================================================== -->
+  <!-- TRAINING BLOCK -->
+  <!-- ====================================================== -->
+
+  <div class="sv-formation">
+
+    <span class="sv-formation-ico">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#12A37E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4L2 8.5 12 13l10-4.5L12 4z"/><path d="M6 10.6v4.6c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.6"/><path d="M21 9v5"/></svg>
+    </span>
+
+    <div class="sv-formation-txt">
+      <p class="sv-kicker">Training and awareness</p>
+      <h2>Train the people, not just the systems</h2>
+      <p>Sessions and short modules for teams, practices, professional bodies and
+         associations. Realistic scenarios, guided exercises and practical materials
+         that participants keep.</p>
+      <div class="sv-tags">
+        <span>Cybersecurity essentials</span>
+        <span>Ransomware and the first hours</span>
+        <span>NIS2 for directors</span>
+        <span>Phishing</span>
+        <span>Supply chain</span>
+      </div>
+    </div>
+
+    <div class="sv-formation-cta">
+      <a href="/en/training.html" class="btn-primary">
+        Explore the training
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <small>From 1 to 3 hours · on quotation</small>
+    </div>
+
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- AUDITS AND ASSESSMENTS -->
+  <!-- ====================================================== -->
+
+  <div class="sv-divider">
+    <p>Audits and assessments</p>
+    <h2>Find out where you are exposed</h2>
+  </div>
 
   <div class="services-grid">
 
@@ -151,7 +236,7 @@ tarteaucitron.user.gtagMore = function () {
   <div class="pricing-note">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
     <span>
-      All our engagements are strictly non-intrusive: we observe, analyse and
+      All our audit engagements are strictly non-intrusive: we observe, analyse and
       report. We do not carry out penetration testing, active exploitation of
       vulnerabilities, or remediation work on your systems — which is precisely
       what keeps our findings independent.
