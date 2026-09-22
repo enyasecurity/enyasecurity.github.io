@@ -192,6 +192,84 @@ tarteaucitron.user.gtagMore = function () {
 </section>
 
 <!-- ====================================================== -->
+<!-- BANDEAU WEBINAIRE CYBERMOIS — à retirer après le 22/10/2026 -->
+<!-- ====================================================== -->
+
+<style>
+.webi-banner-wrap{background:#f5f8fc;padding:28px 20px 6px}
+.webi-banner{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:0;
+  background:#fff;border:1px solid #e1e8f2;border-radius:16px;
+  box-shadow:0 8px 28px rgba(15,40,80,.06);padding:18px 26px;text-decoration:none;color:#0d1b2e}
+.webi-b-main{flex:1 1 34%;min-width:0;padding-right:24px}
+.webi-b-badge{display:inline-block;padding:4px 14px;border-radius:999px;font-size:.78rem;font-weight:700;
+  color:#fff;background:linear-gradient(90deg,#00AEEF,#8B5CF6);letter-spacing:.02em}
+.webi-b-kicker{display:block;margin:8px 0 2px;font-size:.78rem;font-weight:800;letter-spacing:.05em;color:#0d1b2e}
+.webi-b-title{margin:0;font-size:1.28rem;line-height:1.22;font-weight:800;color:#0d1b2e}
+.webi-b-sub{margin:6px 0 0;font-size:.86rem;color:#5b6b7e}
+.webi-b-facts{flex:1 1 40%;display:flex;border-left:1px solid #e1e8f2;border-right:1px solid #e1e8f2}
+.webi-b-fact{flex:1;display:flex;align-items:center;gap:12px;padding:6px 20px}
+.webi-b-fact + .webi-b-fact{border-left:1px solid #e1e8f2}
+.webi-b-fact svg{flex:0 0 auto;color:#1e6fff}
+.webi-b-fact strong{display:block;font-size:.84rem;color:#0d1b2e}
+.webi-b-fact span{font-size:.82rem;color:#5b6b7e;white-space:nowrap}
+.webi-b-cta{flex:0 0 auto;padding-left:26px;text-align:left}
+.webi-b-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:12px;
+  background:linear-gradient(90deg,#2563eb,#8B5CF6);color:#fff !important;font-weight:700;font-size:.98rem;
+  text-decoration:none;box-shadow:0 8px 22px rgba(79,70,229,.28);transition:transform .15s,box-shadow .15s}
+.webi-b-btn:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(79,70,229,.38)}
+.webi-b-note{margin:10px 0 0;font-size:.78rem;line-height:1.4;color:#5b6b7e;max-width:250px}
+@media (max-width:1000px){
+  .webi-banner{flex-wrap:wrap;padding:20px}
+  .webi-b-main{flex:1 1 100%;padding:0 0 16px}
+  .webi-b-facts{flex:1 1 100%;border:0;border-top:1px solid #e1e8f2;border-bottom:1px solid #e1e8f2;padding:10px 0}
+  .webi-b-fact{padding:6px 12px}
+  .webi-b-cta{flex:1 1 100%;padding:16px 0 0}
+  .webi-b-btn{width:100%;justify-content:center;box-sizing:border-box}
+  .webi-b-note{max-width:none;text-align:center}
+}
+@media (max-width:600px){
+  .webi-b-facts{flex-direction:column}
+  .webi-b-fact + .webi-b-fact{border-left:0;border-top:1px solid #e1e8f2}
+}
+</style>
+
+<div class="webi-banner-wrap">
+  <div class="webi-banner">
+
+    <div class="webi-b-main">
+      <span class="webi-b-badge">CYBERMOIS 2026</span>
+      <span class="webi-b-kicker">WEBINAIRE GRATUIT</span>
+      <p class="webi-b-title">Cyberattaque : 10 vérifications essentielles pour protéger une TPE/PME</p>
+      <p class="webi-b-sub">Des conseils concrets pour renforcer votre sécurité, même sans équipe IT.</p>
+    </div>
+
+    <div class="webi-b-facts">
+      <div class="webi-b-fact">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><circle cx="16" cy="16" r="1" fill="currentColor"/></svg>
+        <div><strong>Date</strong><span>Jeudi 22 octobre 2026</span></div>
+      </div>
+      <div class="webi-b-fact">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div><strong>Horaire</strong><span>12h00 – 13h00</span></div>
+      </div>
+      <div class="webi-b-fact">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+        <div><strong>Format</strong><span>En ligne</span></div>
+      </div>
+    </div>
+
+    <div class="webi-b-cta">
+      <a href="/webinaire_cybermois.html" class="webi-b-btn">
+        Je m'inscris gratuitement
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="webi-b-note">Événement référencé dans le programme Cybermois 2026</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ====================================================== -->
 <!-- NOS EXPERTISES (section claire) -->
 <!-- ====================================================== -->
 
