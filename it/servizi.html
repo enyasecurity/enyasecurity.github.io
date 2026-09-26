@@ -72,6 +72,27 @@ tarteaucitron.user.gtagMore = function () {
   .sv-formazione { padding:24px 22px; }
   .sv-formazione-cta { width:100%; }
 }
+
+.sv-pilot {
+    max-width:1020px; margin:34px auto 0;
+    background:#FFFFFF; border:1.5px dashed #B9C7E6; border-radius:20px;
+    padding:26px 30px; display:flex; flex-wrap:wrap; align-items:center; gap:26px;
+    text-align:left;
+}
+.sv-pilot-txt { flex:1 1 430px; }
+.sv-pilot-badge {
+    display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+    color:#7C3AED; background:#F1EAFE; border-radius:999px; padding:5px 12px; margin:0 0 10px;
+}
+.sv-pilot-txt h3 { font-size:1.3rem; line-height:1.25; color:#0F2545; margin:0 0 8px; font-weight:700; }
+.sv-pilot-txt p  { font-size:.95rem; line-height:1.6; color:#5A6472; margin:0 0 14px; }
+.sv-pilot-cta { flex:0 0 auto; text-align:center; }
+.sv-pilot-price { display:block; font-size:1.05rem; font-weight:700; color:#0F2545; margin:0 0 12px; }
+.sv-pilot-cta small { display:block; margin-top:9px; font-size:.79rem; color:#5A6472; }
+@media (max-width:620px){
+  .sv-pilot { padding:22px 20px; }
+  .sv-pilot-cta { width:100%; }
+}
 </style>
 
 </head>
@@ -205,7 +226,7 @@ tarteaucitron.user.gtagMore = function () {
 
     <!-- NIS2 -->
     <div class="service-card">
-      <img src="/assets/icons/icone_auditdb.png" class="service-icon" alt="Icona valutazione NIS2">
+      <svg class="service-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="NIS2 icon"><path d="M12 2l9 4.5v6c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11v-6L12 2z"/><path d="M9 12l2 2 4-4"/></svg>
       <span class="service-tag">CONFORMITÀ</span>
       <h3>Valutazione del livello di adeguamento alla NIS2</h3>
       <p>Requisiti applicabili • Analisi degli scostamenti • Piano d'azione</p>
@@ -227,6 +248,36 @@ tarteaucitron.user.gtagMore = function () {
         <span class="price-amount">449 €</span>
       </span>
       <a href="/it/audit-android.html">Scopri il servizio →</a>
+    </div>
+
+  </div>
+
+  <!-- ====================================================== -->
+  <!-- AUDIT IA — PROGRAMMA PILOTA -->
+  <!-- ====================================================== -->
+
+  <div class="sv-pilot">
+
+    <div class="sv-pilot-txt">
+      <span class="sv-pilot-badge">IA · Programma pilota</span>
+      <h3>Audit di sicurezza degli agenti IA</h3>
+      <p>I vostri assistenti e agenti IA leggono contenuti esterni, accedono ai dati e agiscono per vostro conto. Verifichiamo cosa possono fare, cosa li ferma e cosa viene registrato — senza mai promettere che un agente sia «sicuro».</p>
+      <div class="sv-tags">
+        <span>Permessi</span>
+        <span>Dati</span>
+        <span>Strumenti</span>
+        <span>Istruzioni</span>
+        <span>Tracciabilità</span>
+      </div>
+    </div>
+
+    <div class="sv-pilot-cta">
+      <span class="sv-pilot-price">Tariffa pilota su preventivo</span>
+      <a href="/it/contatti.html?objet=audit-ia" class="btn-primary">
+        Contattaci
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <small>Missioni pilota in numero limitato · 100% a distanza</small>
     </div>
 
   </div>
